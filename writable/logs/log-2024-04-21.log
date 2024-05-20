@@ -1,0 +1,39 @@
+CRITICAL - 2024-04-21 05:12:52 --> Undefined array key "attendance_in"
+in APPPATH\Controllers\Payroll.php on line 166.
+ 1 APPPATH\Controllers\Payroll.php(166): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "attendance_in"', 'APPPATH\\Controllers\\Payroll.php', 166)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->upload_attendance()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-04-21 05:13:25 --> mysqli_sql_exception: Unknown column 'attendance_in' in 'field list' in C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `at...', 0)
+#1 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `at...')
+#2 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `at...')
+#3 C:\laragon\www\tamtechhub_inventory\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `at...', Array, false)
+#4 C:\laragon\www\tamtechhub_inventory\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\tamtechhub_inventory\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\tamtechhub_inventory\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\tamtechhub_inventory\app\Controllers\Payroll.php(171): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Payroll->upload_attendance()
+#9 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#10 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2024-04-21 05:13:25 --> Unknown column 'attendance_in' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `attendance` (`agent_id`, `agent_name`, `date`, `daily_salary`, `time_in`, `time_out`, `late_count`, `attendance_in`, `attendace_out`) VALUES (\'EITB012\', \'Andrei Ivan De Guzman\', \'2024-01-24\', \'320.00\', \'08:00:00\', \'17:00:00\', 0, \'08:00:00\', \'17:00:00\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `attendance` (`agent_id`, `agent_name`, `date`, `daily_salary`, `time_in`, `time_out`, `late_count`, `attendance_in`, `attendace_out`) VALUES (\'EITB012\', \'Andrei Ivan De Guzman\', \'2024-01-24\', \'320.00\', \'08:00:00\', \'17:00:00\', 0, \'08:00:00\', \'17:00:00\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `attendance` (`agent_id`, `agent_name`, `date`, `daily_salary`, `time_in`, `time_out`, `late_count`, `attendance_in`, `attendace_out`) VALUES (\'EITB012\', \'Andrei Ivan De Guzman\', \'2024-01-24\', \'320.00\', \'08:00:00\', \'17:00:00\', 0, \'08:00:00\', \'17:00:00\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance` (`agent_id`, `agent_name`, `date`, `daily_salary`, `time_in`, `time_out`, `late_count`, `attendance_in`, `attendace_out`) VALUES (:agent_id:, :agent_name:, :date:, :daily_salary:, :time_in:, :time_out:, :late_count:, :attendance_in:, :attendace_out:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Payroll.php(171): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->upload_attendance()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

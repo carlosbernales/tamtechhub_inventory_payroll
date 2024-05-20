@@ -1,0 +1,107 @@
+CRITICAL - 2024-03-20 19:52:35 --> Class "App\Controllers\Account_model" not found
+in APPPATH\Controllers\Home.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-20 20:13:08 --> Undefined variable $monitors
+in APPPATH\Controllers\Home.php on line 965.
+ 1 APPPATH\Controllers\Home.php(965): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $monitors', 'APPPATH\\Controllers\\Home.php', 965)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->agent_monitor()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-20 20:53:42 --> whereIn() expects $values to be of type array or closure
+in SYSTEMPATH\Database\BaseBuilder.php on line 907.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(789): CodeIgniter\Database\BaseBuilder->_whereIn('id', 'ROOTPATH\\public', false, 'AND ', null)
+ 2 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->whereIn('id', 'ROOTPATH\\public')
+ 3 APPPATH\Controllers\Home.php(1126): CodeIgniter\Model->__call('whereIn', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->updates_monitor_agent('16')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-20 21:22:02 --> Undefined variable $agent_item
+in APPPATH\Views\admin\agent_monitor.php on line 193.
+ 1 APPPATH\Views\admin\agent_monitor.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $agent_item', 'APPPATH\\Views\\admin\\agent_monitor.php', 193)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\agent_monitor.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/agent_monitor', [], true)
+ 5 APPPATH\Controllers\Home.php(985): view('admin/agent_monitor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->agent_monitor()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-03-20 21:41:19 --> mysqli_sql_exception: Unknown column 'monitor_one_fk' in 'where clause' in C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `monitor...', 0)
+#1 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `monitor...')
+#2 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `monitor...')
+#3 C:\laragon\www\tamtechhub_inventory\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `monitor...', Array, false)
+#4 C:\laragon\www\tamtechhub_inventory\system\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\tamtechhub_inventory\system\BaseModel.php(886): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\laragon\www\tamtechhub_inventory\system\Model.php(693): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\laragon\www\tamtechhub_inventory\app\Controllers\Home.php(1141): CodeIgniter\Model->update()
+#8 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Home->updates_monitor_agent('3')
+#9 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2024-03-20 21:41:19 --> Unknown column 'monitor_one_fk' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `monitor` SET `agent_fk_id` = \'0\'
+WHERE `monitor_one_fk` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `monitor` SET `agent_fk_id` = \'0\'
+WHERE `monitor_one_fk` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `monitor` SET `agent_fk_id` = \'0\'
+WHERE `monitor_one_fk` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `monitor` SET `agent_fk_id` = :agent_fk_id:
+WHERE `monitor_one_fk` = :monitor_one_fk:', [...], false)
+ 5 SYSTEMPATH\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(886): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Controllers\Home.php(1141): CodeIgniter\Model->update()
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->updates_monitor_agent('3')
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-03-20 21:43:18 --> mysqli_sql_exception: Operand should contain 1 column(s) in C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `monitor...', 0)
+#1 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `monitor...')
+#2 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `monitor...')
+#3 C:\laragon\www\tamtechhub_inventory\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `monitor...', Array, false)
+#4 C:\laragon\www\tamtechhub_inventory\system\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\tamtechhub_inventory\system\BaseModel.php(886): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\laragon\www\tamtechhub_inventory\system\Model.php(693): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\laragon\www\tamtechhub_inventory\app\Controllers\Home.php(1141): CodeIgniter\Model->update()
+#8 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Home->updates_monitor_agent('3')
+#9 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2024-03-20 21:43:18 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `monitor` SET `agent_fk_id` = \'0\'
+WHERE `id` = (\'2\',\'3\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `monitor` SET `agent_fk_id` = \'0\'
+WHERE `id` = (\'2\',\'3\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `monitor` SET `agent_fk_id` = \'0\'
+WHERE `id` = (\'2\',\'3\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `monitor` SET `agent_fk_id` = :agent_fk_id:
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(886): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Controllers\Home.php(1141): CodeIgniter\Model->update()
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->updates_monitor_agent('3')
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

@@ -1,0 +1,295 @@
+ERROR - 2023-11-12 07:37:01 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'finalproject' in C:\xampp\htdocs\mapbackend\system\Database\MySQLi\Connection.php:170
+Stack trace:
+#0 C:\xampp\htdocs\mapbackend\system\Database\MySQLi\Connection.php(170): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'finalproject', 3306, '', 0)
+#1 C:\xampp\htdocs\mapbackend\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\mapbackend\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\mapbackend\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\mapbackend\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\mapbackend\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('carlosbernales2...', 'UserEmail', Array, NULL, 'UserEmail')
+#6 C:\xampp\htdocs\mapbackend\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('UserEmail', 'UserEmail', 'carlosbernales2...', Array, Array)
+#7 C:\xampp\htdocs\mapbackend\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\mapbackend\app\Controllers\AuthController.php(202): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\mapbackend\system\CodeIgniter.php(927): App\Controllers\AuthController->register()
+#10 C:\xampp\htdocs\mapbackend\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#11 C:\xampp\htdocs\mapbackend\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\mapbackend\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\mapbackend\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'finalproject' in C:\xampp\htdocs\mapbackend\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\mapbackend\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\mapbackend\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\mapbackend\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\mapbackend\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\mapbackend\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('carlosbernales2...', 'UserEmail', Array, NULL, 'UserEmail')
+#5 C:\xampp\htdocs\mapbackend\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('UserEmail', 'UserEmail', 'carlosbernales2...', Array, Array)
+#6 C:\xampp\htdocs\mapbackend\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 C:\xampp\htdocs\mapbackend\app\Controllers\AuthController.php(202): CodeIgniter\Controller->validate(Array)
+#8 C:\xampp\htdocs\mapbackend\system\CodeIgniter.php(927): App\Controllers\AuthController->register()
+#9 C:\xampp\htdocs\mapbackend\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xampp\htdocs\mapbackend\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\mapbackend\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\mapbackend\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-11-12 07:37:01 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'finalproject'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `tbluser`
+WHERE `UserEmail` = :UserEmail:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('carlosbernales24@gmail.com', 'UserEmail', [...], null, 'UserEmail')
+ 5 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('UserEmail', 'UserEmail', 'carlosbernales24@gmail.com', [...], [...])
+ 6 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\AuthController.php(202): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AuthController->register()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-11-12 07:37:10 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'finalproject' in C:\xampp\htdocs\mapbackend\system\Database\MySQLi\Connection.php:170
+Stack trace:
+#0 C:\xampp\htdocs\mapbackend\system\Database\MySQLi\Connection.php(170): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'finalproject', 3306, '', 0)
+#1 C:\xampp\htdocs\mapbackend\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\mapbackend\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\mapbackend\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\mapbackend\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\mapbackend\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('carlosbernales2...', 'UserEmail', Array, NULL, 'UserEmail')
+#6 C:\xampp\htdocs\mapbackend\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('UserEmail', 'UserEmail', 'carlosbernales2...', Array, Array)
+#7 C:\xampp\htdocs\mapbackend\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\mapbackend\app\Controllers\AuthController.php(202): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\mapbackend\system\CodeIgniter.php(927): App\Controllers\AuthController->register()
+#10 C:\xampp\htdocs\mapbackend\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#11 C:\xampp\htdocs\mapbackend\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\mapbackend\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\mapbackend\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'finalproject' in C:\xampp\htdocs\mapbackend\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\mapbackend\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\mapbackend\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\mapbackend\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\mapbackend\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\mapbackend\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('carlosbernales2...', 'UserEmail', Array, NULL, 'UserEmail')
+#5 C:\xampp\htdocs\mapbackend\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('UserEmail', 'UserEmail', 'carlosbernales2...', Array, Array)
+#6 C:\xampp\htdocs\mapbackend\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 C:\xampp\htdocs\mapbackend\app\Controllers\AuthController.php(202): CodeIgniter\Controller->validate(Array)
+#8 C:\xampp\htdocs\mapbackend\system\CodeIgniter.php(927): App\Controllers\AuthController->register()
+#9 C:\xampp\htdocs\mapbackend\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\xampp\htdocs\mapbackend\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\mapbackend\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\mapbackend\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-11-12 07:37:10 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'finalproject'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `tbluser`
+WHERE `UserEmail` = :UserEmail:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('carlosbernales24@gmail.com', 'UserEmail', [...], null, 'UserEmail')
+ 5 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('UserEmail', 'UserEmail', 'carlosbernales24@gmail.com', [...], [...])
+ 6 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\AuthController.php(202): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AuthController->register()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-11-12 07:55:30 --> Undefined variable $user_email
+in APPPATH\Controllers\AuthController.php on line 228.
+ 1 APPPATH\Controllers\AuthController.php(228): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_email', 'APPPATH\\Controllers\\AuthController.php', 228)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AuthController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-11-12 08:17:48 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.googlemail.com failed: This is usually a temporary error during hostname resolution and means that the local server did not receive a response from an authoritative server.  in C:\xampp\htdocs\mapbackend\system\Email\Email.php:1858
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1858)
+#1 C:\xampp\htdocs\mapbackend\system\Email\Email.php(1858): fsockopen('tls://smtp.goog...', 465, NULL, NULL, 60)
+#2 C:\xampp\htdocs\mapbackend\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\mapbackend\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\mapbackend\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\mapbackend\app\Controllers\AuthController.php(239): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\mapbackend\system\CodeIgniter.php(927): App\Controllers\AuthController->register()
+#7 C:\xampp\htdocs\mapbackend\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#8 C:\xampp\htdocs\mapbackend\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\mapbackend\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\mapbackend\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2023-11-12 08:17:48 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-12 08:17:48 --> 
+CRITICAL - 2023-11-12 08:29:23 --> Undefined variable $model
+in APPPATH\Controllers\AuthController.php on line 225.
+ 1 APPPATH\Controllers\AuthController.php(225): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $model', 'APPPATH\\Controllers\\AuthController.php', 225)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AuthController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-11-12 08:29:56 --> Undefined variable $user_email
+in APPPATH\Controllers\AuthController.php on line 228.
+ 1 APPPATH\Controllers\AuthController.php(228): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_email', 'APPPATH\\Controllers\\AuthController.php', 228)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AuthController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-11-12 08:46:51 --> Invalid file: home/signin.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home/signin.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/signin', [], true)
+ 3 APPPATH\Controllers\AuthController.php(71): view('home/signin', [])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AuthController->signin()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-11-12 08:52:17 --> Undefined variable $validation
+in APPPATH\Views\signin.php on line 64.
+ 1 APPPATH\Views\signin.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Views\\signin.php', 64)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\signin.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('signin', [], true)
+ 5 APPPATH\Controllers\AuthController.php(71): view('signin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AuthController->signin()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-11-12 08:59:36 --> Undefined array key "status"
+in APPPATH\Controllers\AuthController.php on line 53.
+ 1 APPPATH\Controllers\AuthController.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'APPPATH\\Controllers\\AuthController.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AuthController->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-11-12 09:00:57 --> Undefined array key "role"
+in APPPATH\Controllers\AuthController.php on line 54.
+ 1 APPPATH\Controllers\AuthController.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role"', 'APPPATH\\Controllers\\AuthController.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AuthController->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-11-12 09:01:30 --> Undefined variable $employee_data
+in APPPATH\Controllers\AuthController.php on line 93.
+ 1 APPPATH\Controllers\AuthController.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employee_data', 'APPPATH\\Controllers\\AuthController.php', 93)
+ 2 APPPATH\Controllers\AuthController.php(55): App\Controllers\AuthController->setAdminSession([...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AuthController->signin()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-11-12 09:16:45 --> App\Controllers\Home::index(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH\Controllers\Home.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-11-12 09:41:33 --> Invalid file: landingpage.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('landingpage.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('landingpage', [], true)
+ 3 APPPATH\Controllers\Home.php(22): view('landingpage')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-11-12 09:41:38 --> Invalid file: landingpage.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('landingpage.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('landingpage', [], true)
+ 3 APPPATH\Controllers\Home.php(22): view('landingpage')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-11-12 09:41:39 --> Invalid file: landingpage.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('landingpage.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('landingpage', [], true)
+ 3 APPPATH\Controllers\Home.php(22): view('landingpage')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-11-12 09:41:40 --> Invalid file: landingpage.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('landingpage.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('landingpage', [], true)
+ 3 APPPATH\Controllers\Home.php(22): view('landingpage')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-11-12 09:43:15 --> Class "App\Models\UserModel" not found
+in APPPATH\Controllers\AdminController.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-11-12 09:45:30 --> Invalid file: Register.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Register.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Register', [], true)
+ 3 APPPATH\Controllers\AuthController.php(224): view('Register', [])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AuthController->register()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-11-12 09:46:40 --> Invalid file: register.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('register.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('register', [], true)
+ 3 APPPATH\Controllers\AuthController.php(224): view('register', [])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AuthController->register()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-11-12 09:46:52 --> Invalid file: register.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('register.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('register', [], true)
+ 3 APPPATH\Controllers\AuthController.php(224): view('register', [])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AuthController->register()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-11-12 09:47:22 --> Invalid file: register.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('register.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('register', [], true)
+ 3 APPPATH\Controllers\AuthController.php(224): view('register', [])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AuthController->register()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-11-12 09:49:11 --> Invalid file: register.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('register.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('register', [], true)
+ 3 APPPATH\Controllers\AuthController.php(224): view('register', [])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AuthController->register()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

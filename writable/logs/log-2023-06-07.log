@@ -1,0 +1,914 @@
+ERROR - 2023-06-07 00:05:18 --> mysqli_sql_exception: Table 'finalproject.orders' doesn't exist in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('\n              ...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('\n              ...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('\n              ...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(186): CodeIgniter\Database\BaseConnection->query('\n              ...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-07 00:05:18 --> Table 'finalproject.orders' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('
+                SELECT SUM(order_amount) as total_sales
+                FROM orders
+                WHERE order_status = \'completed\'
+            ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('
+                SELECT SUM(order_amount) as total_sales
+                FROM orders
+                WHERE order_status = \'completed\'
+            ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('
+                SELECT SUM(order_amount) as total_sales
+                FROM orders
+                WHERE order_status = \'completed\'
+            ')
+ 4 APPPATH\Controllers\Admin.php(186): CodeIgniter\Database\BaseConnection->query('
+                SELECT SUM(order_amount) as total_sales
+                FROM orders
+                WHERE order_status = \'completed\'
+            ')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 00:52:03 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Views\admin\dashboard.php on line 311.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 4 APPPATH\Controllers\Admin.php(236): view('admin/dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 00:53:17 --> Undefined variable $sum
+in APPPATH\Views\admin\dashboard.php on line 311.
+ 1 APPPATH\Views\admin\dashboard.php(311): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sum', 'APPPATH\\Views\\admin\\dashboard.php', 311)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(236): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 00:54:05 --> Call to a member function findAll() on string
+in APPPATH\Controllers\Admin.php on line 228.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 00:55:05 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\admin\dashboard.php on line 248.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 4 APPPATH\Controllers\Admin.php(221): view('admin/dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 01:01:33 --> Undefined property: stdClass::$quantity
+in APPPATH\Models\POS_model.php on line 26.
+ 1 APPPATH\Models\POS_model.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$quantity', 'APPPATH\\Models\\POS_model.php', 26)
+ 2 APPPATH\Controllers\Admin.php(188): App\Models\POS_model->walkinsum()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 02:22:50 --> Undefined variable $month
+in APPPATH\Views\admin\dashboard.php on line 647.
+ 1 APPPATH\Views\admin\dashboard.php(647): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $month', 'APPPATH\\Views\\admin\\dashboard.php', 647)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(251): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 02:23:06 --> Undefined variable $month
+in APPPATH\Views\admin\dashboard.php on line 647.
+ 1 APPPATH\Views\admin\dashboard.php(647): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $month', 'APPPATH\\Views\\admin\\dashboard.php', 647)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(251): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 02:28:07 --> json_encode() expects at least 1 argument, 0 given
+in APPPATH\Views\admin\dashboard.php on line 703.
+ 1 APPPATH\Views\admin\dashboard.php(703): json_encode()
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(251): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 02:28:17 --> json_encode() expects at least 1 argument, 0 given
+in APPPATH\Views\admin\dashboard.php on line 703.
+ 1 APPPATH\Views\admin\dashboard.php(703): json_encode()
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(251): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 02:31:24 --> Undefined variable $product_name
+in APPPATH\Views\admin\dashboard.php on line 754.
+ 1 APPPATH\Views\admin\dashboard.php(754): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product_name', 'APPPATH\\Views\\admin\\dashboard.php', 754)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(251): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 02:32:03 --> Undefined variable $product_name
+in APPPATH\Views\admin\dashboard.php on line 754.
+ 1 APPPATH\Views\admin\dashboard.php(754): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product_name', 'APPPATH\\Views\\admin\\dashboard.php', 754)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(251): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 02:34:32 --> Undefined variable $product_name
+in APPPATH\Views\admin\dashboard.php on line 754.
+ 1 APPPATH\Views\admin\dashboard.php(754): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product_name', 'APPPATH\\Views\\admin\\dashboard.php', 754)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(251): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 02:35:01 --> Undefined variable $product_name
+in APPPATH\Views\admin\dashboard.php on line 742.
+ 1 APPPATH\Views\admin\dashboard.php(742): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product_name', 'APPPATH\\Views\\admin\\dashboard.php', 742)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(251): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 02:35:02 --> Undefined variable $product_name
+in APPPATH\Views\admin\dashboard.php on line 742.
+ 1 APPPATH\Views\admin\dashboard.php(742): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product_name', 'APPPATH\\Views\\admin\\dashboard.php', 742)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(251): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 02:36:13 --> Undefined variable $productname
+in APPPATH\Views\admin\dashboard.php on line 752.
+ 1 APPPATH\Views\admin\dashboard.php(752): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $productname', 'APPPATH\\Views\\admin\\dashboard.php', 752)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(251): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 02:39:31 --> Undefined variable $item_name
+in APPPATH\Views\admin\dashboard.php on line 752.
+ 1 APPPATH\Views\admin\dashboard.php(752): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item_name', 'APPPATH\\Views\\admin\\dashboard.php', 752)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(251): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 02:39:33 --> Undefined variable $item_name
+in APPPATH\Views\admin\dashboard.php on line 752.
+ 1 APPPATH\Views\admin\dashboard.php(752): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item_name', 'APPPATH\\Views\\admin\\dashboard.php', 752)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(251): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 02:40:27 --> Undefined variable $productname
+in APPPATH\Views\admin\dashboard.php on line 739.
+ 1 APPPATH\Views\admin\dashboard.php(739): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $productname', 'APPPATH\\Views\\admin\\dashboard.php', 739)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(251): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 02:40:39 --> Undefined variable $productname
+in APPPATH\Views\admin\dashboard.php on line 739.
+ 1 APPPATH\Views\admin\dashboard.php(739): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $productname', 'APPPATH\\Views\\admin\\dashboard.php', 739)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(251): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 02:40:40 --> Undefined variable $productname
+in APPPATH\Views\admin\dashboard.php on line 739.
+ 1 APPPATH\Views\admin\dashboard.php(739): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $productname', 'APPPATH\\Views\\admin\\dashboard.php', 739)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(251): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 02:40:43 --> Undefined variable $productname
+in APPPATH\Views\admin\dashboard.php on line 739.
+ 1 APPPATH\Views\admin\dashboard.php(739): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $productname', 'APPPATH\\Views\\admin\\dashboard.php', 739)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(251): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 03:18:40 --> Undefined array key "monthname"
+in APPPATH\Views\admin\dashboard.php on line 411.
+ 1 APPPATH\Views\admin\dashboard.php(411): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "monthname"', 'APPPATH\\Views\\admin\\dashboard.php', 411)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(257): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 03:20:07 --> Undefined array key "monthname , month_name"
+in APPPATH\Views\admin\dashboard.php on line 411.
+ 1 APPPATH\Views\admin\dashboard.php(411): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "monthname , month_name"', 'APPPATH\\Views\\admin\\dashboard.php', 411)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(258): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 03:20:36 --> Undefined array key "month_name"
+in APPPATH\Views\admin\dashboard.php on line 411.
+ 1 APPPATH\Views\admin\dashboard.php(411): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "month_name"', 'APPPATH\\Views\\admin\\dashboard.php', 411)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(258): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-07 03:27:59 --> mysqli_sql_exception: Unknown column 'monthname' in 'group statement' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT MONTHNAM...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT MONTHNAM...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MONTHNAM...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(234): CodeIgniter\Database\BaseConnection->query('SELECT MONTHNAM...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-07 03:27:59 --> Unknown column 'monthname' in 'group statement'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT MONTHNAME(created_at) AS month_name, YEAR(created_at) AS yearname,
+                SUM(total) AS total_amount FROM pos GROUP BY monthname', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT MONTHNAME(created_at) AS month_name, YEAR(created_at) AS yearname,
+                SUM(total) AS total_amount FROM pos GROUP BY monthname')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MONTHNAME(created_at) AS month_name, YEAR(created_at) AS yearname,
+                SUM(total) AS total_amount FROM pos GROUP BY monthname')
+ 4 APPPATH\Controllers\Admin.php(234): CodeIgniter\Database\BaseConnection->query('SELECT MONTHNAME(created_at) AS month_name, YEAR(created_at) AS yearname,
+                SUM(total) AS total_amount FROM pos GROUP BY monthname')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-07 03:35:53 --> mysqli_sql_exception: Unknown column 'total_amount' in 'field list' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `order_d...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `order_d...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `order_d...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `order_d...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(233): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-06-07 03:35:53 --> Unknown column 'total_amount' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `order_date`, SUM(total_amount) as total
+FROM `orderdata`
+GROUP BY `order_date`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `order_date`, SUM(total_amount) as total
+FROM `orderdata`
+GROUP BY `order_date`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `order_date`, SUM(total_amount) as total
+FROM `orderdata`
+GROUP BY `order_date`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `order_date`, SUM(total_amount) as total
+FROM `orderdata`
+GROUP BY `order_date`', [], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Admin.php(233): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-07 03:36:17 --> mysqli_sql_exception: Unknown column 'total_amount' in 'field list' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `order_d...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `order_d...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `order_d...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `order_d...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(233): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-06-07 03:36:17 --> Unknown column 'total_amount' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `order_date`, SUM(total_amount) as total
+FROM `orderdata`
+GROUP BY `order_date`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `order_date`, SUM(total_amount) as total
+FROM `orderdata`
+GROUP BY `order_date`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `order_date`, SUM(total_amount) as total
+FROM `orderdata`
+GROUP BY `order_date`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `order_date`, SUM(total_amount) as total
+FROM `orderdata`
+GROUP BY `order_date`', [], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Admin.php(233): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-07 03:36:19 --> mysqli_sql_exception: Unknown column 'total_amount' in 'field list' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `order_d...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `order_d...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `order_d...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `order_d...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(233): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-06-07 03:36:19 --> Unknown column 'total_amount' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `order_date`, SUM(total_amount) as total
+FROM `orderdata`
+GROUP BY `order_date`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `order_date`, SUM(total_amount) as total
+FROM `orderdata`
+GROUP BY `order_date`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `order_date`, SUM(total_amount) as total
+FROM `orderdata`
+GROUP BY `order_date`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `order_date`, SUM(total_amount) as total
+FROM `orderdata`
+GROUP BY `order_date`', [], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Admin.php(233): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 14:32:55 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 186.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+ERROR - 2023-06-07 07:35:06 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'finalproject' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'finalproject', 3306, '', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(50): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->admin_login()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'finalproject' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(50): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->admin_login()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-06-07 07:35:06 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'finalproject'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admin`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Admin.php(50): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->admin_login()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 08:09:51 --> Non-static method CodeIgniter\BaseModel::find() cannot be called statically
+in APPPATH\Controllers\Category.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Category->editCategory('1')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 08:10:17 --> Non-static method CodeIgniter\BaseModel::find() cannot be called statically
+in APPPATH\Controllers\Category.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Category->editCategory('1')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 08:10:41 --> Non-static method CodeIgniter\BaseModel::find() cannot be called statically
+in APPPATH\Controllers\Category.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Category->editCategory('2')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 08:11:27 --> Undefined variable $categoryModel
+in APPPATH\Controllers\Category.php on line 40.
+ 1 APPPATH\Controllers\Category.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categoryModel', 'APPPATH\\Controllers\\Category.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Category->editCategory('2')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 08:11:30 --> Undefined variable $categoryModel
+in APPPATH\Controllers\Category.php on line 40.
+ 1 APPPATH\Controllers\Category.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categoryModel', 'APPPATH\\Controllers\\Category.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Category->editCategory('1')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 08:11:42 --> Undefined variable $Category_model
+in APPPATH\Controllers\Category.php on line 40.
+ 1 APPPATH\Controllers\Category.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Category_model', 'APPPATH\\Controllers\\Category.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Category->editCategory('1')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 08:12:14 --> Invalid file: edit_category.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('edit_category.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('edit_category', [], true)
+ 3 APPPATH\Controllers\Category.php(44): view('edit_category', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Category->editCategory('1')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 08:13:10 --> Cannot access offset of type string on string
+in APPPATH\Views\admin\category\categorylist.php on line 290.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/category/categorylist', [], true)
+ 4 APPPATH\Controllers\Category.php(44): view('admin/category/categorylist', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Category->editCategory('1')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 08:13:37 --> Cannot access offset of type string on string
+in APPPATH\Views\admin\category\categorylist.php on line 290.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/category/categorylist', [], true)
+ 4 APPPATH\Controllers\Category.php(44): view('admin/category/categorylist', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Category->editCategory('1')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 09:56:08 --> Invalid file: admin/pos/pos.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/pos/pos.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/pos/pos', [], true)
+ 3 APPPATH\Controllers\POS.php(14): view('admin/pos/pos')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\POS->view()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\POS))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 09:59:31 --> Invalid file: admin/pos/pos.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/pos/pos.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/pos/pos', [], true)
+ 3 APPPATH\Controllers\Admin.php(367): view('admin/pos/pos', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->postview()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 09:59:51 --> Invalid file: admin/pos/pos.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/pos/pos.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/pos/pos', [], true)
+ 3 APPPATH\Controllers\Admin.php(367): view('admin/pos/pos', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->postview()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 10:06:52 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(23): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 10:17:18 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(23): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 20:14:51 --> Invalid file: editcategory.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('editcategory.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('editcategory', [], true)
+ 3 APPPATH\Views\admin\category\categorylist.php(305): view('editcategory')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\category\\categorylist.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/category/categorylist', [], true)
+ 7 APPPATH\Controllers\Admin.php(278): view('admin/category/categorylist', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->categorylist()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 20:15:19 --> Invalid file: category_edit_.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('category_edit_.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('category_edit_', [], true)
+ 3 APPPATH\Views\admin\category\categorylist.php(305): view('category_edit_')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\category\\categorylist.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/category/categorylist', [], true)
+ 7 APPPATH\Controllers\Admin.php(278): view('admin/category/categorylist', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->categorylist()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 20:23:20 --> Attempt to read property "cat_name" on array
+in APPPATH\Views\admin\category\categorylist.php on line 291.
+ 1 APPPATH\Views\admin\category\categorylist.php(291): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "cat_name" on array', 'APPPATH\\Views\\admin\\category\\categorylist.php', 291)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\category\\categorylist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/category/categorylist', [], true)
+ 5 APPPATH\Controllers\Admin.php(278): view('admin/category/categorylist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->categorylist()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 20:27:14 --> Attempt to read property "cat_name" on array
+in APPPATH\Views\admin\category\categorylist.php on line 292.
+ 1 APPPATH\Views\admin\category\categorylist.php(292): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "cat_name" on array', 'APPPATH\\Views\\admin\\category\\categorylist.php', 292)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\category\\categorylist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/category/categorylist', [], true)
+ 5 APPPATH\Controllers\Admin.php(278): view('admin/category/categorylist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->categorylist()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 20:36:27 --> Undefined variable $item
+in APPPATH\Views\admin\category\categorylist.php on line 293.
+ 1 APPPATH\Views\admin\category\categorylist.php(293): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Views\\admin\\category\\categorylist.php', 293)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\category\\categorylist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/category/categorylist', [], true)
+ 5 APPPATH\Controllers\Admin.php(278): view('admin/category/categorylist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->categorylist()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 20:36:51 --> Undefined variable $item
+in APPPATH\Views\admin\category\categorylist.php on line 293.
+ 1 APPPATH\Views\admin\category\categorylist.php(293): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Views\\admin\\category\\categorylist.php', 293)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\category\\categorylist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/category/categorylist', [], true)
+ 5 APPPATH\Controllers\Admin.php(278): view('admin/category/categorylist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->categorylist()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 20:37:07 --> Undefined variable $item
+in APPPATH\Views\admin\category\categorylist.php on line 351.
+ 1 APPPATH\Views\admin\category\categorylist.php(351): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Views\\admin\\category\\categorylist.php', 351)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\category\\categorylist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/category/categorylist', [], true)
+ 5 APPPATH\Controllers\Admin.php(278): view('admin/category/categorylist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->categorylist()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 20:37:25 --> Undefined array key "name"
+in APPPATH\Views\admin\category\categorylist.php on line 351.
+ 1 APPPATH\Views\admin\category\categorylist.php(351): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH\\Views\\admin\\category\\categorylist.php', 351)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\category\\categorylist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/category/categorylist', [], true)
+ 5 APPPATH\Controllers\Admin.php(278): view('admin/category/categorylist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->categorylist()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 22:30:29 --> Cannot access offset of type string on string
+in APPPATH\Views\admin\product\productlist.php on line 299.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/product/productlist', [], true)
+ 4 APPPATH\Controllers\Product.php(67): view('admin/product/productlist', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Product->editproduct('1')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 22:48:17 --> Undefined array key "product_name"
+in APPPATH\Views\admin\product\productlist.php on line 345.
+ 1 APPPATH\Views\admin\product\productlist.php(345): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_name"', 'APPPATH\\Views\\admin\\product\\productlist.php', 345)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\product\\productlist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/product/productlist', [], true)
+ 5 APPPATH\Controllers\Admin.php(288): view('admin/product/productlist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->productlist()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 22:50:15 --> Undefined array key "product_image"
+in APPPATH\Views\admin\product\productlist.php on line 377.
+ 1 APPPATH\Views\admin\product\productlist.php(377): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_image"', 'APPPATH\\Views\\admin\\product\\productlist.php', 377)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\product\\productlist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/product/productlist', [], true)
+ 5 APPPATH\Controllers\Admin.php(288): view('admin/product/productlist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->productlist()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 22:50:29 --> Undefined array key "product_name"
+in APPPATH\Views\admin\product\productlist.php on line 345.
+ 1 APPPATH\Views\admin\product\productlist.php(345): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_name"', 'APPPATH\\Views\\admin\\product\\productlist.php', 345)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\product\\productlist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/product/productlist', [], true)
+ 5 APPPATH\Controllers\Admin.php(288): view('admin/product/productlist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->productlist()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 22:50:44 --> Undefined array key "product_name"
+in APPPATH\Views\admin\product\productlist.php on line 345.
+ 1 APPPATH\Views\admin\product\productlist.php(345): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_name"', 'APPPATH\\Views\\admin\\product\\productlist.php', 345)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\product\\productlist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/product/productlist', [], true)
+ 5 APPPATH\Controllers\Admin.php(288): view('admin/product/productlist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->productlist()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 22:52:40 --> Undefined array key "product_name"
+in APPPATH\Views\admin\product\productlist.php on line 345.
+ 1 APPPATH\Views\admin\product\productlist.php(345): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_name"', 'APPPATH\\Views\\admin\\product\\productlist.php', 345)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\product\\productlist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/product/productlist', [], true)
+ 5 APPPATH\Controllers\Admin.php(288): view('admin/product/productlist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->productlist()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 22:53:00 --> Undefined array key "product_name"
+in APPPATH\Views\admin\product\productlist.php on line 344.
+ 1 APPPATH\Views\admin\product\productlist.php(344): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_name"', 'APPPATH\\Views\\admin\\product\\productlist.php', 344)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\product\\productlist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/product/productlist', [], true)
+ 5 APPPATH\Controllers\Admin.php(288): view('admin/product/productlist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->productlist()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 22:53:12 --> Undefined array key "product_name"
+in APPPATH\Views\admin\product\productlist.php on line 345.
+ 1 APPPATH\Views\admin\product\productlist.php(345): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_name"', 'APPPATH\\Views\\admin\\product\\productlist.php', 345)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\product\\productlist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/product/productlist', [], true)
+ 5 APPPATH\Controllers\Admin.php(288): view('admin/product/productlist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->productlist()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 23:01:29 --> syntax error, unexpected end of file
+in APPPATH\Views\admin\product\productlist.php on line 672.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/product/productlist', [], true)
+ 3 APPPATH\Controllers\Admin.php(288): view('admin/product/productlist', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->productlist()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 23:06:23 --> syntax error, unexpected end of file
+in APPPATH\Views\admin\product\productlist.php on line 681.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/product/productlist', [], true)
+ 3 APPPATH\Controllers\Admin.php(288): view('admin/product/productlist', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->productlist()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 23:10:46 --> syntax error, unexpected end of file
+in APPPATH\Views\admin\product\productlist.php on line 679.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/product/productlist', [], true)
+ 3 APPPATH\Controllers\Admin.php(288): view('admin/product/productlist', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->productlist()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 23:38:17 --> Undefined variable $product_qty
+in APPPATH\Controllers\Product.php on line 111.
+ 1 APPPATH\Controllers\Product.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product_qty', 'APPPATH\\Controllers\\Product.php', 111)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Product->updateproduct('22')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 23:41:09 --> Undefined array key "price"
+in APPPATH\Views\admin\product\productlist.php on line 301.
+ 1 APPPATH\Views\admin\product\productlist.php(301): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "price"', 'APPPATH\\Views\\admin\\product\\productlist.php', 301)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\product\\productlist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/product/productlist', [], true)
+ 5 APPPATH\Controllers\Admin.php(288): view('admin/product/productlist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->productlist()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 23:50:04 --> Undefined variable $row
+in APPPATH\Views\admin\orders\orderlist.php on line 299.
+ 1 APPPATH\Views\admin\orders\orderlist.php(299): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'APPPATH\\Views\\admin\\orders\\orderlist.php', 299)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\orders\\orderlist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/orders/orderlist', [], true)
+ 5 APPPATH\Controllers\Admin.php(299): view('admin/orders/orderlist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->orderlist()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 23:52:09 --> Undefined variable $row
+in APPPATH\Views\admin\orders\orderlist.php on line 299.
+ 1 APPPATH\Views\admin\orders\orderlist.php(299): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'APPPATH\\Views\\admin\\orders\\orderlist.php', 299)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\orders\\orderlist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/orders/orderlist', [], true)
+ 5 APPPATH\Controllers\Admin.php(299): view('admin/orders/orderlist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->orderlist()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-07 23:59:37 --> Undefined variable $order
+in APPPATH\Views\admin\orders\orderlist.php on line 344.
+ 1 APPPATH\Views\admin\orders\orderlist.php(344): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $order', 'APPPATH\\Views\\admin\\orders\\orderlist.php', 344)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\orders\\orderlist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/orders/orderlist', [], true)
+ 5 APPPATH\Controllers\Admin.php(299): view('admin/orders/orderlist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->orderlist()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

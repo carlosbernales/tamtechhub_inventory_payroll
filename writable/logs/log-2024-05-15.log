@@ -1,0 +1,32 @@
+CRITICAL - 2024-05-15 03:27:55 --> Undefined array key "dropdownValue"
+in APPPATH/Views/payroll/payslip.php on line 319.
+ 1 APPPATH/Views/payroll/payslip.php(319): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dropdownValue"', 'APPPATH/Views/payroll/payslip.php', 319)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/payroll/payslip.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('payroll/payslip', [], true)
+ 5 APPPATH/Controllers/Payroll.php(952): view('payroll/payslip', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->generatePayslip()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-15 20:25:05 --> Undefined array key 1
+in APPPATH/Controllers/Home.php on line 2666.
+ 1 APPPATH/Controllers/Home.php(2666): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH/Controllers/Home.php', 2666)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_agent_and_mouse_details()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-15 20:25:17 --> Undefined array key 1
+in APPPATH/Controllers/Home.php on line 2666.
+ 1 APPPATH/Controllers/Home.php(2666): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH/Controllers/Home.php', 2666)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_agent_and_mouse_details()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-15 20:25:28 --> Undefined array key 1
+in APPPATH/Controllers/Home.php on line 2666.
+ 1 APPPATH/Controllers/Home.php(2666): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH/Controllers/Home.php', 2666)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_agent_and_mouse_details()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()

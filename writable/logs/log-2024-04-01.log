@@ -1,0 +1,177 @@
+CRITICAL - 2024-04-01 00:07:27 --> Undefined array key "phone_equip_id"
+in FCPATH\template\system_scripts.php on line 478.
+ 1 FCPATH\template\system_scripts.php(478): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "phone_equip_id"', 'FCPATH\\template\\system_scripts.php', 478)
+ 2 APPPATH\Views\admin\sg_5gsimcard.php(370): include_once('FCPATH\\template\\system_scripts.php')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\sg_5gsimcard.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/sg_5gsimcard', [], true)
+ 6 APPPATH\Controllers\Home.php(1450): view('admin/sg_5gsimcard', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->fiveGsimcard_list()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-01 00:13:01 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Home.php on line 1455.
+ 1 APPPATH\Controllers\Home.php(1455): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Home.php', 1455)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->getPhoneDataById()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-01 00:13:05 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Home.php on line 1455.
+ 1 APPPATH\Controllers\Home.php(1455): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Home.php', 1455)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->getPhoneDataById()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-01 00:13:24 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Home.php on line 1455.
+ 1 APPPATH\Controllers\Home.php(1455): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Home.php', 1455)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->getPhoneDataById()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-01 00:14:33 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Home.php on line 1455.
+ 1 APPPATH\Controllers\Home.php(1455): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Home.php', 1455)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->getPhoneDataById()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-01 00:21:02 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Home.php on line 1455.
+ 1 APPPATH\Controllers\Home.php(1455): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Home.php', 1455)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->getPhoneDataById()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-01 00:21:30 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Home.php on line 1455.
+ 1 APPPATH\Controllers\Home.php(1455): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Home.php', 1455)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->getPhoneDataById()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-01 00:23:42 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Home.php on line 1455.
+ 1 APPPATH\Controllers\Home.php(1455): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Home.php', 1455)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->getPhoneDataById()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-01 00:24:37 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Home.php on line 1455.
+ 1 APPPATH\Controllers\Home.php(1455): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Home.php', 1455)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->getPhoneDataById()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-01 00:26:41 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Home.php on line 1455.
+ 1 APPPATH\Controllers\Home.php(1455): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Home.php', 1455)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->getPhoneDataById()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-01 00:27:29 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Home.php on line 1455.
+ 1 APPPATH\Controllers\Home.php(1455): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Home.php', 1455)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->getPhoneDataById()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-01 00:27:43 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Home.php on line 1455.
+ 1 APPPATH\Controllers\Home.php(1455): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Home.php', 1455)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->getPhoneDataById()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-01 00:27:48 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Home.php on line 1455.
+ 1 APPPATH\Controllers\Home.php(1455): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Home.php', 1455)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->getPhoneDataById()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-01 00:31:15 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::isMethod()
+in APPPATH\Controllers\Home.php on line 1564.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->getPhoneDetails()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-01 00:31:24 --> Call to undefined method App\Controllers\Home::failUnauthorized()
+in APPPATH\Controllers\Home.php on line 1584.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->getPhoneDetails()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-01 00:31:51 --> Trait "App\Controllers\ResponseTrait" not found
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-04-01 00:32:15 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::isMethod()
+in APPPATH\Controllers\Home.php on line 1566.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->getPhoneDetails()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-01 00:32:55 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Home.php on line 1455.
+ 1 APPPATH\Controllers\Home.php(1455): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Home.php', 1455)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->getPhoneDataById()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-01 00:33:36 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Home.php on line 1455.
+ 1 APPPATH\Controllers\Home.php(1455): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Home.php', 1455)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->getPhoneDataById()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-01 00:34:43 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Home.php on line 1455.
+ 1 APPPATH\Controllers\Home.php(1455): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Home.php', 1455)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->getPhoneDataById()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-01 00:34:46 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Home.php on line 1455.
+ 1 APPPATH\Controllers\Home.php(1455): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Home.php', 1455)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->getPhoneDataById()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-01 22:02:56 --> Undefined array key "locker_agent"
+in APPPATH\Views\admin\desktop.php on line 246.
+ 1 APPPATH\Views\admin\desktop.php(246): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "locker_agent"', 'APPPATH\\Views\\admin\\desktop.php', 246)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\desktop.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/desktop', [], true)
+ 5 APPPATH\Controllers\Home.php(208): view('admin/desktop', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->machine_list()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

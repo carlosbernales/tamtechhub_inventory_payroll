@@ -1,0 +1,131 @@
+CRITICAL - 2024-05-11 02:11:00 --> syntax error, unexpected end of file
+in APPPATH/Views/payroll/payslip.php on line 661.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('payroll/payslip', [], true)
+ 3 APPPATH/Controllers/Payroll.php(787): view('payroll/payslip', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->generatePayslip()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-11 03:00:39 --> Undefined array key "dropdownValue"
+in APPPATH/Views/payroll/payslip.php on line 295.
+ 1 APPPATH/Views/payroll/payslip.php(295): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dropdownValue"', 'APPPATH/Views/payroll/payslip.php', 295)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/payroll/payslip.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('payroll/payslip', [], true)
+ 5 APPPATH/Controllers/Payroll.php(787): view('payroll/payslip', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->generatePayslip()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-11 03:00:39 --> Undefined array key "dropdownValue"
+in APPPATH/Views/payroll/payslip.php on line 295.
+ 1 APPPATH/Views/payroll/payslip.php(295): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dropdownValue"', 'APPPATH/Views/payroll/payslip.php', 295)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/payroll/payslip.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('payroll/payslip', [], true)
+ 5 APPPATH/Controllers/Payroll.php(787): view('payroll/payslip', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->generatePayslip()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-11 03:40:46 --> Undefined variable $withholdingtax
+in APPPATH/Views/payroll/payslip.php on line 461.
+ 1 APPPATH/Views/payroll/payslip.php(461): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $withholdingtax', 'APPPATH/Views/payroll/payslip.php', 461)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/payroll/payslip.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('payroll/payslip', [], true)
+ 5 APPPATH/Controllers/Payroll.php(789): view('payroll/payslip', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->generatePayslip()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-11 04:51:29 --> Undefined variable $attendance
+in APPPATH/Views/payroll/calendar.php on line 87.
+ 1 APPPATH/Views/payroll/calendar.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $attendance', 'APPPATH/Views/payroll/calendar.php', 87)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/payroll/calendar.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('payroll/calendar', [], true)
+ 5 APPPATH/Controllers/Payroll.php(273): view('payroll/calendar', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->attendance_calendar('TAM069')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-11 21:58:34 --> Undefined array key 1
+in APPPATH/Controllers/Payroll.php on line 348.
+ 1 APPPATH/Controllers/Payroll.php(348): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH/Controllers/Payroll.php', 348)
+ 2 APPPATH/Controllers/Payroll.php(396): App\Controllers\Payroll->convertToTime('7')
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->upload_attendance()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-11 23:20:49 --> require_once(/home1/tamtechh/public_html/inventory/app/ThirdParty/PHPExcel.php): Failed to open stream: No such file or directory
+in APPPATH/Views/payroll/export_excel.php on line 3.
+ 1 APPPATH/Views/payroll/export_excel.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(/home1/tamtechh/public_html/inventory/app/ThirdParty/PHPExcel.php): Failed to open stream: No such file or directory', 'APPPATH/Views/payroll/export_excel.php', 3)
+ 2 APPPATH/Views/payroll/export_excel.php(3): require_once()
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/payroll/export_excel.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('payroll/export_excel', [], true)
+ 6 APPPATH/Controllers/Payroll.php(1173): view('payroll/export_excel', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->extractAttendance()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-11 23:40:03 --> Undefined constant CodeIgniter\HTTP\Response::DOWNLOAD_ATTACHMENT
+in APPPATH/Controllers/Payroll.php on line 1228.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->extractAttendance()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-11 23:41:03 --> Cannot use CodeIgniter\HTTP\ResponseInterface as ResponseInterface because the name is already in use
+in APPPATH/Controllers/Payroll.php on line 18.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-05-11 23:41:36 --> Call to undefined method App\Controllers\Payroll::download()
+in APPPATH/Controllers/Payroll.php on line 1245.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->extractAttendance()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-11 23:44:00 --> CodeIgniter\HTTP\Response::download(): Argument #3 ($setMime) must be of type bool, array given, called in /home1/tamtechh/public_html/inventory/app/Controllers/Payroll.php on line 1227
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 775.
+ 1 APPPATH/Controllers/Payroll.php(1227): CodeIgniter\HTTP\Response->download('FCPATH/Attendance_Report_20240511234400.xlsx', null, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->extractAttendance()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-11 23:46:16 --> Call to a member function setFileName() on null
+in APPPATH/Controllers/Payroll.php on line 1212.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->extractAttendance()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-11 23:47:22 --> fopen(/home1/tamtechh/public_html/inventory/writable/uploads/attendance_report_2024-05-11_23-47-22.xlsx): Failed to open stream: No such file or directory
+in VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/BaseWriter.php on line 125.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(/home1/tamtechh/public_html/inventory/writable/uploads/attendance_report_2024-05-11_23-47-22.xlsx): Failed to open stream: No such file or directory', 'VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/BaseWriter.php', 125)
+ 2 VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/BaseWriter.php(125): fopen('ROOTPATH/writable/uploads/attendance_report_2024-05-11_23-47-22.xlsx', 'wb')
+ 3 VENDORPATH/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Xlsx.php(542): PhpOffice\PhpSpreadsheet\Writer\BaseWriter->openFileHandle('ROOTPATH/writable/uploads/attendance_report_2024-05-11_23-47-22.xlsx')
+ 4 APPPATH/Controllers/Payroll.php(1210): PhpOffice\PhpSpreadsheet\Writer\Xlsx->save('ROOTPATH/writable/uploads/attendance_report_2024-05-11_23-47-22.xlsx')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->extractAttendance()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-11 23:49:27 --> Undefined array key 0
+in APPPATH/Controllers/Payroll.php on line 1208.
+ 1 APPPATH/Controllers/Payroll.php(1208): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Payroll.php', 1208)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->extractAttendance()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-11 23:52:17 --> Undefined array key 0
+in APPPATH/Controllers/Payroll.php on line 1208.
+ 1 APPPATH/Controllers/Payroll.php(1208): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Payroll.php', 1208)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->extractAttendance()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-11 23:59:41 --> Class "App\Controllers\DateTime" not found
+in APPPATH/Controllers/Payroll.php on line 1170.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->extractAttendance()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()

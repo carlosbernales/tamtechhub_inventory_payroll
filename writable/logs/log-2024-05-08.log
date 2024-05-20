@@ -1,0 +1,27 @@
+CRITICAL - 2024-05-08 20:34:58 --> Undefined array key "admin_id"
+in APPPATH/Controllers/Payroll.php on line 1064.
+ 1 APPPATH/Controllers/Payroll.php(1064): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "admin_id"', 'APPPATH/Controllers/Payroll.php', 1064)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->payroll_resignedTerminatedAgent_list()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-08 22:45:57 --> File not found: /home1/tamtechh/public_html/inventory/public/payroll_template/template_instruction.zip
+in SYSTEMPATH/Files/File.php on line 46.
+ 1 SYSTEMPATH/Files/File.php(46): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('FCPATH/payroll_template/template_instruction.zip')
+ 2 SYSTEMPATH/HTTP/DownloadResponse.php(97): CodeIgniter\Files\File->__construct('FCPATH/payroll_template/template_instruction.zip', true)
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(791): CodeIgniter\HTTP\DownloadResponse->setFilePath('FCPATH/payroll_template/template_instruction.zip')
+ 4 APPPATH/Controllers/Payroll.php(1048): CodeIgniter\HTTP\Response->download('template_instruction.zip', null)
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->downloadTemplate()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-08 22:59:28 --> syntax error, unexpected token "}"
+in FCPATH/payroll_template/payroll_scripts.php on line 32.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('payroll/payroll_page', [], true)
+ 4 APPPATH/Controllers/Payroll.php(446): view('payroll/payroll_page', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->payroll_view()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()

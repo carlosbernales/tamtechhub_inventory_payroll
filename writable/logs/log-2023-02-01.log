@@ -1,0 +1,189 @@
+CRITICAL - 2023-02-01 03:52:25 --> Undefined array key "id"
+in APPPATH\Views\includes\header.php on line 7.
+ 1 APPPATH\Views\includes\header.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\includes\\header.php', 7)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/header', [], true)
+ 5 APPPATH\Views\includes\template.php(1): view('includes/header')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(26): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-01 03:52:27 --> Undefined array key "id"
+in APPPATH\Views\includes\header.php on line 7.
+ 1 APPPATH\Views\includes\header.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\includes\\header.php', 7)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/header', [], true)
+ 5 APPPATH\Views\includes\template.php(1): view('includes/header')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(26): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-01 04:07:39 --> Undefined array key "catname"
+in APPPATH\Views\home\home.php on line 36.
+ 1 APPPATH\Views\home\home.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "catname"', 'APPPATH\\Views\\home\\home.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/home', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/home')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(26): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-01 04:13:28 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\home\product.php on line 26.
+ 1 APPPATH\Views\home\product.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\home\\product.php', 26)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\product.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/product', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/product')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(135): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->products_list('(:any)')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-01 04:36:13 --> Too few arguments to function App\Controllers\Home::occasions_list(), 0 passed in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH\Controllers\Home.php on line 138.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->occasions_list()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-01 04:51:14 --> Invalid file: home/occasions.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home/occasions.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/occasions', [], true)
+ 3 APPPATH\Views\includes\template.php(2): view('home/occasions')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 7 APPPATH\Controllers\Home.php(145): view('includes/template', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->wedding_list()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-01 06:43:04 --> Undefined array key 0
+in APPPATH\Controllers\Home.php on line 342.
+ 1 APPPATH\Controllers\Home.php(342): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Home.php', 342)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->decrement()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-01 06:43:05 --> Undefined array key 0
+in APPPATH\Controllers\Home.php on line 342.
+ 1 APPPATH\Controllers\Home.php(342): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Home.php', 342)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->decrement()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-01 06:43:06 --> Undefined array key 0
+in APPPATH\Controllers\Home.php on line 342.
+ 1 APPPATH\Controllers\Home.php(342): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Home.php', 342)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->decrement()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-01 06:43:07 --> Undefined array key 0
+in APPPATH\Controllers\Home.php on line 342.
+ 1 APPPATH\Controllers\Home.php(342): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Home.php', 342)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->decrement()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-01 06:43:07 --> Undefined array key 0
+in APPPATH\Controllers\Home.php on line 342.
+ 1 APPPATH\Controllers\Home.php(342): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Home.php', 342)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->decrement()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-01 06:44:35 --> Undefined array key 0
+in APPPATH\Controllers\Home.php on line 342.
+ 1 APPPATH\Controllers\Home.php(342): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Home.php', 342)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->decrement()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-01 06:47:03 --> Undefined array key 0
+in APPPATH\Controllers\Home.php on line 342.
+ 1 APPPATH\Controllers\Home.php(342): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Home.php', 342)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->decrement()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-01 06:47:03 --> Undefined array key 0
+in APPPATH\Controllers\Home.php on line 342.
+ 1 APPPATH\Controllers\Home.php(342): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Home.php', 342)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->decrement()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-01 06:47:03 --> Undefined array key 0
+in APPPATH\Controllers\Home.php on line 342.
+ 1 APPPATH\Controllers\Home.php(342): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Home.php', 342)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->decrement()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-01 06:53:13 --> Undefined array key 0
+in APPPATH\Controllers\Home.php on line 342.
+ 1 APPPATH\Controllers\Home.php(342): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Home.php', 342)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->decrement()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-01 06:54:51 --> Undefined array key 0
+in APPPATH\Controllers\Home.php on line 342.
+ 1 APPPATH\Controllers\Home.php(342): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Home.php', 342)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->decrement()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-01 07:04:15 --> Undefined variable $Cart_model
+in APPPATH\Controllers\Home.php on line 593.
+ 1 APPPATH\Controllers\Home.php(593): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Cart_model', 'APPPATH\\Controllers\\Home.php', 593)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-01 07:05:29 --> Undefined variable $Cart_model
+in APPPATH\Controllers\Home.php on line 590.
+ 1 APPPATH\Controllers\Home.php(590): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Cart_model', 'APPPATH\\Controllers\\Home.php', 590)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

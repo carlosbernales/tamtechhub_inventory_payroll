@@ -1,0 +1,104 @@
+ERROR - 2023-08-30 00:17:12 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.googlemail.com failed: This is usually a temporary error during hostname resolution and means that the local server did not receive a response from an authoritative server.  in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1863)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1863): fsockopen('tls://smtp.goog...', 465, NULL, NULL, 60)
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Orders.php(150): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Orders->ordersupdate('1', '1')
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2023-08-30 00:17:12 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-08-30 00:17:12 --> 
+ERROR - 2023-08-30 00:17:51 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.googlemail.com failed: This is usually a temporary error during hostname resolution and means that the local server did not receive a response from an authoritative server.  in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1863)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1863): fsockopen('tls://smtp.goog...', 465, NULL, NULL, 60)
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Orders.php(150): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Orders->ordersupdate('1', '1')
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2023-08-30 00:17:51 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-08-30 00:17:51 --> 
+CRITICAL - 2023-08-30 01:10:47 --> Undefined variable $shipping_fee
+in APPPATH\Views\admin\emails\topay_pickup_paid.php on line 76.
+ 1 APPPATH\Views\admin\emails\topay_pickup_paid.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $shipping_fee', 'APPPATH\\Views\\admin\\emails\\topay_pickup_paid.php', 76)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\emails\\topay_pickup_paid.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/emails/topay_pickup_paid', [], true)
+ 5 APPPATH\Controllers\Orders.php(169): view('admin/emails/topay_pickup_paid', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Orders->ordersupdate('2', '2')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-30 01:28:02 --> Undefined array key "selected_brgy"
+in APPPATH\Views\admin\orders\topay_orders.php on line 276.
+ 1 APPPATH\Views\admin\orders\topay_orders.php(276): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "selected_brgy"', 'APPPATH\\Views\\admin\\orders\\topay_orders.php', 276)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\orders\\topay_orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/orders/topay_orders', [], true)
+ 5 APPPATH\Controllers\Orders.php(551): view('admin/orders/topay_orders', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Orders->topay_orders()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-08-30 01:29:44 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.googlemail.com failed: This is usually a temporary error during hostname resolution and means that the local server did not receive a response from an authoritative server.  in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1863)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1863): fsockopen('tls://smtp.goog...', 465, NULL, NULL, 60)
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Orders.php(251): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Orders->ordersupdate('7')
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2023-08-30 01:29:44 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-08-30 01:29:44 --> 
+ERROR - 2023-08-30 01:42:01 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.googlemail.com failed: This is usually a temporary error during hostname resolution and means that the local server did not receive a response from an authoritative server.  in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1863)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1863): fsockopen('tls://smtp.goog...', 465, NULL, NULL, 60)
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Orders.php(395): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Orders->ordersupdate('2')
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2023-08-30 01:42:01 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-08-30 01:42:01 --> 
+ERROR - 2023-08-30 01:48:54 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.googlemail.com failed: This is usually a temporary error during hostname resolution and means that the local server did not receive a response from an authoritative server.  in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1863)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1863): fsockopen('tls://smtp.goog...', 465, NULL, NULL, 60)
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Orders.php(341): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Orders->ordersupdate('3')
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2023-08-30 01:48:54 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-08-30 01:48:54 --> 

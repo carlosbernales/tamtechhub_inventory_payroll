@@ -1,0 +1,447 @@
+CRITICAL - 2024-02-27 00:06:54 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 777.
+ 1 APPPATH\Controllers\Home.php(777): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 777)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->update_monitor()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-02-27 00:07:01 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 777.
+ 1 APPPATH\Controllers\Home.php(777): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 777)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->update_monitor()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-02-27 00:07:12 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 777.
+ 1 APPPATH\Controllers\Home.php(777): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 777)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->update_monitor()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-02-27 00:16:27 --> mysqli_sql_exception: Table 'tamtech_inventory.your_monitor_table' doesn't exist in C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `monitor...', 0)
+#1 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `monitor...')
+#2 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `monitor...')
+#3 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `monitor...', Array, false)
+#4 C:\xampp\htdocs\tamtechhub_inventory\app\Controllers\Home.php(774): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Home->update_monitor()
+#6 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-02-27 00:16:27 --> Table 'tamtech_inventory.your_monitor_table' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `monitor_equip_id`
+FROM `your_monitor_table`
+WHERE `second_monitor` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `monitor_equip_id`
+FROM `your_monitor_table`
+WHERE `second_monitor` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `monitor_equip_id`
+FROM `your_monitor_table`
+WHERE `second_monitor` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `monitor_equip_id`
+FROM `your_monitor_table`
+WHERE `second_monitor` IS NULL', [], false)
+ 5 APPPATH\Controllers\Home.php(774): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->update_monitor()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-02-27 00:16:33 --> mysqli_sql_exception: Table 'tamtech_inventory.your_monitor_table' doesn't exist in C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `monitor...', 0)
+#1 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `monitor...')
+#2 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `monitor...')
+#3 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `monitor...', Array, false)
+#4 C:\xampp\htdocs\tamtechhub_inventory\app\Controllers\Home.php(774): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Home->update_monitor()
+#6 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-02-27 00:16:33 --> Table 'tamtech_inventory.your_monitor_table' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `monitor_equip_id`
+FROM `your_monitor_table`
+WHERE `second_monitor` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `monitor_equip_id`
+FROM `your_monitor_table`
+WHERE `second_monitor` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `monitor_equip_id`
+FROM `your_monitor_table`
+WHERE `second_monitor` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `monitor_equip_id`
+FROM `your_monitor_table`
+WHERE `second_monitor` IS NULL', [], false)
+ 5 APPPATH\Controllers\Home.php(774): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->update_monitor()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-02-27 00:16:35 --> mysqli_sql_exception: Table 'tamtech_inventory.your_monitor_table' doesn't exist in C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `monitor...', 0)
+#1 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `monitor...')
+#2 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `monitor...')
+#3 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `monitor...', Array, false)
+#4 C:\xampp\htdocs\tamtechhub_inventory\app\Controllers\Home.php(774): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Home->update_monitor()
+#6 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-02-27 00:16:35 --> Table 'tamtech_inventory.your_monitor_table' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `monitor_equip_id`
+FROM `your_monitor_table`
+WHERE `second_monitor` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `monitor_equip_id`
+FROM `your_monitor_table`
+WHERE `second_monitor` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `monitor_equip_id`
+FROM `your_monitor_table`
+WHERE `second_monitor` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `monitor_equip_id`
+FROM `your_monitor_table`
+WHERE `second_monitor` IS NULL', [], false)
+ 5 APPPATH\Controllers\Home.php(774): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->update_monitor()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-02-27 00:16:43 --> mysqli_sql_exception: Table 'tamtech_inventory.your_monitor_table' doesn't exist in C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `monitor...', 0)
+#1 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `monitor...')
+#2 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `monitor...')
+#3 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `monitor...', Array, false)
+#4 C:\xampp\htdocs\tamtechhub_inventory\app\Controllers\Home.php(774): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Home->update_monitor()
+#6 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-02-27 00:16:43 --> Table 'tamtech_inventory.your_monitor_table' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `monitor_equip_id`
+FROM `your_monitor_table`
+WHERE `second_monitor` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `monitor_equip_id`
+FROM `your_monitor_table`
+WHERE `second_monitor` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `monitor_equip_id`
+FROM `your_monitor_table`
+WHERE `second_monitor` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `monitor_equip_id`
+FROM `your_monitor_table`
+WHERE `second_monitor` IS NULL', [], false)
+ 5 APPPATH\Controllers\Home.php(774): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->update_monitor()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-02-27 00:33:58 --> Call to undefined method App\Models\Monitor_model::where()
+in APPPATH\Controllers\Home.php on line 757.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->update_monitor()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-02-27 00:36:04 --> Call to undefined method App\Models\Monitor_model::updateMonitor
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Home.php(762): CodeIgniter\Model->__call('updateMonitor', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->update_monitor()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-02-27 01:46:29 --> Class "App\Controllers\Phone_model" not found
+in APPPATH\Controllers\Home.php on line 883.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->phone_list()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-02-27 01:46:45 --> Undefined variable $second_monitor
+in APPPATH\Views\admin\phone.php on line 263.
+ 1 APPPATH\Views\admin\phone.php(263): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $second_monitor', 'APPPATH\\Views\\admin\\phone.php', 263)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\phone.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/phone', [], true)
+ 5 APPPATH\Controllers\Home.php(896): view('admin/phone', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->phone_list()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-02-27 01:50:03 --> Undefined variable $second_monitor
+in APPPATH\Views\admin\phone.php on line 263.
+ 1 APPPATH\Views\admin\phone.php(263): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $second_monitor', 'APPPATH\\Views\\admin\\phone.php', 263)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\phone.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/phone', [], true)
+ 5 APPPATH\Controllers\Home.php(896): view('admin/phone', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->phone_list()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-02-27 01:57:09 --> mysqli_sql_exception: Unknown column 'phone_equip_id' in 'where clause' in C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tamtechhub_inventory\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tamtechhub_inventory\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\tamtechhub_inventory\app\Controllers\Home.php(928): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Home->phone_check_equip_id()
+#8 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-02-27 01:57:09 --> Unknown column 'phone_equip_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `monitor`
+WHERE `phone_equip_id` = \'PHN01-Tamtech\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `monitor`
+WHERE `phone_equip_id` = \'PHN01-Tamtech\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `monitor`
+WHERE `phone_equip_id` = \'PHN01-Tamtech\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `monitor`
+WHERE `phone_equip_id` = :phone_equip_id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Home.php(928): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->phone_check_equip_id()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-02-27 01:57:50 --> mysqli_sql_exception: Unknown column 'phone_equip_id' in 'where clause' in C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tamtechhub_inventory\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tamtechhub_inventory\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\tamtechhub_inventory\app\Controllers\Home.php(928): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Home->phone_check_equip_id()
+#8 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-02-27 01:57:50 --> Unknown column 'phone_equip_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `monitor`
+WHERE `phone_equip_id` = \'PHN01-Tamtech\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `monitor`
+WHERE `phone_equip_id` = \'PHN01-Tamtech\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `monitor`
+WHERE `phone_equip_id` = \'PHN01-Tamtech\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `monitor`
+WHERE `phone_equip_id` = :phone_equip_id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Home.php(928): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->phone_check_equip_id()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-02-27 02:29:25 --> Undefined array key "phone_agent_name"
+in APPPATH\Views\admin\phone.php on line 278.
+ 1 APPPATH\Views\admin\phone.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "phone_agent_name"', 'APPPATH\\Views\\admin\\phone.php', 278)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\phone.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/phone', [], true)
+ 5 APPPATH\Controllers\Home.php(896): view('admin/phone', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->phone_list()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-02-27 02:29:30 --> Undefined array key "phone_agent_name"
+in APPPATH\Views\admin\phone.php on line 278.
+ 1 APPPATH\Views\admin\phone.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "phone_agent_name"', 'APPPATH\\Views\\admin\\phone.php', 278)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\phone.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/phone', [], true)
+ 5 APPPATH\Controllers\Home.php(896): view('admin/phone', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->phone_list()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-02-27 02:30:11 --> Undefined variable $aphone_agent_name
+in APPPATH\Controllers\Home.php on line 965.
+ 1 APPPATH\Controllers\Home.php(965): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $aphone_agent_name', 'APPPATH\\Controllers\\Home.php', 965)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->update_phone()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-02-27 18:45:07 --> Undefined variable $agentName
+in APPPATH\Controllers\Home.php on line 369.
+ 1 APPPATH\Controllers\Home.php(369): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $agentName', 'APPPATH\\Controllers\\Home.php', 369)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->update_headset()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-02-27 18:56:13 --> Undefined variable $agentName
+in APPPATH\Controllers\Home.php on line 368.
+ 1 APPPATH\Controllers\Home.php(368): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $agentName', 'APPPATH\\Controllers\\Home.php', 368)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->update_headset()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-02-27 18:57:34 --> mysqli_sql_exception: Unknown column 'agent' in 'where clause' in C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tamtechhub_inventory\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tamtechhub_inventory\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\tamtechhub_inventory\app\Controllers\Home.php(368): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Home->update_headset()
+#8 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-02-27 18:57:34 --> Unknown column 'agent' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `agent_list`
+WHERE `agent` = \'ugyghg1234\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `agent_list`
+WHERE `agent` = \'ugyghg1234\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `agent_list`
+WHERE `agent` = \'ugyghg1234\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `agent_list`
+WHERE `agent` = :agent:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Home.php(368): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->update_headset()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-02-27 18:59:08 --> Undefined variable $agentName
+in APPPATH\Controllers\Home.php on line 369.
+ 1 APPPATH\Controllers\Home.php(369): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $agentName', 'APPPATH\\Controllers\\Home.php', 369)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->update_headset()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-02-27 20:16:55 --> Undefined variable $agents
+in APPPATH\Views\admin\headset.php on line 215.
+ 1 APPPATH\Views\admin\headset.php(215): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $agents', 'APPPATH\\Views\\admin\\headset.php', 215)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\headset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/headset', [], true)
+ 5 APPPATH\Controllers\Home.php(310): view('admin/headset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->headset_list()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-02-27 21:20:34 --> Undefined variable $agents
+in APPPATH\Views\admin\headset.php on line 140.
+ 1 APPPATH\Views\admin\headset.php(140): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $agents', 'APPPATH\\Views\\admin\\headset.php', 140)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\headset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/headset', [], true)
+ 5 APPPATH\Controllers\Home.php(310): view('admin/headset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->headset_list()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-02-27 21:20:41 --> Cannot access offset of type string on string
+in APPPATH\Views\admin\headset.php on line 271.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/headset', [], true)
+ 4 APPPATH\Controllers\Home.php(310): view('admin/headset', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->headset_list()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-02-27 21:27:46 --> Class "App\Controllers\HeadsetModel" not found
+in APPPATH\Controllers\Home.php on line 355.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->update_headset()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-02-27 21:47:47 --> Undefined array key "agent"
+in APPPATH\Views\admin\headset.php on line 147.
+ 1 APPPATH\Views\admin\headset.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "agent"', 'APPPATH\\Views\\admin\\headset.php', 147)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\headset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/headset', [], true)
+ 5 APPPATH\Controllers\Home.php(310): view('admin/headset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->headset_list()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-02-27 23:55:33 --> Undefined variable $row
+in APPPATH\Views\admin\headset.php on line 108.
+ 1 APPPATH\Views\admin\headset.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'APPPATH\\Views\\admin\\headset.php', 108)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\headset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/headset', [], true)
+ 5 APPPATH\Controllers\Home.php(310): view('admin/headset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->headset_list()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

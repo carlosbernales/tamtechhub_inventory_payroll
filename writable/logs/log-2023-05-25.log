@@ -1,0 +1,822 @@
+CRITICAL - 2023-05-25 00:42:40 --> Undefined array key "item_image"
+in APPPATH\Views\home\orders.php on line 96.
+ 1 APPPATH\Views\home\orders.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_image"', 'APPPATH\\Views\\home\\orders.php', 96)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(220): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 01:03:43 --> Undefined array key "item_image"
+in APPPATH\Views\home\orders.php on line 95.
+ 1 APPPATH\Views\home\orders.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_image"', 'APPPATH\\Views\\home\\orders.php', 95)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(228): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-25 01:27:03 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(225): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->orders()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-25 01:27:03 --> Column 'id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `order_item`
+INNER JOIN `orderdata` ON `orderdata`.`id` = `order_item`.`fk_order_id`
+WHERE `fk_user_id` = \'1\'
+AND `id` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `order_item`
+INNER JOIN `orderdata` ON `orderdata`.`id` = `order_item`.`fk_order_id`
+WHERE `fk_user_id` = \'1\'
+AND `id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `order_item`
+INNER JOIN `orderdata` ON `orderdata`.`id` = `order_item`.`fk_order_id`
+WHERE `fk_user_id` = \'1\'
+AND `id` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `order_item`
+INNER JOIN `orderdata` ON `orderdata`.`id` = `order_item`.`fk_order_id`
+WHERE `fk_user_id` = :fk_user_id:
+AND `id` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(225): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-25 01:27:16 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(225): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->orders()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-25 01:27:16 --> Column 'id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `order_item`
+INNER JOIN `orderdata` ON `orderdata`.`id` = `order_item`.`fk_order_id`
+WHERE `fk_user_id` = \'1\'
+AND `id` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `order_item`
+INNER JOIN `orderdata` ON `orderdata`.`id` = `order_item`.`fk_order_id`
+WHERE `fk_user_id` = \'1\'
+AND `id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `order_item`
+INNER JOIN `orderdata` ON `orderdata`.`id` = `order_item`.`fk_order_id`
+WHERE `fk_user_id` = \'1\'
+AND `id` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `order_item`
+INNER JOIN `orderdata` ON `orderdata`.`id` = `order_item`.`fk_order_id`
+WHERE `fk_user_id` = :fk_user_id:
+AND `id` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(225): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-25 01:27:28 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(225): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->orders()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-25 01:27:28 --> Column 'id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `order_item`
+INNER JOIN `orderdata` ON `orderdata`.`id` = `order_item`.`fk_order_id`
+WHERE `fk_user_id` = \'1\'
+AND `id` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `order_item`
+INNER JOIN `orderdata` ON `orderdata`.`id` = `order_item`.`fk_order_id`
+WHERE `fk_user_id` = \'1\'
+AND `id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `order_item`
+INNER JOIN `orderdata` ON `orderdata`.`id` = `order_item`.`fk_order_id`
+WHERE `fk_user_id` = \'1\'
+AND `id` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `order_item`
+INNER JOIN `orderdata` ON `orderdata`.`id` = `order_item`.`fk_order_id`
+WHERE `fk_user_id` = :fk_user_id:
+AND `id` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(225): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 01:28:21 --> Cannot access offset of type string on string
+in APPPATH\Views\home\orders.php on line 104.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 4 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 8 APPPATH\Controllers\Home.php(227): view('includes/template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-25 01:30:07 --> mysqli_sql_exception: Unknown column 'fk_user_id' in 'where clause' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(224): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->orders()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-25 01:30:07 --> Unknown column 'fk_user_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = \'1\'
+AND `fk_order_id` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = \'1\'
+AND `fk_order_id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = \'1\'
+AND `fk_order_id` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = :fk_user_id:
+AND `fk_order_id` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(224): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-25 01:30:22 --> mysqli_sql_exception: Unknown column 'fk_user_id' in 'where clause' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(224): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->orders()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-25 01:30:22 --> Unknown column 'fk_user_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = \'1\'
+AND `fk_order_id` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = \'1\'
+AND `fk_order_id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = \'1\'
+AND `fk_order_id` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = :fk_user_id:
+AND `fk_order_id` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(224): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-25 01:30:26 --> mysqli_sql_exception: Unknown column 'fk_user_id' in 'where clause' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(223): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->orders()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-25 01:30:26 --> Unknown column 'fk_user_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = :fk_user_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(223): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-25 01:30:27 --> mysqli_sql_exception: Unknown column 'fk_user_id' in 'where clause' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(223): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->orders()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-25 01:30:27 --> Unknown column 'fk_user_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = :fk_user_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(223): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-25 01:30:28 --> mysqli_sql_exception: Unknown column 'fk_user_id' in 'where clause' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(223): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->orders()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-25 01:30:28 --> Unknown column 'fk_user_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = :fk_user_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(223): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 02:57:52 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\productdetails.php on line 13.
+ 1 APPPATH\Views\home\productdetails.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\home\\productdetails.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\productdetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/productdetails', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/productdetails')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(266): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->productdetails('BFS_265')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 03:03:42 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\productdetails.php on line 13.
+ 1 APPPATH\Views\home\productdetails.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\home\\productdetails.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\productdetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/productdetails', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/productdetails')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(265): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->productdetails('BFS_467')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 06:03:16 --> Undefined variable $chartData
+in APPPATH\Views\admin\adminlte3\index.php on line 293.
+ 1 APPPATH\Views\admin\adminlte3\index.php(293): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $chartData', 'APPPATH\\Views\\admin\\adminlte3\\index.php', 293)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\adminlte3\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('admin/adminlte3/index', [], true)
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 6 APPPATH\Controllers\Admin.php(197): view('admin/dashboard', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 06:04:13 --> Undefined variable $chartData
+in APPPATH\Views\admin\adminlte3\index.php on line 293.
+ 1 APPPATH\Views\admin\adminlte3\index.php(293): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $chartData', 'APPPATH\\Views\\admin\\adminlte3\\index.php', 293)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\adminlte3\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('admin/adminlte3/index', [], true)
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 6 APPPATH\Controllers\Admin.php(197): view('admin/dashboard', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 06:04:42 --> Undefined variable $chartData
+in APPPATH\Views\admin\adminlte3\index.php on line 293.
+ 1 APPPATH\Views\admin\adminlte3\index.php(293): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $chartData', 'APPPATH\\Views\\admin\\adminlte3\\index.php', 293)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\adminlte3\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('admin/adminlte3/index', [], true)
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 6 APPPATH\Controllers\Admin.php(197): view('admin/dashboard', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 06:15:36 --> Undefined variable $completed_orders
+in APPPATH\Views\admin\adminlte3\index.php on line 294.
+ 1 APPPATH\Views\admin\adminlte3\index.php(294): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $completed_orders', 'APPPATH\\Views\\admin\\adminlte3\\index.php', 294)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\adminlte3\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('admin/adminlte3/index', [], true)
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 6 APPPATH\Controllers\Admin.php(197): view('admin/dashboard', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 06:16:13 --> Undefined variable $completed_orders
+in APPPATH\Views\admin\adminlte3\index.php on line 293.
+ 1 APPPATH\Views\admin\adminlte3\index.php(293): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $completed_orders', 'APPPATH\\Views\\admin\\adminlte3\\index.php', 293)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\adminlte3\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('admin/adminlte3/index', [], true)
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 6 APPPATH\Controllers\Admin.php(197): view('admin/dashboard', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 07:20:19 --> Undefined variable $completed_orders
+in APPPATH\Views\admin\adminlte3\index.php on line 293.
+ 1 APPPATH\Views\admin\adminlte3\index.php(293): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $completed_orders', 'APPPATH\\Views\\admin\\adminlte3\\index.php', 293)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\adminlte3\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('admin/adminlte3/index', [], true)
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 6 APPPATH\Controllers\Admin.php(197): view('admin/dashboard', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 07:30:57 --> Invalid file: admin/employee/employee_list.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/employee/employee_list.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/employee/employee_list', [], true)
+ 3 APPPATH\Controllers\Admin.php(300): view('admin/employee/employee_list', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->employeelist()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 07:31:56 --> Undefined variable $user
+in APPPATH\Views\admin\employee\employee_list.php on line 262.
+ 1 APPPATH\Views\admin\employee\employee_list.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'APPPATH\\Views\\admin\\employee\\employee_list.php', 262)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\employee\\employee_list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/employee/employee_list', [], true)
+ 5 APPPATH\Controllers\Admin.php(300): view('admin/employee/employee_list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->employeelist()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 07:32:32 --> Undefined array key "firstname"
+in APPPATH\Views\admin\employee\employee_list.php on line 265.
+ 1 APPPATH\Views\admin\employee\employee_list.php(265): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'APPPATH\\Views\\admin\\employee\\employee_list.php', 265)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\employee\\employee_list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/employee/employee_list', [], true)
+ 5 APPPATH\Controllers\Admin.php(300): view('admin/employee/employee_list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->employeelist()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 07:32:33 --> Undefined array key "firstname"
+in APPPATH\Views\admin\employee\employee_list.php on line 265.
+ 1 APPPATH\Views\admin\employee\employee_list.php(265): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'APPPATH\\Views\\admin\\employee\\employee_list.php', 265)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\employee\\employee_list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/employee/employee_list', [], true)
+ 5 APPPATH\Controllers\Admin.php(300): view('admin/employee/employee_list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->employeelist()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 07:32:34 --> Undefined array key "firstname"
+in APPPATH\Views\admin\employee\employee_list.php on line 265.
+ 1 APPPATH\Views\admin\employee\employee_list.php(265): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'APPPATH\\Views\\admin\\employee\\employee_list.php', 265)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\employee\\employee_list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/employee/employee_list', [], true)
+ 5 APPPATH\Controllers\Admin.php(300): view('admin/employee/employee_list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->employeelist()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 07:32:34 --> Undefined array key "firstname"
+in APPPATH\Views\admin\employee\employee_list.php on line 265.
+ 1 APPPATH\Views\admin\employee\employee_list.php(265): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'APPPATH\\Views\\admin\\employee\\employee_list.php', 265)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\employee\\employee_list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/employee/employee_list', [], true)
+ 5 APPPATH\Controllers\Admin.php(300): view('admin/employee/employee_list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->employeelist()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 07:32:35 --> Undefined array key "firstname"
+in APPPATH\Views\admin\employee\employee_list.php on line 265.
+ 1 APPPATH\Views\admin\employee\employee_list.php(265): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'APPPATH\\Views\\admin\\employee\\employee_list.php', 265)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\employee\\employee_list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/employee/employee_list', [], true)
+ 5 APPPATH\Controllers\Admin.php(300): view('admin/employee/employee_list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->employeelist()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 07:32:35 --> Undefined array key "firstname"
+in APPPATH\Views\admin\employee\employee_list.php on line 265.
+ 1 APPPATH\Views\admin\employee\employee_list.php(265): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'APPPATH\\Views\\admin\\employee\\employee_list.php', 265)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\employee\\employee_list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/employee/employee_list', [], true)
+ 5 APPPATH\Controllers\Admin.php(300): view('admin/employee/employee_list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->employeelist()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 07:45:55 --> Undefined variable $data
+in APPPATH\Controllers\Employee.php on line 260.
+ 1 APPPATH\Controllers\Employee.php(260): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Employee.php', 260)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->update_employee('1')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 07:46:55 --> Undefined variable $data
+in APPPATH\Controllers\Employee.php on line 260.
+ 1 APPPATH\Controllers\Employee.php(260): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Employee.php', 260)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->update_employee('1')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 07:47:14 --> Undefined variable $data
+in APPPATH\Controllers\Employee.php on line 260.
+ 1 APPPATH\Controllers\Employee.php(260): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Employee.php', 260)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->update_employee('1')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 07:47:17 --> Undefined variable $data
+in APPPATH\Controllers\Employee.php on line 260.
+ 1 APPPATH\Controllers\Employee.php(260): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Employee.php', 260)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->update_employee('1')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 07:48:21 --> Undefined variable $data
+in APPPATH\Controllers\Employee.php on line 260.
+ 1 APPPATH\Controllers\Employee.php(260): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Employee.php', 260)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->update_employee('1')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 07:48:24 --> Undefined variable $data
+in APPPATH\Controllers\Employee.php on line 260.
+ 1 APPPATH\Controllers\Employee.php(260): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Employee.php', 260)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->update_employee('1')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 07:55:33 --> Undefined array key "firstname"
+in APPPATH\Views\home\productdetails.php on line 74.
+ 1 APPPATH\Views\home\productdetails.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'APPPATH\\Views\\home\\productdetails.php', 74)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\productdetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/productdetails', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/productdetails')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(264): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->productdetails('2')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 07:55:39 --> Undefined array key "firstname"
+in APPPATH\Views\home\productdetails.php on line 74.
+ 1 APPPATH\Views\home\productdetails.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'APPPATH\\Views\\home\\productdetails.php', 74)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\productdetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/productdetails', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/productdetails')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(264): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->productdetails('1')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 07:55:51 --> Undefined array key "firstname"
+in APPPATH\Views\home\productdetails.php on line 74.
+ 1 APPPATH\Views\home\productdetails.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'APPPATH\\Views\\home\\productdetails.php', 74)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\productdetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/productdetails', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/productdetails')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(264): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->productdetails('2')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 07:56:39 --> Undefined array key "firstname"
+in APPPATH\Views\home\productdetails.php on line 74.
+ 1 APPPATH\Views\home\productdetails.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'APPPATH\\Views\\home\\productdetails.php', 74)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\productdetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/productdetails', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/productdetails')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(264): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->productdetails('2')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 08:10:49 --> Undefined variable $row
+in APPPATH\Views\admin\employee\employee_list.php on line 272.
+ 1 APPPATH\Views\admin\employee\employee_list.php(272): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'APPPATH\\Views\\admin\\employee\\employee_list.php', 272)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\employee\\employee_list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/employee/employee_list', [], true)
+ 5 APPPATH\Controllers\Admin.php(300): view('admin/employee/employee_list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->employeelist()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 12:43:07 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\Booking.php on line 116.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Booking.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Booking')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Booking')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Booking', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 12:43:14 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\Booking.php on line 116.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Booking.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Booking')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Booking')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Booking', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-25 12:47:55 --> mysqli_sql_exception: Column 'bride_bouqet' cannot be null in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bo...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bo...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bo...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Booking.php(104): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Booking->book_now()
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-05-25 12:47:55 --> Column 'bride_bouqet' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `booking` (`fk_userid`, `fullname`, `contact`, `email`, `location`, `date`, `start`, `grooms_name`, `brides_name`, `grooms_father`, `grooms_mother`, `brides_father`, `brides_mother`, `principal_sponsor`, `best_man`, `maid_honor`, `groomsmen`, `bridemaid`, `candle`, `veil`, `cord`, `little_groombride`, `ring_bearer`, `coin_bearer`, `bible_bearer`, `flower_girls`, `bride_bouqet`, `note_for_bouquet`, `church_setup`, `note_for_setup`, `other_specify`, `proof_payment`, `status`) VALUES (\'1\', \'raven poro\', \'2147483647\', \'bituinsflowershop@gmail.com\', \'masipit\', \'2023-05-28\', \'14:48\', \'Crisostomo\', \'MariaClara\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', NULL, \'\', NULL, \'\', \'\', NULL, \'Pending\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `booking` (`fk_userid`, `fullname`, `contact`, `email`, `location`, `date`, `start`, `grooms_name`, `brides_name`, `grooms_father`, `grooms_mother`, `brides_father`, `brides_mother`, `principal_sponsor`, `best_man`, `maid_honor`, `groomsmen`, `bridemaid`, `candle`, `veil`, `cord`, `little_groombride`, `ring_bearer`, `coin_bearer`, `bible_bearer`, `flower_girls`, `bride_bouqet`, `note_for_bouquet`, `church_setup`, `note_for_setup`, `other_specify`, `proof_payment`, `status`) VALUES (\'1\', \'raven poro\', \'2147483647\', \'bituinsflowershop@gmail.com\', \'masipit\', \'2023-05-28\', \'14:48\', \'Crisostomo\', \'MariaClara\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', NULL, \'\', NULL, \'\', \'\', NULL, \'Pending\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `booking` (`fk_userid`, `fullname`, `contact`, `email`, `location`, `date`, `start`, `grooms_name`, `brides_name`, `grooms_father`, `grooms_mother`, `brides_father`, `brides_mother`, `principal_sponsor`, `best_man`, `maid_honor`, `groomsmen`, `bridemaid`, `candle`, `veil`, `cord`, `little_groombride`, `ring_bearer`, `coin_bearer`, `bible_bearer`, `flower_girls`, `bride_bouqet`, `note_for_bouquet`, `church_setup`, `note_for_setup`, `other_specify`, `proof_payment`, `status`) VALUES (\'1\', \'raven poro\', \'2147483647\', \'bituinsflowershop@gmail.com\', \'masipit\', \'2023-05-28\', \'14:48\', \'Crisostomo\', \'MariaClara\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', \'James Bond\', NULL, \'\', NULL, \'\', \'\', NULL, \'Pending\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `booking` (`fk_userid`, `fullname`, `contact`, `email`, `location`, `date`, `start`, `grooms_name`, `brides_name`, `grooms_father`, `grooms_mother`, `brides_father`, `brides_mother`, `principal_sponsor`, `best_man`, `maid_honor`, `groomsmen`, `bridemaid`, `candle`, `veil`, `cord`, `little_groombride`, `ring_bearer`, `coin_bearer`, `bible_bearer`, `flower_girls`, `bride_bouqet`, `note_for_bouquet`, `church_setup`, `note_for_setup`, `other_specify`, `proof_payment`, `status`) VALUES (:fk_userid:, :fullname:, :contact:, :email:, :location:, :date:, :start:, :grooms_name:, :brides_name:, :grooms_father:, :grooms_mother:, :brides_father:, :brides_mother:, :principal_sponsor:, :best_man:, :maid_honor:, :groomsmen:, :bridemaid:, :candle:, :veil:, :cord:, :little_groombride:, :ring_bearer:, :coin_bearer:, :bible_bearer:, :flower_girls:, :bride_bouqet:, :note_for_bouquet:, :church_setup:, :note_for_setup:, :other_specify:, :proof_payment:, :status:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Booking.php(104): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->book_now()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-25 12:49:47 --> mysqli_sql_exception: Column 'bride_bouqet' cannot be null in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bo...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bo...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bo...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Booking.php(104): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Booking->book_now()
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-05-25 12:49:47 --> Column 'bride_bouqet' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `booking` (`fk_userid`, `fullname`, `contact`, `email`, `location`, `date`, `start`, `grooms_name`, `brides_name`, `grooms_father`, `grooms_mother`, `brides_father`, `brides_mother`, `principal_sponsor`, `best_man`, `maid_honor`, `groomsmen`, `bridemaid`, `candle`, `veil`, `cord`, `little_groombride`, `ring_bearer`, `coin_bearer`, `bible_bearer`, `flower_girls`, `bride_bouqet`, `note_for_bouquet`, `church_setup`, `note_for_setup`, `other_specify`, `proof_payment`, `status`) VALUES (\'1\', \'raven poro\', \'2147483647\', \'bituinsflowershop@gmail.com\', \'masipit\', \'2023-05-28\', \'14:50\', \'Crisostomo\', \'MariaClara\', \'Juan Carlito\', \'Josephine Braquen\', \'Juanito Pomoy\', \'Saksi Niyan\', \'Juanito Pomoy\', \'James Bond\', \'Kristine Barte\', \'bride_bouqet\', \'bride_bouqet\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', NULL, \'\', NULL, \'\', \'\', NULL, \'Pending\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `booking` (`fk_userid`, `fullname`, `contact`, `email`, `location`, `date`, `start`, `grooms_name`, `brides_name`, `grooms_father`, `grooms_mother`, `brides_father`, `brides_mother`, `principal_sponsor`, `best_man`, `maid_honor`, `groomsmen`, `bridemaid`, `candle`, `veil`, `cord`, `little_groombride`, `ring_bearer`, `coin_bearer`, `bible_bearer`, `flower_girls`, `bride_bouqet`, `note_for_bouquet`, `church_setup`, `note_for_setup`, `other_specify`, `proof_payment`, `status`) VALUES (\'1\', \'raven poro\', \'2147483647\', \'bituinsflowershop@gmail.com\', \'masipit\', \'2023-05-28\', \'14:50\', \'Crisostomo\', \'MariaClara\', \'Juan Carlito\', \'Josephine Braquen\', \'Juanito Pomoy\', \'Saksi Niyan\', \'Juanito Pomoy\', \'James Bond\', \'Kristine Barte\', \'bride_bouqet\', \'bride_bouqet\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', NULL, \'\', NULL, \'\', \'\', NULL, \'Pending\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `booking` (`fk_userid`, `fullname`, `contact`, `email`, `location`, `date`, `start`, `grooms_name`, `brides_name`, `grooms_father`, `grooms_mother`, `brides_father`, `brides_mother`, `principal_sponsor`, `best_man`, `maid_honor`, `groomsmen`, `bridemaid`, `candle`, `veil`, `cord`, `little_groombride`, `ring_bearer`, `coin_bearer`, `bible_bearer`, `flower_girls`, `bride_bouqet`, `note_for_bouquet`, `church_setup`, `note_for_setup`, `other_specify`, `proof_payment`, `status`) VALUES (\'1\', \'raven poro\', \'2147483647\', \'bituinsflowershop@gmail.com\', \'masipit\', \'2023-05-28\', \'14:50\', \'Crisostomo\', \'MariaClara\', \'Juan Carlito\', \'Josephine Braquen\', \'Juanito Pomoy\', \'Saksi Niyan\', \'Juanito Pomoy\', \'James Bond\', \'Kristine Barte\', \'bride_bouqet\', \'bride_bouqet\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', NULL, \'\', NULL, \'\', \'\', NULL, \'Pending\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `booking` (`fk_userid`, `fullname`, `contact`, `email`, `location`, `date`, `start`, `grooms_name`, `brides_name`, `grooms_father`, `grooms_mother`, `brides_father`, `brides_mother`, `principal_sponsor`, `best_man`, `maid_honor`, `groomsmen`, `bridemaid`, `candle`, `veil`, `cord`, `little_groombride`, `ring_bearer`, `coin_bearer`, `bible_bearer`, `flower_girls`, `bride_bouqet`, `note_for_bouquet`, `church_setup`, `note_for_setup`, `other_specify`, `proof_payment`, `status`) VALUES (:fk_userid:, :fullname:, :contact:, :email:, :location:, :date:, :start:, :grooms_name:, :brides_name:, :grooms_father:, :grooms_mother:, :brides_father:, :brides_mother:, :principal_sponsor:, :best_man:, :maid_honor:, :groomsmen:, :bridemaid:, :candle:, :veil:, :cord:, :little_groombride:, :ring_bearer:, :coin_bearer:, :bible_bearer:, :flower_girls:, :bride_bouqet:, :note_for_bouquet:, :church_setup:, :note_for_setup:, :other_specify:, :proof_payment:, :status:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Booking.php(104): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->book_now()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-25 12:51:31 --> mysqli_sql_exception: Column 'bride_bouqet' cannot be null in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bo...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bo...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bo...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Booking.php(104): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Booking->book_now()
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-05-25 12:51:31 --> Column 'bride_bouqet' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `booking` (`fk_userid`, `fullname`, `contact`, `email`, `location`, `date`, `start`, `grooms_name`, `brides_name`, `grooms_father`, `grooms_mother`, `brides_father`, `brides_mother`, `principal_sponsor`, `best_man`, `maid_honor`, `groomsmen`, `bridemaid`, `candle`, `veil`, `cord`, `little_groombride`, `ring_bearer`, `coin_bearer`, `bible_bearer`, `flower_girls`, `bride_bouqet`, `note_for_bouquet`, `church_setup`, `note_for_setup`, `other_specify`, `proof_payment`, `status`) VALUES (\'1\', \'raven poro\', \'2147483647\', \'bituinsflowershop@gmail.com\', \'masipit\', \'2023-05-28\', \'14:50\', \'Crisostomo\', \'MariaClara\', \'Juan Carlito\', \'Josephine Braquen\', \'Juanito Pomoy\', \'Saksi Niyan\', \'Juanito Pomoy\', \'James Bond\', \'Kristine Barte\', \'bride_bouqet\', \'bride_bouqet\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', NULL, \'\', NULL, \'\', \'\', NULL, \'Pending\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `booking` (`fk_userid`, `fullname`, `contact`, `email`, `location`, `date`, `start`, `grooms_name`, `brides_name`, `grooms_father`, `grooms_mother`, `brides_father`, `brides_mother`, `principal_sponsor`, `best_man`, `maid_honor`, `groomsmen`, `bridemaid`, `candle`, `veil`, `cord`, `little_groombride`, `ring_bearer`, `coin_bearer`, `bible_bearer`, `flower_girls`, `bride_bouqet`, `note_for_bouquet`, `church_setup`, `note_for_setup`, `other_specify`, `proof_payment`, `status`) VALUES (\'1\', \'raven poro\', \'2147483647\', \'bituinsflowershop@gmail.com\', \'masipit\', \'2023-05-28\', \'14:50\', \'Crisostomo\', \'MariaClara\', \'Juan Carlito\', \'Josephine Braquen\', \'Juanito Pomoy\', \'Saksi Niyan\', \'Juanito Pomoy\', \'James Bond\', \'Kristine Barte\', \'bride_bouqet\', \'bride_bouqet\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', NULL, \'\', NULL, \'\', \'\', NULL, \'Pending\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `booking` (`fk_userid`, `fullname`, `contact`, `email`, `location`, `date`, `start`, `grooms_name`, `brides_name`, `grooms_father`, `grooms_mother`, `brides_father`, `brides_mother`, `principal_sponsor`, `best_man`, `maid_honor`, `groomsmen`, `bridemaid`, `candle`, `veil`, `cord`, `little_groombride`, `ring_bearer`, `coin_bearer`, `bible_bearer`, `flower_girls`, `bride_bouqet`, `note_for_bouquet`, `church_setup`, `note_for_setup`, `other_specify`, `proof_payment`, `status`) VALUES (\'1\', \'raven poro\', \'2147483647\', \'bituinsflowershop@gmail.com\', \'masipit\', \'2023-05-28\', \'14:50\', \'Crisostomo\', \'MariaClara\', \'Juan Carlito\', \'Josephine Braquen\', \'Juanito Pomoy\', \'Saksi Niyan\', \'Juanito Pomoy\', \'James Bond\', \'Kristine Barte\', \'bride_bouqet\', \'bride_bouqet\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', \'Juanito Pomoy\', NULL, \'\', NULL, \'\', \'\', NULL, \'Pending\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `booking` (`fk_userid`, `fullname`, `contact`, `email`, `location`, `date`, `start`, `grooms_name`, `brides_name`, `grooms_father`, `grooms_mother`, `brides_father`, `brides_mother`, `principal_sponsor`, `best_man`, `maid_honor`, `groomsmen`, `bridemaid`, `candle`, `veil`, `cord`, `little_groombride`, `ring_bearer`, `coin_bearer`, `bible_bearer`, `flower_girls`, `bride_bouqet`, `note_for_bouquet`, `church_setup`, `note_for_setup`, `other_specify`, `proof_payment`, `status`) VALUES (:fk_userid:, :fullname:, :contact:, :email:, :location:, :date:, :start:, :grooms_name:, :brides_name:, :grooms_father:, :grooms_mother:, :brides_father:, :brides_mother:, :principal_sponsor:, :best_man:, :maid_honor:, :groomsmen:, :bridemaid:, :candle:, :veil:, :cord:, :little_groombride:, :ring_bearer:, :coin_bearer:, :bible_bearer:, :flower_girls:, :bride_bouqet:, :note_for_bouquet:, :church_setup:, :note_for_setup:, :other_specify:, :proof_payment:, :status:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Booking.php(104): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->book_now()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

@@ -1,0 +1,602 @@
+ERROR - 2024-03-05 02:17:38 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php:170
+Stack trace:
+#0 C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php(170): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'tamtech_invento...', 3306, '', 0)
+#1 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tamtechhub_inventory\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tamtechhub_inventory\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\tamtechhub_inventory\app\Controllers\Home.php(683): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Home->monitor_list()
+#8 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\tamtechhub_inventory\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\tamtechhub_inventory\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\tamtechhub_inventory\app\Controllers\Home.php(683): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Home->monitor_list()
+#7 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-03-05 02:17:38 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `monitor`', [], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(683): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->monitor_list()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-03-05 02:17:49 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php:170
+Stack trace:
+#0 C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php(170): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'tamtech_invento...', 3306, '', 0)
+#1 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tamtechhub_inventory\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tamtechhub_inventory\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\tamtechhub_inventory\app\Controllers\Home.php(683): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Home->monitor_list()
+#8 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\tamtechhub_inventory\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\tamtechhub_inventory\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\tamtechhub_inventory\app\Controllers\Home.php(683): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Home->monitor_list()
+#7 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-03-05 02:17:49 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `monitor`', [], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(683): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->monitor_list()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-03-05 02:17:50 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php:170
+Stack trace:
+#0 C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php(170): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'tamtech_invento...', 3306, '', 0)
+#1 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tamtechhub_inventory\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tamtechhub_inventory\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\tamtechhub_inventory\app\Controllers\Home.php(683): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Home->monitor_list()
+#8 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\tamtechhub_inventory\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\tamtechhub_inventory\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\tamtechhub_inventory\app\Controllers\Home.php(683): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Home->monitor_list()
+#7 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-03-05 02:17:50 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `monitor`', [], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(683): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->monitor_list()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-03-05 02:17:51 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php:170
+Stack trace:
+#0 C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php(170): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'tamtech_invento...', 3306, '', 0)
+#1 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tamtechhub_inventory\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tamtechhub_inventory\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\tamtechhub_inventory\app\Controllers\Home.php(683): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Home->monitor_list()
+#8 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\tamtechhub_inventory\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\tamtechhub_inventory\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\tamtechhub_inventory\app\Controllers\Home.php(683): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Home->monitor_list()
+#7 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-03-05 02:17:51 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `monitor`', [], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(683): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->monitor_list()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-03-05 02:17:52 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php:170
+Stack trace:
+#0 C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php(170): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'tamtech_invento...', 3306, '', 0)
+#1 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tamtechhub_inventory\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tamtechhub_inventory\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\tamtechhub_inventory\app\Controllers\Home.php(683): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Home->monitor_list()
+#8 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\tamtechhub_inventory\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\tamtechhub_inventory\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\tamtechhub_inventory\app\Controllers\Home.php(683): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Home->monitor_list()
+#7 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-03-05 02:17:52 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `monitor`', [], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(683): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->monitor_list()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-03-05 02:18:09 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php:170
+Stack trace:
+#0 C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php(170): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'tamtech_invento...', 3306, '', 0)
+#1 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tamtechhub_inventory\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tamtechhub_inventory\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\tamtechhub_inventory\app\Controllers\Home.php(683): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Home->monitor_list()
+#8 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\tamtechhub_inventory\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\tamtechhub_inventory\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\tamtechhub_inventory\app\Controllers\Home.php(683): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Home->monitor_list()
+#7 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-03-05 02:18:09 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `monitor`', [], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(683): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->monitor_list()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-03-05 02:19:05 --> mysqli_sql_exception: Table 'tamtech_inventory.monitor' doesn't exist in engine in C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tamtechhub_inventory\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tamtechhub_inventory\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\tamtechhub_inventory\app\Controllers\Home.php(683): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Home->monitor_list()
+#8 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-03-05 02:19:05 --> Table 'tamtech_inventory.monitor' doesn't exist in engine
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `monitor`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `monitor`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `monitor`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `monitor`', [], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(683): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->monitor_list()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-03-05 02:19:09 --> mysqli_sql_exception: Table 'tamtech_inventory.monitor' doesn't exist in engine in C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tamtechhub_inventory\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tamtechhub_inventory\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\tamtechhub_inventory\app\Controllers\Home.php(683): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Home->monitor_list()
+#8 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-03-05 02:19:09 --> Table 'tamtech_inventory.monitor' doesn't exist in engine
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `monitor`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `monitor`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `monitor`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `monitor`', [], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(683): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->monitor_list()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-03-05 02:19:10 --> mysqli_sql_exception: Table 'tamtech_inventory.monitor' doesn't exist in engine in C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tamtechhub_inventory\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tamtechhub_inventory\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\tamtechhub_inventory\app\Controllers\Home.php(683): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Home->monitor_list()
+#8 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-03-05 02:19:10 --> Table 'tamtech_inventory.monitor' doesn't exist in engine
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `monitor`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `monitor`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `monitor`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `monitor`', [], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(683): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->monitor_list()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-03-05 02:19:23 --> mysqli_sql_exception: Table 'tamtech_inventory.monitor' doesn't exist in engine in C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tamtechhub_inventory\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tamtechhub_inventory\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\tamtechhub_inventory\app\Controllers\Home.php(683): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Home->monitor_list()
+#8 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-03-05 02:19:23 --> Table 'tamtech_inventory.monitor' doesn't exist in engine
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `monitor`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `monitor`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `monitor`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `monitor`', [], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(683): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->monitor_list()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-03-05 02:20:31 --> mysqli_sql_exception: Table 'tamtech_inventory.monitor' doesn't exist in engine in C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tamtechhub_inventory\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tamtechhub_inventory\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\tamtechhub_inventory\app\Controllers\Home.php(683): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Home->monitor_list()
+#8 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-03-05 02:20:31 --> Table 'tamtech_inventory.monitor' doesn't exist in engine
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `monitor`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `monitor`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `monitor`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `monitor`', [], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(683): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->monitor_list()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-03-05 02:24:54 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php:170
+Stack trace:
+#0 C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php(170): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'tamtech_invento...', 3306, '', 0)
+#1 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tamtechhub_inventory\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tamtechhub_inventory\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\tamtechhub_inventory\app\Controllers\Home.php(683): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Home->monitor_list()
+#8 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\tamtechhub_inventory\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\tamtechhub_inventory\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\tamtechhub_inventory\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\tamtechhub_inventory\app\Controllers\Home.php(683): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Home->monitor_list()
+#7 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-03-05 02:24:54 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `monitor`', [], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(683): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->monitor_list()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-03-05 23:19:37 --> mysqli_sql_exception: Unknown column 'monitor_one_id' in 'where clause' in C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `monitor...', 0)
+#1 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `monitor...')
+#2 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `monitor...')
+#3 C:\laragon\www\tamtechhub_inventory\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `monitor...', Array, false)
+#4 C:\laragon\www\tamtechhub_inventory\system\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\tamtechhub_inventory\system\BaseModel.php(886): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\laragon\www\tamtechhub_inventory\system\Model.php(693): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\laragon\www\tamtechhub_inventory\app\Controllers\Home.php(879): CodeIgniter\Model->update()
+#8 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Home->updates_monitor_agent('4')
+#9 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2024-03-05 23:19:37 --> Unknown column 'monitor_one_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `monitor` SET `monitor_status` = \'Assigned\'
+WHERE `id` = \'4\'
+AND `monitor_one_id` = \'0\'
+AND `monitor_two_id` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `monitor` SET `monitor_status` = \'Assigned\'
+WHERE `id` = \'4\'
+AND `monitor_one_id` = \'0\'
+AND `monitor_two_id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `monitor` SET `monitor_status` = \'Assigned\'
+WHERE `id` = \'4\'
+AND `monitor_one_id` = \'0\'
+AND `monitor_two_id` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `monitor` SET `monitor_status` = :monitor_status:
+WHERE `id` = :id:
+AND `monitor_one_id` = :monitor_one_id:
+AND `monitor_two_id` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(886): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Controllers\Home.php(879): CodeIgniter\Model->update()
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->updates_monitor_agent('4')
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-05 23:26:33 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1598.
+ 1 SYSTEMPATH\BaseModel.php(1598): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Home.php(877): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->updates_monitor_agent('4')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-05 23:27:37 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1598.
+ 1 SYSTEMPATH\BaseModel.php(1598): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Home.php(875): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->updates_monitor_agent('4')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-05 23:28:35 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1598.
+ 1 SYSTEMPATH\BaseModel.php(1598): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Home.php(875): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->updates_monitor_agent('4')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-05 23:29:55 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1598.
+ 1 SYSTEMPATH\BaseModel.php(1598): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Home.php(875): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->updates_monitor_agent('4')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-05 23:30:46 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1598.
+ 1 SYSTEMPATH\BaseModel.php(1598): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Home.php(875): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->updates_monitor_agent('4')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-05 23:33:01 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 867.
+ 1 SYSTEMPATH\BaseModel.php(867): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\Home.php(877): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->updates_monitor_agent('4')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-05 23:33:19 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 867.
+ 1 SYSTEMPATH\BaseModel.php(867): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\Home.php(876): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->updates_monitor_agent('4')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-05 23:55:49 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1598.
+ 1 SYSTEMPATH\BaseModel.php(1598): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Home.php(877): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->updates_monitor_agent('4')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

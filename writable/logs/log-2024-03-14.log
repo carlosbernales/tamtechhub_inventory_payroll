@@ -1,0 +1,30 @@
+CRITICAL - 2024-03-14 00:42:09 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 867.
+ 1 SYSTEMPATH\BaseModel.php(867): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Home.php(823): CodeIgniter\Model->update('1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->updateThemonitors('1')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-14 00:43:55 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 867.
+ 1 SYSTEMPATH\BaseModel.php(867): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Home.php(802): CodeIgniter\Model->update('1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->updateThemonitors('1')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-14 01:16:05 --> whereIn() expects $values to be of type array or closure
+in SYSTEMPATH\Database\BaseBuilder.php on line 907.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(789): CodeIgniter\Database\BaseBuilder->_whereIn('id', '1', false, 'AND ', null)
+ 2 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->whereIn('id', '1')
+ 3 APPPATH\Controllers\Home.php(903): CodeIgniter\Model->__call('whereIn', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addagent_monitor()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

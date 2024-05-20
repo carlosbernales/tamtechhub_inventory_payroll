@@ -1,0 +1,1976 @@
+CRITICAL - 2023-06-17 18:44:56 --> Undefined variable $db
+in APPPATH\Controllers\Admin.php on line 211.
+ 1 APPPATH\Controllers\Admin.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'APPPATH\\Controllers\\Admin.php', 211)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 18:45:26 --> Attempt to read property "order_date" on string
+in APPPATH\Controllers\Admin.php on line 285.
+ 1 APPPATH\Controllers\Admin.php(285): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "order_date" on string', 'APPPATH\\Controllers\\Admin.php', 285)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-17 19:17:44 --> mysqli_sql_exception: Unknown column 'oi.fk_user_id' in 'on clause' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(o...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(o...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(o...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(198): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(o...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-17 19:17:44 --> Unknown column 'oi.fk_user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+    COALESCE(SUM(od.order_amount), 0) + COALESCE(p.total_sum, 0) AS total_amount,
+    DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+    FROM order_item AS oi
+    JOIN orderdata AS od ON od.id = oi.fk_user_id
+    LEFT JOIN (SELECT SUM(total) AS total_sum FROM pos) AS p ON 1=1
+    LEFT JOIN pos ON pos.product_name = oi.item_name
+    WHERE od.order_status = \'Completed\'
+    GROUP BY item_product_name, month_name', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+    COALESCE(SUM(od.order_amount), 0) + COALESCE(p.total_sum, 0) AS total_amount,
+    DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+    FROM order_item AS oi
+    JOIN orderdata AS od ON od.id = oi.fk_user_id
+    LEFT JOIN (SELECT SUM(total) AS total_sum FROM pos) AS p ON 1=1
+    LEFT JOIN pos ON pos.product_name = oi.item_name
+    WHERE od.order_status = \'Completed\'
+    GROUP BY item_product_name, month_name')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+    COALESCE(SUM(od.order_amount), 0) + COALESCE(p.total_sum, 0) AS total_amount,
+    DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+    FROM order_item AS oi
+    JOIN orderdata AS od ON od.id = oi.fk_user_id
+    LEFT JOIN (SELECT SUM(total) AS total_sum FROM pos) AS p ON 1=1
+    LEFT JOIN pos ON pos.product_name = oi.item_name
+    WHERE od.order_status = \'Completed\'
+    GROUP BY item_product_name, month_name')
+ 4 APPPATH\Controllers\Admin.php(198): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+    COALESCE(SUM(od.order_amount), 0) + COALESCE(p.total_sum, 0) AS total_amount,
+    DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+    FROM order_item AS oi
+    JOIN orderdata AS od ON od.id = oi.fk_user_id
+    LEFT JOIN (SELECT SUM(total) AS total_sum FROM pos) AS p ON 1=1
+    LEFT JOIN pos ON pos.product_name = oi.item_name
+    WHERE od.order_status = \'Completed\'
+    GROUP BY item_product_name, month_name')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-17 19:23:57 --> mysqli_sql_exception: Can't group on 'total_amount' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(o...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(o...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(o...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(198): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(o...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-17 19:23:57 --> Can't group on 'total_amount'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+        COALESCE(SUM(od.order_amount), 0) + COALESCE(p.total_sum, 0) AS total_amount,
+        DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+        FROM order_item AS oi
+        JOIN orderdata AS od ON oi.fk_order_id = od.id
+        LEFT JOIN (SELECT SUM(total) AS total_sum FROM pos) AS p ON 1=1
+        LEFT JOIN pos ON pos.product_name = oi.item_name
+        WHERE od.order_status = \'Completed\'
+        GROUP BY item_product_name, month_name,total_amount', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+        COALESCE(SUM(od.order_amount), 0) + COALESCE(p.total_sum, 0) AS total_amount,
+        DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+        FROM order_item AS oi
+        JOIN orderdata AS od ON oi.fk_order_id = od.id
+        LEFT JOIN (SELECT SUM(total) AS total_sum FROM pos) AS p ON 1=1
+        LEFT JOIN pos ON pos.product_name = oi.item_name
+        WHERE od.order_status = \'Completed\'
+        GROUP BY item_product_name, month_name,total_amount')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+        COALESCE(SUM(od.order_amount), 0) + COALESCE(p.total_sum, 0) AS total_amount,
+        DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+        FROM order_item AS oi
+        JOIN orderdata AS od ON oi.fk_order_id = od.id
+        LEFT JOIN (SELECT SUM(total) AS total_sum FROM pos) AS p ON 1=1
+        LEFT JOIN pos ON pos.product_name = oi.item_name
+        WHERE od.order_status = \'Completed\'
+        GROUP BY item_product_name, month_name,total_amount')
+ 4 APPPATH\Controllers\Admin.php(198): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+        COALESCE(SUM(od.order_amount), 0) + COALESCE(p.total_sum, 0) AS total_amount,
+        DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+        FROM order_item AS oi
+        JOIN orderdata AS od ON oi.fk_order_id = od.id
+        LEFT JOIN (SELECT SUM(total) AS total_sum FROM pos) AS p ON 1=1
+        LEFT JOIN pos ON pos.product_name = oi.item_name
+        WHERE od.order_status = \'Completed\'
+        GROUP BY item_product_name, month_name,total_amount')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-17 19:24:13 --> mysqli_sql_exception: Can't group on 'total_amount' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(o...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(o...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(o...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(198): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(o...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-17 19:24:13 --> Can't group on 'total_amount'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+        COALESCE(SUM(od.order_amount), 0) + COALESCE(p.total_sum, 0) AS total_amount,
+        DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+        FROM order_item AS oi
+        JOIN orderdata AS od ON oi.fk_order_id = od.id
+        LEFT JOIN (SELECT SUM(total) AS total_sum FROM pos) AS p ON 1=1
+        LEFT JOIN pos ON pos.product_name = oi.item_name
+        WHERE od.order_status = \'Completed\'
+        GROUP BY item_product_name, month_name, total_amount', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+        COALESCE(SUM(od.order_amount), 0) + COALESCE(p.total_sum, 0) AS total_amount,
+        DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+        FROM order_item AS oi
+        JOIN orderdata AS od ON oi.fk_order_id = od.id
+        LEFT JOIN (SELECT SUM(total) AS total_sum FROM pos) AS p ON 1=1
+        LEFT JOIN pos ON pos.product_name = oi.item_name
+        WHERE od.order_status = \'Completed\'
+        GROUP BY item_product_name, month_name, total_amount')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+        COALESCE(SUM(od.order_amount), 0) + COALESCE(p.total_sum, 0) AS total_amount,
+        DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+        FROM order_item AS oi
+        JOIN orderdata AS od ON oi.fk_order_id = od.id
+        LEFT JOIN (SELECT SUM(total) AS total_sum FROM pos) AS p ON 1=1
+        LEFT JOIN pos ON pos.product_name = oi.item_name
+        WHERE od.order_status = \'Completed\'
+        GROUP BY item_product_name, month_name, total_amount')
+ 4 APPPATH\Controllers\Admin.php(198): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+        COALESCE(SUM(od.order_amount), 0) + COALESCE(p.total_sum, 0) AS total_amount,
+        DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+        FROM order_item AS oi
+        JOIN orderdata AS od ON oi.fk_order_id = od.id
+        LEFT JOIN (SELECT SUM(total) AS total_sum FROM pos) AS p ON 1=1
+        LEFT JOIN pos ON pos.product_name = oi.item_name
+        WHERE od.order_status = \'Completed\'
+        GROUP BY item_product_name, month_name, total_amount')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-17 19:25:42 --> mysqli_sql_exception: Incorrect parameter count in the call to native function 'IFNULL' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(o...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(o...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(o...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(198): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(o...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-17 19:25:42 --> Incorrect parameter count in the call to native function 'IFNULL'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name)) AS item_product_name,
+        COALESCE(SUM(od.order_amount), 0) + COALESCE(p.total_sum, 0) AS total_amount,
+        DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+        FROM order_item AS oi
+        JOIN orderdata AS od ON oi.fk_order_id = od.id
+        LEFT JOIN (SELECT SUM(total) AS total_sum FROM pos) AS p ON 1=1
+        LEFT JOIN pos ON pos.product_name = oi.item_name
+        WHERE od.order_status = \'Completed\'
+        GROUP BY item_product_name, month_name', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name)) AS item_product_name,
+        COALESCE(SUM(od.order_amount), 0) + COALESCE(p.total_sum, 0) AS total_amount,
+        DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+        FROM order_item AS oi
+        JOIN orderdata AS od ON oi.fk_order_id = od.id
+        LEFT JOIN (SELECT SUM(total) AS total_sum FROM pos) AS p ON 1=1
+        LEFT JOIN pos ON pos.product_name = oi.item_name
+        WHERE od.order_status = \'Completed\'
+        GROUP BY item_product_name, month_name')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name)) AS item_product_name,
+        COALESCE(SUM(od.order_amount), 0) + COALESCE(p.total_sum, 0) AS total_amount,
+        DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+        FROM order_item AS oi
+        JOIN orderdata AS od ON oi.fk_order_id = od.id
+        LEFT JOIN (SELECT SUM(total) AS total_sum FROM pos) AS p ON 1=1
+        LEFT JOIN pos ON pos.product_name = oi.item_name
+        WHERE od.order_status = \'Completed\'
+        GROUP BY item_product_name, month_name')
+ 4 APPPATH\Controllers\Admin.php(198): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name)) AS item_product_name,
+        COALESCE(SUM(od.order_amount), 0) + COALESCE(p.total_sum, 0) AS total_amount,
+        DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+        FROM order_item AS oi
+        JOIN orderdata AS od ON oi.fk_order_id = od.id
+        LEFT JOIN (SELECT SUM(total) AS total_sum FROM pos) AS p ON 1=1
+        LEFT JOIN pos ON pos.product_name = oi.item_name
+        WHERE od.order_status = \'Completed\'
+        GROUP BY item_product_name, month_name')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-17 19:29:35 --> mysqli_sql_exception: Unknown column 'p.total' in 'field list' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(o...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(o...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(o...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(198): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(o...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-17 19:29:35 --> Unknown column 'p.total' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+        COALESCE(SUM(od.order_amount), 0) + COALESCE(p.total, 0) AS total_amount,
+        DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+        FROM order_item AS oi
+        JOIN orderdata AS od ON oi.fk_order_id = od.id
+        LEFT JOIN (SELECT SUM(total) AS total_sum FROM pos) AS p ON 1=1
+        LEFT JOIN pos ON pos.product_name = oi.item_name
+        WHERE od.order_status = \'Completed\'
+        GROUP BY item_product_name, month_name', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+        COALESCE(SUM(od.order_amount), 0) + COALESCE(p.total, 0) AS total_amount,
+        DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+        FROM order_item AS oi
+        JOIN orderdata AS od ON oi.fk_order_id = od.id
+        LEFT JOIN (SELECT SUM(total) AS total_sum FROM pos) AS p ON 1=1
+        LEFT JOIN pos ON pos.product_name = oi.item_name
+        WHERE od.order_status = \'Completed\'
+        GROUP BY item_product_name, month_name')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+        COALESCE(SUM(od.order_amount), 0) + COALESCE(p.total, 0) AS total_amount,
+        DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+        FROM order_item AS oi
+        JOIN orderdata AS od ON oi.fk_order_id = od.id
+        LEFT JOIN (SELECT SUM(total) AS total_sum FROM pos) AS p ON 1=1
+        LEFT JOIN pos ON pos.product_name = oi.item_name
+        WHERE od.order_status = \'Completed\'
+        GROUP BY item_product_name, month_name')
+ 4 APPPATH\Controllers\Admin.php(198): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+        COALESCE(SUM(od.order_amount), 0) + COALESCE(p.total, 0) AS total_amount,
+        DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+        FROM order_item AS oi
+        JOIN orderdata AS od ON oi.fk_order_id = od.id
+        LEFT JOIN (SELECT SUM(total) AS total_sum FROM pos) AS p ON 1=1
+        LEFT JOIN pos ON pos.product_name = oi.item_name
+        WHERE od.order_status = \'Completed\'
+        GROUP BY item_product_name, month_name')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 19:34:19 --> Undefined variable $month
+in APPPATH\Views\admin\dashboard.php on line 649.
+ 1 APPPATH\Views\admin\dashboard.php(649): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $month', 'APPPATH\\Views\\admin\\dashboard.php', 649)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(293): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-17 19:36:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 9 in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(o...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(o...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(o...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(198): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(o...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-17 19:36:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 9
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+    COALESCE(SUM(od.order_amount), 0) + COALESCE(p.total_sum, 0) AS total_amount,
+    DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+    FROM order_item AS oi
+    JOIN orderdata AS od ON oi.fk_order_id = od.id
+    LEFT JOIN (SELECT SUM(total) AS total_sum FROM pos) AS p ON 1=1
+    LEFT JOIN pos ON pos.product_name = oi.item_name
+    WHERE od.order_status = \'Completed\'
+    GROUP BY IFNULL( month_name', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+    COALESCE(SUM(od.order_amount), 0) + COALESCE(p.total_sum, 0) AS total_amount,
+    DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+    FROM order_item AS oi
+    JOIN orderdata AS od ON oi.fk_order_id = od.id
+    LEFT JOIN (SELECT SUM(total) AS total_sum FROM pos) AS p ON 1=1
+    LEFT JOIN pos ON pos.product_name = oi.item_name
+    WHERE od.order_status = \'Completed\'
+    GROUP BY IFNULL( month_name')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+    COALESCE(SUM(od.order_amount), 0) + COALESCE(p.total_sum, 0) AS total_amount,
+    DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+    FROM order_item AS oi
+    JOIN orderdata AS od ON oi.fk_order_id = od.id
+    LEFT JOIN (SELECT SUM(total) AS total_sum FROM pos) AS p ON 1=1
+    LEFT JOIN pos ON pos.product_name = oi.item_name
+    WHERE od.order_status = \'Completed\'
+    GROUP BY IFNULL( month_name')
+ 4 APPPATH\Controllers\Admin.php(198): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+    COALESCE(SUM(od.order_amount), 0) + COALESCE(p.total_sum, 0) AS total_amount,
+    DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+    FROM order_item AS oi
+    JOIN orderdata AS od ON oi.fk_order_id = od.id
+    LEFT JOIN (SELECT SUM(total) AS total_sum FROM pos) AS p ON 1=1
+    LEFT JOIN pos ON pos.product_name = oi.item_name
+    WHERE od.order_status = \'Completed\'
+    GROUP BY IFNULL( month_name')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-17 19:36:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'month_name' at line 9 in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(o...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(o...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(o...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(198): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(o...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-17 19:36:44 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'month_name' at line 9
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+    COALESCE(SUM(od.order_amount), 0) + COALESCE(p.total_sum, 0) AS total_amount,
+    DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+    FROM order_item AS oi
+    JOIN orderdata AS od ON oi.fk_order_id = od.id
+    LEFT JOIN (SELECT SUM(total) AS total_sum FROM pos) AS p ON 1=1
+    LEFT JOIN pos ON pos.product_name = oi.item_name
+    WHERE od.order_status = \'Completed\'
+    GROUP BY IFNULL month_name', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+    COALESCE(SUM(od.order_amount), 0) + COALESCE(p.total_sum, 0) AS total_amount,
+    DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+    FROM order_item AS oi
+    JOIN orderdata AS od ON oi.fk_order_id = od.id
+    LEFT JOIN (SELECT SUM(total) AS total_sum FROM pos) AS p ON 1=1
+    LEFT JOIN pos ON pos.product_name = oi.item_name
+    WHERE od.order_status = \'Completed\'
+    GROUP BY IFNULL month_name')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+    COALESCE(SUM(od.order_amount), 0) + COALESCE(p.total_sum, 0) AS total_amount,
+    DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+    FROM order_item AS oi
+    JOIN orderdata AS od ON oi.fk_order_id = od.id
+    LEFT JOIN (SELECT SUM(total) AS total_sum FROM pos) AS p ON 1=1
+    LEFT JOIN pos ON pos.product_name = oi.item_name
+    WHERE od.order_status = \'Completed\'
+    GROUP BY IFNULL month_name')
+ 4 APPPATH\Controllers\Admin.php(198): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+    COALESCE(SUM(od.order_amount), 0) + COALESCE(p.total_sum, 0) AS total_amount,
+    DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+    FROM order_item AS oi
+    JOIN orderdata AS od ON oi.fk_order_id = od.id
+    LEFT JOIN (SELECT SUM(total) AS total_sum FROM pos) AS p ON 1=1
+    LEFT JOIN pos ON pos.product_name = oi.item_name
+    WHERE od.order_status = \'Completed\'
+    GROUP BY IFNULL month_name')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 19:39:13 --> Undefined variable $total_amount
+in APPPATH\Controllers\Admin.php on line 235.
+ 1 APPPATH\Controllers\Admin.php(235): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_amount', 'APPPATH\\Controllers\\Admin.php', 235)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-17 19:40:33 --> mysqli_sql_exception: Unknown column 'pos.product_name' in 'field list' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(o...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(o...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(o...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(198): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(o...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-17 19:40:33 --> Unknown column 'pos.product_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+        COALESCE(SUM(od.order_amount), 0) AS total_order_amount,
+        COALESCE(p.total_sum, 0) AS total_pos_sum,
+        DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+        FROM order_item AS oi
+        JOIN orderdata AS od ON oi.fk_order_id = od.id
+        LEFT JOIN (SELECT product_name, SUM(total) AS total_sum FROM pos GROUP BY product_name) AS p ON p.product_name = oi.item_name
+        WHERE od.order_status = \'Completed\'
+        GROUP BY item_product_name, month_name', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+        COALESCE(SUM(od.order_amount), 0) AS total_order_amount,
+        COALESCE(p.total_sum, 0) AS total_pos_sum,
+        DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+        FROM order_item AS oi
+        JOIN orderdata AS od ON oi.fk_order_id = od.id
+        LEFT JOIN (SELECT product_name, SUM(total) AS total_sum FROM pos GROUP BY product_name) AS p ON p.product_name = oi.item_name
+        WHERE od.order_status = \'Completed\'
+        GROUP BY item_product_name, month_name')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+        COALESCE(SUM(od.order_amount), 0) AS total_order_amount,
+        COALESCE(p.total_sum, 0) AS total_pos_sum,
+        DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+        FROM order_item AS oi
+        JOIN orderdata AS od ON oi.fk_order_id = od.id
+        LEFT JOIN (SELECT product_name, SUM(total) AS total_sum FROM pos GROUP BY product_name) AS p ON p.product_name = oi.item_name
+        WHERE od.order_status = \'Completed\'
+        GROUP BY item_product_name, month_name')
+ 4 APPPATH\Controllers\Admin.php(198): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+        COALESCE(SUM(od.order_amount), 0) AS total_order_amount,
+        COALESCE(p.total_sum, 0) AS total_pos_sum,
+        DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+        FROM order_item AS oi
+        JOIN orderdata AS od ON oi.fk_order_id = od.id
+        LEFT JOIN (SELECT product_name, SUM(total) AS total_sum FROM pos GROUP BY product_name) AS p ON p.product_name = oi.item_name
+        WHERE od.order_status = \'Completed\'
+        GROUP BY item_product_name, month_name')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-17 19:40:50 --> mysqli_sql_exception: Unknown column 'pos.product_name' in 'field list' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(o...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(o...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(o...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(198): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(o...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-17 19:40:50 --> Unknown column 'pos.product_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+        COALESCE(SUM(od.order_amount), 0) AS total_order_amount,
+        COALESCE(p.total_sum, 0) AS total_pos_sum,
+        DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+        FROM order_item AS oi
+        JOIN orderdata AS od ON oi.fk_order_id = od.id
+        LEFT JOIN (SELECT product_name, SUM(total) AS total_sum FROM pos GROUP BY product_name) AS p ON p.product_name = oi.item_name
+        WHERE od.order_status = \'Completed\'
+        GROUP BY item_product_name, month_name', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+        COALESCE(SUM(od.order_amount), 0) AS total_order_amount,
+        COALESCE(p.total_sum, 0) AS total_pos_sum,
+        DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+        FROM order_item AS oi
+        JOIN orderdata AS od ON oi.fk_order_id = od.id
+        LEFT JOIN (SELECT product_name, SUM(total) AS total_sum FROM pos GROUP BY product_name) AS p ON p.product_name = oi.item_name
+        WHERE od.order_status = \'Completed\'
+        GROUP BY item_product_name, month_name')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+        COALESCE(SUM(od.order_amount), 0) AS total_order_amount,
+        COALESCE(p.total_sum, 0) AS total_pos_sum,
+        DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+        FROM order_item AS oi
+        JOIN orderdata AS od ON oi.fk_order_id = od.id
+        LEFT JOIN (SELECT product_name, SUM(total) AS total_sum FROM pos GROUP BY product_name) AS p ON p.product_name = oi.item_name
+        WHERE od.order_status = \'Completed\'
+        GROUP BY item_product_name, month_name')
+ 4 APPPATH\Controllers\Admin.php(198): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+        COALESCE(SUM(od.order_amount), 0) AS total_order_amount,
+        COALESCE(p.total_sum, 0) AS total_pos_sum,
+        DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+        FROM order_item AS oi
+        JOIN orderdata AS od ON oi.fk_order_id = od.id
+        LEFT JOIN (SELECT product_name, SUM(total) AS total_sum FROM pos GROUP BY product_name) AS p ON p.product_name = oi.item_name
+        WHERE od.order_status = \'Completed\'
+        GROUP BY item_product_name, month_name')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-17 19:41:38 --> mysqli_sql_exception: Unknown column 'pos.product_name' in 'field list' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(o...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(o...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(o...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(198): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(o...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-17 19:41:38 --> Unknown column 'pos.product_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+        COALESCE(SUM(od.order_amount), 0) AS total_order_amount,
+        COALESCE(p.total_sum, 0) AS total_pos_sum,
+        DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+        FROM order_item AS oi
+        JOIN orderdata AS od ON oi.fk_order_id = od.id
+        LEFT JOIN (SELECT product_name, SUM(total) AS total_sum FROM pos GROUP BY product_name) AS p ON p.product_name = oi.item_name
+        WHERE od.order_status = \'Completed\'
+        GROUP BY item_product_name, month_name', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+        COALESCE(SUM(od.order_amount), 0) AS total_order_amount,
+        COALESCE(p.total_sum, 0) AS total_pos_sum,
+        DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+        FROM order_item AS oi
+        JOIN orderdata AS od ON oi.fk_order_id = od.id
+        LEFT JOIN (SELECT product_name, SUM(total) AS total_sum FROM pos GROUP BY product_name) AS p ON p.product_name = oi.item_name
+        WHERE od.order_status = \'Completed\'
+        GROUP BY item_product_name, month_name')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+        COALESCE(SUM(od.order_amount), 0) AS total_order_amount,
+        COALESCE(p.total_sum, 0) AS total_pos_sum,
+        DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+        FROM order_item AS oi
+        JOIN orderdata AS od ON oi.fk_order_id = od.id
+        LEFT JOIN (SELECT product_name, SUM(total) AS total_sum FROM pos GROUP BY product_name) AS p ON p.product_name = oi.item_name
+        WHERE od.order_status = \'Completed\'
+        GROUP BY item_product_name, month_name')
+ 4 APPPATH\Controllers\Admin.php(198): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(oi.item_name, \' - \', IFNULL(pos.product_name, \'Unknown\')) AS item_product_name,
+        COALESCE(SUM(od.order_amount), 0) AS total_order_amount,
+        COALESCE(p.total_sum, 0) AS total_pos_sum,
+        DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+        FROM order_item AS oi
+        JOIN orderdata AS od ON oi.fk_order_id = od.id
+        LEFT JOIN (SELECT product_name, SUM(total) AS total_sum FROM pos GROUP BY product_name) AS p ON p.product_name = oi.item_name
+        WHERE od.order_status = \'Completed\'
+        GROUP BY item_product_name, month_name')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 19:41:52 --> Undefined variable $lineChartData
+in APPPATH\Controllers\Admin.php on line 214.
+ 1 APPPATH\Controllers\Admin.php(214): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lineChartData', 'APPPATH\\Controllers\\Admin.php', 214)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 19:42:14 --> Undefined array key "total_amount"
+in APPPATH\Controllers\Admin.php on line 218.
+ 1 APPPATH\Controllers\Admin.php(218): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "total_amount"', 'APPPATH\\Controllers\\Admin.php', 218)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 19:48:08 --> Undefined array key ""
+in APPPATH\Views\admin\sales\saleslist.php on line 327.
+ 1 APPPATH\Views\admin\sales\saleslist.php(327): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'APPPATH\\Views\\admin\\sales\\saleslist.php', 327)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\sales\\saleslist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/sales/saleslist', [], true)
+ 5 APPPATH\Controllers\Admin.php(373): view('admin/sales/saleslist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->sales()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 19:50:11 --> Undefined array key "order_id"
+in APPPATH\Views\admin\sales\saleslist.php on line 327.
+ 1 APPPATH\Views\admin\sales\saleslist.php(327): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "order_id"', 'APPPATH\\Views\\admin\\sales\\saleslist.php', 327)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\sales\\saleslist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/sales/saleslist', [], true)
+ 5 APPPATH\Controllers\Admin.php(373): view('admin/sales/saleslist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->sales()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 19:50:28 --> Undefined array key "order_type"
+in APPPATH\Views\admin\sales\saleslist.php on line 329.
+ 1 APPPATH\Views\admin\sales\saleslist.php(329): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "order_type"', 'APPPATH\\Views\\admin\\sales\\saleslist.php', 329)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\sales\\saleslist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/sales/saleslist', [], true)
+ 5 APPPATH\Controllers\Admin.php(373): view('admin/sales/saleslist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->sales()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-17 19:51:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AS `total_order_amount`
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`f...' at line 1 in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FOR...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FOR...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FOR...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FOR...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(366): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->sales()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-06-17 19:51:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AS `total_order_amount`
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`f...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FORMAT(order_item.order_date, \'%M %e, %Y\') AS order_date_formatted, `order_item`.*, `order_item`.* AS `total_order_amount`
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`fk_order_id` = `orderdata`.`id`
+WHERE `order_status` = \'Completed\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FORMAT(order_item.order_date, \'%M %e, %Y\') AS order_date_formatted, `order_item`.*, `order_item`.* AS `total_order_amount`
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`fk_order_id` = `orderdata`.`id`
+WHERE `order_status` = \'Completed\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FORMAT(order_item.order_date, \'%M %e, %Y\') AS order_date_formatted, `order_item`.*, `order_item`.* AS `total_order_amount`
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`fk_order_id` = `orderdata`.`id`
+WHERE `order_status` = \'Completed\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(order_item.order_date, \'%M %e, %Y\') AS order_date_formatted, `order_item`.*, `order_item`.* AS `total_order_amount`
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`fk_order_id` = `orderdata`.`id`
+WHERE `order_status` = :order_status:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Admin.php(366): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->sales()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-17 19:51:20 --> mysqli_sql_exception: Unknown column 'AS' in 'field list' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FOR...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FOR...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FOR...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FOR...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(366): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->sales()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-06-17 19:51:20 --> Unknown column 'AS' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FORMAT(order_item.order_date, \'%M %e, %Y\') AS order_date_formatted, `order_item`.*, `order_item`.*, `AS` `total_order_amount`
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`fk_order_id` = `orderdata`.`id`
+WHERE `order_status` = \'Completed\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FORMAT(order_item.order_date, \'%M %e, %Y\') AS order_date_formatted, `order_item`.*, `order_item`.*, `AS` `total_order_amount`
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`fk_order_id` = `orderdata`.`id`
+WHERE `order_status` = \'Completed\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FORMAT(order_item.order_date, \'%M %e, %Y\') AS order_date_formatted, `order_item`.*, `order_item`.*, `AS` `total_order_amount`
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`fk_order_id` = `orderdata`.`id`
+WHERE `order_status` = \'Completed\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(order_item.order_date, \'%M %e, %Y\') AS order_date_formatted, `order_item`.*, `order_item`.*, `AS` `total_order_amount`
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`fk_order_id` = `orderdata`.`id`
+WHERE `order_status` = :order_status:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Admin.php(366): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->sales()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 19:51:43 --> Undefined array key "order_id"
+in APPPATH\Views\admin\sales\saleslist.php on line 327.
+ 1 APPPATH\Views\admin\sales\saleslist.php(327): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "order_id"', 'APPPATH\\Views\\admin\\sales\\saleslist.php', 327)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\sales\\saleslist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/sales/saleslist', [], true)
+ 5 APPPATH\Controllers\Admin.php(374): view('admin/sales/saleslist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->sales()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 19:52:23 --> Undefined array key "total_order_amount"
+in APPPATH\Views\admin\sales\saleslist.php on line 332.
+ 1 APPPATH\Views\admin\sales\saleslist.php(332): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "total_order_amount"', 'APPPATH\\Views\\admin\\sales\\saleslist.php', 332)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\sales\\saleslist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/sales/saleslist', [], true)
+ 5 APPPATH\Controllers\Admin.php(374): view('admin/sales/saleslist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->sales()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 20:10:51 --> Undefined array key "total_order_amount"
+in APPPATH\Controllers\Admin.php on line 217.
+ 1 APPPATH\Controllers\Admin.php(217): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "total_order_amount"', 'APPPATH\\Controllers\\Admin.php', 217)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-17 20:14:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AS total_combined_amount,
+    DATE_FORMAT(oi.order_date, '%Y-%m-%d') AS month...' at line 2 in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(o...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(o...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(o...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(198): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(o...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-17 20:14:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AS total_combined_amount,
+    DATE_FORMAT(oi.order_date, '%Y-%m-%d') AS month...' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(oi.item_name, \' - \', IFNULL(p.product_name, \'Unknown\')) AS item_product_name,
+    COALESCE((oi.item_qty * oi.item_amount + p.total_sum) AS total_combined_amount,
+    DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+    FROM order_item AS oi
+    JOIN orderdata AS od ON oi.fk_order_id = od.id
+    LEFT JOIN (SELECT product_name, SUM(total) AS total_sum FROM pos GROUP BY product_name) AS p ON p.product_name = oi.item_name
+    WHERE od.order_status = \'Completed\'
+    GROUP BY item_product_name, month_name', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(oi.item_name, \' - \', IFNULL(p.product_name, \'Unknown\')) AS item_product_name,
+    COALESCE((oi.item_qty * oi.item_amount + p.total_sum) AS total_combined_amount,
+    DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+    FROM order_item AS oi
+    JOIN orderdata AS od ON oi.fk_order_id = od.id
+    LEFT JOIN (SELECT product_name, SUM(total) AS total_sum FROM pos GROUP BY product_name) AS p ON p.product_name = oi.item_name
+    WHERE od.order_status = \'Completed\'
+    GROUP BY item_product_name, month_name')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(oi.item_name, \' - \', IFNULL(p.product_name, \'Unknown\')) AS item_product_name,
+    COALESCE((oi.item_qty * oi.item_amount + p.total_sum) AS total_combined_amount,
+    DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+    FROM order_item AS oi
+    JOIN orderdata AS od ON oi.fk_order_id = od.id
+    LEFT JOIN (SELECT product_name, SUM(total) AS total_sum FROM pos GROUP BY product_name) AS p ON p.product_name = oi.item_name
+    WHERE od.order_status = \'Completed\'
+    GROUP BY item_product_name, month_name')
+ 4 APPPATH\Controllers\Admin.php(198): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(oi.item_name, \' - \', IFNULL(p.product_name, \'Unknown\')) AS item_product_name,
+    COALESCE((oi.item_qty * oi.item_amount + p.total_sum) AS total_combined_amount,
+    DATE_FORMAT(oi.order_date, \'%Y-%m-%d\') AS month_name
+    FROM order_item AS oi
+    JOIN orderdata AS od ON oi.fk_order_id = od.id
+    LEFT JOIN (SELECT product_name, SUM(total) AS total_sum FROM pos GROUP BY product_name) AS p ON p.product_name = oi.item_name
+    WHERE od.order_status = \'Completed\'
+    GROUP BY item_product_name, month_name')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 20:18:40 --> Undefined array key "item_product_name"
+in APPPATH\Controllers\Admin.php on line 216.
+ 1 APPPATH\Controllers\Admin.php(216): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_product_name"', 'APPPATH\\Controllers\\Admin.php', 216)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-17 20:23:44 --> mysqli_sql_exception: Can't group on 'combined_dates' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(o...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(o...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(o...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(198): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(o...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-17 20:23:44 --> Can't group on 'combined_dates'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(oi.item_name, \' - \', IFNULL(p.product_name, \'Unknown\')) AS combined_name,
+    COALESCE((oi.item_qty * oi.item_amount) + p.total_sum, oi.item_qty * oi.item_amount) AS total_combined_amount,
+    CONCAT(oi.order_date, \' - \', MAX(p.created_at)) AS combined_dates
+    FROM order_item AS oi
+    JOIN orderdata AS od ON oi.fk_order_id = od.id
+    LEFT JOIN (SELECT product_name, SUM(total) AS total_sum, MAX(created_at) AS created_at FROM pos GROUP BY product_name) AS p ON p.product_name = oi.item_name
+    WHERE od.order_status = \'Completed\'
+    GROUP BY combined_name, combined_dates', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(oi.item_name, \' - \', IFNULL(p.product_name, \'Unknown\')) AS combined_name,
+    COALESCE((oi.item_qty * oi.item_amount) + p.total_sum, oi.item_qty * oi.item_amount) AS total_combined_amount,
+    CONCAT(oi.order_date, \' - \', MAX(p.created_at)) AS combined_dates
+    FROM order_item AS oi
+    JOIN orderdata AS od ON oi.fk_order_id = od.id
+    LEFT JOIN (SELECT product_name, SUM(total) AS total_sum, MAX(created_at) AS created_at FROM pos GROUP BY product_name) AS p ON p.product_name = oi.item_name
+    WHERE od.order_status = \'Completed\'
+    GROUP BY combined_name, combined_dates')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(oi.item_name, \' - \', IFNULL(p.product_name, \'Unknown\')) AS combined_name,
+    COALESCE((oi.item_qty * oi.item_amount) + p.total_sum, oi.item_qty * oi.item_amount) AS total_combined_amount,
+    CONCAT(oi.order_date, \' - \', MAX(p.created_at)) AS combined_dates
+    FROM order_item AS oi
+    JOIN orderdata AS od ON oi.fk_order_id = od.id
+    LEFT JOIN (SELECT product_name, SUM(total) AS total_sum, MAX(created_at) AS created_at FROM pos GROUP BY product_name) AS p ON p.product_name = oi.item_name
+    WHERE od.order_status = \'Completed\'
+    GROUP BY combined_name, combined_dates')
+ 4 APPPATH\Controllers\Admin.php(198): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(oi.item_name, \' - \', IFNULL(p.product_name, \'Unknown\')) AS combined_name,
+    COALESCE((oi.item_qty * oi.item_amount) + p.total_sum, oi.item_qty * oi.item_amount) AS total_combined_amount,
+    CONCAT(oi.order_date, \' - \', MAX(p.created_at)) AS combined_dates
+    FROM order_item AS oi
+    JOIN orderdata AS od ON oi.fk_order_id = od.id
+    LEFT JOIN (SELECT product_name, SUM(total) AS total_sum, MAX(created_at) AS created_at FROM pos GROUP BY product_name) AS p ON p.product_name = oi.item_name
+    WHERE od.order_status = \'Completed\'
+    GROUP BY combined_name, combined_dates')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 20:30:42 --> Undefined array key "item_product_name"
+in APPPATH\Controllers\Admin.php on line 215.
+ 1 APPPATH\Controllers\Admin.php(215): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_product_name"', 'APPPATH\\Controllers\\Admin.php', 215)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-17 20:35:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'p.total_sum, oi.item_qty * oi.item_amount) AS total_combined_amount,
+    CONC...' at line 2 in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(o...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(o...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(o...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(198): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(o...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-17 20:35:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'p.total_sum, oi.item_qty * oi.item_amount) AS total_combined_amount,
+    CONC...' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(oi.item_name, \' - \', IFNULL(p.product_name, \'Unknown\')) AS combined_name,
+    COALESCE((oi.item_qty * oi.item_amount)  p.total_sum, oi.item_qty * oi.item_amount) AS total_combined_amount,
+    CONCAT(oi.order_date, \' \', p.created_at) AS combined_dates
+    FROM order_item AS oi
+    JOIN orderdata AS od ON oi.fk_order_id = od.id
+    LEFT JOIN (SELECT product_name, SUM(total) AS total_sum, MAX(created_at) AS created_at FROM pos GROUP BY product_name) AS p ON p.product_name = oi.item_name
+    WHERE od.order_status = \'Completed\'
+    GROUP BY combined_name, combined_dates', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(oi.item_name, \' - \', IFNULL(p.product_name, \'Unknown\')) AS combined_name,
+    COALESCE((oi.item_qty * oi.item_amount)  p.total_sum, oi.item_qty * oi.item_amount) AS total_combined_amount,
+    CONCAT(oi.order_date, \' \', p.created_at) AS combined_dates
+    FROM order_item AS oi
+    JOIN orderdata AS od ON oi.fk_order_id = od.id
+    LEFT JOIN (SELECT product_name, SUM(total) AS total_sum, MAX(created_at) AS created_at FROM pos GROUP BY product_name) AS p ON p.product_name = oi.item_name
+    WHERE od.order_status = \'Completed\'
+    GROUP BY combined_name, combined_dates')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(oi.item_name, \' - \', IFNULL(p.product_name, \'Unknown\')) AS combined_name,
+    COALESCE((oi.item_qty * oi.item_amount)  p.total_sum, oi.item_qty * oi.item_amount) AS total_combined_amount,
+    CONCAT(oi.order_date, \' \', p.created_at) AS combined_dates
+    FROM order_item AS oi
+    JOIN orderdata AS od ON oi.fk_order_id = od.id
+    LEFT JOIN (SELECT product_name, SUM(total) AS total_sum, MAX(created_at) AS created_at FROM pos GROUP BY product_name) AS p ON p.product_name = oi.item_name
+    WHERE od.order_status = \'Completed\'
+    GROUP BY combined_name, combined_dates')
+ 4 APPPATH\Controllers\Admin.php(198): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(oi.item_name, \' - \', IFNULL(p.product_name, \'Unknown\')) AS combined_name,
+    COALESCE((oi.item_qty * oi.item_amount)  p.total_sum, oi.item_qty * oi.item_amount) AS total_combined_amount,
+    CONCAT(oi.order_date, \' \', p.created_at) AS combined_dates
+    FROM order_item AS oi
+    JOIN orderdata AS od ON oi.fk_order_id = od.id
+    LEFT JOIN (SELECT product_name, SUM(total) AS total_sum, MAX(created_at) AS created_at FROM pos GROUP BY product_name) AS p ON p.product_name = oi.item_name
+    WHERE od.order_status = \'Completed\'
+    GROUP BY combined_name, combined_dates')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-17 20:51:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p....' at line 2 in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(M...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(M...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(M...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(263): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(M...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-17 20:51:44 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p....' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR)), \' \', YEAR(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR))) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR)), \' \', YEAR(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR))) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR)), \' \', YEAR(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR))) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 4 APPPATH\Controllers\Admin.php(263): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR)), \' \', YEAR(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR))) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-17 20:52:07 --> mysqli_sql_exception: Operand should contain 1 column(s) in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(M...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(M...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(M...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(263): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(M...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-17 20:52:07 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR)), \' \', YEAR(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR))) AS month_year,
+        SUM(o.order_amount) + ((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR)), \' \', YEAR(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR))) AS month_year,
+        SUM(o.order_amount) + ((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR)), \' \', YEAR(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR))) AS month_year,
+        SUM(o.order_amount) + ((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 4 APPPATH\Controllers\Admin.php(263): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR)), \' \', YEAR(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR))) AS month_year,
+        SUM(o.order_amount) + ((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-17 20:52:14 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p....' at line 2 in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(M...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(M...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(M...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(263): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(M...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-17 20:52:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p....' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR)), \' \', YEAR(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR))) AS month_year,
+        SUM(o.order_amount) + ((SELECT SUM(p.total) FROM pos p) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR)), \' \', YEAR(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR))) AS month_year,
+        SUM(o.order_amount) + ((SELECT SUM(p.total) FROM pos p) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR)), \' \', YEAR(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR))) AS month_year,
+        SUM(o.order_amount) + ((SELECT SUM(p.total) FROM pos p) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 4 APPPATH\Controllers\Admin.php(263): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR)), \' \', YEAR(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR))) AS month_year,
+        SUM(o.order_amount) + ((SELECT SUM(p.total) FROM pos p) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-17 20:55:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = ...' at line 2 in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(M...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(M...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(M...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(263): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(M...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-17 20:55:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = ...' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR)), \' \', YEAR(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR))) AS month_year,
+        (SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR)), \' \', YEAR(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR))) AS month_year,
+        (SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR)), \' \', YEAR(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR))) AS month_year,
+        (SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 4 APPPATH\Controllers\Admin.php(263): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR)), \' \', YEAR(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR))) AS month_year,
+        (SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-17 20:55:46 --> mysqli_sql_exception: Operand should contain 1 column(s) in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(M...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(M...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(M...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(263): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(M...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-17 20:55:46 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR)), \' \', YEAR(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR))) AS month_year,
+        SUM(o.order_amount) + ((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR)), \' \', YEAR(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR))) AS month_year,
+        SUM(o.order_amount) + ((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR)), \' \', YEAR(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR))) AS month_year,
+        SUM(o.order_amount) + ((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 4 APPPATH\Controllers\Admin.php(263): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR)), \' \', YEAR(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR))) AS month_year,
+        SUM(o.order_amount) + ((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-17 20:56:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        
+        GROU...' at line 4 in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(M...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(M...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(M...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(263): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(M...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-17 20:56:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        
+        GROU...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR)), \' \', YEAR(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR))) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        WHERE o.order_status = \'Completed\'
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        
+        GROUP BY month_year', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR)), \' \', YEAR(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR))) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        WHERE o.order_status = \'Completed\'
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        
+        GROUP BY month_year')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR)), \' \', YEAR(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR))) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        WHERE o.order_status = \'Completed\'
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        
+        GROUP BY month_year')
+ 4 APPPATH\Controllers\Admin.php(263): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR)), \' \', YEAR(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR))) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        WHERE o.order_status = \'Completed\'
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        
+        GROUP BY month_year')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-17 21:00:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'p.created_at)), ' ', YEAR(DATE_ADD(o.order_date,p.created_at)) AS month_year,...' at line 1 in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(M...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(M...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(M...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(263): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(M...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-17 21:00:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'p.created_at)), ' ', YEAR(DATE_ADD(o.order_date,p.created_at)) AS month_year,...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, p.created_at)), \' \', YEAR(DATE_ADD(o.order_date,p.created_at)) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, p.created_at)), \' \', YEAR(DATE_ADD(o.order_date,p.created_at)) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, p.created_at)), \' \', YEAR(DATE_ADD(o.order_date,p.created_at)) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 4 APPPATH\Controllers\Admin.php(263): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, p.created_at)), \' \', YEAR(DATE_ADD(o.order_date,p.created_at)) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-17 21:00:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'p.created_at), ' ', YEAR(DATE_ADD(o.order_date,p.created_at)) AS month_year,
+...' at line 1 in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(M...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(M...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(M...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(263): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(M...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-17 21:00:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'p.created_at), ' ', YEAR(DATE_ADD(o.order_date,p.created_at)) AS month_year,
+...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, p.created_at), \' \', YEAR(DATE_ADD(o.order_date,p.created_at)) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, p.created_at), \' \', YEAR(DATE_ADD(o.order_date,p.created_at)) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, p.created_at), \' \', YEAR(DATE_ADD(o.order_date,p.created_at)) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 4 APPPATH\Controllers\Admin.php(263): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, p.created_at), \' \', YEAR(DATE_ADD(o.order_date,p.created_at)) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-17 21:00:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '), p.created_at), ' ', YEAR(DATE_ADD(o.order_date,p.created_at)) AS month_yea...' at line 1 in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(M...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(M...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(M...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(263): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(M...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-17 21:00:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '), p.created_at), ' ', YEAR(DATE_ADD(o.order_date,p.created_at)) AS month_yea...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date), p.created_at), \' \', YEAR(DATE_ADD(o.order_date,p.created_at)) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date), p.created_at), \' \', YEAR(DATE_ADD(o.order_date,p.created_at)) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date), p.created_at), \' \', YEAR(DATE_ADD(o.order_date,p.created_at)) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 4 APPPATH\Controllers\Admin.php(263): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date), p.created_at), \' \', YEAR(DATE_ADD(o.order_date,p.created_at)) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-17 21:00:34 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '), p.created_at), ' ', YEAR(DATE_ADD(o.order_date),p.created_at)) AS month_ye...' at line 1 in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(M...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(M...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(M...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(263): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(M...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-17 21:00:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '), p.created_at), ' ', YEAR(DATE_ADD(o.order_date),p.created_at)) AS month_ye...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date), p.created_at), \' \', YEAR(DATE_ADD(o.order_date),p.created_at)) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date), p.created_at), \' \', YEAR(DATE_ADD(o.order_date),p.created_at)) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date), p.created_at), \' \', YEAR(DATE_ADD(o.order_date),p.created_at)) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 4 APPPATH\Controllers\Admin.php(263): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date), p.created_at), \' \', YEAR(DATE_ADD(o.order_date),p.created_at)) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-17 21:00:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '), p.created_at), ' ', YEAR(DATE_ADD(o.order_date),p.created_at) AS month_yea...' at line 1 in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(M...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(M...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(M...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(263): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(M...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-17 21:00:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '), p.created_at), ' ', YEAR(DATE_ADD(o.order_date),p.created_at) AS month_yea...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date), p.created_at), \' \', YEAR(DATE_ADD(o.order_date),p.created_at) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date), p.created_at), \' \', YEAR(DATE_ADD(o.order_date),p.created_at) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date), p.created_at), \' \', YEAR(DATE_ADD(o.order_date),p.created_at) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 4 APPPATH\Controllers\Admin.php(263): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date), p.created_at), \' \', YEAR(DATE_ADD(o.order_date),p.created_at) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-17 21:03:55 --> mysqli_sql_exception: Can't group on 'total_amount' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(M...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(M...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(M...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(263): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(M...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-17 21:03:55 --> Can't group on 'total_amount'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(MONTHNAME(DATE_FORMAT(o.order_date, \'%Y-%m-%d\')), \' \', YEAR(DATE_FORMAT(o.order_date, \'%Y-%m-%d\'))) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year,total_amount', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(MONTHNAME(DATE_FORMAT(o.order_date, \'%Y-%m-%d\')), \' \', YEAR(DATE_FORMAT(o.order_date, \'%Y-%m-%d\'))) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year,total_amount')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(MONTHNAME(DATE_FORMAT(o.order_date, \'%Y-%m-%d\')), \' \', YEAR(DATE_FORMAT(o.order_date, \'%Y-%m-%d\'))) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year,total_amount')
+ 4 APPPATH\Controllers\Admin.php(263): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(MONTHNAME(DATE_FORMAT(o.order_date, \'%Y-%m-%d\')), \' \', YEAR(DATE_FORMAT(o.order_date, \'%Y-%m-%d\'))) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year,total_amount')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-17 21:09:54 --> mysqli_sql_exception: Unknown column 'p.order_id' in 'on clause' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(M...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(M...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(M...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(263): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(M...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-17 21:09:54 --> Unknown column 'p.order_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR)), \' \', YEAR(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR))) AS month_year,
+        SUM(o.order_amount) + COALESCE(SUM(p.total), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.order_id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR)), \' \', YEAR(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR))) AS month_year,
+        SUM(o.order_amount) + COALESCE(SUM(p.total), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.order_id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR)), \' \', YEAR(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR))) AS month_year,
+        SUM(o.order_amount) + COALESCE(SUM(p.total), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.order_id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 4 APPPATH\Controllers\Admin.php(263): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR)), \' \', YEAR(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR))) AS month_year,
+        SUM(o.order_amount) + COALESCE(SUM(p.total), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.order_id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-17 21:14:41 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'CONCAT(MONTHNAME(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR)), '...' at line 1 in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('CONCAT(MONTHNAM...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('CONCAT(MONTHNAM...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('CONCAT(MONTHNAM...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(264): CodeIgniter\Database\BaseConnection->query('CONCAT(MONTHNAM...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-17 21:14:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'CONCAT(MONTHNAME(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR)), '...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('CONCAT(MONTHNAME(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR)), \' \', YEAR(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR))) AS month_year, SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('CONCAT(MONTHNAME(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR)), \' \', YEAR(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR))) AS month_year, SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('CONCAT(MONTHNAME(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR)), \' \', YEAR(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR))) AS month_year, SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount')
+ 4 APPPATH\Controllers\Admin.php(264): CodeIgniter\Database\BaseConnection->query('CONCAT(MONTHNAME(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR)), \' \', YEAR(DATE_ADD(o.order_date, INTERVAL HOUR(p.created_at) HOUR))) AS month_year, SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-17 21:41:35 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '), ' ', YEAR(DATE_ADD(o.order_date)) AS month_year,
+        SUM(o.order_amoun...' at line 1 in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(M...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(M...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(M...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(263): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(M...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-17 21:41:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '), ' ', YEAR(DATE_ADD(o.order_date)) AS month_year,
+        SUM(o.order_amoun...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date), \' \', YEAR(DATE_ADD(o.order_date)) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date), \' \', YEAR(DATE_ADD(o.order_date)) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date), \' \', YEAR(DATE_ADD(o.order_date)) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 4 APPPATH\Controllers\Admin.php(263): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(MONTHNAME(DATE_ADD(o.order_date), \' \', YEAR(DATE_ADD(o.order_date)) AS month_year,
+        SUM(o.order_amount) + COALESCE((SELECT SUM(p.total) FROM pos p), 0) AS total_amount
+        FROM orderdata o
+        LEFT JOIN pos p ON o.id = p.id
+        WHERE o.order_status = \'Completed\'
+        GROUP BY month_year')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-17 21:47:56 --> mysqli_sql_exception: Unknown column 'p.date' in 'field list' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(M...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(M...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(M...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(262): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(M...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-17 21:47:56 --> Unknown column 'p.date' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(MONTHNAME(o.order_date), \' \', YEAR(o.order_date)) AS month_year,
+    (o.order_amount + p.total) AS combined_total,
+    CONCAT(p.date, \' \', o.order_date) AS combined_date
+    FROM orderdata o
+    LEFT JOIN pos p ON p.order_id = o.order_id
+    WHERE o.order_status = \'Completed\'
+    GROUP BY month_year', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(MONTHNAME(o.order_date), \' \', YEAR(o.order_date)) AS month_year,
+    (o.order_amount + p.total) AS combined_total,
+    CONCAT(p.date, \' \', o.order_date) AS combined_date
+    FROM orderdata o
+    LEFT JOIN pos p ON p.order_id = o.order_id
+    WHERE o.order_status = \'Completed\'
+    GROUP BY month_year')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(MONTHNAME(o.order_date), \' \', YEAR(o.order_date)) AS month_year,
+    (o.order_amount + p.total) AS combined_total,
+    CONCAT(p.date, \' \', o.order_date) AS combined_date
+    FROM orderdata o
+    LEFT JOIN pos p ON p.order_id = o.order_id
+    WHERE o.order_status = \'Completed\'
+    GROUP BY month_year')
+ 4 APPPATH\Controllers\Admin.php(262): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(MONTHNAME(o.order_date), \' \', YEAR(o.order_date)) AS month_year,
+    (o.order_amount + p.total) AS combined_total,
+    CONCAT(p.date, \' \', o.order_date) AS combined_date
+    FROM orderdata o
+    LEFT JOIN pos p ON p.order_id = o.order_id
+    WHERE o.order_status = \'Completed\'
+    GROUP BY month_year')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-17 21:48:13 --> mysqli_sql_exception: Unknown column 'p.order_id' in 'on clause' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(M...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(M...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(M...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(262): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(M...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-17 21:48:13 --> Unknown column 'p.order_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(MONTHNAME(o.order_date), \' \', YEAR(o.order_date)) AS month_year,
+    (o.order_amount + p.total) AS combined_total,
+    CONCAT(p.created_at, \' \', o.order_date) AS combined_date
+    FROM orderdata o
+    LEFT JOIN pos p ON p.order_id = o.order_id
+    WHERE o.order_status = \'Completed\'
+    GROUP BY month_year', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(MONTHNAME(o.order_date), \' \', YEAR(o.order_date)) AS month_year,
+    (o.order_amount + p.total) AS combined_total,
+    CONCAT(p.created_at, \' \', o.order_date) AS combined_date
+    FROM orderdata o
+    LEFT JOIN pos p ON p.order_id = o.order_id
+    WHERE o.order_status = \'Completed\'
+    GROUP BY month_year')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(MONTHNAME(o.order_date), \' \', YEAR(o.order_date)) AS month_year,
+    (o.order_amount + p.total) AS combined_total,
+    CONCAT(p.created_at, \' \', o.order_date) AS combined_date
+    FROM orderdata o
+    LEFT JOIN pos p ON p.order_id = o.order_id
+    WHERE o.order_status = \'Completed\'
+    GROUP BY month_year')
+ 4 APPPATH\Controllers\Admin.php(262): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(MONTHNAME(o.order_date), \' \', YEAR(o.order_date)) AS month_year,
+    (o.order_amount + p.total) AS combined_total,
+    CONCAT(p.created_at, \' \', o.order_date) AS combined_date
+    FROM orderdata o
+    LEFT JOIN pos p ON p.order_id = o.order_id
+    WHERE o.order_status = \'Completed\'
+    GROUP BY month_year')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-17 21:48:15 --> mysqli_sql_exception: Unknown column 'p.order_id' in 'on clause' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(M...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(M...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(M...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(262): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(M...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-17 21:48:15 --> Unknown column 'p.order_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(MONTHNAME(o.order_date), \' \', YEAR(o.order_date)) AS month_year,
+    (o.order_amount + p.total) AS combined_total,
+    CONCAT(p.created_at, \' \', o.order_date) AS combined_date
+    FROM orderdata o
+    LEFT JOIN pos p ON p.order_id = o.order_id
+    WHERE o.order_status = \'Completed\'
+    GROUP BY month_year', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(MONTHNAME(o.order_date), \' \', YEAR(o.order_date)) AS month_year,
+    (o.order_amount + p.total) AS combined_total,
+    CONCAT(p.created_at, \' \', o.order_date) AS combined_date
+    FROM orderdata o
+    LEFT JOIN pos p ON p.order_id = o.order_id
+    WHERE o.order_status = \'Completed\'
+    GROUP BY month_year')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(MONTHNAME(o.order_date), \' \', YEAR(o.order_date)) AS month_year,
+    (o.order_amount + p.total) AS combined_total,
+    CONCAT(p.created_at, \' \', o.order_date) AS combined_date
+    FROM orderdata o
+    LEFT JOIN pos p ON p.order_id = o.order_id
+    WHERE o.order_status = \'Completed\'
+    GROUP BY month_year')
+ 4 APPPATH\Controllers\Admin.php(262): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(MONTHNAME(o.order_date), \' \', YEAR(o.order_date)) AS month_year,
+    (o.order_amount + p.total) AS combined_total,
+    CONCAT(p.created_at, \' \', o.order_date) AS combined_date
+    FROM orderdata o
+    LEFT JOIN pos p ON p.order_id = o.order_id
+    WHERE o.order_status = \'Completed\'
+    GROUP BY month_year')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 21:58:48 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\dashboard.php on line 427.
+ 1 APPPATH\Views\admin\dashboard.php(427): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\admin\\dashboard.php', 427)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(312): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-17 22:00:12 --> mysqli_sql_exception: Unknown column 'p.pos_date' in 'field list' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(M...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(M...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(M...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(279): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(M...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-17 22:00:12 --> Unknown column 'p.pos_date' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(MONTHNAME(p.pos_date), \' \', YEAR(p.pos_date)) AS month_year,
+        SUM(p.amount) AS pos_total
+        FROM pos p
+        GROUP BY month_year', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(MONTHNAME(p.pos_date), \' \', YEAR(p.pos_date)) AS month_year,
+        SUM(p.amount) AS pos_total
+        FROM pos p
+        GROUP BY month_year')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(MONTHNAME(p.pos_date), \' \', YEAR(p.pos_date)) AS month_year,
+        SUM(p.amount) AS pos_total
+        FROM pos p
+        GROUP BY month_year')
+ 4 APPPATH\Controllers\Admin.php(279): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(MONTHNAME(p.pos_date), \' \', YEAR(p.pos_date)) AS month_year,
+        SUM(p.amount) AS pos_total
+        FROM pos p
+        GROUP BY month_year')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 22:01:21 --> Undefined variable $barchart
+in APPPATH\Views\admin\dashboard.php on line 425.
+ 1 APPPATH\Views\admin\dashboard.php(425): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $barchart', 'APPPATH\\Views\\admin\\dashboard.php', 425)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(319): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 22:01:43 --> Undefined variable $barchart
+in APPPATH\Views\admin\dashboard.php on line 425.
+ 1 APPPATH\Views\admin\dashboard.php(425): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $barchart', 'APPPATH\\Views\\admin\\dashboard.php', 425)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(319): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 22:02:07 --> Undefined variable $posTotals
+in APPPATH\Views\admin\dashboard.php on line 428.
+ 1 APPPATH\Views\admin\dashboard.php(428): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $posTotals', 'APPPATH\\Views\\admin\\dashboard.php', 428)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(319): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 22:02:26 --> Undefined variable $month
+in APPPATH\Views\admin\dashboard.php on line 653.
+ 1 APPPATH\Views\admin\dashboard.php(653): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $month', 'APPPATH\\Views\\admin\\dashboard.php', 653)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(320): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 22:02:50 --> Undefined variable $amount
+in APPPATH\Views\admin\dashboard.php on line 656.
+ 1 APPPATH\Views\admin\dashboard.php(656): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $amount', 'APPPATH\\Views\\admin\\dashboard.php', 656)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(320): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 22:23:57 --> Call to undefined method App\Models\Order_model::sumoforderthismonth
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Admin.php(193): CodeIgniter\Model->__call('sumoforderthismonth', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 22:47:31 --> Undefined array key "ids"
+in APPPATH\Views\home\checkout.php on line 77.
+ 1 APPPATH\Views\home\checkout.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ids"', 'APPPATH\\Views\\home\\checkout.php', 77)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\checkout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/checkout', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/checkout')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(573): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->checkout()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 22:50:33 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 667.
+ 1 APPPATH\Controllers\Home.php(667): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 667)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 22:50:35 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 667.
+ 1 APPPATH\Controllers\Home.php(667): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 667)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 22:50:36 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 667.
+ 1 APPPATH\Controllers\Home.php(667): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 667)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 22:50:36 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 667.
+ 1 APPPATH\Controllers\Home.php(667): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 667)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 22:50:36 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 667.
+ 1 APPPATH\Controllers\Home.php(667): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 667)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 22:50:36 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 667.
+ 1 APPPATH\Controllers\Home.php(667): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 667)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 22:50:38 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 667.
+ 1 APPPATH\Controllers\Home.php(667): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 667)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 22:50:38 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 667.
+ 1 APPPATH\Controllers\Home.php(667): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 667)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 22:52:25 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 667.
+ 1 APPPATH\Controllers\Home.php(667): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 667)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 22:52:27 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 667.
+ 1 APPPATH\Controllers\Home.php(667): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 667)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 22:52:28 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 667.
+ 1 APPPATH\Controllers\Home.php(667): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 667)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 23:33:01 --> Undefined variable $month
+in APPPATH\Views\admin\dashboard.php on line 649.
+ 1 APPPATH\Views\admin\dashboard.php(649): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $month', 'APPPATH\\Views\\admin\\dashboard.php', 649)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(294): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 23:46:02 --> Undefined array key "product_id"
+in APPPATH\Views\pos\print_view.php on line 97.
+ 1 APPPATH\Views\pos\print_view.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_id"', 'APPPATH\\Views\\pos\\print_view.php', 97)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pos\\print_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('pos/print_view', [], true)
+ 5 APPPATH\Controllers\POS.php(87): view('pos/print_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\POS->printView()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\POS))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-17 23:48:05 --> Undefined array key "product_id"
+in APPPATH\Views\pos\print_view.php on line 97.
+ 1 APPPATH\Views\pos\print_view.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_id"', 'APPPATH\\Views\\pos\\print_view.php', 97)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pos\\print_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('pos/print_view', [], true)
+ 5 APPPATH\Controllers\POS.php(88): view('pos/print_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\POS->printView()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\POS))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

@@ -1,0 +1,180 @@
+ERROR - 2024-04-26 06:08:26 --> mysqli_sql_exception: Incorrect DATE value: '21233-02-26' in C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\tamtechhub_inventory\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\tamtechhub_inventory\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\tamtechhub_inventory\app\Controllers\Payroll.php(257): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+#8 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#9 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-04-26 06:08:26 --> Incorrect DATE value: '21233-02-26'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `attendance`
+WHERE `agent_id` = \'EITB012\'
+AND `date` >= \'2024-01-18\'
+AND `date` <= \'21233-02-26\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `attendance`
+WHERE `agent_id` = \'EITB012\'
+AND `date` >= \'2024-01-18\'
+AND `date` <= \'21233-02-26\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `attendance`
+WHERE `agent_id` = \'EITB012\'
+AND `date` >= \'2024-01-18\'
+AND `date` <= \'21233-02-26\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `attendance`
+WHERE `agent_id` = :agent_id:
+AND `date` >= :date:
+AND `date` <= :date.1:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Payroll.php(257): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-04-26 06:08:26 --> mysqli_sql_exception: Incorrect DATE value: '21233-02-26' in C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\tamtechhub_inventory\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\tamtechhub_inventory\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\tamtechhub_inventory\app\Controllers\Payroll.php(257): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+#8 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#9 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-04-26 06:08:26 --> Incorrect DATE value: '21233-02-26'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `attendance`
+WHERE `agent_id` = \'EITB012\'
+AND `date` >= \'2024-01-18\'
+AND `date` <= \'21233-02-26\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `attendance`
+WHERE `agent_id` = \'EITB012\'
+AND `date` >= \'2024-01-18\'
+AND `date` <= \'21233-02-26\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `attendance`
+WHERE `agent_id` = \'EITB012\'
+AND `date` >= \'2024-01-18\'
+AND `date` <= \'21233-02-26\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `attendance`
+WHERE `agent_id` = :agent_id:
+AND `date` >= :date:
+AND `date` <= :date.1:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Payroll.php(257): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-04-26 06:08:26 --> mysqli_sql_exception: Incorrect DATE value: '21233-02-26' in C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\tamtechhub_inventory\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\tamtechhub_inventory\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\tamtechhub_inventory\app\Controllers\Payroll.php(257): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+#8 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#9 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-04-26 06:08:26 --> Incorrect DATE value: '21233-02-26'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `attendance`
+WHERE `agent_id` = \'EITB012\'
+AND `date` >= \'2024-01-18\'
+AND `date` <= \'21233-02-26\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `attendance`
+WHERE `agent_id` = \'EITB012\'
+AND `date` >= \'2024-01-18\'
+AND `date` <= \'21233-02-26\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `attendance`
+WHERE `agent_id` = \'EITB012\'
+AND `date` >= \'2024-01-18\'
+AND `date` <= \'21233-02-26\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `attendance`
+WHERE `agent_id` = :agent_id:
+AND `date` >= :date:
+AND `date` <= :date.1:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Payroll.php(257): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-04-26 06:08:27 --> mysqli_sql_exception: Incorrect DATE value: '21233-02-26' in C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\tamtechhub_inventory\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\tamtechhub_inventory\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\tamtechhub_inventory\app\Controllers\Payroll.php(257): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+#8 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#9 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-04-26 06:08:27 --> Incorrect DATE value: '21233-02-26'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `attendance`
+WHERE `agent_id` = \'EITB012\'
+AND `date` >= \'2024-01-18\'
+AND `date` <= \'21233-02-26\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `attendance`
+WHERE `agent_id` = \'EITB012\'
+AND `date` >= \'2024-01-18\'
+AND `date` <= \'21233-02-26\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `attendance`
+WHERE `agent_id` = \'EITB012\'
+AND `date` >= \'2024-01-18\'
+AND `date` <= \'21233-02-26\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `attendance`
+WHERE `agent_id` = :agent_id:
+AND `date` >= :date:
+AND `date` <= :date.1:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Payroll.php(257): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

@@ -1,0 +1,200 @@
+CRITICAL - 2024-04-03 01:39:01 --> syntax error, unexpected token ")"
+in APPPATH\Controllers\Home.php on line 1103.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-03 03:34:57 --> whereIn() expects $values to be of type array or closure
+in SYSTEMPATH\Database\BaseBuilder.php on line 907.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(789): CodeIgniter\Database\BaseBuilder->_whereIn('id', '1', false, 'AND ', null)
+ 2 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->whereIn('id', '1')
+ 3 APPPATH\Controllers\Home.php(1134): CodeIgniter\Model->__call('whereIn', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->updates_monitor_agent('16')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-03 19:31:09 --> whereIn() expects $values to be of type array or closure
+in SYSTEMPATH\Database\BaseBuilder.php on line 907.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(789): CodeIgniter\Database\BaseBuilder->_whereIn('monitor_one_fk', '1', false, 'AND ', null)
+ 2 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->whereIn('monitor_one_fk', '1')
+ 3 APPPATH\Controllers\Home.php(1182): CodeIgniter\Model->__call('whereIn', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->updates_monitor_agent('21')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-04-03 19:31:17 --> mysqli_sql_exception: Unknown column 'monitor_one_fk' in 'where clause' in C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `monitor...', 0)
+#1 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `monitor...')
+#2 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `monitor...')
+#3 C:\laragon\www\tamtechhub_inventory\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `monitor...', Array, false)
+#4 C:\laragon\www\tamtechhub_inventory\system\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\tamtechhub_inventory\system\BaseModel.php(886): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\laragon\www\tamtechhub_inventory\system\Model.php(693): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\laragon\www\tamtechhub_inventory\app\Controllers\Home.php(1184): CodeIgniter\Model->update()
+#8 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Home->updates_monitor_agent('21')
+#9 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2024-04-03 19:31:17 --> Unknown column 'monitor_one_fk' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `monitor` SET `monitor_status` = \'Unassigned\'
+WHERE `monitor_one_fk` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `monitor` SET `monitor_status` = \'Unassigned\'
+WHERE `monitor_one_fk` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `monitor` SET `monitor_status` = \'Unassigned\'
+WHERE `monitor_one_fk` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `monitor` SET `monitor_status` = :monitor_status:
+WHERE `monitor_one_fk` = :monitor_one_fk:', [...], false)
+ 5 SYSTEMPATH\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(886): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Controllers\Home.php(1184): CodeIgniter\Model->update()
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->updates_monitor_agent('21')
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-03 20:12:09 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 867.
+ 1 SYSTEMPATH\BaseModel.php(867): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\Account.php(119): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->verify_account('8ZLV14QRp5lOY6A3EuJt7aWgDxFejwCiNmBSHMnf9UyrcsvGhboTKPzI2Xkdq0')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-03 20:23:15 --> syntax error, unexpected token "->"
+in APPPATH\Controllers\Account.php on line 124.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Account.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Account')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Account')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Account', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-03 20:23:28 --> Call to undefined method CodeIgniter\Session\Session::with()
+in APPPATH\Controllers\Account.php on line 131.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->verify_account('S1mrw06lL8JpzBodWT2e47YQN9siOj5GZXnqbthAVKyxDc3uHfvEPaMgIRFUkC')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-03 20:24:15 --> syntax error, unexpected token "return"
+in APPPATH\Controllers\Account.php on line 134.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Account.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Account')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Account')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Account', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-03 20:24:43 --> syntax error, unexpected token "return"
+in APPPATH\Controllers\Account.php on line 134.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Account.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Account')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Account')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Account', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-03 21:47:56 --> Invalid file: admin/agent_list_viewers.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/agent_list_viewers.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/agent_list_viewers', [], true)
+ 3 APPPATH\Controllers\Viewers.php(25): view('admin/agent_list_viewers', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Viewers->agent_list_viewers()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Viewers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-03 21:52:04 --> Undefined variable $session
+in APPPATH\Views\admin\dashboard.php on line 20.
+ 1 APPPATH\Views\admin\dashboard.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Views\\admin\\dashboard.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Home.php(85): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-03 21:52:30 --> Call to undefined method CodeIgniter\Session\Session::isLoggedIn()
+in APPPATH\Views\admin\dashboard.php on line 20.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 4 APPPATH\Controllers\Home.php(85): view('admin/dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-03 21:57:08 --> Class "App\Controllers\Headset_model" not found
+in APPPATH\Controllers\Viewers.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Viewers->views_dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Viewers))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-03 22:03:22 --> Undefined variable $count_unassigned
+in APPPATH\Views\viewers\views_cpu.php on line 201.
+ 1 APPPATH\Views\viewers\views_cpu.php(201): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $count_unassigned', 'APPPATH\\Views\\viewers\\views_cpu.php', 201)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\viewers\\views_cpu.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('viewers/views_cpu', [], true)
+ 5 APPPATH\Controllers\Viewers.php(84): view('viewers/views_cpu', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Viewers->cpu_list_viewers()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Viewers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-03 22:08:43 --> Undefined variable $cpu_list
+in APPPATH\Views\viewers\views_cpu.php on line 172.
+ 1 APPPATH\Views\viewers\views_cpu.php(172): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cpu_list', 'APPPATH\\Views\\viewers\\views_cpu.php', 172)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\viewers\\views_cpu.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('viewers/views_cpu', [], true)
+ 5 APPPATH\Controllers\Viewers.php(112): view('viewers/views_cpu', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Viewers->headset_list_viewers()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Viewers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-03 22:08:54 --> Undefined variable $cpu_list
+in APPPATH\Views\viewers\views_cpu.php on line 172.
+ 1 APPPATH\Views\viewers\views_cpu.php(172): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cpu_list', 'APPPATH\\Views\\viewers\\views_cpu.php', 172)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\viewers\\views_cpu.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('viewers/views_cpu', [], true)
+ 5 APPPATH\Controllers\Viewers.php(112): view('viewers/views_cpu', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Viewers->headset_list_viewers()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Viewers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-03 22:08:55 --> Undefined variable $cpu_list
+in APPPATH\Views\viewers\views_cpu.php on line 172.
+ 1 APPPATH\Views\viewers\views_cpu.php(172): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cpu_list', 'APPPATH\\Views\\viewers\\views_cpu.php', 172)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\viewers\\views_cpu.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('viewers/views_cpu', [], true)
+ 5 APPPATH\Controllers\Viewers.php(112): view('viewers/views_cpu', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Viewers->headset_list_viewers()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Viewers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

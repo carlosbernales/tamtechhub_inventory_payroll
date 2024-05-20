@@ -1,0 +1,35 @@
+ERROR - 2023-09-04 22:16:04 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `stocks`...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `stocks`...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `stocks`...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `stocks`...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(886): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(693): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Stocks.php(282): CodeIgniter\Model->update('4', Array)
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Stocks->edit_stocks('4')
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stocks))
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-09-04 22:16:04 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `stocks` SET `fix_stock_qty` = \'12\', `stock_price` = \'50\', `updated_at` = \'2023-09-04 22:16:04\'
+WHERE `stocks`.`id` IN (\'4\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `stocks` SET `fix_stock_qty` = \'12\', `stock_price` = \'50\', `updated_at` = \'2023-09-04 22:16:04\'
+WHERE `stocks`.`id` IN (\'4\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `stocks` SET `fix_stock_qty` = \'12\', `stock_price` = \'50\', `updated_at` = \'2023-09-04 22:16:04\'
+WHERE `stocks`.`id` IN (\'4\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `stocks` SET `fix_stock_qty` = :fix_stock_qty:, `stock_price` = :stock_price:, `updated_at` = :updated_at:
+WHERE `stocks`.`id` IN :stocks.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(886): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Stocks.php(282): CodeIgniter\Model->update('4', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Stocks->edit_stocks('4')
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stocks))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

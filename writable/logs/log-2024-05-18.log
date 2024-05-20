@@ -1,0 +1,777 @@
+ERROR - 2024-05-18 20:56:23 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'tamtech_inventory.headset.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\inventory\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\inventory\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\laragon\www\inventory\app\Controllers\Home.php(121): CodeIgniter\Model->countAllResults()
+#6 C:\laragon\www\inventory\system\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+#7 C:\laragon\www\inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2024-05-18 20:56:23 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'tamtech_inventory.headset.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `headset`
+GROUP BY `equip_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `headset`
+GROUP BY `equip_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `headset`
+GROUP BY `equip_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `headset`
+GROUP BY `equip_id`
+) CI_count_all_results', [], false)
+ 5 SYSTEMPATH\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Home.php(121): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-05-18 20:57:30 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'tamtech_inventory.keyboard.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\inventory\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\inventory\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\laragon\www\inventory\app\Controllers\Home.php(121): CodeIgniter\Model->countAllResults()
+#6 C:\laragon\www\inventory\system\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+#7 C:\laragon\www\inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2024-05-18 20:57:30 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'tamtech_inventory.keyboard.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `keyboard`
+GROUP BY `keyboard_equip_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `keyboard`
+GROUP BY `keyboard_equip_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `keyboard`
+GROUP BY `keyboard_equip_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `keyboard`
+GROUP BY `keyboard_equip_id`
+) CI_count_all_results', [], false)
+ 5 SYSTEMPATH\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Home.php(121): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-18 20:57:40 --> Undefined variable $count_cpu
+in APPPATH\Views\admin\dashboard.php on line 195.
+ 1 APPPATH\Views\admin\dashboard.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $count_cpu', 'APPPATH\\Views\\admin\\dashboard.php', 195)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Home.php(124): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-05-18 20:57:54 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'tamtech_inventory.headset.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\inventory\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\inventory\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\laragon\www\inventory\app\Controllers\Home.php(121): CodeIgniter\Model->countAllResults()
+#6 C:\laragon\www\inventory\system\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+#7 C:\laragon\www\inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2024-05-18 20:57:54 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'tamtech_inventory.headset.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `headset`
+GROUP BY `equip_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `headset`
+GROUP BY `equip_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `headset`
+GROUP BY `equip_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `headset`
+GROUP BY `equip_id`
+) CI_count_all_results', [], false)
+ 5 SYSTEMPATH\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Home.php(121): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-18 21:01:24 --> Undefined array key 1
+in APPPATH\Controllers\Home.php on line 2666.
+ 1 APPPATH\Controllers\Home.php(2666): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Home.php', 2666)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->get_agent_and_mouse_details()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-18 21:01:28 --> Undefined array key 1
+in APPPATH\Controllers\Home.php on line 2666.
+ 1 APPPATH\Controllers\Home.php(2666): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Home.php', 2666)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->get_agent_and_mouse_details()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-18 21:09:29 --> Undefined array key 1
+in APPPATH\Controllers\Home.php on line 2666.
+ 1 APPPATH\Controllers\Home.php(2666): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Home.php', 2666)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->get_agent_and_mouse_details()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-18 21:10:53 --> Undefined array key 1
+in APPPATH\Controllers\Home.php on line 2666.
+ 1 APPPATH\Controllers\Home.php(2666): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Home.php', 2666)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->get_agent_and_mouse_details()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-18 21:10:56 --> Undefined array key 1
+in APPPATH\Controllers\Home.php on line 2666.
+ 1 APPPATH\Controllers\Home.php(2666): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Home.php', 2666)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->get_agent_and_mouse_details()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-05-18 21:24:33 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'tamtech_inventory.headset.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\inventory\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\inventory\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\laragon\www\inventory\app\Controllers\Home.php(121): CodeIgniter\Model->countAllResults()
+#6 C:\laragon\www\inventory\system\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+#7 C:\laragon\www\inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2024-05-18 21:24:33 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'tamtech_inventory.headset.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `headset`
+GROUP BY `equip_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `headset`
+GROUP BY `equip_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `headset`
+GROUP BY `equip_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `headset`
+GROUP BY `equip_id`
+) CI_count_all_results', [], false)
+ 5 SYSTEMPATH\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Home.php(121): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-05-18 21:30:40 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'tamtech_inventory.headset.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\inventory\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\inventory\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\laragon\www\inventory\app\Controllers\Home.php(121): CodeIgniter\Model->countAllResults()
+#6 C:\laragon\www\inventory\system\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+#7 C:\laragon\www\inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2024-05-18 21:30:40 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'tamtech_inventory.headset.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `headset`
+GROUP BY `equip_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `headset`
+GROUP BY `equip_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `headset`
+GROUP BY `equip_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `headset`
+GROUP BY `equip_id`
+) CI_count_all_results', [], false)
+ 5 SYSTEMPATH\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Home.php(121): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-05-18 21:31:36 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'tamtech_inventory.headset.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\inventory\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\inventory\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\laragon\www\inventory\app\Controllers\Home.php(121): CodeIgniter\Model->countAllResults()
+#6 C:\laragon\www\inventory\system\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+#7 C:\laragon\www\inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2024-05-18 21:31:36 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'tamtech_inventory.headset.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `headset`
+GROUP BY `equip_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `headset`
+GROUP BY `equip_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `headset`
+GROUP BY `equip_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `headset`
+GROUP BY `equip_id`
+) CI_count_all_results', [], false)
+ 5 SYSTEMPATH\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Home.php(121): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-05-18 21:31:39 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'tamtech_inventory.headset.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\inventory\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\inventory\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\laragon\www\inventory\app\Controllers\Home.php(121): CodeIgniter\Model->countAllResults()
+#6 C:\laragon\www\inventory\system\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+#7 C:\laragon\www\inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2024-05-18 21:31:39 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'tamtech_inventory.headset.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `headset`
+GROUP BY `equip_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `headset`
+GROUP BY `equip_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `headset`
+GROUP BY `equip_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `headset`
+GROUP BY `equip_id`
+) CI_count_all_results', [], false)
+ 5 SYSTEMPATH\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Home.php(121): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-05-18 21:33:42 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'tamtech_inventory.laptop.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\inventory\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\inventory\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\laragon\www\inventory\app\Controllers\Home.php(134): CodeIgniter\Model->countAllResults()
+#6 C:\laragon\www\inventory\system\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+#7 C:\laragon\www\inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2024-05-18 21:33:42 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'tamtech_inventory.laptop.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `laptop`
+GROUP BY `laptop_equip_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `laptop`
+GROUP BY `laptop_equip_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `laptop`
+GROUP BY `laptop_equip_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `laptop`
+GROUP BY `laptop_equip_id`
+) CI_count_all_results', [], false)
+ 5 SYSTEMPATH\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Home.php(134): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-05-18 21:33:44 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'tamtech_inventory.laptop.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\inventory\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\inventory\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\laragon\www\inventory\app\Controllers\Home.php(134): CodeIgniter\Model->countAllResults()
+#6 C:\laragon\www\inventory\system\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+#7 C:\laragon\www\inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2024-05-18 21:33:44 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'tamtech_inventory.laptop.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `laptop`
+GROUP BY `laptop_equip_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `laptop`
+GROUP BY `laptop_equip_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `laptop`
+GROUP BY `laptop_equip_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `laptop`
+GROUP BY `laptop_equip_id`
+) CI_count_all_results', [], false)
+ 5 SYSTEMPATH\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Home.php(134): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-18 21:40:25 --> Array to string conversion
+in APPPATH\Views\admin\dashboard.php on line 195.
+ 1 APPPATH\Views\admin\dashboard.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\admin\\dashboard.php', 195)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Home.php(177): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-18 21:41:26 --> Array to string conversion
+in APPPATH\Views\admin\dashboard.php on line 214.
+ 1 APPPATH\Views\admin\dashboard.php(214): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\admin\\dashboard.php', 214)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Home.php(175): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-05-18 21:46:22 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'tamtech_inventory.headset.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\inventory\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\inventory\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\laragon\www\inventory\app\Controllers\Home.php(121): CodeIgniter\Model->countAllResults()
+#6 C:\laragon\www\inventory\system\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+#7 C:\laragon\www\inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2024-05-18 21:46:22 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'tamtech_inventory.headset.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `headset`
+GROUP BY `equip_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `headset`
+GROUP BY `equip_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `headset`
+GROUP BY `equip_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `headset`
+GROUP BY `equip_id`
+) CI_count_all_results', [], false)
+ 5 SYSTEMPATH\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Home.php(121): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-05-18 21:46:45 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'tamtech_inventory.keyboard.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\inventory\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\inventory\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\laragon\www\inventory\app\Controllers\Home.php(122): CodeIgniter\Model->countAllResults()
+#6 C:\laragon\www\inventory\system\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+#7 C:\laragon\www\inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2024-05-18 21:46:45 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'tamtech_inventory.keyboard.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `keyboard`
+GROUP BY `keyboard_equip_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `keyboard`
+GROUP BY `keyboard_equip_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `keyboard`
+GROUP BY `keyboard_equip_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `keyboard`
+GROUP BY `keyboard_equip_id`
+) CI_count_all_results', [], false)
+ 5 SYSTEMPATH\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Home.php(122): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-05-18 21:48:47 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'tamtech_inventory.headset.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\inventory\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\inventory\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\laragon\www\inventory\app\Controllers\Home.php(121): CodeIgniter\Model->countAllResults()
+#6 C:\laragon\www\inventory\system\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+#7 C:\laragon\www\inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2024-05-18 21:48:47 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'tamtech_inventory.headset.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `headset`
+GROUP BY `equip_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `headset`
+GROUP BY `equip_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `headset`
+GROUP BY `equip_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `headset`
+GROUP BY `equip_id`
+) CI_count_all_results', [], false)
+ 5 SYSTEMPATH\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Home.php(121): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-18 21:50:31 --> Array to string conversion
+in APPPATH\Views\admin\dashboard.php on line 214.
+ 1 APPPATH\Views\admin\dashboard.php(214): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\admin\\dashboard.php', 214)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Home.php(132): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-05-18 21:53:41 --> mysqli_sql_exception: Unknown column 'count' in 'field list' in C:\laragon\www\inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `equip_i...', 0)
+#1 C:\laragon\www\inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `equip_i...')
+#2 C:\laragon\www\inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `equip_i...')
+#3 C:\laragon\www\inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `equip_i...', Array, false)
+#4 C:\laragon\www\inventory\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\inventory\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\inventory\app\Controllers\Home.php(121): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\inventory\system\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+#8 C:\laragon\www\inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\laragon\www\inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-05-18 21:53:41 --> Unknown column 'count' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `equip_id`, SUM(count) as total_count
+FROM `headset`
+GROUP BY `equip_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `equip_id`, SUM(count) as total_count
+FROM `headset`
+GROUP BY `equip_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `equip_id`, SUM(count) as total_count
+FROM `headset`
+GROUP BY `equip_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `equip_id`, SUM(count) as total_count
+FROM `headset`
+GROUP BY `equip_id`', [], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(121): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-05-18 21:54:28 --> mysqli_sql_exception: Unknown column 'count' in 'field list' in C:\laragon\www\inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `equip_i...', 0)
+#1 C:\laragon\www\inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `equip_i...')
+#2 C:\laragon\www\inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `equip_i...')
+#3 C:\laragon\www\inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `equip_i...', Array, false)
+#4 C:\laragon\www\inventory\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\inventory\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\inventory\app\Controllers\Home.php(121): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\inventory\system\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+#8 C:\laragon\www\inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\laragon\www\inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-05-18 21:54:28 --> Unknown column 'count' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `equip_id`, SUM(count) as total_count
+FROM `headset`
+GROUP BY `equip_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `equip_id`, SUM(count) as total_count
+FROM `headset`
+GROUP BY `equip_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `equip_id`, SUM(count) as total_count
+FROM `headset`
+GROUP BY `equip_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `equip_id`, SUM(count) as total_count
+FROM `headset`
+GROUP BY `equip_id`', [], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(121): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-05-18 22:03:00 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'tamtech_inventory.machine.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\inventory\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\inventory\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\laragon\www\inventory\app\Controllers\Home.php(429): CodeIgniter\Model->countAllResults()
+#6 C:\laragon\www\inventory\system\CodeIgniter.php(927): App\Controllers\Home->machine_list()
+#7 C:\laragon\www\inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2024-05-18 22:03:00 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'tamtech_inventory.machine.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `machine`
+WHERE `status` = \'Unassigned\'
+GROUP BY `equip_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `machine`
+WHERE `status` = \'Unassigned\'
+GROUP BY `equip_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `machine`
+WHERE `status` = \'Unassigned\'
+GROUP BY `equip_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT *
+FROM `machine`
+WHERE `status` = :status:
+GROUP BY `equip_id`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Home.php(429): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->machine_list()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

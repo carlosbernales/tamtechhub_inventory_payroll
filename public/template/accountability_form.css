@@ -1,0 +1,116 @@
+.table tbody tr td {
+    height: 10px; /* Adjust the height value as needed */
+}
+.table thead th {
+    height: 10px; /* Adjust the height value as needed */
+}
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+.yellow-green-label {
+    background-color: yellowgreen;
+    padding: 13px 12px;
+    color: white;
+    font-size: 16px;
+    line-height: 1;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.no-border-input {
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    font-size: 16px;
+}
+
+
+.no-border-input {
+border: none; /* Remove border */
+outline: none; /* Remove outline */
+padding: 8px 12px; /* Adjust padding as needed */
+font-size: 16px; /* Adjust font size as needed */
+}
+@media print {
+    .custom-label-width {
+        width: 80px; /* Adjust the width as needed */
+    }
+        /* Hide unwanted elements */
+        .main-panel {
+            width: 100% !important;
+            max-width: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            background: none !important;
+            box-shadow: none !important;
+        }
+        .content {
+            width: 100%;
+            max-width: 870px; /* Adjust max-width as needed */
+            margin: auto; /* Center horizontally */
+         }
+        img {
+            max-width: 100% !important;
+            height: auto !important;
+        }
+        .sidebar {
+            display: none !important;
+        }
+        img.header-image {
+            width: 600px !important; /* Set the width as needed */
+            height: 100px !important; /* Set the height as needed */
+        }
+        .wrapper .main-header {
+            display: none !important;
+        }
+        .footer {
+            display: none !important;
+        }
+        @page {
+            margin-top: 0;
+        }
+        .custom-footer {
+        display: block !important;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #ffffff; 
+        border-top: 1px solid #dddddd; 
+        padding: 10px 20px; 
+        text-align: center;
+    }
+    
+    .print-only-agreement,
+    .print-only-agreement-text {
+        display: block !important;
+    }
+    #printButton {
+        display: none !important;
+    }
+    .bordered-agreement-section {
+        display: block !important;
+    }
+    .table tbody tr td,
+    .table thead th {
+        font-size: 10px;
+        
+    }
+    .table {
+        margin-bottom: 1 !important;
+    }
+    .table-bordered {
+        border-collapse: collapse !important;
+    }
+
+    .yellow-green-label {
+    font-size: 10px !important; 
+}
+.accountability_agent_dropdown,
+.agent_id_input,
+.campaign_input {
+    font-size: 13px !important; 
+}
+    
+}

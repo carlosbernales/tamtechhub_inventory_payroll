@@ -1,0 +1,35 @@
+CRITICAL - 2024-03-13 03:52:43 --> Undefined array key "agent"
+in APPPATH\Views\admin\headset.php on line 219.
+ 1 APPPATH\Views\admin\headset.php(219): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "agent"', 'APPPATH\\Views\\admin\\headset.php', 219)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\headset.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/headset', [], true)
+ 5 APPPATH\Controllers\Home.php(323): view('admin/headset', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->headset_list()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-13 19:51:59 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2367.
+ 1 SYSTEMPATH\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(984): CodeIgniter\Model->doDelete('ROOTPATH\\public', false)
+ 3 APPPATH\Controllers\Home.php(137): CodeIgniter\BaseModel->delete('ROOTPATH\\public')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->delete_agents('ROOTPATH\\public', '8')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-13 20:32:47 --> include_once(path/to/system_scripts.php): Failed to open stream: No such file or directory
+in APPPATH\Views\admin\agent_list.php on line 286.
+ 1 APPPATH\Views\admin\agent_list.php(286): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include_once(path/to/system_scripts.php): Failed to open stream: No such file or directory', 'APPPATH\\Views\\admin\\agent_list.php', 286)
+ 2 APPPATH\Views\admin\agent_list.php(286): include_once()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\agent_list.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/agent_list', [], true)
+ 6 APPPATH\Controllers\Home.php(71): view('admin/agent_list', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->agent_list()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

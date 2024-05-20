@@ -1,0 +1,30 @@
+.hidden {
+    display: none;
+}
+
+.modal.fade .modal-dialog {
+    transform: translate(0, -50%);
+    transition: transform 0.3s ease-out;
+}
+
+.modal.fade.show .modal-dialog {
+    transform: translate(0, 0);
+}
+
+#calendar {
+    width: 70%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the calendar horizontally */
+    height: 700px; /* Adjust the height as needed */
+}
+#setting-default th,
+#setting-default td {
+  height: 10px; /* Adjust the height value as needed */
+}
+
+.swal2-modal {
+    max-width: 330px !important; /* Adjust the width as needed */
+    max-height: 300px !important;
+    }
+    .swal2-icon {
+    font-size: 10px; /* Change the size to your desired value */
+    }

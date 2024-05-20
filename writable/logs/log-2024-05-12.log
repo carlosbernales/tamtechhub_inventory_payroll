@@ -1,0 +1,43 @@
+CRITICAL - 2024-05-12 00:33:03 --> syntax error, unexpected token "public"
+in APPPATH/Controllers/Payroll.php on line 1158.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Payroll.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Payroll')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Payroll')
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\Payroll', true)
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-12 04:59:14 --> Class "App\Controllers\Agent_files" not found
+in APPPATH/Controllers/Payroll.php on line 278.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->payrollDelete_agents('69')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-12 05:01:53 --> Call to undefined method App\Controllers\Payroll::deleteDirectory()
+in APPPATH/Controllers/Payroll.php on line 287.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->payrollDelete_agents('70')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-12 23:28:28 --> Undefined array key "dropdownValue"
+in APPPATH/Views/payroll/payslip.php on line 305.
+ 1 APPPATH/Views/payroll/payslip.php(305): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dropdownValue"', 'APPPATH/Views/payroll/payslip.php', 305)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/payroll/payslip.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('payroll/payslip', [], true)
+ 5 APPPATH/Controllers/Payroll.php(880): view('payroll/payslip', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->generatePayslip()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-12 23:28:39 --> Undefined array key "dropdownValue"
+in APPPATH/Views/payroll/payslip.php on line 305.
+ 1 APPPATH/Views/payroll/payslip.php(305): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dropdownValue"', 'APPPATH/Views/payroll/payslip.php', 305)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/payroll/payslip.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('payroll/payslip', [], true)
+ 5 APPPATH/Controllers/Payroll.php(880): view('payroll/payslip', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->generatePayslip()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()

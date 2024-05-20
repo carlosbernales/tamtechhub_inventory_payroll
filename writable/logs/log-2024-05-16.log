@@ -1,0 +1,142 @@
+CRITICAL - 2024-05-16 06:40:34 --> Undefined array key "dropdownValue"
+in APPPATH/Views/payroll/payslip.php on line 323.
+ 1 APPPATH/Views/payroll/payslip.php(323): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dropdownValue"', 'APPPATH/Views/payroll/payslip.php', 323)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/payroll/payslip.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('payroll/payslip', [], true)
+ 5 APPPATH/Controllers/Payroll.php(961): view('payroll/payslip', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->generatePayslip()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-16 06:44:02 --> Undefined array key "dropdownValue"
+in APPPATH/Views/payroll/payslip.php on line 323.
+ 1 APPPATH/Views/payroll/payslip.php(323): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dropdownValue"', 'APPPATH/Views/payroll/payslip.php', 323)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/payroll/payslip.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('payroll/payslip', [], true)
+ 5 APPPATH/Controllers/Payroll.php(961): view('payroll/payslip', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->generatePayslip()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-16 07:33:24 --> Cannot redeclare App\Controllers\Payroll::__construct()
+in APPPATH/Controllers/Payroll.php on line 27.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-05-16 07:34:02 --> Too few arguments to function App\Controllers\Payroll::uploadPayslip(), 0 passed in /home1/tamtechh/public_html/inventory/system/CodeIgniter.php on line 927 and exactly 2 expected
+in APPPATH/Controllers/Payroll.php on line 965.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->uploadPayslip()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-16 07:35:55 --> Too few arguments to function App\Controllers\Payroll::uploadPayslip(), 0 passed in /home1/tamtechh/public_html/inventory/system/CodeIgniter.php on line 927 and exactly 2 expected
+in APPPATH/Controllers/Payroll.php on line 965.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->uploadPayslip()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-16 07:42:37 --> Too few arguments to function App\Controllers\Payroll::uploadPayslip(), 0 passed in /home1/tamtechh/public_html/inventory/system/CodeIgniter.php on line 927 and exactly 2 expected
+in APPPATH/Controllers/Payroll.php on line 965.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->uploadPayslip()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-16 07:44:14 --> Too few arguments to function App\Controllers\Payroll::uploadPayslip(), 0 passed in /home1/tamtechh/public_html/inventory/system/CodeIgniter.php on line 927 and exactly 2 expected
+in APPPATH/Controllers/Payroll.php on line 965.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->uploadPayslip()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-16 08:37:04 --> Undefined array key "dropdownValue"
+in APPPATH/Views/payroll/payslip.php on line 319.
+ 1 APPPATH/Views/payroll/payslip.php(319): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dropdownValue"', 'APPPATH/Views/payroll/payslip.php', 319)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/payroll/payslip.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('payroll/payslip', [], true)
+ 5 APPPATH/Controllers/Payroll.php(961): view('payroll/payslip', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->generatePayslip()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-16 08:39:33 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH/Controllers/Payroll.php on line 854.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH/Controllers/Payroll.php', 854)
+ 2 APPPATH/Controllers/Payroll.php(854): strtotime(null)
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->generatePayslip()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-16 08:44:23 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH/Controllers/Payroll.php on line 854.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH/Controllers/Payroll.php', 854)
+ 2 APPPATH/Controllers/Payroll.php(854): strtotime(null)
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->generatePayslip()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-16 08:47:49 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH/Controllers/Payroll.php on line 854.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH/Controllers/Payroll.php', 854)
+ 2 APPPATH/Controllers/Payroll.php(854): strtotime(null)
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->generatePayslip()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-16 08:56:04 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH/Controllers/Payroll.php on line 854.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH/Controllers/Payroll.php', 854)
+ 2 APPPATH/Controllers/Payroll.php(854): strtotime(null)
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->generatePayslip()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-16 08:56:27 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH/Controllers/Payroll.php on line 854.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH/Controllers/Payroll.php', 854)
+ 2 APPPATH/Controllers/Payroll.php(854): strtotime(null)
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->generatePayslip()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-16 08:57:56 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH/Controllers/Payroll.php on line 854.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH/Controllers/Payroll.php', 854)
+ 2 APPPATH/Controllers/Payroll.php(854): strtotime(null)
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->generatePayslip()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-16 09:21:23 --> preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated
+in APPPATH/Controllers/Payroll.php on line 968.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated', 'APPPATH/Controllers/Payroll.php', 968)
+ 2 APPPATH/Controllers/Payroll.php(968): preg_replace('#^data:image/\\w+;base64,#i', 'ROOTPATH/public', null)
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->image()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-16 09:23:34 --> preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated
+in APPPATH/Controllers/Payroll.php on line 968.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated', 'APPPATH/Controllers/Payroll.php', 968)
+ 2 APPPATH/Controllers/Payroll.php(968): preg_replace('#^data:image/\\w+;base64,#i', 'ROOTPATH/public', null)
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->image()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-16 19:00:58 --> Undefined variable $file
+in APPPATH/Views/payroll/payslip_list.php on line 86.
+ 1 APPPATH/Views/payroll/payslip_list.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file', 'APPPATH/Views/payroll/payslip_list.php', 86)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/payroll/payslip_list.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('payroll/payslip_list', [], true)
+ 5 APPPATH/Controllers/Payroll.php(1116): view('payroll/payslip_list', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->payslip_list()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-16 23:09:37 --> Undefined array key 1
+in APPPATH/Controllers/Home.php on line 2666.
+ 1 APPPATH/Controllers/Home.php(2666): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH/Controllers/Home.php', 2666)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->get_agent_and_mouse_details()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()

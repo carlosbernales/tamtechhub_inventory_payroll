@@ -1,0 +1,36 @@
+.hidden {
+display: none;
+}
+.modal.fade .modal-dialog {
+transform: translate(0, -50%);
+transition: transform 0.3s ease-out;
+}
+.modal.fade.show .modal-dialog {
+transform: translate(0, 0);
+}
+
+.swal2-modal {
+max-width: 330px !important; /* Adjust the width as needed */
+max-height: 300px !important;
+}
+.swal2-icon {
+font-size: 10px; /* Change the size to your desired value */
+}
+.table tbody tr td {
+    height: 30px; /* Adjust the height value as needed */
+}
+.table thead th {
+    height: 40px; /* Adjust the height value as needed */
+}
+.lightblue-border {
+    border-right: 2px solid lightblue !important;
+}
+
+.table tfoot td {
+    height: 40px; /* Adjust the height value as needed */
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+
+

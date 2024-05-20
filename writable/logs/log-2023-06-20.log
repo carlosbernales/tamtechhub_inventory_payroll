@@ -1,0 +1,2261 @@
+ERROR - 2023-06-20 04:48:54 --> mysqli_sql_exception: Unknown column 'pos_column' in 'field list' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('\n    SELECT DAT...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('\n    SELECT DAT...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('\n    SELECT DAT...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(275): CodeIgniter\Database\BaseConnection->query('\n    SELECT DAT...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-20 04:48:54 --> Unknown column 'pos_column' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('
+    SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(item_amount * item_qty) AS total_sold,
+        (SELECT SUM(pos_column) FROM pos) AS pos_total,
+        SUM(item_amount * item_qty) + (SELECT SUM(pos_column) FROM pos) AS combined_total
+    FROM order_item
+    GROUP BY MONTH(order_date), YEAR(order_date)
+', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(item_amount * item_qty) AS total_sold,
+        (SELECT SUM(pos_column) FROM pos) AS pos_total,
+        SUM(item_amount * item_qty) + (SELECT SUM(pos_column) FROM pos) AS combined_total
+    FROM order_item
+    GROUP BY MONTH(order_date), YEAR(order_date)
+')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(item_amount * item_qty) AS total_sold,
+        (SELECT SUM(pos_column) FROM pos) AS pos_total,
+        SUM(item_amount * item_qty) + (SELECT SUM(pos_column) FROM pos) AS combined_total
+    FROM order_item
+    GROUP BY MONTH(order_date), YEAR(order_date)
+')
+ 4 APPPATH\Controllers\Admin.php(275): CodeIgniter\Database\BaseConnection->query('
+    SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(item_amount * item_qty) AS total_sold,
+        (SELECT SUM(pos_column) FROM pos) AS pos_total,
+        SUM(item_amount * item_qty) + (SELECT SUM(pos_column) FROM pos) AS combined_total
+    FROM order_item
+    GROUP BY MONTH(order_date), YEAR(order_date)
+')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-20 04:49:49 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') + (SELECT SUM(total) FROM pos) AS combined_total
+    FROM order_item
+    GR...' at line 4 in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('\n    SELECT DAT...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('\n    SELECT DAT...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('\n    SELECT DAT...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(275): CodeIgniter\Database\BaseConnection->query('\n    SELECT DAT...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-20 04:49:49 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') + (SELECT SUM(total) FROM pos) AS combined_total
+    FROM order_item
+    GR...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('
+    SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(item_amount * item_qty) AS total_sold,
+        (SELECT SUM(total) FROM pos) AS pos_total,
+        SUM(item_amount * item_qty) FROM order_item) + (SELECT SUM(total) FROM pos) AS combined_total
+    FROM order_item
+    GROUP BY MONTH(order_date), YEAR(order_date)
+', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('
+    SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(item_amount * item_qty) AS total_sold,
+        (SELECT SUM(total) FROM pos) AS pos_total,
+        SUM(item_amount * item_qty) FROM order_item) + (SELECT SUM(total) FROM pos) AS combined_total
+    FROM order_item
+    GROUP BY MONTH(order_date), YEAR(order_date)
+')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('
+    SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(item_amount * item_qty) AS total_sold,
+        (SELECT SUM(total) FROM pos) AS pos_total,
+        SUM(item_amount * item_qty) FROM order_item) + (SELECT SUM(total) FROM pos) AS combined_total
+    FROM order_item
+    GROUP BY MONTH(order_date), YEAR(order_date)
+')
+ 4 APPPATH\Controllers\Admin.php(275): CodeIgniter\Database\BaseConnection->query('
+    SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(item_amount * item_qty) AS total_sold,
+        (SELECT SUM(total) FROM pos) AS pos_total,
+        SUM(item_amount * item_qty) FROM order_item) + (SELECT SUM(total) FROM pos) AS combined_total
+    FROM order_item
+    GROUP BY MONTH(order_date), YEAR(order_date)
+')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-20 04:51:32 --> mysqli_sql_exception: Column 'order_date' in field list is ambiguous in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FOR...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FOR...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FOR...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(275): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FOR...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-20 04:51:32 --> Column 'order_date' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(item_amount * item_qty) AS total_sold,
+        (SELECT SUM(total) FROM pos) AS pos_total,
+        SUM(item_amount * item_qty) + (SELECT SUM(total) FROM pos) AS combined_total
+    FROM order_item
+    JOIN orderdata ON order_item.fk_order_id = order.id WHERE orderdata.order_status = \'Completed\'
+    GROUP BY MONTH(order_date), YEAR(order_date)
+', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(item_amount * item_qty) AS total_sold,
+        (SELECT SUM(total) FROM pos) AS pos_total,
+        SUM(item_amount * item_qty) + (SELECT SUM(total) FROM pos) AS combined_total
+    FROM order_item
+    JOIN orderdata ON order_item.fk_order_id = order.id WHERE orderdata.order_status = \'Completed\'
+    GROUP BY MONTH(order_date), YEAR(order_date)
+')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(item_amount * item_qty) AS total_sold,
+        (SELECT SUM(total) FROM pos) AS pos_total,
+        SUM(item_amount * item_qty) + (SELECT SUM(total) FROM pos) AS combined_total
+    FROM order_item
+    JOIN orderdata ON order_item.fk_order_id = order.id WHERE orderdata.order_status = \'Completed\'
+    GROUP BY MONTH(order_date), YEAR(order_date)
+')
+ 4 APPPATH\Controllers\Admin.php(275): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(item_amount * item_qty) AS total_sold,
+        (SELECT SUM(total) FROM pos) AS pos_total,
+        SUM(item_amount * item_qty) + (SELECT SUM(total) FROM pos) AS combined_total
+    FROM order_item
+    JOIN orderdata ON order_item.fk_order_id = order.id WHERE orderdata.order_status = \'Completed\'
+    GROUP BY MONTH(order_date), YEAR(order_date)
+')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-20 04:52:30 --> mysqli_sql_exception: Column 'order_date' in field list is ambiguous in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FOR...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FOR...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FOR...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(275): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FOR...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-20 04:52:30 --> Column 'order_date' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(item_amount * item_qty) AS total_sold,
+        (SELECT SUM(total) FROM pos) AS pos_total,
+        SUM(item_amount * item_qty) + (SELECT SUM(total) FROM pos) AS combined_total
+    FROM order_item
+    JOIN orderdata ON order_item.fk_order_id = orderdata.id WHERE orderdata.order_status = \'Completed\'
+    GROUP BY MONTH(order_date), YEAR(order_date)
+', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(item_amount * item_qty) AS total_sold,
+        (SELECT SUM(total) FROM pos) AS pos_total,
+        SUM(item_amount * item_qty) + (SELECT SUM(total) FROM pos) AS combined_total
+    FROM order_item
+    JOIN orderdata ON order_item.fk_order_id = orderdata.id WHERE orderdata.order_status = \'Completed\'
+    GROUP BY MONTH(order_date), YEAR(order_date)
+')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(item_amount * item_qty) AS total_sold,
+        (SELECT SUM(total) FROM pos) AS pos_total,
+        SUM(item_amount * item_qty) + (SELECT SUM(total) FROM pos) AS combined_total
+    FROM order_item
+    JOIN orderdata ON order_item.fk_order_id = orderdata.id WHERE orderdata.order_status = \'Completed\'
+    GROUP BY MONTH(order_date), YEAR(order_date)
+')
+ 4 APPPATH\Controllers\Admin.php(275): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(item_amount * item_qty) AS total_sold,
+        (SELECT SUM(total) FROM pos) AS pos_total,
+        SUM(item_amount * item_qty) + (SELECT SUM(total) FROM pos) AS combined_total
+    FROM order_item
+    JOIN orderdata ON order_item.fk_order_id = orderdata.id WHERE orderdata.order_status = \'Completed\'
+    GROUP BY MONTH(order_date), YEAR(order_date)
+')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-20 04:53:34 --> mysqli_sql_exception: Not unique table/alias: 'order_item' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FOR...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FOR...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FOR...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(275): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FOR...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-20 04:53:34 --> Not unique table/alias: 'order_item'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(item_amount * item_qty) AS total_sold,
+        (SELECT SUM(total) FROM pos) AS pos_total,
+        SUM(item_amount * item_qty) + (SELECT SUM(total) FROM pos) AS combined_total
+    FROM order_item
+    JOIN order_item ON orderdata.id = order_item.fk_order_id WHERE orderdata.order_status = \'Completed\'
+    GROUP BY MONTH(order_date), YEAR(order_date)
+', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(item_amount * item_qty) AS total_sold,
+        (SELECT SUM(total) FROM pos) AS pos_total,
+        SUM(item_amount * item_qty) + (SELECT SUM(total) FROM pos) AS combined_total
+    FROM order_item
+    JOIN order_item ON orderdata.id = order_item.fk_order_id WHERE orderdata.order_status = \'Completed\'
+    GROUP BY MONTH(order_date), YEAR(order_date)
+')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(item_amount * item_qty) AS total_sold,
+        (SELECT SUM(total) FROM pos) AS pos_total,
+        SUM(item_amount * item_qty) + (SELECT SUM(total) FROM pos) AS combined_total
+    FROM order_item
+    JOIN order_item ON orderdata.id = order_item.fk_order_id WHERE orderdata.order_status = \'Completed\'
+    GROUP BY MONTH(order_date), YEAR(order_date)
+')
+ 4 APPPATH\Controllers\Admin.php(275): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(item_amount * item_qty) AS total_sold,
+        (SELECT SUM(total) FROM pos) AS pos_total,
+        SUM(item_amount * item_qty) + (SELECT SUM(total) FROM pos) AS combined_total
+    FROM order_item
+    JOIN order_item ON orderdata.id = order_item.fk_order_id WHERE orderdata.order_status = \'Completed\'
+    GROUP BY MONTH(order_date), YEAR(order_date)
+')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-20 04:53:36 --> mysqli_sql_exception: Not unique table/alias: 'order_item' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FOR...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FOR...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FOR...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(275): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FOR...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-20 04:53:36 --> Not unique table/alias: 'order_item'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(item_amount * item_qty) AS total_sold,
+        (SELECT SUM(total) FROM pos) AS pos_total,
+        SUM(item_amount * item_qty) + (SELECT SUM(total) FROM pos) AS combined_total
+    FROM order_item
+    JOIN order_item ON orderdata.id = order_item.fk_order_id WHERE orderdata.order_status = \'Completed\'
+    GROUP BY MONTH(order_date), YEAR(order_date)
+', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(item_amount * item_qty) AS total_sold,
+        (SELECT SUM(total) FROM pos) AS pos_total,
+        SUM(item_amount * item_qty) + (SELECT SUM(total) FROM pos) AS combined_total
+    FROM order_item
+    JOIN order_item ON orderdata.id = order_item.fk_order_id WHERE orderdata.order_status = \'Completed\'
+    GROUP BY MONTH(order_date), YEAR(order_date)
+')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(item_amount * item_qty) AS total_sold,
+        (SELECT SUM(total) FROM pos) AS pos_total,
+        SUM(item_amount * item_qty) + (SELECT SUM(total) FROM pos) AS combined_total
+    FROM order_item
+    JOIN order_item ON orderdata.id = order_item.fk_order_id WHERE orderdata.order_status = \'Completed\'
+    GROUP BY MONTH(order_date), YEAR(order_date)
+')
+ 4 APPPATH\Controllers\Admin.php(275): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(item_amount * item_qty) AS total_sold,
+        (SELECT SUM(total) FROM pos) AS pos_total,
+        SUM(item_amount * item_qty) + (SELECT SUM(total) FROM pos) AS combined_total
+    FROM order_item
+    JOIN order_item ON orderdata.id = order_item.fk_order_id WHERE orderdata.order_status = \'Completed\'
+    GROUP BY MONTH(order_date), YEAR(order_date)
+')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-20 04:53:55 --> mysqli_sql_exception: Column 'order_date' in field list is ambiguous in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FOR...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FOR...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FOR...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(275): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FOR...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-20 04:53:55 --> Column 'order_date' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(item_amount * item_qty) AS total_sold,
+        (SELECT SUM(total) FROM pos) AS pos_total,
+        SUM(item_amount * item_qty) + (SELECT SUM(total) FROM pos) AS combined_total
+    FROM order_item
+    JOIN orderdata ON order_item.fk_order_id = orderdata.id WHERE orderdata.order_status = \'Completed\'
+    GROUP BY MONTH(order_date), YEAR(order_date)
+', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(item_amount * item_qty) AS total_sold,
+        (SELECT SUM(total) FROM pos) AS pos_total,
+        SUM(item_amount * item_qty) + (SELECT SUM(total) FROM pos) AS combined_total
+    FROM order_item
+    JOIN orderdata ON order_item.fk_order_id = orderdata.id WHERE orderdata.order_status = \'Completed\'
+    GROUP BY MONTH(order_date), YEAR(order_date)
+')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(item_amount * item_qty) AS total_sold,
+        (SELECT SUM(total) FROM pos) AS pos_total,
+        SUM(item_amount * item_qty) + (SELECT SUM(total) FROM pos) AS combined_total
+    FROM order_item
+    JOIN orderdata ON order_item.fk_order_id = orderdata.id WHERE orderdata.order_status = \'Completed\'
+    GROUP BY MONTH(order_date), YEAR(order_date)
+')
+ 4 APPPATH\Controllers\Admin.php(275): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(item_amount * item_qty) AS total_sold,
+        (SELECT SUM(total) FROM pos) AS pos_total,
+        SUM(item_amount * item_qty) + (SELECT SUM(total) FROM pos) AS combined_total
+    FROM order_item
+    JOIN orderdata ON order_item.fk_order_id = orderdata.id WHERE orderdata.order_status = \'Completed\'
+    GROUP BY MONTH(order_date), YEAR(order_date)
+')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 04:58:31 --> Undefined array key "combined_total"
+in APPPATH\Views\admin\dashboard.php on line 534.
+ 1 APPPATH\Views\admin\dashboard.php(534): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "combined_total"', 'APPPATH\\Views\\admin\\dashboard.php', 534)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(327): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-20 05:00:01 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''%Y-%m) AS month_name
+        FROM 
+            pos 
+        GROUP BY 
+      ...' at line 4 in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT \n       ...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \n       ...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \n       ...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(291): CodeIgniter\Database\BaseConnection->query('SELECT \n       ...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-20 05:00:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''%Y-%m) AS month_name
+        FROM 
+            pos 
+        GROUP BY 
+      ...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 
+            product_name AS product_name, 
+            SUM(total) AS total_sold, 
+            DATE_FORMAT(created_at, \'%Y-%m) AS month_name
+        FROM 
+            pos 
+        GROUP BY 
+         product_name, month_name', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+            product_name AS product_name, 
+            SUM(total) AS total_sold, 
+            DATE_FORMAT(created_at, \'%Y-%m) AS month_name
+        FROM 
+            pos 
+        GROUP BY 
+         product_name, month_name')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+            product_name AS product_name, 
+            SUM(total) AS total_sold, 
+            DATE_FORMAT(created_at, \'%Y-%m) AS month_name
+        FROM 
+            pos 
+        GROUP BY 
+         product_name, month_name')
+ 4 APPPATH\Controllers\Admin.php(291): CodeIgniter\Database\BaseConnection->query('SELECT 
+            product_name AS product_name, 
+            SUM(total) AS total_sold, 
+            DATE_FORMAT(created_at, \'%Y-%m) AS month_name
+        FROM 
+            pos 
+        GROUP BY 
+         product_name, month_name')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-20 05:00:01 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''%Y-%m) AS month_name
+        FROM 
+            pos 
+        GROUP BY 
+      ...' at line 4 in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT \n       ...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \n       ...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \n       ...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(291): CodeIgniter\Database\BaseConnection->query('SELECT \n       ...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-20 05:00:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''%Y-%m) AS month_name
+        FROM 
+            pos 
+        GROUP BY 
+      ...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 
+            product_name AS product_name, 
+            SUM(total) AS total_sold, 
+            DATE_FORMAT(created_at, \'%Y-%m) AS month_name
+        FROM 
+            pos 
+        GROUP BY 
+         product_name, month_name', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+            product_name AS product_name, 
+            SUM(total) AS total_sold, 
+            DATE_FORMAT(created_at, \'%Y-%m) AS month_name
+        FROM 
+            pos 
+        GROUP BY 
+         product_name, month_name')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+            product_name AS product_name, 
+            SUM(total) AS total_sold, 
+            DATE_FORMAT(created_at, \'%Y-%m) AS month_name
+        FROM 
+            pos 
+        GROUP BY 
+         product_name, month_name')
+ 4 APPPATH\Controllers\Admin.php(291): CodeIgniter\Database\BaseConnection->query('SELECT 
+            product_name AS product_name, 
+            SUM(total) AS total_sold, 
+            DATE_FORMAT(created_at, \'%Y-%m) AS month_name
+        FROM 
+            pos 
+        GROUP BY 
+         product_name, month_name')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 05:06:37 --> Undefined variable $posModel
+in APPPATH\Controllers\Admin.php on line 292.
+ 1 APPPATH\Controllers\Admin.php(292): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $posModel', 'APPPATH\\Controllers\\Admin.php', 292)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 05:12:28 --> Undefined variable $pointlinechart
+in APPPATH\Controllers\Admin.php on line 360.
+ 1 APPPATH\Controllers\Admin.php(360): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pointlinechart', 'APPPATH\\Controllers\\Admin.php', 360)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 05:12:36 --> Undefined variable $poslinesales
+in APPPATH\Views\admin\dashboard.php on line 476.
+ 1 APPPATH\Views\admin\dashboard.php(476): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $poslinesales', 'APPPATH\\Views\\admin\\dashboard.php', 476)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(364): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 05:12:58 --> Undefined variable $pointlinechart
+in APPPATH\Controllers\Admin.php on line 360.
+ 1 APPPATH\Controllers\Admin.php(360): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pointlinechart', 'APPPATH\\Controllers\\Admin.php', 360)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 05:13:55 --> Undefined variable $lineproduct
+in APPPATH\Views\admin\dashboard.php on line 941.
+ 1 APPPATH\Views\admin\dashboard.php(941): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lineproduct', 'APPPATH\\Views\\admin\\dashboard.php', 941)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(364): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 05:30:59 --> Cannot access offset of type string on string
+in APPPATH\Views\admin\dashboard.php on line 598.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 4 APPPATH\Controllers\Admin.php(327): view('admin/dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 05:36:49 --> Undefined variable $productname
+in APPPATH\Views\admin\dashboard.php on line 942.
+ 1 APPPATH\Views\admin\dashboard.php(942): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $productname', 'APPPATH\\Views\\admin\\dashboard.php', 942)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(327): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 05:43:57 --> Undefined variable $productname
+in APPPATH\Views\admin\dashboard.php on line 944.
+ 1 APPPATH\Views\admin\dashboard.php(944): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $productname', 'APPPATH\\Views\\admin\\dashboard.php', 944)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(327): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-20 06:15:46 --> mysqli_sql_exception: Unknown column 'order_item.product_name' in 'field list' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT order_it...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT order_it...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT order_it...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(293): CodeIgniter\Database\BaseConnection->query('SELECT order_it...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-20 06:15:46 --> Unknown column 'order_item.product_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT order_item.product_name AS item_name, 
+        SUM(order_item.item_qty) AS total_sold
+        FROM order_item 
+        JOIN orderdata ON order_item.fk_order_id = orderdata.id 
+        WHERE orderdata.order_status = \'Completed\' 
+        GROUP BY item_name ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT order_item.product_name AS item_name, 
+        SUM(order_item.item_qty) AS total_sold
+        FROM order_item 
+        JOIN orderdata ON order_item.fk_order_id = orderdata.id 
+        WHERE orderdata.order_status = \'Completed\' 
+        GROUP BY item_name ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT order_item.product_name AS item_name, 
+        SUM(order_item.item_qty) AS total_sold
+        FROM order_item 
+        JOIN orderdata ON order_item.fk_order_id = orderdata.id 
+        WHERE orderdata.order_status = \'Completed\' 
+        GROUP BY item_name ASC')
+ 4 APPPATH\Controllers\Admin.php(293): CodeIgniter\Database\BaseConnection->query('SELECT order_item.product_name AS item_name, 
+        SUM(order_item.item_qty) AS total_sold
+        FROM order_item 
+        JOIN orderdata ON order_item.fk_order_id = orderdata.id 
+        WHERE orderdata.order_status = \'Completed\' 
+        GROUP BY item_name ASC')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-20 06:16:35 --> mysqli_sql_exception: Unknown column 'order_item.product_name' in 'field list' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT order_it...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT order_it...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT order_it...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(254): CodeIgniter\Database\BaseConnection->query('SELECT order_it...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-20 06:16:35 --> Unknown column 'order_item.product_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT order_item.product_name AS item_name, 
+        SUM(order_item.item_qty) AS total_sold
+        FROM order_item 
+        JOIN orderdata ON order_item.fk_order_id = orderdata.id 
+        WHERE orderdata.order_status = \'Completed\' 
+        GROUP BY item_name ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT order_item.product_name AS item_name, 
+        SUM(order_item.item_qty) AS total_sold
+        FROM order_item 
+        JOIN orderdata ON order_item.fk_order_id = orderdata.id 
+        WHERE orderdata.order_status = \'Completed\' 
+        GROUP BY item_name ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT order_item.product_name AS item_name, 
+        SUM(order_item.item_qty) AS total_sold
+        FROM order_item 
+        JOIN orderdata ON order_item.fk_order_id = orderdata.id 
+        WHERE orderdata.order_status = \'Completed\' 
+        GROUP BY item_name ASC')
+ 4 APPPATH\Controllers\Admin.php(254): CodeIgniter\Database\BaseConnection->query('SELECT order_item.product_name AS item_name, 
+        SUM(order_item.item_qty) AS total_sold
+        FROM order_item 
+        JOIN orderdata ON order_item.fk_order_id = orderdata.id 
+        WHERE orderdata.order_status = \'Completed\' 
+        GROUP BY item_name ASC')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-20 06:17:20 --> mysqli_sql_exception: Unknown column 'order_item.product_name' in 'field list' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT order_it...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT order_it...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT order_it...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(254): CodeIgniter\Database\BaseConnection->query('SELECT order_it...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-20 06:17:20 --> Unknown column 'order_item.product_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT order_item.product_name AS item_name, 
+        SUM(order_item.item_qty) AS total_sold
+        FROM order_item 
+        JOIN orderdata ON order_item.fk_order_id = orderdata.id 
+        WHERE orderdata.order_status = \'Completed\' 
+        GROUP BY item_name ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT order_item.product_name AS item_name, 
+        SUM(order_item.item_qty) AS total_sold
+        FROM order_item 
+        JOIN orderdata ON order_item.fk_order_id = orderdata.id 
+        WHERE orderdata.order_status = \'Completed\' 
+        GROUP BY item_name ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT order_item.product_name AS item_name, 
+        SUM(order_item.item_qty) AS total_sold
+        FROM order_item 
+        JOIN orderdata ON order_item.fk_order_id = orderdata.id 
+        WHERE orderdata.order_status = \'Completed\' 
+        GROUP BY item_name ASC')
+ 4 APPPATH\Controllers\Admin.php(254): CodeIgniter\Database\BaseConnection->query('SELECT order_item.product_name AS item_name, 
+        SUM(order_item.item_qty) AS total_sold
+        FROM order_item 
+        JOIN orderdata ON order_item.fk_order_id = orderdata.id 
+        WHERE orderdata.order_status = \'Completed\' 
+        GROUP BY item_name ASC')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-20 06:17:57 --> mysqli_sql_exception: Unknown column 'order_item.product_name' in 'field list' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT order_it...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT order_it...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT order_it...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(293): CodeIgniter\Database\BaseConnection->query('SELECT order_it...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-20 06:17:57 --> Unknown column 'order_item.product_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT order_item.product_name AS item_name, 
+        SUM(order_item.item_qty) AS total_sold
+        FROM order_item 
+        JOIN orderdata ON order_item.fk_order_id = orderdata.id 
+        WHERE orderdata.order_status = \'Completed\' 
+        GROUP BY item_name ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT order_item.product_name AS item_name, 
+        SUM(order_item.item_qty) AS total_sold
+        FROM order_item 
+        JOIN orderdata ON order_item.fk_order_id = orderdata.id 
+        WHERE orderdata.order_status = \'Completed\' 
+        GROUP BY item_name ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT order_item.product_name AS item_name, 
+        SUM(order_item.item_qty) AS total_sold
+        FROM order_item 
+        JOIN orderdata ON order_item.fk_order_id = orderdata.id 
+        WHERE orderdata.order_status = \'Completed\' 
+        GROUP BY item_name ASC')
+ 4 APPPATH\Controllers\Admin.php(293): CodeIgniter\Database\BaseConnection->query('SELECT order_item.product_name AS item_name, 
+        SUM(order_item.item_qty) AS total_sold
+        FROM order_item 
+        JOIN orderdata ON order_item.fk_order_id = orderdata.id 
+        WHERE orderdata.order_status = \'Completed\' 
+        GROUP BY item_name ASC')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-20 06:47:35 --> mysqli_sql_exception: Column 'order_date' in order clause is ambiguous in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT \n       ...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \n       ...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \n       ...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(201): CodeIgniter\Database\BaseConnection->query('SELECT \n       ...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-20 06:47:35 --> Column 'order_date' in order clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 
+            order_item.item_name AS item_name, 
+            SUM(order_item.item_qty * order_item.item_amount) AS total_sold, 
+            DATE_FORMAT(order_item.order_date, \'%M %Y\') AS month_name
+        FROM 
+            order_item 
+        JOIN 
+            orderdata ON order_item.fk_order_id = orderdata.id 
+        WHERE 
+            orderdata.order_status = \'Completed\' 
+        GROUP BY 
+            item_name, month_name
+        ORDER BY 
+        MONTH(order_date), YEAR(order_date)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+            order_item.item_name AS item_name, 
+            SUM(order_item.item_qty * order_item.item_amount) AS total_sold, 
+            DATE_FORMAT(order_item.order_date, \'%M %Y\') AS month_name
+        FROM 
+            order_item 
+        JOIN 
+            orderdata ON order_item.fk_order_id = orderdata.id 
+        WHERE 
+            orderdata.order_status = \'Completed\' 
+        GROUP BY 
+            item_name, month_name
+        ORDER BY 
+        MONTH(order_date), YEAR(order_date)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+            order_item.item_name AS item_name, 
+            SUM(order_item.item_qty * order_item.item_amount) AS total_sold, 
+            DATE_FORMAT(order_item.order_date, \'%M %Y\') AS month_name
+        FROM 
+            order_item 
+        JOIN 
+            orderdata ON order_item.fk_order_id = orderdata.id 
+        WHERE 
+            orderdata.order_status = \'Completed\' 
+        GROUP BY 
+            item_name, month_name
+        ORDER BY 
+        MONTH(order_date), YEAR(order_date)')
+ 4 APPPATH\Controllers\Admin.php(201): CodeIgniter\Database\BaseConnection->query('SELECT 
+            order_item.item_name AS item_name, 
+            SUM(order_item.item_qty * order_item.item_amount) AS total_sold, 
+            DATE_FORMAT(order_item.order_date, \'%M %Y\') AS month_name
+        FROM 
+            order_item 
+        JOIN 
+            orderdata ON order_item.fk_order_id = orderdata.id 
+        WHERE 
+            orderdata.order_status = \'Completed\' 
+        GROUP BY 
+            item_name, month_name
+        ORDER BY 
+        MONTH(order_date), YEAR(order_date)')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 07:22:41 --> Undefined variable $stackedchartData
+in APPPATH\Views\admin\dashboard.php on line 1022.
+ 1 APPPATH\Views\admin\dashboard.php(1022): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $stackedchartData', 'APPPATH\\Views\\admin\\dashboard.php', 1022)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(389): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 07:23:20 --> Undefined variable $stackedlineData
+in APPPATH\Views\admin\dashboard.php on line 1022.
+ 1 APPPATH\Views\admin\dashboard.php(1022): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $stackedlineData', 'APPPATH\\Views\\admin\\dashboard.php', 1022)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(389): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 07:23:21 --> Undefined variable $stackedlineData
+in APPPATH\Views\admin\dashboard.php on line 1022.
+ 1 APPPATH\Views\admin\dashboard.php(1022): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $stackedlineData', 'APPPATH\\Views\\admin\\dashboard.php', 1022)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(389): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 07:23:40 --> Undefined variable $stackedchartData
+in APPPATH\Views\admin\dashboard.php on line 1022.
+ 1 APPPATH\Views\admin\dashboard.php(1022): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $stackedchartData', 'APPPATH\\Views\\admin\\dashboard.php', 1022)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(389): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 07:23:41 --> Undefined variable $stackedchartData
+in APPPATH\Views\admin\dashboard.php on line 1022.
+ 1 APPPATH\Views\admin\dashboard.php(1022): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $stackedchartData', 'APPPATH\\Views\\admin\\dashboard.php', 1022)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(389): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 07:24:38 --> Undefined variable $stackedchartData
+in APPPATH\Views\admin\dashboard.php on line 1022.
+ 1 APPPATH\Views\admin\dashboard.php(1022): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $stackedchartData', 'APPPATH\\Views\\admin\\dashboard.php', 1022)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(389): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 07:24:39 --> Undefined variable $stackedchartData
+in APPPATH\Views\admin\dashboard.php on line 1022.
+ 1 APPPATH\Views\admin\dashboard.php(1022): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $stackedchartData', 'APPPATH\\Views\\admin\\dashboard.php', 1022)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(389): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 07:27:59 --> Class "App\Controllers\DateTime" not found
+in APPPATH\Controllers\Admin.php on line 291.
+ 1 [internal function]: App\Controllers\Admin->App\Controllers\{closure}('April 2023', 'May 2023')
+ 2 APPPATH\Controllers\Admin.php(294): usort([...], Object(Closure))
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 07:31:06 --> Undefined variable $stackedlineData
+in APPPATH\Views\admin\dashboard.php on line 1022.
+ 1 APPPATH\Views\admin\dashboard.php(1022): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $stackedlineData', 'APPPATH\\Views\\admin\\dashboard.php', 1022)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(387): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 08:35:45 --> Undefined variable $month
+in APPPATH\Views\admin\dashboard.php on line 866.
+ 1 APPPATH\Views\admin\dashboard.php(866): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $month', 'APPPATH\\Views\\admin\\dashboard.php', 866)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(373): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 08:37:12 --> Undefined variable $month
+in APPPATH\Views\admin\dashboard.php on line 847.
+ 1 APPPATH\Views\admin\dashboard.php(847): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $month', 'APPPATH\\Views\\admin\\dashboard.php', 847)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(373): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 08:37:14 --> Undefined variable $month
+in APPPATH\Views\admin\dashboard.php on line 847.
+ 1 APPPATH\Views\admin\dashboard.php(847): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $month', 'APPPATH\\Views\\admin\\dashboard.php', 847)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(373): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 08:39:42 --> Undefined variable $month
+in APPPATH\Views\admin\dashboard.php on line 922.
+ 1 APPPATH\Views\admin\dashboard.php(922): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $month', 'APPPATH\\Views\\admin\\dashboard.php', 922)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(373): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 19:01:20 --> Undefined variable $product_name
+in APPPATH\Views\admin\dashboard.php on line 968.
+ 1 APPPATH\Views\admin\dashboard.php(968): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product_name', 'APPPATH\\Views\\admin\\dashboard.php', 968)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(380): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 19:02:08 --> Undefined variable $product_name
+in APPPATH\Views\admin\dashboard.php on line 968.
+ 1 APPPATH\Views\admin\dashboard.php(968): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product_name', 'APPPATH\\Views\\admin\\dashboard.php', 968)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(380): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-20 19:02:30 --> mysqli_sql_exception: Unknown column 'pos.order_item_id' in 'on clause' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(o...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(o...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(o...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(317): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(o...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-20 19:02:30 --> Unknown column 'pos.order_item_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CONCAT(order_item.item_name, \' - \', pos.product_name) AS combined_name,
+        CONCAT(SUM(order_item.item_qty), \' - \', SUM(pos.quantity)) AS combined_totals
+        FROM order_item 
+        JOIN orderdata ON order_item.fk_order_id = orderdata.id 
+        JOIN pos ON order_item.id = pos.order_item_id
+        WHERE orderdata.order_status = \'Completed\' 
+        GROUP BY combined_name', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CONCAT(order_item.item_name, \' - \', pos.product_name) AS combined_name,
+        CONCAT(SUM(order_item.item_qty), \' - \', SUM(pos.quantity)) AS combined_totals
+        FROM order_item 
+        JOIN orderdata ON order_item.fk_order_id = orderdata.id 
+        JOIN pos ON order_item.id = pos.order_item_id
+        WHERE orderdata.order_status = \'Completed\' 
+        GROUP BY combined_name')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CONCAT(order_item.item_name, \' - \', pos.product_name) AS combined_name,
+        CONCAT(SUM(order_item.item_qty), \' - \', SUM(pos.quantity)) AS combined_totals
+        FROM order_item 
+        JOIN orderdata ON order_item.fk_order_id = orderdata.id 
+        JOIN pos ON order_item.id = pos.order_item_id
+        WHERE orderdata.order_status = \'Completed\' 
+        GROUP BY combined_name')
+ 4 APPPATH\Controllers\Admin.php(317): CodeIgniter\Database\BaseConnection->query('SELECT CONCAT(order_item.item_name, \' - \', pos.product_name) AS combined_name,
+        CONCAT(SUM(order_item.item_qty), \' - \', SUM(pos.quantity)) AS combined_totals
+        FROM order_item 
+        JOIN orderdata ON order_item.fk_order_id = orderdata.id 
+        JOIN pos ON order_item.id = pos.order_item_id
+        WHERE orderdata.order_status = \'Completed\' 
+        GROUP BY combined_name')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 19:02:39 --> Undefined array key "item_name"
+in APPPATH\Views\admin\dashboard.php on line 563.
+ 1 APPPATH\Views\admin\dashboard.php(563): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_name"', 'APPPATH\\Views\\admin\\dashboard.php', 563)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(380): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 19:04:17 --> Undefined variable $product_name
+in APPPATH\Views\admin\dashboard.php on line 968.
+ 1 APPPATH\Views\admin\dashboard.php(968): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product_name', 'APPPATH\\Views\\admin\\dashboard.php', 968)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(380): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 19:06:37 --> Undefined variable $product_name
+in APPPATH\Views\admin\dashboard.php on line 968.
+ 1 APPPATH\Views\admin\dashboard.php(968): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product_name', 'APPPATH\\Views\\admin\\dashboard.php', 968)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(380): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 19:06:39 --> Undefined variable $product_name
+in APPPATH\Views\admin\dashboard.php on line 968.
+ 1 APPPATH\Views\admin\dashboard.php(968): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product_name', 'APPPATH\\Views\\admin\\dashboard.php', 968)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(380): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 19:14:52 --> Undefined variable $product_name
+in APPPATH\Views\admin\dashboard.php on line 968.
+ 1 APPPATH\Views\admin\dashboard.php(968): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product_name', 'APPPATH\\Views\\admin\\dashboard.php', 968)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(380): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 19:20:06 --> Undefined variable $total_amount
+in APPPATH\Views\admin\dashboard.php on line 972.
+ 1 APPPATH\Views\admin\dashboard.php(972): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_amount', 'APPPATH\\Views\\admin\\dashboard.php', 972)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(380): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 19:21:02 --> Undefined variable $product_name
+in APPPATH\Views\admin\dashboard.php on line 968.
+ 1 APPPATH\Views\admin\dashboard.php(968): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product_name', 'APPPATH\\Views\\admin\\dashboard.php', 968)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(380): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 19:21:45 --> Undefined variable $product_name
+in APPPATH\Views\admin\dashboard.php on line 968.
+ 1 APPPATH\Views\admin\dashboard.php(968): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product_name', 'APPPATH\\Views\\admin\\dashboard.php', 968)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(380): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 19:22:35 --> Undefined variable $product_name
+in APPPATH\Views\admin\dashboard.php on line 968.
+ 1 APPPATH\Views\admin\dashboard.php(968): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product_name', 'APPPATH\\Views\\admin\\dashboard.php', 968)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(380): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 19:22:36 --> Undefined variable $product_name
+in APPPATH\Views\admin\dashboard.php on line 968.
+ 1 APPPATH\Views\admin\dashboard.php(968): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product_name', 'APPPATH\\Views\\admin\\dashboard.php', 968)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(380): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 19:22:41 --> Undefined variable $product_name
+in APPPATH\Views\admin\dashboard.php on line 968.
+ 1 APPPATH\Views\admin\dashboard.php(968): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product_name', 'APPPATH\\Views\\admin\\dashboard.php', 968)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(380): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 19:22:54 --> Undefined variable $product_name
+in APPPATH\Views\admin\dashboard.php on line 968.
+ 1 APPPATH\Views\admin\dashboard.php(968): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product_name', 'APPPATH\\Views\\admin\\dashboard.php', 968)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(380): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 19:24:01 --> Undefined variable $total_amount
+in APPPATH\Views\admin\dashboard.php on line 971.
+ 1 APPPATH\Views\admin\dashboard.php(971): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_amount', 'APPPATH\\Views\\admin\\dashboard.php', 971)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(380): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 19:24:02 --> Undefined variable $total_amount
+in APPPATH\Views\admin\dashboard.php on line 971.
+ 1 APPPATH\Views\admin\dashboard.php(971): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_amount', 'APPPATH\\Views\\admin\\dashboard.php', 971)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(380): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 19:24:02 --> Undefined variable $total_amount
+in APPPATH\Views\admin\dashboard.php on line 971.
+ 1 APPPATH\Views\admin\dashboard.php(971): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_amount', 'APPPATH\\Views\\admin\\dashboard.php', 971)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(380): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 19:24:03 --> Undefined variable $total_amount
+in APPPATH\Views\admin\dashboard.php on line 971.
+ 1 APPPATH\Views\admin\dashboard.php(971): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_amount', 'APPPATH\\Views\\admin\\dashboard.php', 971)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(380): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 19:24:27 --> Undefined variable $total_amounts
+in APPPATH\Views\admin\dashboard.php on line 971.
+ 1 APPPATH\Views\admin\dashboard.php(971): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_amounts', 'APPPATH\\Views\\admin\\dashboard.php', 971)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(380): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 19:24:28 --> Undefined variable $total_amounts
+in APPPATH\Views\admin\dashboard.php on line 971.
+ 1 APPPATH\Views\admin\dashboard.php(971): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_amounts', 'APPPATH\\Views\\admin\\dashboard.php', 971)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(380): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 19:24:28 --> Undefined variable $total_amounts
+in APPPATH\Views\admin\dashboard.php on line 971.
+ 1 APPPATH\Views\admin\dashboard.php(971): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_amounts', 'APPPATH\\Views\\admin\\dashboard.php', 971)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(380): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 19:24:28 --> Undefined variable $total_amounts
+in APPPATH\Views\admin\dashboard.php on line 971.
+ 1 APPPATH\Views\admin\dashboard.php(971): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_amounts', 'APPPATH\\Views\\admin\\dashboard.php', 971)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(380): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 19:24:56 --> Undefined variable $total_amounts
+in APPPATH\Views\admin\dashboard.php on line 971.
+ 1 APPPATH\Views\admin\dashboard.php(971): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_amounts', 'APPPATH\\Views\\admin\\dashboard.php', 971)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(380): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 19:24:57 --> Undefined variable $total_amounts
+in APPPATH\Views\admin\dashboard.php on line 971.
+ 1 APPPATH\Views\admin\dashboard.php(971): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_amounts', 'APPPATH\\Views\\admin\\dashboard.php', 971)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(380): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 19:26:01 --> Undefined variable $product_name
+in APPPATH\Views\admin\dashboard.php on line 968.
+ 1 APPPATH\Views\admin\dashboard.php(968): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product_name', 'APPPATH\\Views\\admin\\dashboard.php', 968)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(390): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 19:46:29 --> Class "App\Controllers\Order_model" not found
+in APPPATH\Controllers\POS.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\POS->insertData()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\POS))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 19:59:33 --> Class "App\Controllers\Order_model" not found
+in APPPATH\Controllers\POS.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\POS->insertData()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\POS))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 20:03:52 --> Undefined variable $monthpos
+in APPPATH\Views\admin\dashboard.php on line 814.
+ 1 APPPATH\Views\admin\dashboard.php(814): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $monthpos', 'APPPATH\\Views\\admin\\dashboard.php', 814)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(378): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-20 20:13:39 --> mysqli_sql_exception: Not unique table/alias: 'order_item' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FOR...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FOR...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FOR...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FOR...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(451): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->sales()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-06-20 20:13:39 --> Not unique table/alias: 'order_item'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FORMAT(orderdata.order_date, \'%M %e, %Y\') AS order_date_formatted, `orderdata`.*, `order_item`.*, (order_item.item_qty * order_item.item_amount) AS total_order_amount
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`fk_order_id` = `orderdata`.`id`
+JOIN `order_item` ON `order_item`.`id` = `orderdata`.`id`
+WHERE `order_status` = \'Completed\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FORMAT(orderdata.order_date, \'%M %e, %Y\') AS order_date_formatted, `orderdata`.*, `order_item`.*, (order_item.item_qty * order_item.item_amount) AS total_order_amount
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`fk_order_id` = `orderdata`.`id`
+JOIN `order_item` ON `order_item`.`id` = `orderdata`.`id`
+WHERE `order_status` = \'Completed\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FORMAT(orderdata.order_date, \'%M %e, %Y\') AS order_date_formatted, `orderdata`.*, `order_item`.*, (order_item.item_qty * order_item.item_amount) AS total_order_amount
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`fk_order_id` = `orderdata`.`id`
+JOIN `order_item` ON `order_item`.`id` = `orderdata`.`id`
+WHERE `order_status` = \'Completed\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(orderdata.order_date, \'%M %e, %Y\') AS order_date_formatted, `orderdata`.*, `order_item`.*, (order_item.item_qty * order_item.item_amount) AS total_order_amount
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`fk_order_id` = `orderdata`.`id`
+JOIN `order_item` ON `order_item`.`id` = `orderdata`.`id`
+WHERE `order_status` = :order_status:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Admin.php(451): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->sales()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 20:18:48 --> ctype_digit(): Argument of type bool will be interpreted as string in the future
+in SYSTEMPATH\Database\BaseConnection.php on line 1145.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'ctype_digit(): Argument of type bool will be interpreted as string in the future', 'SYSTEMPATH\\Database\\BaseConnection.php', 1145)
+ 2 SYSTEMPATH\Database\BaseConnection.php(1145): ctype_digit(true)
+ 3 SYSTEMPATH\Database\BaseBuilder.php(625): CodeIgniter\Database\BaseConnection->escapeIdentifiers(true)
+ 4 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->join('`order_item`', true)
+ 5 APPPATH\Controllers\Admin.php(448): CodeIgniter\Model->__call('join', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->sales()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-20 20:28:03 --> mysqli_sql_exception: Column 'id' in on clause is ambiguous in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FOR...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FOR...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FOR...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FOR...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(450): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->sales()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-06-20 20:28:03 --> Column 'id' in on clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FORMAT(orderdata.order_date, \'%M %e, %Y\') AS order_date_formatted, `orderdata`.*, `order_item`.*, (order_item.item_qty * order_item.item_amount) AS total_order_amount
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`fk_order_id` and `id` = `orderdata`.`id`
+WHERE `order_status` = \'Completed\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FORMAT(orderdata.order_date, \'%M %e, %Y\') AS order_date_formatted, `orderdata`.*, `order_item`.*, (order_item.item_qty * order_item.item_amount) AS total_order_amount
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`fk_order_id` and `id` = `orderdata`.`id`
+WHERE `order_status` = \'Completed\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FORMAT(orderdata.order_date, \'%M %e, %Y\') AS order_date_formatted, `orderdata`.*, `order_item`.*, (order_item.item_qty * order_item.item_amount) AS total_order_amount
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`fk_order_id` and `id` = `orderdata`.`id`
+WHERE `order_status` = \'Completed\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(orderdata.order_date, \'%M %e, %Y\') AS order_date_formatted, `orderdata`.*, `order_item`.*, (order_item.item_qty * order_item.item_amount) AS total_order_amount
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`fk_order_id` and `id` = `orderdata`.`id`
+WHERE `order_status` = :order_status:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Admin.php(450): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->sales()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-20 20:28:16 --> mysqli_sql_exception: Unknown column 'order_item.fk_order_id.id' in 'on clause' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FOR...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FOR...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FOR...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FOR...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(450): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->sales()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-06-20 20:28:16 --> Unknown column 'order_item.fk_order_id.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FORMAT(orderdata.order_date, \'%M %e, %Y\') AS order_date_formatted, `orderdata`.*, `order_item`.*, (order_item.item_qty * order_item.item_amount) AS total_order_amount
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`fk_order_id`.`id` = `orderdata`.`id`
+WHERE `order_status` = \'Completed\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FORMAT(orderdata.order_date, \'%M %e, %Y\') AS order_date_formatted, `orderdata`.*, `order_item`.*, (order_item.item_qty * order_item.item_amount) AS total_order_amount
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`fk_order_id`.`id` = `orderdata`.`id`
+WHERE `order_status` = \'Completed\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FORMAT(orderdata.order_date, \'%M %e, %Y\') AS order_date_formatted, `orderdata`.*, `order_item`.*, (order_item.item_qty * order_item.item_amount) AS total_order_amount
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`fk_order_id`.`id` = `orderdata`.`id`
+WHERE `order_status` = \'Completed\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(orderdata.order_date, \'%M %e, %Y\') AS order_date_formatted, `orderdata`.*, `order_item`.*, (order_item.item_qty * order_item.item_amount) AS total_order_amount
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`fk_order_id`.`id` = `orderdata`.`id`
+WHERE `order_status` = :order_status:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Admin.php(450): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->sales()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-20 20:33:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`orderdata`.`id`
+WHERE `order_status` = 'Completed'' at line 3 in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FOR...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FOR...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FOR...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FOR...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(450): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->sales()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-06-20 20:33:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`orderdata`.`id`
+WHERE `order_status` = 'Completed'' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FORMAT(orderdata.order_date, \'%M %e, %Y\') AS order_date_formatted, `orderdata`.*, `order_item`.*, (order_item.item_qty * order_item.item_amount) AS total_order_amount
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`fk_order_id` = `orderdata`.`id & order_item`.`id =` `orderdata`.`id`
+WHERE `order_status` = \'Completed\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FORMAT(orderdata.order_date, \'%M %e, %Y\') AS order_date_formatted, `orderdata`.*, `order_item`.*, (order_item.item_qty * order_item.item_amount) AS total_order_amount
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`fk_order_id` = `orderdata`.`id & order_item`.`id =` `orderdata`.`id`
+WHERE `order_status` = \'Completed\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FORMAT(orderdata.order_date, \'%M %e, %Y\') AS order_date_formatted, `orderdata`.*, `order_item`.*, (order_item.item_qty * order_item.item_amount) AS total_order_amount
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`fk_order_id` = `orderdata`.`id & order_item`.`id =` `orderdata`.`id`
+WHERE `order_status` = \'Completed\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(orderdata.order_date, \'%M %e, %Y\') AS order_date_formatted, `orderdata`.*, `order_item`.*, (order_item.item_qty * order_item.item_amount) AS total_order_amount
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`fk_order_id` = `orderdata`.`id & order_item`.`id =` `orderdata`.`id`
+WHERE `order_status` = :order_status:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Admin.php(450): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->sales()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-20 20:33:46 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`orderdata`.`id`
+WHERE `order_status` = 'Completed'' at line 3 in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FOR...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FOR...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FOR...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FOR...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(450): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->sales()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-06-20 20:33:46 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`orderdata`.`id`
+WHERE `order_status` = 'Completed'' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FORMAT(orderdata.order_date, \'%M %e, %Y\') AS order_date_formatted, `orderdata`.*, `order_item`.*, (order_item.item_qty * order_item.item_amount) AS total_order_amount
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`fk_order_id` = `orderdata`.`id && order_item`.`id =` `orderdata`.`id`
+WHERE `order_status` = \'Completed\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FORMAT(orderdata.order_date, \'%M %e, %Y\') AS order_date_formatted, `orderdata`.*, `order_item`.*, (order_item.item_qty * order_item.item_amount) AS total_order_amount
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`fk_order_id` = `orderdata`.`id && order_item`.`id =` `orderdata`.`id`
+WHERE `order_status` = \'Completed\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FORMAT(orderdata.order_date, \'%M %e, %Y\') AS order_date_formatted, `orderdata`.*, `order_item`.*, (order_item.item_qty * order_item.item_amount) AS total_order_amount
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`fk_order_id` = `orderdata`.`id && order_item`.`id =` `orderdata`.`id`
+WHERE `order_status` = \'Completed\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(orderdata.order_date, \'%M %e, %Y\') AS order_date_formatted, `orderdata`.*, `order_item`.*, (order_item.item_qty * order_item.item_amount) AS total_order_amount
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`fk_order_id` = `orderdata`.`id && order_item`.`id =` `orderdata`.`id`
+WHERE `order_status` = :order_status:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Admin.php(450): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->sales()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 20:40:08 --> Undefined variable $possales
+in APPPATH\Views\admin\dashboard.php on line 488.
+ 1 APPPATH\Views\admin\dashboard.php(488): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $possales', 'APPPATH\\Views\\admin\\dashboard.php', 488)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(378): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 20:40:18 --> Undefined variable $monthpos
+in APPPATH\Views\admin\dashboard.php on line 807.
+ 1 APPPATH\Views\admin\dashboard.php(807): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $monthpos', 'APPPATH\\Views\\admin\\dashboard.php', 807)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(378): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 20:40:30 --> Undefined variable $stackedLineChart
+in APPPATH\Views\admin\dashboard.php on line 1139.
+ 1 APPPATH\Views\admin\dashboard.php(1139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $stackedLineChart', 'APPPATH\\Views\\admin\\dashboard.php', 1139)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(378): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 20:43:31 --> Undefined variable $verticalchart
+in APPPATH\Controllers\Admin.php on line 382.
+ 1 APPPATH\Controllers\Admin.php(382): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $verticalchart', 'APPPATH\\Controllers\\Admin.php', 382)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 20:43:47 --> Undefined variable $monthpos
+in APPPATH\Views\admin\dashboard.php on line 814.
+ 1 APPPATH\Views\admin\dashboard.php(814): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $monthpos', 'APPPATH\\Views\\admin\\dashboard.php', 814)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(387): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 20:45:33 --> Undefined array key "month_year"
+in APPPATH\Views\admin\dashboard.php on line 490.
+ 1 APPPATH\Views\admin\dashboard.php(490): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "month_year"', 'APPPATH\\Views\\admin\\dashboard.php', 490)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(383): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 20:55:40 --> Undefined variable $product_name
+in APPPATH\Views\admin\dashboard.php on line 968.
+ 1 APPPATH\Views\admin\dashboard.php(968): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product_name', 'APPPATH\\Views\\admin\\dashboard.php', 968)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(383): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 20:56:04 --> Undefined variable $product_name
+in APPPATH\Views\admin\dashboard.php on line 968.
+ 1 APPPATH\Views\admin\dashboard.php(968): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product_name', 'APPPATH\\Views\\admin\\dashboard.php', 968)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(383): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 21:14:46 --> Undefined variable $Order_model
+in APPPATH\Controllers\POS.php on line 32.
+ 1 APPPATH\Controllers\POS.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Order_model', 'APPPATH\\Controllers\\POS.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\POS->insertData()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\POS))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 21:15:36 --> Undefined variable $order_id
+in APPPATH\Controllers\POS.php on line 42.
+ 1 APPPATH\Controllers\POS.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $order_id', 'APPPATH\\Controllers\\POS.php', 42)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\POS->insertData()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\POS))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 21:29:25 --> Undefined variable $month
+in APPPATH\Views\admin\dashboard.php on line 895.
+ 1 APPPATH\Views\admin\dashboard.php(895): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $month', 'APPPATH\\Views\\admin\\dashboard.php', 895)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(386): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 21:31:21 --> Undefined array key "total_sold"
+in APPPATH\Controllers\Admin.php on line 227.
+ 1 APPPATH\Controllers\Admin.php(227): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "total_sold"', 'APPPATH\\Controllers\\Admin.php', 227)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-20 21:33:34 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`fk_order_id`)
+WHERE `order_status` = 'Completed'' at line 3 in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FOR...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FOR...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FOR...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FOR...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(458): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->sales()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-06-20 21:33:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`fk_order_id`)
+WHERE `order_status` = 'Completed'' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FORMAT(orderdata.order_date, \'%M %e, %Y\') AS order_date_formatted, `orderdata`.*, `order_item`.*, (order_item.item_qty * order_item.item_amount) AS total_order_amount
+FROM `orderdata`
+JOIN `order_item` USING (`order_item`.`fk_order_id`)
+WHERE `order_status` = \'Completed\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FORMAT(orderdata.order_date, \'%M %e, %Y\') AS order_date_formatted, `orderdata`.*, `order_item`.*, (order_item.item_qty * order_item.item_amount) AS total_order_amount
+FROM `orderdata`
+JOIN `order_item` USING (`order_item`.`fk_order_id`)
+WHERE `order_status` = \'Completed\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FORMAT(orderdata.order_date, \'%M %e, %Y\') AS order_date_formatted, `orderdata`.*, `order_item`.*, (order_item.item_qty * order_item.item_amount) AS total_order_amount
+FROM `orderdata`
+JOIN `order_item` USING (`order_item`.`fk_order_id`)
+WHERE `order_status` = \'Completed\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(orderdata.order_date, \'%M %e, %Y\') AS order_date_formatted, `orderdata`.*, `order_item`.*, (order_item.item_qty * order_item.item_amount) AS total_order_amount
+FROM `orderdata`
+JOIN `order_item` USING (`order_item`.`fk_order_id`)
+WHERE `order_status` = :order_status:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Admin.php(458): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->sales()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 21:36:48 --> Undefined variable $month
+in APPPATH\Views\admin\dashboard.php on line 895.
+ 1 APPPATH\Views\admin\dashboard.php(895): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $month', 'APPPATH\\Views\\admin\\dashboard.php', 895)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(386): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 21:37:05 --> Undefined variable $month
+in APPPATH\Views\admin\dashboard.php on line 895.
+ 1 APPPATH\Views\admin\dashboard.php(895): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $month', 'APPPATH\\Views\\admin\\dashboard.php', 895)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(386): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 21:45:07 --> Undefined variable $month
+in APPPATH\Views\admin\dashboard.php on line 895.
+ 1 APPPATH\Views\admin\dashboard.php(895): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $month', 'APPPATH\\Views\\admin\\dashboard.php', 895)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(386): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-20 21:45:14 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''
+            GROUP BY MONTH(order_date), YEAR(order_date)' at line 4 in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FOR...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FOR...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FOR...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(338): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FOR...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-20 21:45:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''
+            GROUP BY MONTH(order_date), YEAR(order_date)' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+            SUM(order_amount) AS total_sold
+            FROM orderdata 
+            WHERE order_status = \'Completed\' and order_type = \'COD\' \'
+            GROUP BY MONTH(order_date), YEAR(order_date)
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+            SUM(order_amount) AS total_sold
+            FROM orderdata 
+            WHERE order_status = \'Completed\' and order_type = \'COD\' \'
+            GROUP BY MONTH(order_date), YEAR(order_date)
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+            SUM(order_amount) AS total_sold
+            FROM orderdata 
+            WHERE order_status = \'Completed\' and order_type = \'COD\' \'
+            GROUP BY MONTH(order_date), YEAR(order_date)
+        ')
+ 4 APPPATH\Controllers\Admin.php(338): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+            SUM(order_amount) AS total_sold
+            FROM orderdata 
+            WHERE order_status = \'Completed\' and order_type = \'COD\' \'
+            GROUP BY MONTH(order_date), YEAR(order_date)
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-20 21:45:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '  orderdata.order_type = 'Online'
+            GROUP BY MONTH(order_date), YEA...' at line 4 in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FOR...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FOR...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FOR...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(338): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FOR...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-20 21:45:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '  orderdata.order_type = 'Online'
+            GROUP BY MONTH(order_date), YEA...' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+            SUM(order_amount) AS total_sold
+            FROM orderdata 
+            WHERE order_status = \'Completed\' and order_type = \'COD\',  orderdata.order_type = \'Online\'
+            GROUP BY MONTH(order_date), YEAR(order_date)
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+            SUM(order_amount) AS total_sold
+            FROM orderdata 
+            WHERE order_status = \'Completed\' and order_type = \'COD\',  orderdata.order_type = \'Online\'
+            GROUP BY MONTH(order_date), YEAR(order_date)
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+            SUM(order_amount) AS total_sold
+            FROM orderdata 
+            WHERE order_status = \'Completed\' and order_type = \'COD\',  orderdata.order_type = \'Online\'
+            GROUP BY MONTH(order_date), YEAR(order_date)
+        ')
+ 4 APPPATH\Controllers\Admin.php(338): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+            SUM(order_amount) AS total_sold
+            FROM orderdata 
+            WHERE order_status = \'Completed\' and order_type = \'COD\',  orderdata.order_type = \'Online\'
+            GROUP BY MONTH(order_date), YEAR(order_date)
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-20 21:47:34 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'order_type = 'COD' and order_type = 'Online'
+            FROM orderdata 
+    ...' at line 3 in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FOR...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FOR...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FOR...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(338): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FOR...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-20 21:47:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'order_type = 'COD' and order_type = 'Online'
+            FROM orderdata 
+    ...' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+            SUM(order_amount) AS total_sold
+            order_type = \'COD\' and order_type = \'Online\'
+            FROM orderdata 
+            WHERE order_status = \'Completed\' 
+            GROUP BY MONTH(order_date), YEAR(order_date)
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+            SUM(order_amount) AS total_sold
+            order_type = \'COD\' and order_type = \'Online\'
+            FROM orderdata 
+            WHERE order_status = \'Completed\' 
+            GROUP BY MONTH(order_date), YEAR(order_date)
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+            SUM(order_amount) AS total_sold
+            order_type = \'COD\' and order_type = \'Online\'
+            FROM orderdata 
+            WHERE order_status = \'Completed\' 
+            GROUP BY MONTH(order_date), YEAR(order_date)
+        ')
+ 4 APPPATH\Controllers\Admin.php(338): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+            SUM(order_amount) AS total_sold
+            order_type = \'COD\' and order_type = \'Online\'
+            FROM orderdata 
+            WHERE order_status = \'Completed\' 
+            GROUP BY MONTH(order_date), YEAR(order_date)
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 22:24:22 --> Array to string conversion
+in APPPATH\Views\admin\dashboard.php on line 1256.
+ 1 APPPATH\Views\admin\dashboard.php(1256): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\admin\\dashboard.php', 1256)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(409): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 22:24:35 --> Undefined variable $lineeee
+in APPPATH\Views\admin\dashboard.php on line 1256.
+ 1 APPPATH\Views\admin\dashboard.php(1256): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lineeee', 'APPPATH\\Views\\admin\\dashboard.php', 1256)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(409): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 22:42:36 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(25): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 22:42:36 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(25): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 22:50:49 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(25): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 22:50:49 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(25): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 22:51:01 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(25): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 22:54:40 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(25): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 23:00:45 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(25): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 23:00:45 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(25): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 23:07:45 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(25): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 23:07:46 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(25): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-20 23:14:47 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=7052 in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 171)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'finalproject', 3306, '', 0)
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(44): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->home()
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'finalproject', 3306, '', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(44): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->home()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(44): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->home()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-06-20 23:14:47 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`fk_order_id` = `orderdata`.`id`
+WHERE `order_status` = :order_status:
+GROUP BY `item_name`
+ORDER BY `item_qty` DESC', [...], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(44): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->home()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 23:20:48 --> Undefined array key "image"
+in APPPATH\Views\pos\print_view.php on line 101.
+ 1 APPPATH\Views\pos\print_view.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "image"', 'APPPATH\\Views\\pos\\print_view.php', 101)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pos\\print_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('pos/print_view', [], true)
+ 5 APPPATH\Controllers\POS.php(107): view('pos/print_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\POS->printView()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\POS))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 23:29:55 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(25): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 23:29:55 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(25): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 23:30:28 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(25): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 23:37:49 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(25): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 23:38:22 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(25): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 23:40:09 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(25): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 23:44:40 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(25): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 23:46:28 --> Undefined property: App\Controllers\Cart::$
+in APPPATH\Controllers\Cart.php on line 22.
+ 1 APPPATH\Controllers\Cart.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Cart::$', 'APPPATH\\Controllers\\Cart.php', 22)
+ 2 APPPATH\Controllers\Cart.php(41): App\Controllers\Cart->isExist(null)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 23:47:10 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(25): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 23:47:32 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(25): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 23:47:58 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(25): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-20 23:47:59 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(25): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

@@ -1,0 +1,27 @@
+CRITICAL - 2023-04-20 02:18:31 --> Undefined property: App\Controllers\Cart::$
+in APPPATH\Controllers\Cart.php on line 22.
+ 1 APPPATH\Controllers\Cart.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Cart::$', 'APPPATH\\Controllers\\Cart.php', 22)
+ 2 APPPATH\Controllers\Cart.php(41): App\Controllers\Cart->isExist(null)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-20 02:18:32 --> Undefined property: App\Controllers\Cart::$
+in APPPATH\Controllers\Cart.php on line 22.
+ 1 APPPATH\Controllers\Cart.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Cart::$', 'APPPATH\\Controllers\\Cart.php', 22)
+ 2 APPPATH\Controllers\Cart.php(41): App\Controllers\Cart->isExist(null)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-20 02:18:35 --> Undefined property: App\Controllers\Cart::$
+in APPPATH\Controllers\Cart.php on line 22.
+ 1 APPPATH\Controllers\Cart.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Cart::$', 'APPPATH\\Controllers\\Cart.php', 22)
+ 2 APPPATH\Controllers\Cart.php(41): App\Controllers\Cart->isExist(null)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

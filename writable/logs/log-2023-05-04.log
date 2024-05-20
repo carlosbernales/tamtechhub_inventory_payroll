@@ -1,0 +1,2193 @@
+ERROR - 2023-05-04 04:49:10 --> mysqli_sql_exception: Column 'fk_user_id' in where clause is ambiguous in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(97): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->orders()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-04 04:49:10 --> Column 'fk_user_id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `orderdata`
+INNER JOIN `order_item` ON `order_item`.`fk_order_id` = `orderdata`.`order_id`
+WHERE `orderdata`.`fk_user_id` = \'1\'
+AND `fk_user_id` = \'1\'
+AND `order_status` = \'Pending\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `orderdata`
+INNER JOIN `order_item` ON `order_item`.`fk_order_id` = `orderdata`.`order_id`
+WHERE `orderdata`.`fk_user_id` = \'1\'
+AND `fk_user_id` = \'1\'
+AND `order_status` = \'Pending\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `orderdata`
+INNER JOIN `order_item` ON `order_item`.`fk_order_id` = `orderdata`.`order_id`
+WHERE `orderdata`.`fk_user_id` = \'1\'
+AND `fk_user_id` = \'1\'
+AND `order_status` = \'Pending\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `orderdata`
+INNER JOIN `order_item` ON `order_item`.`fk_order_id` = `orderdata`.`order_id`
+WHERE `orderdata`.`fk_user_id` = :orderdata.fk_user_id:
+AND `fk_user_id` = :fk_user_id:
+AND `order_status` = :order_status:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(97): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 04:49:38 --> Undefined array key "item_image"
+in APPPATH\Views\home\orders.php on line 74.
+ 1 APPPATH\Views\home\orders.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_image"', 'APPPATH\\Views\\home\\orders.php', 74)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(105): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-04 04:49:49 --> mysqli_sql_exception: Column 'fk_user_id' in where clause is ambiguous in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(97): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->orders()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-04 04:49:49 --> Column 'fk_user_id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `orderdata`
+INNER JOIN `order_item` ON `order_item`.`fk_order_id` = `orderdata`.`order_id`
+WHERE `orderdata`.`fk_user_id` = \'1\'
+AND `fk_user_id` = \'1\'
+AND `order_status` = \'Pending\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `orderdata`
+INNER JOIN `order_item` ON `order_item`.`fk_order_id` = `orderdata`.`order_id`
+WHERE `orderdata`.`fk_user_id` = \'1\'
+AND `fk_user_id` = \'1\'
+AND `order_status` = \'Pending\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `orderdata`
+INNER JOIN `order_item` ON `order_item`.`fk_order_id` = `orderdata`.`order_id`
+WHERE `orderdata`.`fk_user_id` = \'1\'
+AND `fk_user_id` = \'1\'
+AND `order_status` = \'Pending\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `orderdata`
+INNER JOIN `order_item` ON `order_item`.`fk_order_id` = `orderdata`.`order_id`
+WHERE `orderdata`.`fk_user_id` = :orderdata.fk_user_id:
+AND `fk_user_id` = :fk_user_id:
+AND `order_status` = :order_status:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(97): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 04:53:28 --> Undefined array key "item_image"
+in APPPATH\Views\home\orders.php on line 132.
+ 1 APPPATH\Views\home\orders.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_image"', 'APPPATH\\Views\\home\\orders.php', 132)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(108): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 04:53:42 --> Undefined array key "item_image"
+in APPPATH\Views\home\orders.php on line 132.
+ 1 APPPATH\Views\home\orders.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_image"', 'APPPATH\\Views\\home\\orders.php', 132)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(108): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 04:59:45 --> Undefined array key "item_image"
+in APPPATH\Views\home\orders.php on line 132.
+ 1 APPPATH\Views\home\orders.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_image"', 'APPPATH\\Views\\home\\orders.php', 132)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(103): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 04:59:46 --> Undefined array key "item_image"
+in APPPATH\Views\home\orders.php on line 132.
+ 1 APPPATH\Views\home\orders.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_image"', 'APPPATH\\Views\\home\\orders.php', 132)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(103): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 04:59:47 --> Undefined array key "item_image"
+in APPPATH\Views\home\orders.php on line 132.
+ 1 APPPATH\Views\home\orders.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_image"', 'APPPATH\\Views\\home\\orders.php', 132)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(103): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 04:59:47 --> Undefined array key "item_image"
+in APPPATH\Views\home\orders.php on line 132.
+ 1 APPPATH\Views\home\orders.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_image"', 'APPPATH\\Views\\home\\orders.php', 132)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(103): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 04:59:49 --> Undefined array key "item_image"
+in APPPATH\Views\home\orders.php on line 132.
+ 1 APPPATH\Views\home\orders.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_image"', 'APPPATH\\Views\\home\\orders.php', 132)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(103): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-04 05:05:14 --> mysqli_sql_exception: Column 'fk_user_id' in where clause is ambiguous in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(94): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->orders()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-04 05:05:14 --> Column 'fk_user_id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `orderdata`
+JOIN `order_item` ON `orderdata`.`order_id` = `order_item`.`fk_order_id`
+WHERE `fk_user_id` = \'1\'
+AND `order_status` = \'Pending\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `orderdata`
+JOIN `order_item` ON `orderdata`.`order_id` = `order_item`.`fk_order_id`
+WHERE `fk_user_id` = \'1\'
+AND `order_status` = \'Pending\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `orderdata`
+JOIN `order_item` ON `orderdata`.`order_id` = `order_item`.`fk_order_id`
+WHERE `fk_user_id` = \'1\'
+AND `order_status` = \'Pending\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `orderdata`
+JOIN `order_item` ON `orderdata`.`order_id` = `order_item`.`fk_order_id`
+WHERE `fk_user_id` = :fk_user_id:
+AND `order_status` = :order_status:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(94): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-04 05:07:09 --> mysqli_sql_exception: Column 'fk_user_id' in where clause is ambiguous in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(94): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->orders()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-04 05:07:09 --> Column 'fk_user_id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `orderdata`
+JOIN `order_item` ON `orderdata`.`order_id` = `order_item`.`id`
+WHERE `fk_user_id` = \'1\'
+AND `order_status` = \'Pending\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `orderdata`
+JOIN `order_item` ON `orderdata`.`order_id` = `order_item`.`id`
+WHERE `fk_user_id` = \'1\'
+AND `order_status` = \'Pending\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `orderdata`
+JOIN `order_item` ON `orderdata`.`order_id` = `order_item`.`id`
+WHERE `fk_user_id` = \'1\'
+AND `order_status` = \'Pending\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `orderdata`
+JOIN `order_item` ON `orderdata`.`order_id` = `order_item`.`id`
+WHERE `fk_user_id` = :fk_user_id:
+AND `order_status` = :order_status:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(94): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 05:07:24 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\home\orders.php on line 55.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 4 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 8 APPPATH\Controllers\Home.php(105): view('includes/template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 05:07:56 --> Undefined variable $pending_orders
+in APPPATH\Views\home\orders.php on line 64.
+ 1 APPPATH\Views\home\orders.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pending_orders', 'APPPATH\\Views\\home\\orders.php', 64)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(105): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 05:08:02 --> Undefined variable $pending_orders
+in APPPATH\Views\home\orders.php on line 64.
+ 1 APPPATH\Views\home\orders.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pending_orders', 'APPPATH\\Views\\home\\orders.php', 64)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(105): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-04 05:08:12 --> mysqli_sql_exception: Column 'fk_user_id' in where clause is ambiguous in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(94): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->orders()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-04 05:08:12 --> Column 'fk_user_id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `orderdata`
+JOIN `order_item` ON `orderdata`.`order_id` = `order_item`.`id`
+WHERE `fk_user_id` = \'1\'
+AND `order_status` = \'Pending\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `orderdata`
+JOIN `order_item` ON `orderdata`.`order_id` = `order_item`.`id`
+WHERE `fk_user_id` = \'1\'
+AND `order_status` = \'Pending\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `orderdata`
+JOIN `order_item` ON `orderdata`.`order_id` = `order_item`.`id`
+WHERE `fk_user_id` = \'1\'
+AND `order_status` = \'Pending\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `orderdata`
+JOIN `order_item` ON `orderdata`.`order_id` = `order_item`.`id`
+WHERE `fk_user_id` = :fk_user_id:
+AND `order_status` = :order_status:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(94): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 05:08:46 --> Undefined array key "item_image"
+in APPPATH\Views\home\orders.php on line 115.
+ 1 APPPATH\Views\home\orders.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_image"', 'APPPATH\\Views\\home\\orders.php', 115)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(108): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 05:09:25 --> Undefined array key "item_image"
+in APPPATH\Views\home\orders.php on line 115.
+ 1 APPPATH\Views\home\orders.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_image"', 'APPPATH\\Views\\home\\orders.php', 115)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(108): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 05:12:10 --> Undefined array key "item_image"
+in APPPATH\Views\home\orders.php on line 115.
+ 1 APPPATH\Views\home\orders.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_image"', 'APPPATH\\Views\\home\\orders.php', 115)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(108): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 05:13:13 --> Undefined array key "item_image"
+in APPPATH\Views\home\orders.php on line 115.
+ 1 APPPATH\Views\home\orders.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_image"', 'APPPATH\\Views\\home\\orders.php', 115)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(108): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 05:13:14 --> Undefined array key "item_image"
+in APPPATH\Views\home\orders.php on line 115.
+ 1 APPPATH\Views\home\orders.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_image"', 'APPPATH\\Views\\home\\orders.php', 115)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(108): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 05:25:28 --> Undefined array key "item_image"
+in APPPATH\Views\home\orders.php on line 115.
+ 1 APPPATH\Views\home\orders.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_image"', 'APPPATH\\Views\\home\\orders.php', 115)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(108): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 05:36:36 --> Undefined variable $order_items
+in APPPATH\Views\home\orders.php on line 86.
+ 1 APPPATH\Views\home\orders.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $order_items', 'APPPATH\\Views\\home\\orders.php', 86)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(108): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 05:38:24 --> Undefined array key "product_image"
+in APPPATH\Views\home\orders.php on line 87.
+ 1 APPPATH\Views\home\orders.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_image"', 'APPPATH\\Views\\home\\orders.php', 87)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(109): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 05:39:21 --> Undefined array key "product_image"
+in APPPATH\Views\home\orders.php on line 94.
+ 1 APPPATH\Views\home\orders.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_image"', 'APPPATH\\Views\\home\\orders.php', 94)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(109): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 05:39:23 --> Undefined array key "product_image"
+in APPPATH\Views\home\orders.php on line 94.
+ 1 APPPATH\Views\home\orders.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_image"', 'APPPATH\\Views\\home\\orders.php', 94)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(109): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 05:40:03 --> Undefined array key "product_image"
+in APPPATH\Views\home\orders.php on line 94.
+ 1 APPPATH\Views\home\orders.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_image"', 'APPPATH\\Views\\home\\orders.php', 94)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(109): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 05:41:10 --> Undefined array key "product_image"
+in APPPATH\Views\home\orders.php on line 93.
+ 1 APPPATH\Views\home\orders.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_image"', 'APPPATH\\Views\\home\\orders.php', 93)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(109): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 05:49:03 --> Cannot access offset of type string on string
+in APPPATH\Views\home\orders.php on line 93.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 4 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 8 APPPATH\Controllers\Home.php(109): view('includes/template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 05:51:55 --> Undefined array key "item_image"
+in APPPATH\Views\home\orders.php on line 85.
+ 1 APPPATH\Views\home\orders.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_image"', 'APPPATH\\Views\\home\\orders.php', 85)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(106): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 05:56:10 --> Call to undefined function App\Controllers\where()
+in APPPATH\Controllers\Home.php on line 98.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-04 05:56:17 --> mysqli_sql_exception: Column 'fk_user_id' in where clause is ambiguous in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(98): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->orders()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-04 05:56:17 --> Column 'fk_user_id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `orderdata`
+INNER JOIN `order_item` ON `orderdata`.`order_id` = `order_item`.`fk_order_id`
+WHERE `fk_user_id` = \'1\'
+AND `order_status` = \'Pending\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `orderdata`
+INNER JOIN `order_item` ON `orderdata`.`order_id` = `order_item`.`fk_order_id`
+WHERE `fk_user_id` = \'1\'
+AND `order_status` = \'Pending\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `orderdata`
+INNER JOIN `order_item` ON `orderdata`.`order_id` = `order_item`.`fk_order_id`
+WHERE `fk_user_id` = \'1\'
+AND `order_status` = \'Pending\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `orderdata`
+INNER JOIN `order_item` ON `orderdata`.`order_id` = `order_item`.`fk_order_id`
+WHERE `fk_user_id` = :fk_user_id:
+AND `order_status` = :order_status:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(98): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-04 05:57:04 --> mysqli_sql_exception: Column 'fk_user_id' in where clause is ambiguous in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(98): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->orders()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-04 05:57:04 --> Column 'fk_user_id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `orderdata`
+INNER JOIN `order_item` ON `orderdata`.`order_id` = `order_item`.`fk_order_id`
+WHERE `fk_user_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `orderdata`
+INNER JOIN `order_item` ON `orderdata`.`order_id` = `order_item`.`fk_order_id`
+WHERE `fk_user_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `orderdata`
+INNER JOIN `order_item` ON `orderdata`.`order_id` = `order_item`.`fk_order_id`
+WHERE `fk_user_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `orderdata`
+INNER JOIN `order_item` ON `orderdata`.`order_id` = `order_item`.`fk_order_id`
+WHERE `fk_user_id` = :fk_user_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(98): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 05:59:18 --> Undefined array key "order_id"
+in APPPATH\Views\home\orders.php on line 66.
+ 1 APPPATH\Views\home\orders.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "order_id"', 'APPPATH\\Views\\home\\orders.php', 66)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(110): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 05:59:42 --> Undefined array key "order_id"
+in APPPATH\Views\home\orders.php on line 66.
+ 1 APPPATH\Views\home\orders.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "order_id"', 'APPPATH\\Views\\home\\orders.php', 66)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(110): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 06:01:10 --> Undefined array key "order_id"
+in APPPATH\Views\home\orders.php on line 65.
+ 1 APPPATH\Views\home\orders.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "order_id"', 'APPPATH\\Views\\home\\orders.php', 65)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(110): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-04 06:02:28 --> mysqli_sql_exception: Unknown column 'order_item.order_id' in 'on clause' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(98): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->orders()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-04 06:02:28 --> Unknown column 'order_item.order_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `order_item`
+INNER JOIN `orderdata` ON `order_item`.`fk_order_id` = `order_item`.`order_id`
+WHERE `fk_user_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `order_item`
+INNER JOIN `orderdata` ON `order_item`.`fk_order_id` = `order_item`.`order_id`
+WHERE `fk_user_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `order_item`
+INNER JOIN `orderdata` ON `order_item`.`fk_order_id` = `order_item`.`order_id`
+WHERE `fk_user_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `order_item`
+INNER JOIN `orderdata` ON `order_item`.`fk_order_id` = `order_item`.`order_id`
+WHERE `fk_user_id` = :fk_user_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(98): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-04 06:02:40 --> mysqli_sql_exception: Unknown column 'order_item.order_id' in 'on clause' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(98): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->orders()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-04 06:02:40 --> Unknown column 'order_item.order_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `order_item`
+LEFT JOIN `orderdata` ON `order_item`.`fk_order_id` = `order_item`.`order_id`
+WHERE `fk_user_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `order_item`
+LEFT JOIN `orderdata` ON `order_item`.`fk_order_id` = `order_item`.`order_id`
+WHERE `fk_user_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `order_item`
+LEFT JOIN `orderdata` ON `order_item`.`fk_order_id` = `order_item`.`order_id`
+WHERE `fk_user_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `order_item`
+LEFT JOIN `orderdata` ON `order_item`.`fk_order_id` = `order_item`.`order_id`
+WHERE `fk_user_id` = :fk_user_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(98): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-04 06:02:43 --> mysqli_sql_exception: Unknown column 'order_item.order_id' in 'on clause' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(98): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->orders()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-04 06:02:43 --> Unknown column 'order_item.order_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `order_item`
+RIGHT JOIN `orderdata` ON `order_item`.`fk_order_id` = `order_item`.`order_id`
+WHERE `fk_user_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `order_item`
+RIGHT JOIN `orderdata` ON `order_item`.`fk_order_id` = `order_item`.`order_id`
+WHERE `fk_user_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `order_item`
+RIGHT JOIN `orderdata` ON `order_item`.`fk_order_id` = `order_item`.`order_id`
+WHERE `fk_user_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `order_item`
+RIGHT JOIN `orderdata` ON `order_item`.`fk_order_id` = `order_item`.`order_id`
+WHERE `fk_user_id` = :fk_user_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(98): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-04 06:02:46 --> mysqli_sql_exception: Unknown column 'order_item.order_id' in 'on clause' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(98): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->orders()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-04 06:02:46 --> Unknown column 'order_item.order_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `order_item`
+JOIN `orderdata` ON `order_item`.`fk_order_id` = `order_item`.`order_id`
+WHERE `fk_user_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `order_item`
+JOIN `orderdata` ON `order_item`.`fk_order_id` = `order_item`.`order_id`
+WHERE `fk_user_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `order_item`
+JOIN `orderdata` ON `order_item`.`fk_order_id` = `order_item`.`order_id`
+WHERE `fk_user_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `order_item`
+JOIN `orderdata` ON `order_item`.`fk_order_id` = `order_item`.`order_id`
+WHERE `fk_user_id` = :fk_user_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(98): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-04 06:02:50 --> mysqli_sql_exception: Unknown column 'order_item.order_id' in 'on clause' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(98): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->orders()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-04 06:02:50 --> Unknown column 'order_item.order_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `order_item`
+JOIN `orderdata` ON `order_item`.`fk_order_id` = `order_item`.`order_id`
+WHERE `fk_user_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `order_item`
+JOIN `orderdata` ON `order_item`.`fk_order_id` = `order_item`.`order_id`
+WHERE `fk_user_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `order_item`
+JOIN `orderdata` ON `order_item`.`fk_order_id` = `order_item`.`order_id`
+WHERE `fk_user_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `order_item`
+JOIN `orderdata` ON `order_item`.`fk_order_id` = `order_item`.`order_id`
+WHERE `fk_user_id` = :fk_user_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(98): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-04 06:06:13 --> mysqli_sql_exception: Unknown column 'fk_user_id' in 'field list' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(540): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-05-04 06:06:13 --> Unknown column 'fk_user_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'1\', \'ORDER_ID. 1134303\', \'1674142736_c29cb3152a5a2faacf82.jpg\', \'BQT-53\', \'1800.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:06:13\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'1\', \'ORDER_ID. 1134303\', \'1674142736_c29cb3152a5a2faacf82.jpg\', \'BQT-53\', \'1800.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:06:13\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'1\', \'ORDER_ID. 1134303\', \'1674142736_c29cb3152a5a2faacf82.jpg\', \'BQT-53\', \'1800.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:06:13\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (:fk_user_id:, :fk_order_id:, :item_image:, :item_name:, :item_amount:, :item_qty:, :order_date:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Home.php(540): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-04 06:06:15 --> mysqli_sql_exception: Unknown column 'fk_user_id' in 'field list' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(540): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-05-04 06:06:15 --> Unknown column 'fk_user_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'1\', \'ORDER_ID. 1278464\', \'1674142736_c29cb3152a5a2faacf82.jpg\', \'BQT-53\', \'1800.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:06:15\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'1\', \'ORDER_ID. 1278464\', \'1674142736_c29cb3152a5a2faacf82.jpg\', \'BQT-53\', \'1800.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:06:15\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'1\', \'ORDER_ID. 1278464\', \'1674142736_c29cb3152a5a2faacf82.jpg\', \'BQT-53\', \'1800.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:06:15\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (:fk_user_id:, :fk_order_id:, :item_image:, :item_name:, :item_amount:, :item_qty:, :order_date:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Home.php(540): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-04 06:06:19 --> mysqli_sql_exception: Unknown column 'fk_user_id' in 'field list' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(540): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-05-04 06:06:19 --> Unknown column 'fk_user_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'1\', \'ORDER_ID. 8752\', \'1674142736_c29cb3152a5a2faacf82.jpg\', \'BQT-53\', \'1800.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:06:19\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'1\', \'ORDER_ID. 8752\', \'1674142736_c29cb3152a5a2faacf82.jpg\', \'BQT-53\', \'1800.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:06:19\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'1\', \'ORDER_ID. 8752\', \'1674142736_c29cb3152a5a2faacf82.jpg\', \'BQT-53\', \'1800.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:06:19\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (:fk_user_id:, :fk_order_id:, :item_image:, :item_name:, :item_amount:, :item_qty:, :order_date:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Home.php(540): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-04 06:06:33 --> mysqli_sql_exception: Unknown column 'fk_user_id' in 'field list' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(540): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-05-04 06:06:33 --> Unknown column 'fk_user_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'1\', \'ORDER_ID. 1952226\', \'1674142736_c29cb3152a5a2faacf82.jpg\', \'BQT-53\', \'1800.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:06:33\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'1\', \'ORDER_ID. 1952226\', \'1674142736_c29cb3152a5a2faacf82.jpg\', \'BQT-53\', \'1800.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:06:33\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'1\', \'ORDER_ID. 1952226\', \'1674142736_c29cb3152a5a2faacf82.jpg\', \'BQT-53\', \'1800.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:06:33\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (:fk_user_id:, :fk_order_id:, :item_image:, :item_name:, :item_amount:, :item_qty:, :order_date:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Home.php(540): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-04 06:06:41 --> mysqli_sql_exception: Unknown column 'fk_user_id' in 'field list' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(540): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-05-04 06:06:41 --> Unknown column 'fk_user_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'1\', \'ORDER_ID. 453855\', \'1674142736_c29cb3152a5a2faacf82.jpg\', \'BQT-53\', \'1800.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:06:41\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'1\', \'ORDER_ID. 453855\', \'1674142736_c29cb3152a5a2faacf82.jpg\', \'BQT-53\', \'1800.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:06:41\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'1\', \'ORDER_ID. 453855\', \'1674142736_c29cb3152a5a2faacf82.jpg\', \'BQT-53\', \'1800.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:06:41\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (:fk_user_id:, :fk_order_id:, :item_image:, :item_name:, :item_amount:, :item_qty:, :order_date:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Home.php(540): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-04 06:06:58 --> mysqli_sql_exception: Unknown column 'fk_user_id' in 'field list' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(540): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-05-04 06:06:58 --> Unknown column 'fk_user_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'1\', \'ORDER_ID. 1121406\', \'1674142736_c29cb3152a5a2faacf82.jpg\', \'BQT-53\', \'1800.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:06:58\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'1\', \'ORDER_ID. 1121406\', \'1674142736_c29cb3152a5a2faacf82.jpg\', \'BQT-53\', \'1800.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:06:58\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'1\', \'ORDER_ID. 1121406\', \'1674142736_c29cb3152a5a2faacf82.jpg\', \'BQT-53\', \'1800.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:06:58\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (:fk_user_id:, :fk_order_id:, :item_image:, :item_name:, :item_amount:, :item_qty:, :order_date:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Home.php(540): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-04 06:07:05 --> mysqli_sql_exception: Unknown column 'fk_user_id' in 'field list' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(540): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-05-04 06:07:05 --> Unknown column 'fk_user_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'1\', \'ORDER_ID. 169011\', \'1674142736_c29cb3152a5a2faacf82.jpg\', \'BQT-53\', \'1800.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:07:05\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'1\', \'ORDER_ID. 169011\', \'1674142736_c29cb3152a5a2faacf82.jpg\', \'BQT-53\', \'1800.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:07:05\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'1\', \'ORDER_ID. 169011\', \'1674142736_c29cb3152a5a2faacf82.jpg\', \'BQT-53\', \'1800.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:07:05\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (:fk_user_id:, :fk_order_id:, :item_image:, :item_name:, :item_amount:, :item_qty:, :order_date:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Home.php(540): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-04 06:07:09 --> mysqli_sql_exception: Unknown column 'fk_user_id' in 'field list' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(540): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-05-04 06:07:09 --> Unknown column 'fk_user_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'1\', \'ORDER_ID. 1370099\', \'1674142736_c29cb3152a5a2faacf82.jpg\', \'BQT-53\', \'1800.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:07:09\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'1\', \'ORDER_ID. 1370099\', \'1674142736_c29cb3152a5a2faacf82.jpg\', \'BQT-53\', \'1800.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:07:09\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'1\', \'ORDER_ID. 1370099\', \'1674142736_c29cb3152a5a2faacf82.jpg\', \'BQT-53\', \'1800.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:07:09\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (:fk_user_id:, :fk_order_id:, :item_image:, :item_name:, :item_amount:, :item_qty:, :order_date:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Home.php(540): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-04 06:07:28 --> mysqli_sql_exception: Unknown column 'fk_user_id' in 'field list' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(540): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-05-04 06:07:28 --> Unknown column 'fk_user_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'1\', \'ORDER_ID. 779206\', \'1674142736_c29cb3152a5a2faacf82.jpg\', \'BQT-53\', \'1800.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:07:28\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'1\', \'ORDER_ID. 779206\', \'1674142736_c29cb3152a5a2faacf82.jpg\', \'BQT-53\', \'1800.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:07:28\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'1\', \'ORDER_ID. 779206\', \'1674142736_c29cb3152a5a2faacf82.jpg\', \'BQT-53\', \'1800.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:07:28\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (:fk_user_id:, :fk_order_id:, :item_image:, :item_name:, :item_amount:, :item_qty:, :order_date:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Home.php(540): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-04 06:07:57 --> mysqli_sql_exception: Unknown column 'fk_user_id' in 'field list' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(540): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-05-04 06:07:57 --> Unknown column 'fk_user_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'1\', \'ORDER_ID. 2345144\', \'1674142736_c29cb3152a5a2faacf82.jpg\', \'BQT-53\', \'1800.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:07:57\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'1\', \'ORDER_ID. 2345144\', \'1674142736_c29cb3152a5a2faacf82.jpg\', \'BQT-53\', \'1800.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:07:57\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'1\', \'ORDER_ID. 2345144\', \'1674142736_c29cb3152a5a2faacf82.jpg\', \'BQT-53\', \'1800.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:07:57\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (:fk_user_id:, :fk_order_id:, :item_image:, :item_name:, :item_amount:, :item_qty:, :order_date:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Home.php(540): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-04 06:08:49 --> mysqli_sql_exception: Unknown column 'fk_user_id' in 'field list' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(540): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-05-04 06:08:49 --> Unknown column 'fk_user_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'3\', \'ORDER_ID. 805945\', \'1675146413_74a47161861f103e0945.jpg\', \'BQT-22\', \'1236.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:08:49\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'3\', \'ORDER_ID. 805945\', \'1675146413_74a47161861f103e0945.jpg\', \'BQT-22\', \'1236.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:08:49\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'3\', \'ORDER_ID. 805945\', \'1675146413_74a47161861f103e0945.jpg\', \'BQT-22\', \'1236.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:08:49\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (:fk_user_id:, :fk_order_id:, :item_image:, :item_name:, :item_amount:, :item_qty:, :order_date:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Home.php(540): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-04 06:09:59 --> mysqli_sql_exception: Unknown column 'fk_user_id' in 'where clause' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(562): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->order_success('ORDER_ID. 15125...')
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-04 06:09:59 --> Unknown column 'fk_user_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = :fk_user_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(562): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->order_success('ORDER_ID. 1512593')
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-04 06:11:19 --> mysqli_sql_exception: Unknown column 'fk_user_id' in 'field list' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(540): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-05-04 06:11:19 --> Unknown column 'fk_user_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'1\', \'ORDER_ID. 320325\', \'1675146413_74a47161861f103e0945.jpg\', \'BQT-22\', \'1236.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:11:19\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'1\', \'ORDER_ID. 320325\', \'1675146413_74a47161861f103e0945.jpg\', \'BQT-22\', \'1236.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:11:19\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (\'1\', \'ORDER_ID. 320325\', \'1675146413_74a47161861f103e0945.jpg\', \'BQT-22\', \'1236.00\', \'1\', \'2023-05-04\', \'2023-05-04 06:11:19\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `order_item` (`fk_user_id`, `fk_order_id`, `item_image`, `item_name`, `item_amount`, `item_qty`, `order_date`, `created_at`) VALUES (:fk_user_id:, :fk_order_id:, :item_image:, :item_name:, :item_amount:, :item_qty:, :order_date:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Home.php(540): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-04 06:12:10 --> mysqli_sql_exception: Unknown column 'fk_user_id' in 'where clause' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(562): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->order_success('ORDER_ID. 19876...')
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-04 06:12:10 --> Unknown column 'fk_user_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = :fk_user_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(562): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->order_success('ORDER_ID. 1987657')
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-04 06:14:38 --> mysqli_sql_exception: Unknown column 'fk_user_id' in 'where clause' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(562): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->order_success('ORDER_ID. 19876...')
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-04 06:14:38 --> Unknown column 'fk_user_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = :fk_user_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(562): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->order_success('ORDER_ID. 1987657')
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-04 06:15:03 --> mysqli_sql_exception: Unknown column 'fk_user_id' in 'where clause' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(562): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->order_success('ORDER_ID. 81149...')
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-04 06:15:03 --> Unknown column 'fk_user_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = :fk_user_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(562): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->order_success('ORDER_ID. 811490')
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-04 06:21:15 --> mysqli_sql_exception: Unknown column 'orderdata.fk_order_id' in 'on clause' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(99): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->orders()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-04 06:21:15 --> Unknown column 'orderdata.fk_order_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `orderdata`
+INNER JOIN `order_item` ON `orderdata`.`order_id` = `orderdata`.`fk_order_id`
+WHERE `fk_user_id` = \'1\'
+AND `order_status` = \'Pending\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `orderdata`
+INNER JOIN `order_item` ON `orderdata`.`order_id` = `orderdata`.`fk_order_id`
+WHERE `fk_user_id` = \'1\'
+AND `order_status` = \'Pending\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `orderdata`
+INNER JOIN `order_item` ON `orderdata`.`order_id` = `orderdata`.`fk_order_id`
+WHERE `fk_user_id` = \'1\'
+AND `order_status` = \'Pending\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `orderdata`
+INNER JOIN `order_item` ON `orderdata`.`order_id` = `orderdata`.`fk_order_id`
+WHERE `fk_user_id` = :fk_user_id:
+AND `order_status` = :order_status:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(99): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 06:22:56 --> Undefined array key "order_id"
+in APPPATH\Views\home\orders.php on line 66.
+ 1 APPPATH\Views\home\orders.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "order_id"', 'APPPATH\\Views\\home\\orders.php', 66)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(104): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 07:06:47 --> syntax error, unexpected token "(", expecting identifier or variable or "{" or "$"
+in APPPATH\Controllers\Home.php on line 102.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 07:08:16 --> Cannot access offset of type string on string
+in APPPATH\Views\home\orders.php on line 94.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 4 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 8 APPPATH\Controllers\Home.php(110): view('includes/template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 07:11:33 --> Cannot access offset of type string on string
+in APPPATH\Views\home\orders.php on line 66.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 4 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 8 APPPATH\Controllers\Home.php(110): view('includes/template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 07:14:50 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\orders.php on line 66.
+ 1 APPPATH\Views\home\orders.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\home\\orders.php', 66)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(110): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-04 07:15:27 --> mysqli_sql_exception: Unknown column 'fk_user_id' in 'where clause' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(104): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->orders()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-04 07:15:27 --> Unknown column 'fk_user_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = \'1\'
+AND `fk_order_id` = 0', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = \'1\'
+AND `fk_order_id` = 0')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = \'1\'
+AND `fk_order_id` = 0')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `order_item`
+WHERE `fk_user_id` = :fk_user_id:
+AND `fk_order_id` = :fk_order_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(104): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-04 07:18:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `orderdata`
+INNER JOIN `order_item` ON `orderdata`.`id` = `order_item`...' at line 1 in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, *\nFRO...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, *\nFRO...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, *\nFRO...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *, *\nFRO...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(103): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->orders()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-04 07:18:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `orderdata`
+INNER JOIN `order_item` ON `orderdata`.`id` = `order_item`...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, *
+FROM `orderdata`
+INNER JOIN `order_item` ON `orderdata`.`id` = `order_item`.`fk_order_id`
+INNER JOIN `order_item` ON `orderdata`.`id` = `order_item`.`fk_order_id`
+WHERE `fk_user_id` = \'1\'
+AND `fk_user_id` = \'1\'
+AND `order_status` = \'Pending\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, *
+FROM `orderdata`
+INNER JOIN `order_item` ON `orderdata`.`id` = `order_item`.`fk_order_id`
+INNER JOIN `order_item` ON `orderdata`.`id` = `order_item`.`fk_order_id`
+WHERE `fk_user_id` = \'1\'
+AND `fk_user_id` = \'1\'
+AND `order_status` = \'Pending\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, *
+FROM `orderdata`
+INNER JOIN `order_item` ON `orderdata`.`id` = `order_item`.`fk_order_id`
+INNER JOIN `order_item` ON `orderdata`.`id` = `order_item`.`fk_order_id`
+WHERE `fk_user_id` = \'1\'
+AND `fk_user_id` = \'1\'
+AND `order_status` = \'Pending\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *, *
+FROM `orderdata`
+INNER JOIN `order_item` ON `orderdata`.`id` = `order_item`.`fk_order_id`
+INNER JOIN `order_item` ON `orderdata`.`id` = `order_item`.`fk_order_id`
+WHERE `fk_user_id` = :fk_user_id:
+AND `fk_user_id` = :fk_user_id.1:
+AND `order_status` = :order_status:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(103): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-04 07:18:46 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `orderdata`
+INNER JOIN `order_item` ON `orderdata`.`id` = `order_item`...' at line 1 in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, *\nFRO...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, *\nFRO...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, *\nFRO...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *, *\nFRO...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(103): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->orders()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-04 07:18:46 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `orderdata`
+INNER JOIN `order_item` ON `orderdata`.`id` = `order_item`...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, *
+FROM `orderdata`
+INNER JOIN `order_item` ON `orderdata`.`id` = `order_item`.`fk_order_id`
+INNER JOIN `order_item` ON `orderdata`.`id` = `order_item`.`fk_order_id`
+WHERE `fk_user_id` = \'1\'
+AND `fk_user_id` = \'1\'
+AND `order_status` = \'Pending\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, *
+FROM `orderdata`
+INNER JOIN `order_item` ON `orderdata`.`id` = `order_item`.`fk_order_id`
+INNER JOIN `order_item` ON `orderdata`.`id` = `order_item`.`fk_order_id`
+WHERE `fk_user_id` = \'1\'
+AND `fk_user_id` = \'1\'
+AND `order_status` = \'Pending\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, *
+FROM `orderdata`
+INNER JOIN `order_item` ON `orderdata`.`id` = `order_item`.`fk_order_id`
+INNER JOIN `order_item` ON `orderdata`.`id` = `order_item`.`fk_order_id`
+WHERE `fk_user_id` = \'1\'
+AND `fk_user_id` = \'1\'
+AND `order_status` = \'Pending\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *, *
+FROM `orderdata`
+INNER JOIN `order_item` ON `orderdata`.`id` = `order_item`.`fk_order_id`
+INNER JOIN `order_item` ON `orderdata`.`id` = `order_item`.`fk_order_id`
+WHERE `fk_user_id` = :fk_user_id:
+AND `fk_user_id` = :fk_user_id.1:
+AND `order_status` = :order_status:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(103): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-04 07:22:43 --> mysqli_sql_exception: Unknown column 'fk_order_id' in 'where clause' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(103): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->orders()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-04 07:22:43 --> Unknown column 'fk_order_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `orderdata`
+WHERE `fk_order_id` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `orderdata`
+WHERE `fk_order_id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `orderdata`
+WHERE `fk_order_id` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `orderdata`
+WHERE `fk_order_id` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(103): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 09:04:15 --> Undefined array key "item_image"
+in APPPATH\Views\home\orders.php on line 94.
+ 1 APPPATH\Views\home\orders.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_image"', 'APPPATH\\Views\\home\\orders.php', 94)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(108): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 09:04:21 --> Undefined array key "item_image"
+in APPPATH\Views\home\orders.php on line 94.
+ 1 APPPATH\Views\home\orders.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_image"', 'APPPATH\\Views\\home\\orders.php', 94)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(108): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 09:05:18 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\home\orders.php on line 55.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 4 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 8 APPPATH\Controllers\Home.php(108): view('includes/template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 09:09:03 --> Undefined array key "item_image"
+in APPPATH\Views\home\orders.php on line 102.
+ 1 APPPATH\Views\home\orders.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_image"', 'APPPATH\\Views\\home\\orders.php', 102)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(115): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 10:11:18 --> Undefined array key "order_id"
+in APPPATH\Views\home\orders.php on line 73.
+ 1 APPPATH\Views\home\orders.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "order_id"', 'APPPATH\\Views\\home\\orders.php', 73)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(136): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 10:58:46 --> Undefined variable $order
+in APPPATH\Controllers\Orders.php on line 27.
+ 1 APPPATH\Controllers\Orders.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $order', 'APPPATH\\Controllers\\Orders.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Orders->ordersupdate('1')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-04 10:59:09 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-05-04 10:59:09 --> 220 smtp.googlemail.com ESMTP h16-20020a17090aea9000b00247164c1947sm12561440pjz.0 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:630:7f00:689c:fcb6:b6bf:c8d6]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK h16-20020a17090aea9000b00247164c1947sm12561440pjz.0 - gsmtp
+
+to: 555 5.5.2 Syntax error. h16-20020a17090aea9000b00247164c1947sm12561440pjz.0 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. h16-20020a17090aea9000b00247164c1947sm12561440pjz.0 - gsmtp
+
+quit: 221 2.0.0 closing connection h16-20020a17090aea9000b00247164c1947sm12561440pjz.0 - gsmtp
+
+ERROR - 2023-05-04 11:01:10 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-05-04 11:01:10 --> 220 smtp.googlemail.com ESMTP cf17-20020a17090aebd100b0022be36be19asm5139563pjb.53 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:630:7f00:689c:fcb6:b6bf:c8d6]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK cf17-20020a17090aebd100b0022be36be19asm5139563pjb.53 - gsmtp
+
+to: 555 5.5.2 Syntax error. cf17-20020a17090aebd100b0022be36be19asm5139563pjb.53 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. cf17-20020a17090aebd100b0022be36be19asm5139563pjb.53 - gsmtp
+
+quit: 221 2.0.0 closing connection cf17-20020a17090aebd100b0022be36be19asm5139563pjb.53 - gsmtp
+
+ERROR - 2023-05-04 11:03:37 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-05-04 11:03:37 --> 220 smtp.googlemail.com ESMTP i22-20020a635856000000b00502f4c62fd3sm21570648pgm.33 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:630:7f00:689c:fcb6:b6bf:c8d6]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK i22-20020a635856000000b00502f4c62fd3sm21570648pgm.33 - gsmtp
+
+to: 555 5.5.2 Syntax error. i22-20020a635856000000b00502f4c62fd3sm21570648pgm.33 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. i22-20020a635856000000b00502f4c62fd3sm21570648pgm.33 - gsmtp
+
+quit: 221 2.0.0 closing connection i22-20020a635856000000b00502f4c62fd3sm21570648pgm.33 - gsmtp
+
+ERROR - 2023-05-04 11:04:38 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-05-04 11:04:38 --> 220 smtp.googlemail.com ESMTP v5-20020a654605000000b00520f4ecd71esm1888180pgq.93 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:630:7f00:689c:fcb6:b6bf:c8d6]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK v5-20020a654605000000b00520f4ecd71esm1888180pgq.93 - gsmtp
+
+to: 555 5.5.2 Syntax error. v5-20020a654605000000b00520f4ecd71esm1888180pgq.93 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. v5-20020a654605000000b00520f4ecd71esm1888180pgq.93 - gsmtp
+
+quit: 221 2.0.0 closing connection v5-20020a654605000000b00520f4ecd71esm1888180pgq.93 - gsmtp
+
+ERROR - 2023-05-04 11:06:12 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-05-04 11:06:12 --> 220 smtp.googlemail.com ESMTP t4-20020a655544000000b005143448896csm1417226pgr.58 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:630:7f00:689c:fcb6:b6bf:c8d6]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK t4-20020a655544000000b005143448896csm1417226pgr.58 - gsmtp
+
+to: 555 5.5.2 Syntax error. t4-20020a655544000000b005143448896csm1417226pgr.58 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. t4-20020a655544000000b005143448896csm1417226pgr.58 - gsmtp
+
+quit: 221 2.0.0 closing connection t4-20020a655544000000b005143448896csm1417226pgr.58 - gsmtp
+
+ERROR - 2023-05-04 11:07:00 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-05-04 11:07:00 --> 220 smtp.googlemail.com ESMTP y8-20020a170902700800b001a674fb0dd8sm4848662plk.247 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:630:7f00:689c:fcb6:b6bf:c8d6]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK y8-20020a170902700800b001a674fb0dd8sm4848662plk.247 - gsmtp
+
+to: 555 5.5.2 Syntax error. y8-20020a170902700800b001a674fb0dd8sm4848662plk.247 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. y8-20020a170902700800b001a674fb0dd8sm4848662plk.247 - gsmtp
+
+quit: 221 2.0.0 closing connection y8-20020a170902700800b001a674fb0dd8sm4848662plk.247 - gsmtp
+
+ERROR - 2023-05-04 11:09:22 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-05-04 11:09:22 --> 220 smtp.googlemail.com ESMTP n12-20020a17090a928c00b00246ba2b48f3sm1014428pjo.3 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:630:7f00:689c:fcb6:b6bf:c8d6]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK n12-20020a17090a928c00b00246ba2b48f3sm1014428pjo.3 - gsmtp
+
+to: 555 5.5.2 Syntax error. n12-20020a17090a928c00b00246ba2b48f3sm1014428pjo.3 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. n12-20020a17090a928c00b00246ba2b48f3sm1014428pjo.3 - gsmtp
+
+quit: 221 2.0.0 closing connection n12-20020a17090a928c00b00246ba2b48f3sm1014428pjo.3 - gsmtp
+
+ERROR - 2023-05-04 11:11:32 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-05-04 11:11:32 --> 220 smtp.googlemail.com ESMTP lx11-20020a17090b4b0b00b00246cc751c6bsm3268907pjb.46 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:630:7f00:689c:fcb6:b6bf:c8d6]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK lx11-20020a17090b4b0b00b00246cc751c6bsm3268907pjb.46 - gsmtp
+
+to: 555 5.5.2 Syntax error. lx11-20020a17090b4b0b00b00246cc751c6bsm3268907pjb.46 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. lx11-20020a17090b4b0b00b00246cc751c6bsm3268907pjb.46 - gsmtp
+
+quit: 221 2.0.0 closing connection lx11-20020a17090b4b0b00b00246cc751c6bsm3268907pjb.46 - gsmtp
+
+ERROR - 2023-05-04 11:14:23 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-05-04 11:14:23 --> 220 smtp.googlemail.com ESMTP qe3-20020a17090b4f8300b0024744818bc5sm3354458pjb.9 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:630:7f00:689c:fcb6:b6bf:c8d6]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK qe3-20020a17090b4f8300b0024744818bc5sm3354458pjb.9 - gsmtp
+
+to: 555 5.5.2 Syntax error. qe3-20020a17090b4f8300b0024744818bc5sm3354458pjb.9 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. qe3-20020a17090b4f8300b0024744818bc5sm3354458pjb.9 - gsmtp
+
+quit: 221 2.0.0 closing connection qe3-20020a17090b4f8300b0024744818bc5sm3354458pjb.9 - gsmtp
+
+ERROR - 2023-05-04 11:15:52 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-05-04 11:15:52 --> 220 smtp.googlemail.com ESMTP s1-20020a17090a1c0100b0024e11f31012sm3454978pjs.5 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:630:7f00:689c:fcb6:b6bf:c8d6]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK s1-20020a17090a1c0100b0024e11f31012sm3454978pjs.5 - gsmtp
+
+to: 555 5.5.2 Syntax error. s1-20020a17090a1c0100b0024e11f31012sm3454978pjs.5 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. s1-20020a17090a1c0100b0024e11f31012sm3454978pjs.5 - gsmtp
+
+quit: 221 2.0.0 closing connection s1-20020a17090a1c0100b0024e11f31012sm3454978pjs.5 - gsmtp
+
+ERROR - 2023-05-04 11:33:22 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-05-04 11:33:22 --> 220 smtp.googlemail.com ESMTP e17-20020a17090a4a1100b00247150f2091sm3352258pjh.8 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:630:7f00:689c:fcb6:b6bf:c8d6]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK e17-20020a17090a4a1100b00247150f2091sm3352258pjh.8 - gsmtp
+
+to: 555 5.5.2 Syntax error. e17-20020a17090a4a1100b00247150f2091sm3352258pjh.8 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. e17-20020a17090a4a1100b00247150f2091sm3352258pjh.8 - gsmtp
+
+quit: 221 2.0.0 closing connection e17-20020a17090a4a1100b00247150f2091sm3352258pjh.8 - gsmtp
+
+ERROR - 2023-05-04 11:47:50 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-05-04 11:47:50 --> 220 smtp.googlemail.com ESMTP n5-20020a170902d2c500b001aaecc0b6ffsm8493807plc.160 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:630:7f00:689c:fcb6:b6bf:c8d6]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK n5-20020a170902d2c500b001aaecc0b6ffsm8493807plc.160 - gsmtp
+
+to: 555 5.5.2 Syntax error. n5-20020a170902d2c500b001aaecc0b6ffsm8493807plc.160 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. n5-20020a170902d2c500b001aaecc0b6ffsm8493807plc.160 - gsmtp
+
+quit: 221 2.0.0 closing connection n5-20020a170902d2c500b001aaecc0b6ffsm8493807plc.160 - gsmtp
+
+ERROR - 2023-05-04 11:48:19 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-05-04 11:48:19 --> 220 smtp.googlemail.com ESMTP x23-20020a2e7c17000000b002a5f554d263sm6635712ljc.46 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:630:7f00:689c:fcb6:b6bf:c8d6]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK x23-20020a2e7c17000000b002a5f554d263sm6635712ljc.46 - gsmtp
+
+to: 555 5.5.2 Syntax error. x23-20020a2e7c17000000b002a5f554d263sm6635712ljc.46 - gsmtp
+
+The following SMTP error was encountered: 555 5.5.2 Syntax error. x23-20020a2e7c17000000b002a5f554d263sm6635712ljc.46 - gsmtp
+
+quit: 221 2.0.0 closing connection x23-20020a2e7c17000000b002a5f554d263sm6635712ljc.46 - gsmtp
+
+CRITICAL - 2023-05-04 11:50:17 --> Undefined variable $order_items
+in APPPATH\Views\home\orders.php on line 99.
+ 1 APPPATH\Views\home\orders.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $order_items', 'APPPATH\\Views\\home\\orders.php', 99)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(134): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

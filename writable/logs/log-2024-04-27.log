@@ -1,0 +1,31 @@
+CRITICAL - 2024-04-27 22:06:53 --> Too few arguments to function App\Controllers\Payroll::attendance_calendar(), 0 passed in C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH\Controllers\Payroll.php on line 90.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->attendance_calendar()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-27 22:32:44 --> Undefined variable $agent
+in APPPATH\Views\payroll\calendar.php on line 49.
+ 1 APPPATH\Views\payroll\calendar.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $agent', 'APPPATH\\Views\\payroll\\calendar.php', 49)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\payroll\\calendar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('payroll/calendar', [], true)
+ 5 APPPATH\Controllers\Payroll.php(128): view('payroll/calendar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->attendance_calendar('EITB012')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-27 22:32:58 --> Undefined variable $agent
+in APPPATH\Views\payroll\calendar.php on line 49.
+ 1 APPPATH\Views\payroll\calendar.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $agent', 'APPPATH\\Views\\payroll\\calendar.php', 49)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\payroll\\calendar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('payroll/calendar', [], true)
+ 5 APPPATH\Controllers\Payroll.php(128): view('payroll/calendar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->attendance_calendar('EITB012')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

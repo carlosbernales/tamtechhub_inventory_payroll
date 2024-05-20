@@ -1,0 +1,306 @@
+CRITICAL - 2024-04-19 00:19:31 --> Class "App\Controllers\DateTime" not found
+in APPPATH\Controllers\Payroll.php on line 334.
+ 1 APPPATH\Controllers\Payroll.php(235): App\Controllers\Payroll->calculateIntervalMinutes('20:00:00', '05:00:00')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-19 00:19:32 --> Class "App\Controllers\DateTime" not found
+in APPPATH\Controllers\Payroll.php on line 334.
+ 1 APPPATH\Controllers\Payroll.php(235): App\Controllers\Payroll->calculateIntervalMinutes('20:00:00', '05:00:00')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-19 00:19:32 --> Class "App\Controllers\DateTime" not found
+in APPPATH\Controllers\Payroll.php on line 334.
+ 1 APPPATH\Controllers\Payroll.php(235): App\Controllers\Payroll->calculateIntervalMinutes('20:00:00', '05:00:00')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-04-19 01:06:02 --> mysqli_sql_exception: Incorrect DATE value: '20224-01-24' in C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\tamtechhub_inventory\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\tamtechhub_inventory\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\tamtechhub_inventory\app\Controllers\Payroll.php(224): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+#8 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#9 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-04-19 01:06:02 --> Incorrect DATE value: '20224-01-24'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `attendance`
+WHERE `agent_id` = \'TAM075\'
+AND `date` >= \'20224-01-24\'
+AND `date` <= \'2024-01-24\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `attendance`
+WHERE `agent_id` = \'TAM075\'
+AND `date` >= \'20224-01-24\'
+AND `date` <= \'2024-01-24\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `attendance`
+WHERE `agent_id` = \'TAM075\'
+AND `date` >= \'20224-01-24\'
+AND `date` <= \'2024-01-24\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `attendance`
+WHERE `agent_id` = :agent_id:
+AND `date` >= :date:
+AND `date` <= :date.1:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Payroll.php(224): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-04-19 01:06:04 --> mysqli_sql_exception: Incorrect DATE value: '20224-01-24' in C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\tamtechhub_inventory\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\tamtechhub_inventory\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\tamtechhub_inventory\app\Controllers\Payroll.php(224): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+#8 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#9 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-04-19 01:06:04 --> Incorrect DATE value: '20224-01-24'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `attendance`
+WHERE `agent_id` = \'TAM075\'
+AND `date` >= \'20224-01-24\'
+AND `date` <= \'2024-01-24\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `attendance`
+WHERE `agent_id` = \'TAM075\'
+AND `date` >= \'20224-01-24\'
+AND `date` <= \'2024-01-24\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `attendance`
+WHERE `agent_id` = \'TAM075\'
+AND `date` >= \'20224-01-24\'
+AND `date` <= \'2024-01-24\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `attendance`
+WHERE `agent_id` = :agent_id:
+AND `date` >= :date:
+AND `date` <= :date.1:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Payroll.php(224): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-19 01:59:30 --> Undefined array key "SSS"
+in APPPATH\Controllers\Payroll.php on line 237.
+ 1 APPPATH\Controllers\Payroll.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "SSS"', 'APPPATH\\Controllers\\Payroll.php', 237)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-19 01:59:31 --> Undefined array key "SSS"
+in APPPATH\Controllers\Payroll.php on line 237.
+ 1 APPPATH\Controllers\Payroll.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "SSS"', 'APPPATH\\Controllers\\Payroll.php', 237)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-19 01:59:31 --> Undefined array key "SSS"
+in APPPATH\Controllers\Payroll.php on line 237.
+ 1 APPPATH\Controllers\Payroll.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "SSS"', 'APPPATH\\Controllers\\Payroll.php', 237)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-19 01:59:31 --> Undefined array key "SSS"
+in APPPATH\Controllers\Payroll.php on line 237.
+ 1 APPPATH\Controllers\Payroll.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "SSS"', 'APPPATH\\Controllers\\Payroll.php', 237)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-19 01:59:32 --> Undefined array key "SSS"
+in APPPATH\Controllers\Payroll.php on line 237.
+ 1 APPPATH\Controllers\Payroll.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "SSS"', 'APPPATH\\Controllers\\Payroll.php', 237)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-19 02:03:12 --> Undefined array key "SSS"
+in APPPATH\Controllers\Payroll.php on line 237.
+ 1 APPPATH\Controllers\Payroll.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "SSS"', 'APPPATH\\Controllers\\Payroll.php', 237)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-19 02:03:13 --> Undefined array key "SSS"
+in APPPATH\Controllers\Payroll.php on line 237.
+ 1 APPPATH\Controllers\Payroll.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "SSS"', 'APPPATH\\Controllers\\Payroll.php', 237)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-19 02:03:13 --> Undefined array key "SSS"
+in APPPATH\Controllers\Payroll.php on line 237.
+ 1 APPPATH\Controllers\Payroll.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "SSS"', 'APPPATH\\Controllers\\Payroll.php', 237)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-19 02:03:14 --> Undefined array key "SSS"
+in APPPATH\Controllers\Payroll.php on line 237.
+ 1 APPPATH\Controllers\Payroll.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "SSS"', 'APPPATH\\Controllers\\Payroll.php', 237)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-19 02:03:14 --> Undefined array key "SSS"
+in APPPATH\Controllers\Payroll.php on line 237.
+ 1 APPPATH\Controllers\Payroll.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "SSS"', 'APPPATH\\Controllers\\Payroll.php', 237)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-19 20:56:45 --> Undefined array key "daily_salary"
+in APPPATH\Controllers\Payroll.php on line 268.
+ 1 APPPATH\Controllers\Payroll.php(268): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "daily_salary"', 'APPPATH\\Controllers\\Payroll.php', 268)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-19 20:56:46 --> Undefined array key "daily_salary"
+in APPPATH\Controllers\Payroll.php on line 268.
+ 1 APPPATH\Controllers\Payroll.php(268): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "daily_salary"', 'APPPATH\\Controllers\\Payroll.php', 268)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-19 20:56:48 --> Undefined array key "daily_salary"
+in APPPATH\Controllers\Payroll.php on line 268.
+ 1 APPPATH\Controllers\Payroll.php(268): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "daily_salary"', 'APPPATH\\Controllers\\Payroll.php', 268)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-19 20:56:48 --> Undefined array key "daily_salary"
+in APPPATH\Controllers\Payroll.php on line 268.
+ 1 APPPATH\Controllers\Payroll.php(268): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "daily_salary"', 'APPPATH\\Controllers\\Payroll.php', 268)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-19 20:56:51 --> Undefined array key "daily_salary"
+in APPPATH\Controllers\Payroll.php on line 268.
+ 1 APPPATH\Controllers\Payroll.php(268): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "daily_salary"', 'APPPATH\\Controllers\\Payroll.php', 268)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-19 20:56:52 --> Undefined array key "daily_salary"
+in APPPATH\Controllers\Payroll.php on line 268.
+ 1 APPPATH\Controllers\Payroll.php(268): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "daily_salary"', 'APPPATH\\Controllers\\Payroll.php', 268)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-19 20:56:52 --> Undefined array key "daily_salary"
+in APPPATH\Controllers\Payroll.php on line 268.
+ 1 APPPATH\Controllers\Payroll.php(268): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "daily_salary"', 'APPPATH\\Controllers\\Payroll.php', 268)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-19 21:00:15 --> Undefined array key "status"
+in APPPATH\Controllers\Payroll.php on line 278.
+ 1 APPPATH\Controllers\Payroll.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'APPPATH\\Controllers\\Payroll.php', 278)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-19 21:00:16 --> Undefined array key "status"
+in APPPATH\Controllers\Payroll.php on line 278.
+ 1 APPPATH\Controllers\Payroll.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'APPPATH\\Controllers\\Payroll.php', 278)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-19 21:00:16 --> Undefined array key "status"
+in APPPATH\Controllers\Payroll.php on line 278.
+ 1 APPPATH\Controllers\Payroll.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'APPPATH\\Controllers\\Payroll.php', 278)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-19 21:00:17 --> Undefined array key "status"
+in APPPATH\Controllers\Payroll.php on line 278.
+ 1 APPPATH\Controllers\Payroll.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'APPPATH\\Controllers\\Payroll.php', 278)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-19 21:00:57 --> Undefined array key "status"
+in APPPATH\Controllers\Payroll.php on line 278.
+ 1 APPPATH\Controllers\Payroll.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'APPPATH\\Controllers\\Payroll.php', 278)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-19 21:00:58 --> Undefined array key "status"
+in APPPATH\Controllers\Payroll.php on line 278.
+ 1 APPPATH\Controllers\Payroll.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'APPPATH\\Controllers\\Payroll.php', 278)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-19 21:00:58 --> Undefined array key "status"
+in APPPATH\Controllers\Payroll.php on line 278.
+ 1 APPPATH\Controllers\Payroll.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'APPPATH\\Controllers\\Payroll.php', 278)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

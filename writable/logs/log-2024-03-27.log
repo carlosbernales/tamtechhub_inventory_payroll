@@ -1,0 +1,148 @@
+CRITICAL - 2024-03-27 01:38:35 --> Undefined array key ""
+in APPPATH\Views\admin\sg_5gsimcard.php on line 310.
+ 1 APPPATH\Views\admin\sg_5gsimcard.php(310): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'APPPATH\\Views\\admin\\sg_5gsimcard.php', 310)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\sg_5gsimcard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/sg_5gsimcard', [], true)
+ 5 APPPATH\Controllers\Home.php(1450): view('admin/sg_5gsimcard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->fiveGsimcard_list()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-27 02:21:30 --> Undefined variable $Agent_model
+in APPPATH\Controllers\Home.php on line 1413.
+ 1 APPPATH\Controllers\Home.php(1413): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Agent_model', 'APPPATH\\Controllers\\Home.php', 1413)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->fiveGsimcard_list()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-27 02:28:05 --> Undefined variable $simcards
+in APPPATH\Controllers\Home.php on line 1430.
+ 1 APPPATH\Controllers\Home.php(1430): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $simcards', 'APPPATH\\Controllers\\Home.php', 1430)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->fiveGsimcard_list()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-27 02:33:26 --> Cannot use object of type App\Models\Agent_model as array
+in APPPATH\Controllers\Home.php on line 1432.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->fiveGsimcard_list()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-27 02:34:21 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Home.php on line 1435.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->fiveGsimcard_list()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-27 02:34:27 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\Home.php on line 1455.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-27 02:34:32 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Home.php on line 1435.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->fiveGsimcard_list()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-27 02:34:38 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Home.php on line 1435.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->fiveGsimcard_list()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-27 02:37:26 --> Undefined array key "agent_fk_id"
+in APPPATH\Controllers\Home.php on line 1432.
+ 1 APPPATH\Controllers\Home.php(1432): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "agent_fk_id"', 'APPPATH\\Controllers\\Home.php', 1432)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->fiveGsimcard_list()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-27 02:38:48 --> Undefined array key "agent_fk_id"
+in APPPATH\Controllers\Home.php on line 1433.
+ 1 APPPATH\Controllers\Home.php(1433): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "agent_fk_id"', 'APPPATH\\Controllers\\Home.php', 1433)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->fiveGsimcard_list()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-27 02:41:34 --> Undefined array key "agent_fk_id"
+in APPPATH\Controllers\Home.php on line 1432.
+ 1 APPPATH\Controllers\Home.php(1432): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "agent_fk_id"', 'APPPATH\\Controllers\\Home.php', 1432)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->fiveGsimcard_list()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-27 02:41:43 --> Undefined array key "phone_equip_id"
+in APPPATH\Views\admin\sg_5gsimcard.php on line 310.
+ 1 APPPATH\Views\admin\sg_5gsimcard.php(310): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "phone_equip_id"', 'APPPATH\\Views\\admin\\sg_5gsimcard.php', 310)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\sg_5gsimcard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/sg_5gsimcard', [], true)
+ 5 APPPATH\Controllers\Home.php(1450): view('admin/sg_5gsimcard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->fiveGsimcard_list()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-27 02:42:53 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 1433.
+ 1 APPPATH\Controllers\Home.php(1433): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 1433)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->fiveGsimcard_list()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-27 02:43:05 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 1433.
+ 1 APPPATH\Controllers\Home.php(1433): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 1433)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->fiveGsimcard_list()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-27 02:43:09 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 1433.
+ 1 APPPATH\Controllers\Home.php(1433): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 1433)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->fiveGsimcard_list()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-27 02:57:53 --> syntax error, unexpected token "new", expecting variable or "{" or "$"
+in APPPATH\Views\admin\sg_5gsimcard.php on line 212.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/sg_5gsimcard', [], true)
+ 3 APPPATH\Controllers\Home.php(1450): view('admin/sg_5gsimcard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->fiveGsimcard_list()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-27 02:59:06 --> Undefined array key "id"
+in APPPATH\Views\admin\sg_5gsimcard.php on line 203.
+ 1 APPPATH\Views\admin\sg_5gsimcard.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\admin\\sg_5gsimcard.php', 203)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\sg_5gsimcard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/sg_5gsimcard', [], true)
+ 5 APPPATH\Controllers\Home.php(1450): view('admin/sg_5gsimcard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->fiveGsimcard_list()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

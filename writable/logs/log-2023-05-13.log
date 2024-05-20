@@ -1,0 +1,477 @@
+CRITICAL - 2023-05-13 01:50:06 --> Undefined array key "id"
+in APPPATH\Controllers\Home.php on line 49.
+ 1 APPPATH\Controllers\Home.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\Home.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->home()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 05:37:31 --> CodeIgniter\HTTP\Response::setJSON(): Argument #2 ($unencoded) must be of type bool, array given, called in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php on line 191
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 245.
+ 1 APPPATH\Controllers\Admin.php(191): CodeIgniter\HTTP\Response->setJSON('admin/stocks/stockslist', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->stocks()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 06:37:32 --> syntax error, unexpected token "return", expecting "function" or "const"
+in APPPATH\Controllers\Stocks.php on line 28.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Stocks.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Stocks')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Stocks')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Stocks', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 06:38:19 --> Invalid file: admin/stocks/addproduct.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/stocks/addproduct.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/stocks/addproduct', [], true)
+ 3 APPPATH\Controllers\Stocks.php(27): view('admin/stocks/addproduct', [])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Stocks->addproduct_stocks()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stocks))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 06:39:56 --> Invalid file: admin/stocks/addproduct.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/stocks/addproduct.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/stocks/addproduct', [], true)
+ 3 APPPATH\Controllers\Stocks.php(27): view('admin/stocks/addproduct', [])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Stocks->addproduct_stocks()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stocks))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 06:39:59 --> Invalid file: admin/stocks/addproduct.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/stocks/addproduct.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/stocks/addproduct', [], true)
+ 3 APPPATH\Controllers\Stocks.php(27): view('admin/stocks/addproduct', [])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Stocks->addproduct_stocks()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stocks))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 06:40:03 --> Invalid file: admin/stocks/addproduct.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/stocks/addproduct.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/stocks/addproduct', [], true)
+ 3 APPPATH\Controllers\Stocks.php(27): view('admin/stocks/addproduct', [])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Stocks->addproduct_stocks()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stocks))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 06:40:44 --> Invalid file: admin/stocks/addproduct.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/stocks/addproduct.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/stocks/addproduct', [], true)
+ 3 APPPATH\Controllers\Stocks.php(27): view('admin/stocks/addproduct', [])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Stocks->addproduct_stocks()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stocks))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 06:47:48 --> Undefined variable $category
+in APPPATH\Views\admin\stocks\addproducts.php on line 44.
+ 1 APPPATH\Views\admin\stocks\addproducts.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $category', 'APPPATH\\Views\\admin\\stocks\\addproducts.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\stocks\\addproducts.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/stocks/addproducts', [], true)
+ 5 APPPATH\Controllers\Stocks.php(27): view('admin/stocks/addproducts', [])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Stocks->addproduct_stocks()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stocks))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 07:08:36 --> Undefined variable $stocks
+in APPPATH\Views\admin\stocks\stockslist.php on line 259.
+ 1 APPPATH\Views\admin\stocks\stockslist.php(259): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $stocks', 'APPPATH\\Views\\admin\\stocks\\stockslist.php', 259)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\stocks\\stockslist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/stocks/stockslist', [], true)
+ 5 APPPATH\Controllers\Admin.php(191): view('admin/stocks/stockslist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->stocks()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 07:17:52 --> Undefined variable $category
+in APPPATH\Views\admin\stocks\addstocks.php on line 43.
+ 1 APPPATH\Views\admin\stocks\addstocks.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $category', 'APPPATH\\Views\\admin\\stocks\\addstocks.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\stocks\\addstocks.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/stocks/addstocks', [], true)
+ 5 APPPATH\Controllers\Stocks.php(35): view('admin/stocks/addstocks', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Stocks->add_stocks('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stocks))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 07:18:08 --> Undefined variable $category
+in APPPATH\Views\admin\stocks\addstocks.php on line 43.
+ 1 APPPATH\Views\admin\stocks\addstocks.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $category', 'APPPATH\\Views\\admin\\stocks\\addstocks.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\stocks\\addstocks.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/stocks/addstocks', [], true)
+ 5 APPPATH\Controllers\Stocks.php(35): view('admin/stocks/addstocks', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Stocks->add_stocks('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stocks))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-13 07:18:18 --> mysqli_sql_exception: Column 'stock_qty' cannot be null in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `st...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Stocks.php(21): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Stocks->addproduct_stocks()
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stocks))
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-05-13 07:18:18 --> Column 'stock_qty' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `stocks` (`product_name`, `stock_qty`, `stock_price`, `created_at`) VALUES (\'qwe\', NULL, NULL, \'2023-05-13 07:18:18\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `stocks` (`product_name`, `stock_qty`, `stock_price`, `created_at`) VALUES (\'qwe\', NULL, NULL, \'2023-05-13 07:18:18\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `stocks` (`product_name`, `stock_qty`, `stock_price`, `created_at`) VALUES (\'qwe\', NULL, NULL, \'2023-05-13 07:18:18\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `stocks` (`product_name`, `stock_qty`, `stock_price`, `created_at`) VALUES (:product_name:, :stock_qty:, :stock_price:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Stocks.php(21): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Stocks->addproduct_stocks()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stocks))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 07:20:37 --> Undefined variable $category
+in APPPATH\Views\admin\stocks\addstocks.php on line 43.
+ 1 APPPATH\Views\admin\stocks\addstocks.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $category', 'APPPATH\\Views\\admin\\stocks\\addstocks.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\stocks\\addstocks.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/stocks/addstocks', [], true)
+ 5 APPPATH\Controllers\Stocks.php(35): view('admin/stocks/addstocks', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Stocks->add_stocks('12')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stocks))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 08:13:29 --> Undefined variable $pending
+in APPPATH\Views\admin\stocks\stockslist.php on line 276.
+ 1 APPPATH\Views\admin\stocks\stockslist.php(276): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pending', 'APPPATH\\Views\\admin\\stocks\\stockslist.php', 276)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\stocks\\stockslist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/stocks/stockslist', [], true)
+ 5 APPPATH\Controllers\Admin.php(191): view('admin/stocks/stockslist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->stocks()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 08:51:19 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 100.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(24): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 08:51:45 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 100.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(24): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 08:51:53 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 100.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(24): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 09:20:29 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\stocks\addstocks.php on line 69.
+ 1 APPPATH\Views\admin\stocks\addstocks.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\admin\\stocks\\addstocks.php', 69)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\stocks\\addstocks.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/stocks/addstocks', [], true)
+ 5 APPPATH\Controllers\Stocks.php(35): view('admin/stocks/addstocks', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Stocks->add_stocks('12')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stocks))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 09:52:32 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 100.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(24): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-13 10:28:05 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `stocks`...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `stocks`...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `stocks`...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `stocks`...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(886): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(693): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Stocks.php(51): CodeIgniter\Model->update('5', Array)
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Stocks->update_add_stocks('5')
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stocks))
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-05-13 10:28:05 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `stocks` SET `product_name` = \'Gumamela\', `stock_qty` = \'48\', `stock_price` = NULL, `bundle` = NULL, `bundle_price` = NULL, `updated_at` = \'2023-05-13 10:28:05\'
+WHERE `stocks`.`id` IN (\'5\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `stocks` SET `product_name` = \'Gumamela\', `stock_qty` = \'48\', `stock_price` = NULL, `bundle` = NULL, `bundle_price` = NULL, `updated_at` = \'2023-05-13 10:28:05\'
+WHERE `stocks`.`id` IN (\'5\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `stocks` SET `product_name` = \'Gumamela\', `stock_qty` = \'48\', `stock_price` = NULL, `bundle` = NULL, `bundle_price` = NULL, `updated_at` = \'2023-05-13 10:28:05\'
+WHERE `stocks`.`id` IN (\'5\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `stocks` SET `product_name` = :product_name:, `stock_qty` = :stock_qty:, `stock_price` = :stock_price:, `bundle` = :bundle:, `bundle_price` = :bundle_price:, `updated_at` = :updated_at:
+WHERE `stocks`.`id` IN :stocks.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(886): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Stocks.php(51): CodeIgniter\Model->update('5', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Stocks->update_add_stocks('5')
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stocks))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-13 10:28:49 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `stocks`...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `stocks`...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `stocks`...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `stocks`...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(886): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(693): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Stocks.php(51): CodeIgniter\Model->update('5', Array)
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Stocks->update_add_stocks('5')
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stocks))
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-05-13 10:28:49 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `stocks` SET `product_name` = \'Gumamela\', `stock_qty` = \'48\', `stock_price` = NULL, `bundle` = NULL, `bundle_price` = NULL, `updated_at` = \'2023-05-13 10:28:49\'
+WHERE `stocks`.`id` IN (\'5\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `stocks` SET `product_name` = \'Gumamela\', `stock_qty` = \'48\', `stock_price` = NULL, `bundle` = NULL, `bundle_price` = NULL, `updated_at` = \'2023-05-13 10:28:49\'
+WHERE `stocks`.`id` IN (\'5\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `stocks` SET `product_name` = \'Gumamela\', `stock_qty` = \'48\', `stock_price` = NULL, `bundle` = NULL, `bundle_price` = NULL, `updated_at` = \'2023-05-13 10:28:49\'
+WHERE `stocks`.`id` IN (\'5\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `stocks` SET `product_name` = :product_name:, `stock_qty` = :stock_qty:, `stock_price` = :stock_price:, `bundle` = :bundle:, `bundle_price` = :bundle_price:, `updated_at` = :updated_at:
+WHERE `stocks`.`id` IN :stocks.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(886): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Stocks.php(51): CodeIgniter\Model->update('5', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Stocks->update_add_stocks('5')
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stocks))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 10:31:24 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\stocks\addstocks.php on line 52.
+ 1 APPPATH\Views\admin\stocks\addstocks.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\admin\\stocks\\addstocks.php', 52)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\stocks\\addstocks.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/stocks/addstocks', [], true)
+ 5 APPPATH\Controllers\Stocks.php(38): view('admin/stocks/addstocks', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Stocks->add_stocks('5')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stocks))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 12:41:52 --> Undefined array key "id"
+in APPPATH\Controllers\Home.php on line 49.
+ 1 APPPATH\Controllers\Home.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\Home.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->home()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 13:24:16 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 100.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(24): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 13:24:20 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 100.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(24): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 13:25:11 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 100.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(33): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 13:25:26 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 100.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(33): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 13:25:30 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 100.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(33): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 13:25:58 --> Undefined array key "id"
+in APPPATH\Controllers\Home.php on line 29.
+ 1 APPPATH\Controllers\Home.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\Home.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 13:25:59 --> Undefined array key "id"
+in APPPATH\Controllers\Home.php on line 29.
+ 1 APPPATH\Controllers\Home.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\Home.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 13:26:10 --> Undefined array key "id"
+in APPPATH\Controllers\Home.php on line 29.
+ 1 APPPATH\Controllers\Home.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\Home.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 13:27:06 --> Undefined array key "id"
+in APPPATH\Controllers\Home.php on line 29.
+ 1 APPPATH\Controllers\Home.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\Home.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 13:49:51 --> Undefined array key "id"
+in APPPATH\Controllers\Home.php on line 49.
+ 1 APPPATH\Controllers\Home.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\Home.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->home()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 14:02:23 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\productdetails.php on line 13.
+ 1 APPPATH\Views\home\productdetails.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\home\\productdetails.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\productdetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/productdetails', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/productdetails')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(259): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->productdetails('BFS_467')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 14:03:08 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 100.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(24): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 14:03:14 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 100.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(24): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 15:00:06 --> Undefined array key "admin_id"
+in APPPATH\Controllers\Admin.php on line 57.
+ 1 APPPATH\Controllers\Admin.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "admin_id"', 'APPPATH\\Controllers\\Admin.php', 57)
+ 2 APPPATH\Controllers\Admin.php(43): App\Controllers\Admin->setUserSession([...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-13 15:06:48 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Admin.php on line 40.
+ 1 APPPATH\Controllers\Admin.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Admin.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

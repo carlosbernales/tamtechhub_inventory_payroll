@@ -1,0 +1,2 @@
+[11-May-2024 23:41:03 America/Chicago] PHP Fatal error:  Cannot use CodeIgniter\HTTP\ResponseInterface as ResponseInterface because the name is already in use in /home1/tamtechh/public_html/inventory/app/Controllers/Payroll.php on line 18
+[16-May-2024 07:33:24 America/Chicago] PHP Fatal error:  Cannot redeclare App\Controllers\Payroll::__construct() in /home1/tamtechh/public_html/inventory/app/Controllers/Payroll.php on line 27

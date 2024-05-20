@@ -1,0 +1,502 @@
+CRITICAL - 2024-03-18 00:12:15 --> Invalid file: footers_headers/header.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('footers_headers/header.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('footers_headers/header', null, true)
+ 3 APPPATH\Views\admin\dashboard.php(1): CodeIgniter\View\View->include('footers_headers/header')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 7 APPPATH\Controllers\Home.php(54): view('admin/dashboard')
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-18 01:09:22 --> Invalid file: footers_headers/header.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('footers_headers/header.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('footers_headers/header', null, true)
+ 3 APPPATH\Views\admin\dashboard.php(1): CodeIgniter\View\View->include('footers_headers/header')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 7 APPPATH\Controllers\Home.php(54): view('admin/dashboard')
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-18 02:50:53 --> Invalid file: footers_headers/header.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('footers_headers/header.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('footers_headers/header', null, true)
+ 3 APPPATH\Views\admin\dashboard.php(1): CodeIgniter\View\View->include('footers_headers/header')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 7 APPPATH\Controllers\Home.php(54): view('admin/dashboard')
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-18 02:51:02 --> Invalid file: footers_headers/header.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('footers_headers/header.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('footers_headers/header', null, true)
+ 3 APPPATH\Views\admin\dashboard.php(1): CodeIgniter\View\View->include('footers_headers/header')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 7 APPPATH\Controllers\Home.php(54): view('admin/dashboard')
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-18 02:53:45 --> Invalid file: footers_headers/header.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('footers_headers/header.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('footers_headers/header', null, true)
+ 3 APPPATH\Views\admin\dashboard.php(1): CodeIgniter\View\View->include('footers_headers/header')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 7 APPPATH\Controllers\Home.php(54): view('admin/dashboard')
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-18 19:42:24 --> Invalid file: footers_headers/header.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('footers_headers/header.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('footers_headers/header', null, true)
+ 3 APPPATH\Views\admin\dashboard.php(1): CodeIgniter\View\View->include('footers_headers/header')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 7 APPPATH\Controllers\Home.php(54): view('admin/dashboard')
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-18 19:42:27 --> Invalid file: footers_headers/header.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('footers_headers/header.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('footers_headers/header', null, true)
+ 3 APPPATH\Views\admin\dashboard.php(1): CodeIgniter\View\View->include('footers_headers/header')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 7 APPPATH\Controllers\Home.php(54): view('admin/dashboard')
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-18 19:54:17 --> check_password is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 323.
+ 1 SYSTEMPATH\Validation\Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('check_password')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', 'sadsad', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Account.php(125): CodeIgniter\Controller->validate([...], [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->signin()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-18 19:56:42 --> CodeIgniter\Validation\Rules::is_not_unique(): Argument #2 ($field) must be of type string, null given, called in C:\laragon\www\tamtechhub_inventory\system\Validation\Validation.php on line 314
+in SYSTEMPATH\Validation\Rules.php on line 86.
+ 1 SYSTEMPATH\Validation\Validation.php(314): CodeIgniter\Validation\Rules->is_not_unique('sadsad', null)
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', 'sadsad', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Account.php(125): CodeIgniter\Controller->validate([...], [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->signin()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-18 19:56:47 --> CodeIgniter\Validation\Rules::is_not_unique(): Argument #2 ($field) must be of type string, null given, called in C:\laragon\www\tamtechhub_inventory\system\Validation\Validation.php on line 314
+in SYSTEMPATH\Validation\Rules.php on line 86.
+ 1 SYSTEMPATH\Validation\Validation.php(314): CodeIgniter\Validation\Rules->is_not_unique('asdsd', null)
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', 'asdsd', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Account.php(125): CodeIgniter\Controller->validate([...], [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->signin()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-18 20:10:16 --> incorrect is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 323.
+ 1 SYSTEMPATH\Validation\Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('incorrect')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', 'sdad', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Account.php(125): CodeIgniter\Controller->validate([...], [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->signin()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-18 20:11:49 --> validatePassword is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 323.
+ 1 SYSTEMPATH\Validation\Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('validatePassword')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', 'sdad', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Account.php(124): CodeIgniter\Controller->validate([...], [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->signin()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-18 20:13:24 --> callback_check_password is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 323.
+ 1 SYSTEMPATH\Validation\Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('callback_check_password')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', 'sdad', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Account.php(124): CodeIgniter\Controller->validate([...], [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->signin()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-18 20:13:31 --> check_password is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 323.
+ 1 SYSTEMPATH\Validation\Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('check_password')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', 'sdad', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Account.php(124): CodeIgniter\Controller->validate([...], [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->signin()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-18 20:15:20 --> validatePassword is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 323.
+ 1 SYSTEMPATH\Validation\Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('validatePassword')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', 'sdad', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Account.php(108): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->signin()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-18 20:15:25 --> validatePassword is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 323.
+ 1 SYSTEMPATH\Validation\Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('validatePassword')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', 'sdad', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Account.php(108): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->signin()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-18 20:18:26 --> Invalid file: footers_headers/header.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('footers_headers/header.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('footers_headers/header', null, true)
+ 3 APPPATH\Views\admin\dashboard.php(1): CodeIgniter\View\View->include('footers_headers/header')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 7 APPPATH\Controllers\Home.php(54): view('admin/dashboard')
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-18 20:20:56 --> Invalid file: footers_headers/header.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('footers_headers/header.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('footers_headers/header', null, true)
+ 3 APPPATH\Views\admin\dashboard.php(1): CodeIgniter\View\View->include('footers_headers/header')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 7 APPPATH\Controllers\Home.php(54): view('admin/dashboard')
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-18 20:21:14 --> Invalid file: footers_headers/header.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('footers_headers/header.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('footers_headers/header', null, true)
+ 3 APPPATH\Views\admin\dashboard.php(1): CodeIgniter\View\View->include('footers_headers/header')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 7 APPPATH\Controllers\Home.php(54): view('admin/dashboard')
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-18 20:21:23 --> Invalid file: footers_headers/header.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('footers_headers/header.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('footers_headers/header', null, true)
+ 3 APPPATH\Views\admin\dashboard.php(1): CodeIgniter\View\View->include('footers_headers/header')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 7 APPPATH\Controllers\Home.php(54): view('admin/dashboard')
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-18 20:22:09 --> Invalid file: footers_headers/header.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('footers_headers/header.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('footers_headers/header', null, true)
+ 3 APPPATH\Views\admin\dashboard.php(1): CodeIgniter\View\View->include('footers_headers/header')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 7 APPPATH\Controllers\Home.php(54): view('admin/dashboard')
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-03-18 20:24:26 --> mysqli_sql_exception: Unknown column 'username|account' in 'where clause' in C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\laragon\www\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\laragon\www\tamtechhub_inventory\system\Validation\Rules.php(104): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\tamtechhub_inventory\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_not_unique('carlosbernales2...', 'username|accoun...', Array, NULL, 'username_email')
+#6 C:\laragon\www\tamtechhub_inventory\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('username_email', 'username_email', 'carlosbernales2...', Array, Array)
+#7 C:\laragon\www\tamtechhub_inventory\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\laragon\www\tamtechhub_inventory\app\Controllers\Account.php(122): CodeIgniter\Controller->validate(Array, Array)
+#9 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Account->signin()
+#10 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+#11 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#14 {main}
+CRITICAL - 2024-03-18 20:24:26 --> Unknown column 'username|account' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1
+FROM `account`
+WHERE `username|account` = \'carlosbernales24@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `account`
+WHERE `username|account` = \'carlosbernales24@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `account`
+WHERE `username|account` = \'carlosbernales24@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `account`
+WHERE `username|account` = :username|account:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\Rules.php(104): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_not_unique('carlosbernales24@gmail.com', 'username|account', [...], null, 'username_email')
+ 7 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('username_email', 'username_email', 'carlosbernales24@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\Account.php(122): CodeIgniter\Controller->validate([...], [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->signin()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-03-18 20:24:48 --> mysqli_sql_exception: Unknown column 'username||account' in 'where clause' in C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\laragon\www\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\laragon\www\tamtechhub_inventory\system\Validation\Rules.php(104): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\tamtechhub_inventory\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_not_unique('carlosbernales2...', 'username||accou...', Array, NULL, 'username_email')
+#6 C:\laragon\www\tamtechhub_inventory\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('username_email', 'username_email', 'carlosbernales2...', Array, Array)
+#7 C:\laragon\www\tamtechhub_inventory\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\laragon\www\tamtechhub_inventory\app\Controllers\Account.php(122): CodeIgniter\Controller->validate(Array, Array)
+#9 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Account->signin()
+#10 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+#11 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#14 {main}
+CRITICAL - 2024-03-18 20:24:48 --> Unknown column 'username||account' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1
+FROM `account`
+WHERE `username||account` = \'carlosbernales24@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `account`
+WHERE `username||account` = \'carlosbernales24@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `account`
+WHERE `username||account` = \'carlosbernales24@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `account`
+WHERE `username||account` = :username||account:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\Rules.php(104): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_not_unique('carlosbernales24@gmail.com', 'username||account', [...], null, 'username_email')
+ 7 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('username_email', 'username_email', 'carlosbernales24@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\Account.php(122): CodeIgniter\Controller->validate([...], [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->signin()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-03-18 20:24:57 --> mysqli_sql_exception: Unknown column 'username||account' in 'where clause' in C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\laragon\www\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\laragon\www\tamtechhub_inventory\system\Validation\Rules.php(104): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\tamtechhub_inventory\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_not_unique('carlosbernales', 'username||accou...', Array, NULL, 'username_email')
+#6 C:\laragon\www\tamtechhub_inventory\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('username_email', 'username_email', 'carlosbernales', Array, Array)
+#7 C:\laragon\www\tamtechhub_inventory\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\laragon\www\tamtechhub_inventory\app\Controllers\Account.php(122): CodeIgniter\Controller->validate(Array, Array)
+#9 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Account->signin()
+#10 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+#11 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#14 {main}
+CRITICAL - 2024-03-18 20:24:57 --> Unknown column 'username||account' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1
+FROM `account`
+WHERE `username||account` = \'carlosbernales\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `account`
+WHERE `username||account` = \'carlosbernales\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `account`
+WHERE `username||account` = \'carlosbernales\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `account`
+WHERE `username||account` = :username||account:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\Rules.php(104): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_not_unique('carlosbernales', 'username||account', [...], null, 'username_email')
+ 7 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('username_email', 'username_email', 'carlosbernales', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\Account.php(122): CodeIgniter\Controller->validate([...], [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->signin()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-18 20:25:45 --> Invalid file: footers_headers/header.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('footers_headers/header.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('footers_headers/header', null, true)
+ 3 APPPATH\Views\admin\dashboard.php(1): CodeIgniter\View\View->include('footers_headers/header')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 7 APPPATH\Controllers\Home.php(54): view('admin/dashboard')
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-18 20:26:06 --> Invalid file: footers_headers/header.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('footers_headers/header.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('footers_headers/header', null, true)
+ 3 APPPATH\Views\admin\dashboard.php(1): CodeIgniter\View\View->include('footers_headers/header')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 7 APPPATH\Controllers\Home.php(54): view('admin/dashboard')
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-18 20:30:44 --> Invalid file: footers_headers/header.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('footers_headers/header.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('footers_headers/header', null, true)
+ 3 APPPATH\Views\admin\dashboard.php(1): CodeIgniter\View\View->include('footers_headers/header')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 7 APPPATH\Controllers\Home.php(54): view('admin/dashboard')
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-18 20:30:59 --> Invalid file: footers_headers/header.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('footers_headers/header.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('footers_headers/header', null, true)
+ 3 APPPATH\Views\admin\dashboard.php(1): CodeIgniter\View\View->include('footers_headers/header')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 7 APPPATH\Controllers\Home.php(54): view('admin/dashboard')
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-18 20:31:10 --> Invalid file: footers_headers/header.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('footers_headers/header.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('footers_headers/header', null, true)
+ 3 APPPATH\Views\admin\dashboard.php(1): CodeIgniter\View\View->include('footers_headers/header')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 7 APPPATH\Controllers\Home.php(54): view('admin/dashboard')
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-18 20:35:08 --> Invalid file: footers_headers/header.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('footers_headers/header.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('footers_headers/header', null, true)
+ 3 APPPATH\Views\admin\dashboard.php(1): CodeIgniter\View\View->include('footers_headers/header')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 7 APPPATH\Controllers\Home.php(54): view('admin/dashboard')
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-18 21:46:26 --> syntax error, unexpected token "]"
+in APPPATH\Config\Routes.php on line 142.
+ 1 SYSTEMPATH\CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 2 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-18 21:46:35 --> Invalid file: resetpassword.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('resetpassword.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('resetpassword', [], true)
+ 3 APPPATH\Controllers\Account.php(165): view('resetpassword')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->resetpassword()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

@@ -1,0 +1,240 @@
+CRITICAL - 2024-04-23 00:00:53 --> Invalid file: your_view.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('your_view.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('your_view', [], true)
+ 3 APPPATH\Controllers\Payroll.php(329): view('your_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-23 00:00:54 --> Invalid file: your_view.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('your_view.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('your_view', [], true)
+ 3 APPPATH\Controllers\Payroll.php(329): view('your_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-23 00:00:55 --> Invalid file: your_view.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('your_view.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('your_view', [], true)
+ 3 APPPATH\Controllers\Payroll.php(329): view('your_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-23 00:00:55 --> Invalid file: your_view.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('your_view.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('your_view', [], true)
+ 3 APPPATH\Controllers\Payroll.php(329): view('your_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-23 00:01:04 --> Undefined array key "agent_id"
+in APPPATH\Controllers\Payroll.php on line 288.
+ 1 APPPATH\Controllers\Payroll.php(288): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "agent_id"', 'APPPATH\\Controllers\\Payroll.php', 288)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-23 00:10:34 --> Undefined variable $attendanceWithDate
+in APPPATH\Controllers\Payroll.php on line 318.
+ 1 APPPATH\Controllers\Payroll.php(318): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $attendanceWithDate', 'APPPATH\\Controllers\\Payroll.php', 318)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-23 00:10:35 --> Undefined variable $attendanceWithDate
+in APPPATH\Controllers\Payroll.php on line 318.
+ 1 APPPATH\Controllers\Payroll.php(318): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $attendanceWithDate', 'APPPATH\\Controllers\\Payroll.php', 318)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-23 00:10:36 --> Undefined variable $attendanceWithDate
+in APPPATH\Controllers\Payroll.php on line 318.
+ 1 APPPATH\Controllers\Payroll.php(318): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $attendanceWithDate', 'APPPATH\\Controllers\\Payroll.php', 318)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-23 00:10:36 --> Undefined variable $attendanceWithDate
+in APPPATH\Controllers\Payroll.php on line 318.
+ 1 APPPATH\Controllers\Payroll.php(318): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $attendanceWithDate', 'APPPATH\\Controllers\\Payroll.php', 318)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-23 00:10:43 --> Undefined variable $attendanceWithDate
+in APPPATH\Controllers\Payroll.php on line 318.
+ 1 APPPATH\Controllers\Payroll.php(318): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $attendanceWithDate', 'APPPATH\\Controllers\\Payroll.php', 318)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-23 00:10:43 --> Undefined variable $attendanceWithDate
+in APPPATH\Controllers\Payroll.php on line 318.
+ 1 APPPATH\Controllers\Payroll.php(318): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $attendanceWithDate', 'APPPATH\\Controllers\\Payroll.php', 318)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-23 00:10:43 --> Undefined variable $attendanceWithDate
+in APPPATH\Controllers\Payroll.php on line 318.
+ 1 APPPATH\Controllers\Payroll.php(318): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $attendanceWithDate', 'APPPATH\\Controllers\\Payroll.php', 318)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-23 00:10:53 --> Undefined variable $attendanceWithDate
+in APPPATH\Controllers\Payroll.php on line 318.
+ 1 APPPATH\Controllers\Payroll.php(318): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $attendanceWithDate', 'APPPATH\\Controllers\\Payroll.php', 318)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-23 00:10:53 --> Undefined variable $attendanceWithDate
+in APPPATH\Controllers\Payroll.php on line 318.
+ 1 APPPATH\Controllers\Payroll.php(318): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $attendanceWithDate', 'APPPATH\\Controllers\\Payroll.php', 318)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-23 00:10:54 --> Undefined variable $attendanceWithDate
+in APPPATH\Controllers\Payroll.php on line 318.
+ 1 APPPATH\Controllers\Payroll.php(318): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $attendanceWithDate', 'APPPATH\\Controllers\\Payroll.php', 318)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-23 00:10:54 --> Undefined variable $attendanceWithDate
+in APPPATH\Controllers\Payroll.php on line 318.
+ 1 APPPATH\Controllers\Payroll.php(318): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $attendanceWithDate', 'APPPATH\\Controllers\\Payroll.php', 318)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-23 00:10:54 --> Undefined variable $attendanceWithDate
+in APPPATH\Controllers\Payroll.php on line 318.
+ 1 APPPATH\Controllers\Payroll.php(318): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $attendanceWithDate', 'APPPATH\\Controllers\\Payroll.php', 318)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-23 00:11:02 --> Undefined array key "agent_id"
+in APPPATH\Controllers\Payroll.php on line 287.
+ 1 APPPATH\Controllers\Payroll.php(287): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "agent_id"', 'APPPATH\\Controllers\\Payroll.php', 287)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-23 00:13:01 --> Undefined variable $attendanceWithDate
+in APPPATH\Controllers\Payroll.php on line 318.
+ 1 APPPATH\Controllers\Payroll.php(318): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $attendanceWithDate', 'APPPATH\\Controllers\\Payroll.php', 318)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-23 00:13:01 --> Undefined variable $attendanceWithDate
+in APPPATH\Controllers\Payroll.php on line 318.
+ 1 APPPATH\Controllers\Payroll.php(318): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $attendanceWithDate', 'APPPATH\\Controllers\\Payroll.php', 318)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-23 00:13:02 --> Undefined variable $attendanceWithDate
+in APPPATH\Controllers\Payroll.php on line 318.
+ 1 APPPATH\Controllers\Payroll.php(318): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $attendanceWithDate', 'APPPATH\\Controllers\\Payroll.php', 318)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-23 00:13:07 --> Undefined array key "agent_id"
+in APPPATH\Controllers\Payroll.php on line 287.
+ 1 APPPATH\Controllers\Payroll.php(287): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "agent_id"', 'APPPATH\\Controllers\\Payroll.php', 287)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-23 00:13:53 --> Undefined variable $attendanceWithDate
+in APPPATH\Controllers\Payroll.php on line 318.
+ 1 APPPATH\Controllers\Payroll.php(318): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $attendanceWithDate', 'APPPATH\\Controllers\\Payroll.php', 318)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-23 00:14:02 --> Undefined array key "agent_id"
+in APPPATH\Controllers\Payroll.php on line 287.
+ 1 APPPATH\Controllers\Payroll.php(287): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "agent_id"', 'APPPATH\\Controllers\\Payroll.php', 287)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-23 00:16:08 --> Undefined variable $attendanceWithDate
+in APPPATH\Controllers\Payroll.php on line 318.
+ 1 APPPATH\Controllers\Payroll.php(318): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $attendanceWithDate', 'APPPATH\\Controllers\\Payroll.php', 318)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-23 00:17:27 --> Undefined variable $attendanceWithDate
+in APPPATH\Controllers\Payroll.php on line 318.
+ 1 APPPATH\Controllers\Payroll.php(318): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $attendanceWithDate', 'APPPATH\\Controllers\\Payroll.php', 318)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-23 00:17:28 --> Undefined variable $attendanceWithDate
+in APPPATH\Controllers\Payroll.php on line 318.
+ 1 APPPATH\Controllers\Payroll.php(318): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $attendanceWithDate', 'APPPATH\\Controllers\\Payroll.php', 318)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-23 00:17:28 --> Undefined variable $attendanceWithDate
+in APPPATH\Controllers\Payroll.php on line 318.
+ 1 APPPATH\Controllers\Payroll.php(318): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $attendanceWithDate', 'APPPATH\\Controllers\\Payroll.php', 318)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-23 00:17:36 --> Undefined array key "agent_id"
+in APPPATH\Controllers\Payroll.php on line 287.
+ 1 APPPATH\Controllers\Payroll.php(287): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "agent_id"', 'APPPATH\\Controllers\\Payroll.php', 287)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->calculate_total_salary()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

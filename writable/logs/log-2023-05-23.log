@@ -1,0 +1,527 @@
+CRITICAL - 2023-05-23 00:48:22 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(24): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 00:48:34 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(24): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 00:48:43 --> Call to undefined function set_value()
+in APPPATH\Views\admin\employee_register.php on line 43.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/employee_register', [], true)
+ 4 APPPATH\Controllers\Employee.php(156): view('admin/employee_register', [])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->employee_dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 00:50:10 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\admin\employee_dashboard.php on line 254.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/employee_dashboard', [], true)
+ 4 APPPATH\Controllers\Employee.php(156): view('admin/employee_dashboard', [])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->employee_dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 02:29:02 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(24): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 02:29:11 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(24): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 02:30:33 --> Undefined array key "id"
+in APPPATH\Controllers\Home.php on line 49.
+ 1 APPPATH\Controllers\Home.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\Home.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->home()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 02:30:34 --> Undefined array key "id"
+in APPPATH\Controllers\Home.php on line 49.
+ 1 APPPATH\Controllers\Home.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\Home.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->home()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 02:30:35 --> Undefined array key "id"
+in APPPATH\Controllers\Home.php on line 49.
+ 1 APPPATH\Controllers\Home.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\Home.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->home()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 02:30:41 --> Undefined array key "id"
+in APPPATH\Controllers\Home.php on line 49.
+ 1 APPPATH\Controllers\Home.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\Home.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->home()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 02:48:10 --> Undefined variable $session
+in APPPATH\Controllers\Employee.php on line 40.
+ 1 APPPATH\Controllers\Employee.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Controllers\\Employee.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->employee_login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 02:48:28 --> Undefined variable $session
+in APPPATH\Controllers\Employee.php on line 40.
+ 1 APPPATH\Controllers\Employee.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Controllers\\Employee.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->employee_login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 02:49:08 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Employee.php on line 36.
+ 1 APPPATH\Controllers\Employee.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Employee.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->employee_login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 02:49:42 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Employee.php on line 36.
+ 1 APPPATH\Controllers\Employee.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Employee.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->employee_login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 02:53:56 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Employee.php on line 36.
+ 1 APPPATH\Controllers\Employee.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Employee.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->employee_login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 02:55:08 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Employee.php on line 36.
+ 1 APPPATH\Controllers\Employee.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Employee.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->employee_login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 03:00:49 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Employee.php on line 36.
+ 1 APPPATH\Controllers\Employee.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Employee.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->employee_login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 03:01:45 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Employee.php on line 36.
+ 1 APPPATH\Controllers\Employee.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Employee.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->employee_login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 03:02:11 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Employee.php on line 36.
+ 1 APPPATH\Controllers\Employee.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Employee.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->employee_login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 03:41:26 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Employee.php on line 36.
+ 1 APPPATH\Controllers\Employee.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Employee.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->employee_login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 03:48:17 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Employee.php on line 36.
+ 1 APPPATH\Controllers\Employee.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Employee.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->employee_login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 03:48:32 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Employee.php on line 36.
+ 1 APPPATH\Controllers\Employee.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Employee.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->employee_login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 04:11:53 --> Invalid file: admin/employee_dashboard.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/employee_dashboard.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/employee_dashboard', [], true)
+ 3 APPPATH\Controllers\Employee.php(161): view('admin/employee_dashboard', [])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->employee_dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 05:11:02 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(24): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 05:13:06 --> Undefined array key "id"
+in APPPATH\Controllers\Home.php on line 49.
+ 1 APPPATH\Controllers\Home.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\Home.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->home()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 05:16:01 --> Undefined array key "id"
+in APPPATH\Controllers\Home.php on line 49.
+ 1 APPPATH\Controllers\Home.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\Home.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->home()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 06:26:34 --> Invalid file: includes/header.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('includes/header.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/header', [], true)
+ 3 APPPATH\Views\includes\template.php(1): view('includes/header')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 7 APPPATH\Controllers\Home.php(81): view('includes/template', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->flower_bouquet_list()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 06:27:11 --> Invalid file: includes/template.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('includes/template.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 3 APPPATH\Controllers\Home.php(81): view('includes/template', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->flower_bouquet_list()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 06:27:55 --> Invalid file: includes/template.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('includes/template.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 3 APPPATH\Controllers\Home.php(81): view('includes/template', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->flower_bouquet_list()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 07:21:23 --> Undefined array key "firstname"
+in APPPATH\Views\home\productdetails.php on line 74.
+ 1 APPPATH\Views\home\productdetails.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'APPPATH\\Views\\home\\productdetails.php', 74)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\productdetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/productdetails', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/productdetails')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(259): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->productdetails('12')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 07:21:38 --> Undefined array key "id"
+in APPPATH\Controllers\Home.php on line 175.
+ 1 APPPATH\Controllers\Home.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\Home.php', 175)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->inaugural_list()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 07:21:49 --> Undefined array key "id"
+in APPPATH\Controllers\Home.php on line 150.
+ 1 APPPATH\Controllers\Home.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\Home.php', 150)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->funeral_list()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 07:21:51 --> Undefined array key "id"
+in APPPATH\Controllers\Home.php on line 255.
+ 1 APPPATH\Controllers\Home.php(255): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\Home.php', 255)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->productdetails('12')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 07:21:57 --> Undefined array key "id"
+in APPPATH\Controllers\Home.php on line 100.
+ 1 APPPATH\Controllers\Home.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\Home.php', 100)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->money_bouquet_list()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 07:21:58 --> Undefined array key "id"
+in APPPATH\Controllers\Home.php on line 175.
+ 1 APPPATH\Controllers\Home.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\Home.php', 175)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->inaugural_list()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 07:21:58 --> Undefined array key "id"
+in APPPATH\Controllers\Home.php on line 75.
+ 1 APPPATH\Controllers\Home.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\Home.php', 75)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->flower_bouquet_list()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 07:27:57 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(24): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 07:28:10 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(24): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 10:53:22 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(24): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 10:53:43 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(24): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 10:54:06 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(24): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 10:54:47 --> Undefined variable $Product_model
+in APPPATH\Controllers\Home.php on line 26.
+ 1 APPPATH\Controllers\Home.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Product_model', 'APPPATH\\Controllers\\Home.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 10:54:58 --> Undefined variable $useSessionData
+in APPPATH\Controllers\Home.php on line 28.
+ 1 APPPATH\Controllers\Home.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $useSessionData', 'APPPATH\\Controllers\\Home.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 10:55:00 --> Undefined variable $useSessionData
+in APPPATH\Controllers\Home.php on line 28.
+ 1 APPPATH\Controllers\Home.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $useSessionData', 'APPPATH\\Controllers\\Home.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 10:55:08 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(33): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 10:55:25 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(35): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 10:55:26 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(35): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 10:55:27 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(35): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 10:55:27 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(35): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 10:55:28 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(35): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 10:56:02 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(24): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 10:56:03 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(24): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 11:02:19 --> Cannot access offset of type string on string
+in APPPATH\Views\home\orders.php on line 73.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 4 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 8 APPPATH\Controllers\Home.php(221): view('includes/template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-23 11:05:54 --> Undefined array key "product_image"
+in APPPATH\Views\home\orders.php on line 79.
+ 1 APPPATH\Views\home\orders.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_image"', 'APPPATH\\Views\\home\\orders.php', 79)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(221): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

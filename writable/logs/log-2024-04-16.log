@@ -1,0 +1,306 @@
+ERROR - 2024-04-16 01:17:10 --> mysqli_sql_exception: Unknown table 'start_date' in C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FOR...', 0)
+#1 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FOR...')
+#2 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FOR...')
+#3 C:\laragon\www\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FOR...', Array, false)
+#4 C:\laragon\www\tamtechhub_inventory\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\tamtechhub_inventory\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\tamtechhub_inventory\app\Controllers\Home.php(141): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Home->agent_list()
+#8 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-04-16 01:17:10 --> Unknown table 'start_date'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FORMAT(start_date, \'%M %e, %Y\') AS start_date_formatted, `start_date`.*
+FROM `agent_list`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FORMAT(start_date, \'%M %e, %Y\') AS start_date_formatted, `start_date`.*
+FROM `agent_list`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FORMAT(start_date, \'%M %e, %Y\') AS start_date_formatted, `start_date`.*
+FROM `agent_list`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(start_date, \'%M %e, %Y\') AS start_date_formatted, `start_date`.*
+FROM `agent_list`', [], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(141): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->agent_list()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-04-16 01:17:29 --> mysqli_sql_exception: Unknown table 'start_date' in C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FOR...', 0)
+#1 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FOR...')
+#2 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FOR...')
+#3 C:\laragon\www\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FOR...', Array, false)
+#4 C:\laragon\www\tamtechhub_inventory\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\tamtechhub_inventory\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\tamtechhub_inventory\app\Controllers\Home.php(141): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Home->agent_list()
+#8 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-04-16 01:17:29 --> Unknown table 'start_date'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FORMAT(agent_list, \'%M %e, %Y\') AS start_date_formatted, `start_date`.*
+FROM `agent_list`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FORMAT(agent_list, \'%M %e, %Y\') AS start_date_formatted, `start_date`.*
+FROM `agent_list`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FORMAT(agent_list, \'%M %e, %Y\') AS start_date_formatted, `start_date`.*
+FROM `agent_list`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(agent_list, \'%M %e, %Y\') AS start_date_formatted, `start_date`.*
+FROM `agent_list`', [], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(141): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->agent_list()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-04-16 01:17:31 --> mysqli_sql_exception: Unknown table 'start_date' in C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FOR...', 0)
+#1 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FOR...')
+#2 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FOR...')
+#3 C:\laragon\www\tamtechhub_inventory\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FOR...', Array, false)
+#4 C:\laragon\www\tamtechhub_inventory\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\tamtechhub_inventory\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\tamtechhub_inventory\app\Controllers\Home.php(141): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Home->agent_list()
+#8 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-04-16 01:17:31 --> Unknown table 'start_date'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FORMAT(agent_list, \'%M %e, %Y\') AS start_date_formatted, `start_date`.*
+FROM `agent_list`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FORMAT(agent_list, \'%M %e, %Y\') AS start_date_formatted, `start_date`.*
+FROM `agent_list`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FORMAT(agent_list, \'%M %e, %Y\') AS start_date_formatted, `start_date`.*
+FROM `agent_list`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(agent_list, \'%M %e, %Y\') AS start_date_formatted, `start_date`.*
+FROM `agent_list`', [], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(141): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->agent_list()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-16 01:26:01 --> Undefined variable $files
+in APPPATH\Views\admin\leaveView.php on line 231.
+ 1 APPPATH\Views\admin\leaveView.php(231): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $files', 'APPPATH\\Views\\admin\\leaveView.php', 231)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\leaveView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/leaveView', [], true)
+ 5 APPPATH\Controllers\Home.php(308): view('admin/leaveView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->leaveView('47')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-16 02:10:00 --> Undefined array key "Status"
+in APPPATH\Views\admin\leaveView.php on line 172.
+ 1 APPPATH\Views\admin\leaveView.php(172): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Status"', 'APPPATH\\Views\\admin\\leaveView.php', 172)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\leaveView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/leaveView', [], true)
+ 5 APPPATH\Controllers\Home.php(308): view('admin/leaveView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->leaveView('47')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-16 02:10:12 --> Undefined array key "agent_id"
+in APPPATH\Views\admin\leaveView.php on line 180.
+ 1 APPPATH\Views\admin\leaveView.php(180): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "agent_id"', 'APPPATH\\Views\\admin\\leaveView.php', 180)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\leaveView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/leaveView', [], true)
+ 5 APPPATH\Controllers\Home.php(308): view('admin/leaveView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->leaveView('5')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-16 05:07:03 --> Attempt to read property "status" on array
+in APPPATH\Controllers\Home.php on line 310.
+ 1 APPPATH\Controllers\Home.php(310): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "status" on array', 'APPPATH\\Controllers\\Home.php', 310)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->leaveView('47')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-16 05:20:37 --> Undefined array key "start_date"
+in APPPATH\Views\admin\leaveView.php on line 202.
+ 1 APPPATH\Views\admin\leaveView.php(202): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "start_date"', 'APPPATH\\Views\\admin\\leaveView.php', 202)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\leaveView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/leaveView', [], true)
+ 5 APPPATH\Controllers\Home.php(338): view('admin/leaveView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->leaveView('47')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-16 05:20:52 --> Undefined array key "start_date"
+in APPPATH\Views\admin\leaveView.php on line 202.
+ 1 APPPATH\Views\admin\leaveView.php(202): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "start_date"', 'APPPATH\\Views\\admin\\leaveView.php', 202)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\leaveView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/leaveView', [], true)
+ 5 APPPATH\Controllers\Home.php(338): view('admin/leaveView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->leaveView('20')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-16 05:55:09 --> Undefined array key "admin_id"
+in APPPATH\Controllers\Home.php on line 102.
+ 1 APPPATH\Controllers\Home.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "admin_id"', 'APPPATH\\Controllers\\Home.php', 102)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-16 05:55:56 --> Undefined variable $userId
+in APPPATH\Controllers\Home.php on line 102.
+ 1 APPPATH\Controllers\Home.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userId', 'APPPATH\\Controllers\\Home.php', 102)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-16 05:56:00 --> Undefined variable $userData
+in APPPATH\Controllers\Home.php on line 113.
+ 1 APPPATH\Controllers\Home.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userData', 'APPPATH\\Controllers\\Home.php', 113)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-16 05:59:09 --> Undefined array key "admin_id"
+in APPPATH\Controllers\Home.php on line 102.
+ 1 APPPATH\Controllers\Home.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "admin_id"', 'APPPATH\\Controllers\\Home.php', 102)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-16 07:39:44 --> Invalid file: admin/leaveHistory.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/leaveHistory.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/leaveHistory', [], true)
+ 3 APPPATH\Controllers\Home.php(380): view('admin/leaveHistory', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->leaveHistory('26')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-16 07:45:44 --> Undefined variable $agent
+in APPPATH\Views\admin\leave_history.php on line 193.
+ 1 APPPATH\Views\admin\leave_history.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $agent', 'APPPATH\\Views\\admin\\leave_history.php', 193)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\leave_history.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/leave_history', [], true)
+ 5 APPPATH\Controllers\Home.php(380): view('admin/leave_history', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->leaveHistory('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-16 07:47:10 --> Undefined variable $agent
+in APPPATH\Views\admin\leave_history.php on line 178.
+ 1 APPPATH\Views\admin\leave_history.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $agent', 'APPPATH\\Views\\admin\\leave_history.php', 178)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\leave_history.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/leave_history', [], true)
+ 5 APPPATH\Controllers\Home.php(380): view('admin/leave_history', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->leaveHistory('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-16 07:47:51 --> Undefined variable $leave
+in APPPATH\Views\admin\leave_history.php on line 194.
+ 1 APPPATH\Views\admin\leave_history.php(194): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $leave', 'APPPATH\\Views\\admin\\leave_history.php', 194)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\leave_history.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/leave_history', [], true)
+ 5 APPPATH\Controllers\Home.php(380): view('admin/leave_history', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->leaveHistory('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-16 07:48:15 --> Undefined variable $leave
+in APPPATH\Views\admin\leave_history.php on line 194.
+ 1 APPPATH\Views\admin\leave_history.php(194): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $leave', 'APPPATH\\Views\\admin\\leave_history.php', 194)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\leave_history.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/leave_history', [], true)
+ 5 APPPATH\Controllers\Home.php(380): view('admin/leave_history', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->leaveHistory('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-16 07:48:23 --> Undefined array key "start_date"
+in APPPATH\Views\admin\leave_history.php on line 197.
+ 1 APPPATH\Views\admin\leave_history.php(197): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "start_date"', 'APPPATH\\Views\\admin\\leave_history.php', 197)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\leave_history.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/leave_history', [], true)
+ 5 APPPATH\Controllers\Home.php(380): view('admin/leave_history', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->leaveHistory('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-16 20:34:18 --> Undefined array key "admin_id"
+in APPPATH\Controllers\Home.php on line 2698.
+ 1 APPPATH\Controllers\Home.php(2698): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "admin_id"', 'APPPATH\\Controllers\\Home.php', 2698)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->accountability_form()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-16 21:08:00 --> Class "App\Controllers\AccountModel" not found
+in APPPATH\Controllers\Account.php on line 470.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->user_Data()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-16 21:11:10 --> syntax error, unexpected token ";", expecting "]"
+in APPPATH\Controllers\Home.php on line 111.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-16 22:11:43 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\leaveView.php on line 181.
+ 1 APPPATH\Views\admin\leaveView.php(181): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\admin\\leaveView.php', 181)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\leaveView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/leaveView', [], true)
+ 5 APPPATH\Controllers\Home.php(410): view('admin/leaveView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->leaveView('ROOTPATH\\public')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

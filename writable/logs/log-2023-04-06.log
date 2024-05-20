@@ -1,0 +1,960 @@
+CRITICAL - 2023-04-06 02:13:27 --> Undefined variable $product
+in APPPATH\Views\test.php on line 11.
+ 1 APPPATH\Views\test.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product', 'APPPATH\\Views\\test.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('test', [], true)
+ 5 APPPATH\Controllers\Welcome.php(9): view('test')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Welcome->draganddrop()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 02:18:39 --> Undefined variable $product
+in APPPATH\Views\test.php on line 26.
+ 1 APPPATH\Views\test.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product', 'APPPATH\\Views\\test.php', 26)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('test', [], true)
+ 5 APPPATH\Controllers\Welcome.php(17): view('test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Welcome->draganddrop()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:14:04 --> Undefined variable $row
+in APPPATH\Views\test.php on line 27.
+ 1 APPPATH\Views\test.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'APPPATH\\Views\\test.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('test', [], true)
+ 5 APPPATH\Controllers\Welcome.php(17): view('test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Welcome->draganddrop()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:14:34 --> Undefined variable $row
+in APPPATH\Views\test.php on line 27.
+ 1 APPPATH\Views\test.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'APPPATH\\Views\\test.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('test', [], true)
+ 5 APPPATH\Controllers\Welcome.php(17): view('test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Welcome->draganddrop()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:15:03 --> Undefined array key "product_image"
+in APPPATH\Views\test.php on line 27.
+ 1 APPPATH\Views\test.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_image"', 'APPPATH\\Views\\test.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('test', [], true)
+ 5 APPPATH\Controllers\Welcome.php(17): view('test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Welcome->draganddrop()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:15:34 --> Undefined array key "product_image"
+in APPPATH\Views\test.php on line 27.
+ 1 APPPATH\Views\test.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_image"', 'APPPATH\\Views\\test.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('test', [], true)
+ 5 APPPATH\Controllers\Welcome.php(17): view('test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Welcome->draganddrop()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:16:05 --> Undefined array key "product_image"
+in APPPATH\Views\test.php on line 27.
+ 1 APPPATH\Views\test.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_image"', 'APPPATH\\Views\\test.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('test', [], true)
+ 5 APPPATH\Controllers\Welcome.php(17): view('test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Welcome->draganddrop()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:16:17 --> Undefined variable $row
+in APPPATH\Views\test.php on line 27.
+ 1 APPPATH\Views\test.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'APPPATH\\Views\\test.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('test', [], true)
+ 5 APPPATH\Controllers\Welcome.php(17): view('test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Welcome->draganddrop()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:16:47 --> Undefined variable $row
+in APPPATH\Views\test.php on line 27.
+ 1 APPPATH\Views\test.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'APPPATH\\Views\\test.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('test', [], true)
+ 5 APPPATH\Controllers\Welcome.php(17): view('test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Welcome->draganddrop()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:17:30 --> Undefined variable $row
+in APPPATH\Views\test.php on line 27.
+ 1 APPPATH\Views\test.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'APPPATH\\Views\\test.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('test', [], true)
+ 5 APPPATH\Controllers\Welcome.php(17): view('test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Welcome->draganddrop()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:19:15 --> Undefined variable $row
+in APPPATH\Views\test.php on line 27.
+ 1 APPPATH\Views\test.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'APPPATH\\Views\\test.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('test', [], true)
+ 5 APPPATH\Controllers\Welcome.php(17): view('test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Welcome->draganddrop()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Welcome))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:28:40 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:28:41 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:28:54 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:29:00 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:29:02 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:29:03 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:29:32 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:29:34 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:30:10 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:30:11 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:31:46 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:31:47 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:31:48 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:31:50 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:31:57 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:31:58 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:31:59 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:37:29 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:37:31 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:38:41 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:38:42 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:38:43 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:42:46 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:45:33 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:50:21 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:50:23 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:50:38 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:50:39 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:50:40 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:50:41 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:50:42 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:50:43 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:50:44 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:50:45 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:50:48 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:51:41 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:58:22 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:58:28 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:58:32 --> Class "App\Controllers\Product_model" not found
+in APPPATH\Controllers\Cart.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:59:18 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:59:20 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:59:29 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:59:31 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:59:32 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:59:47 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 03:59:48 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:00:25 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:00:27 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:00:29 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:00:44 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:03:48 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:03:49 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:03:50 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:03:51 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:03:58 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:03:59 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:04:01 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:04:52 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:04:54 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:05:23 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:05:24 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:05:25 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:05:26 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:05:30 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:09:18 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:09:20 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:14:11 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:14:12 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:14:12 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:14:21 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:14:22 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:33:21 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:33:22 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:33:48 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:33:49 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:33:59 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:34:00 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:34:30 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:34:31 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:34:32 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 04:34:33 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 05:10:13 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 05:10:14 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 05:10:15 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 05:10:36 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 05:10:38 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 05:10:40 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 05:10:42 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 05:10:43 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 05:30:37 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 23:25:58 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 23:25:59 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 23:26:50 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 23:27:04 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 23:27:20 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 23:29:17 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 23:30:19 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 23:31:28 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 23:31:30 --> Class "App\Controllers\Category_model" not found
+in APPPATH\Controllers\Cart.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 23:39:50 --> Undefined property: App\Controllers\Cart::$
+in APPPATH\Controllers\Cart.php on line 13.
+ 1 APPPATH\Controllers\Cart.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Cart::$', 'APPPATH\\Controllers\\Cart.php', 13)
+ 2 APPPATH\Controllers\Cart.php(33): App\Controllers\Cart->isExist('11')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 23:39:51 --> Undefined property: App\Controllers\Cart::$
+in APPPATH\Controllers\Cart.php on line 13.
+ 1 APPPATH\Controllers\Cart.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Cart::$', 'APPPATH\\Controllers\\Cart.php', 13)
+ 2 APPPATH\Controllers\Cart.php(33): App\Controllers\Cart->isExist('14')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 23:39:53 --> Undefined property: App\Controllers\Cart::$
+in APPPATH\Controllers\Cart.php on line 13.
+ 1 APPPATH\Controllers\Cart.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Cart::$', 'APPPATH\\Controllers\\Cart.php', 13)
+ 2 APPPATH\Controllers\Cart.php(33): App\Controllers\Cart->isExist('16')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 23:40:22 --> Undefined variable $cart
+in APPPATH\Controllers\Cart.php on line 13.
+ 1 APPPATH\Controllers\Cart.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cart', 'APPPATH\\Controllers\\Cart.php', 13)
+ 2 APPPATH\Controllers\Cart.php(33): App\Controllers\Cart->isExist('14')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 23:41:04 --> Undefined property: App\Controllers\Cart::$cart
+in APPPATH\Controllers\Cart.php on line 13.
+ 1 APPPATH\Controllers\Cart.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Cart::$cart', 'APPPATH\\Controllers\\Cart.php', 13)
+ 2 APPPATH\Controllers\Cart.php(33): App\Controllers\Cart->isExist('14')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 23:41:06 --> Undefined property: App\Controllers\Cart::$cart
+in APPPATH\Controllers\Cart.php on line 13.
+ 1 APPPATH\Controllers\Cart.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Cart::$cart', 'APPPATH\\Controllers\\Cart.php', 13)
+ 2 APPPATH\Controllers\Cart.php(33): App\Controllers\Cart->isExist('16')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 23:44:33 --> Undefined property: App\Controllers\Cart::$cart
+in APPPATH\Controllers\Cart.php on line 13.
+ 1 APPPATH\Controllers\Cart.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Cart::$cart', 'APPPATH\\Controllers\\Cart.php', 13)
+ 2 APPPATH\Controllers\Cart.php(32): App\Controllers\Cart->isExist('14')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 23:45:02 --> Undefined property: App\Controllers\Cart::$cart
+in APPPATH\Controllers\Cart.php on line 13.
+ 1 APPPATH\Controllers\Cart.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Cart::$cart', 'APPPATH\\Controllers\\Cart.php', 13)
+ 2 APPPATH\Controllers\Cart.php(32): App\Controllers\Cart->isExist('16')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 23:45:31 --> Undefined property: App\Controllers\Cart::$cart
+in APPPATH\Controllers\Cart.php on line 13.
+ 1 APPPATH\Controllers\Cart.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Cart::$cart', 'APPPATH\\Controllers\\Cart.php', 13)
+ 2 APPPATH\Controllers\Cart.php(32): App\Controllers\Cart->isExist('16')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 23:47:09 --> Undefined property: App\Controllers\Cart::$cart
+in APPPATH\Controllers\Cart.php on line 13.
+ 1 APPPATH\Controllers\Cart.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Cart::$cart', 'APPPATH\\Controllers\\Cart.php', 13)
+ 2 APPPATH\Controllers\Cart.php(32): App\Controllers\Cart->isExist(null)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 23:47:10 --> Undefined property: App\Controllers\Cart::$cart
+in APPPATH\Controllers\Cart.php on line 13.
+ 1 APPPATH\Controllers\Cart.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Cart::$cart', 'APPPATH\\Controllers\\Cart.php', 13)
+ 2 APPPATH\Controllers\Cart.php(32): App\Controllers\Cart->isExist(null)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 23:51:54 --> Undefined property: App\Controllers\Cart::$cart
+in APPPATH\Controllers\Cart.php on line 13.
+ 1 APPPATH\Controllers\Cart.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Cart::$cart', 'APPPATH\\Controllers\\Cart.php', 13)
+ 2 APPPATH\Controllers\Cart.php(32): App\Controllers\Cart->isExist('11')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 23:51:55 --> Undefined property: App\Controllers\Cart::$cart
+in APPPATH\Controllers\Cart.php on line 13.
+ 1 APPPATH\Controllers\Cart.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Cart::$cart', 'APPPATH\\Controllers\\Cart.php', 13)
+ 2 APPPATH\Controllers\Cart.php(32): App\Controllers\Cart->isExist('14')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 23:57:38 --> Undefined property: App\Controllers\Cart::$cart
+in APPPATH\Controllers\Cart.php on line 13.
+ 1 APPPATH\Controllers\Cart.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Cart::$cart', 'APPPATH\\Controllers\\Cart.php', 13)
+ 2 APPPATH\Controllers\Cart.php(32): App\Controllers\Cart->isExist('14')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-06 23:58:47 --> Undefined property: App\Controllers\Cart::$cart
+in APPPATH\Controllers\Cart.php on line 13.
+ 1 APPPATH\Controllers\Cart.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Cart::$cart', 'APPPATH\\Controllers\\Cart.php', 13)
+ 2 APPPATH\Controllers\Cart.php(32): App\Controllers\Cart->isExist('46')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cart->buy()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cart))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

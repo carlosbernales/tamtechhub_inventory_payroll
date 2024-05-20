@@ -1,0 +1,44 @@
+CRITICAL - 2024-03-03 20:53:31 --> Undefined variable $new
+in APPPATH\Views\admin\desktop.php on line 353.
+ 1 APPPATH\Views\admin\desktop.php(353): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $new', 'APPPATH\\Views\\admin\\desktop.php', 353)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\desktop.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/desktop', [], true)
+ 5 APPPATH\Controllers\Home.php(161): view('admin/desktop', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->machine_list()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-03 21:01:51 --> Undefined variable $agent
+in APPPATH\Controllers\Home.php on line 214.
+ 1 APPPATH\Controllers\Home.php(214): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $agent', 'APPPATH\\Controllers\\Home.php', 214)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->update_machine('2')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-03 21:12:03 --> Undefined variable $agent
+in APPPATH\Controllers\Home.php on line 214.
+ 1 APPPATH\Controllers\Home.php(214): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $agent', 'APPPATH\\Controllers\\Home.php', 214)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->update_machine('2')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-03 21:18:00 --> Undefined variable $agent_fk_ids
+in APPPATH\Controllers\Home.php on line 226.
+ 1 APPPATH\Controllers\Home.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $agent_fk_ids', 'APPPATH\\Controllers\\Home.php', 226)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->update_machine('2')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-03 21:44:40 --> Undefined variable $agent
+in APPPATH\Controllers\Home.php on line 231.
+ 1 APPPATH\Controllers\Home.php(231): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $agent', 'APPPATH\\Controllers\\Home.php', 231)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->update_machine('4')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

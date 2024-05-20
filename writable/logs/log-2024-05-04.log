@@ -1,0 +1,39 @@
+CRITICAL - 2024-05-04 01:30:28 --> Cannot redeclare App\Controllers\Payroll::delete_leave()
+in APPPATH\Controllers\Payroll.php on line 746.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-05-04 01:30:31 --> Cannot redeclare App\Controllers\Payroll::delete_leave()
+in APPPATH\Controllers\Payroll.php on line 746.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-05-04 03:23:39 --> include_once(public/template/system_scripts.php): Failed to open stream: No such file or directory
+in APPPATH/Views/admin/agent_list.php on line 351.
+ 1 APPPATH/Views/admin/agent_list.php(351): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include_once(public/template/system_scripts.php): Failed to open stream: No such file or directory', 'APPPATH/Views/admin/agent_list.php', 351)
+ 2 APPPATH/Views/admin/agent_list.php(351): include_once()
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/agent_list.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/agent_list', [], true)
+ 6 APPPATH/Controllers/Home.php(161): view('admin/agent_list', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->agent_list()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-04 03:28:40 --> include_once(public/template/system_scripts.php): Failed to open stream: No such file or directory
+in APPPATH/Views/admin/resigned_agent.php on line 285.
+ 1 APPPATH/Views/admin/resigned_agent.php(285): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include_once(public/template/system_scripts.php): Failed to open stream: No such file or directory', 'APPPATH/Views/admin/resigned_agent.php', 285)
+ 2 APPPATH/Views/admin/resigned_agent.php(285): include_once()
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/resigned_agent.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('admin/resigned_agent', [], true)
+ 6 APPPATH/Controllers/Home.php(355): view('admin/resigned_agent', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->agentAgent_list()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-04 20:03:54 --> syntax error, unexpected token "/"
+in APPPATH/Views/payroll/login.php on line 111.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('payroll/login', [], true)
+ 3 APPPATH/Controllers/Payroll_account.php(78): view('payroll/login', [])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll_account->payroll_signin()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll_account))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()

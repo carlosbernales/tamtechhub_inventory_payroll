@@ -1,0 +1,36 @@
+CRITICAL - 2024-03-31 20:19:26 --> Undefined array key "status"
+in APPPATH\Views\admin\keyboard.php on line 172.
+ 1 APPPATH\Views\admin\keyboard.php(172): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'APPPATH\\Views\\admin\\keyboard.php', 172)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\keyboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/keyboard', [], true)
+ 5 APPPATH\Controllers\Home.php(689): view('admin/keyboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->keyboard_list()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-31 20:22:22 --> Undefined array key "keyboard_status"
+in APPPATH\Views\admin\monitor.php on line 181.
+ 1 APPPATH\Views\admin\monitor.php(181): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "keyboard_status"', 'APPPATH\\Views\\admin\\monitor.php', 181)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\monitor.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/monitor', [], true)
+ 5 APPPATH\Controllers\Home.php(835): view('admin/monitor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->monitor_list()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-03-31 20:47:52 --> Undefined array key "phone_equip_id"
+in APPPATH\Views\admin\sg_5gsimcard.php on line 203.
+ 1 APPPATH\Views\admin\sg_5gsimcard.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "phone_equip_id"', 'APPPATH\\Views\\admin\\sg_5gsimcard.php', 203)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\sg_5gsimcard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/sg_5gsimcard', [], true)
+ 5 APPPATH\Controllers\Home.php(1450): view('admin/sg_5gsimcard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->fiveGsimcard_list()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

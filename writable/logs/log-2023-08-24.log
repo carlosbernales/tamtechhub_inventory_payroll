@@ -1,0 +1,619 @@
+CRITICAL - 2023-08-24 00:35:37 --> Undefined variable $orderStatus
+in APPPATH\Views\admin\orders\pending_orders.php on line 339.
+ 1 APPPATH\Views\admin\orders\pending_orders.php(339): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $orderStatus', 'APPPATH\\Views\\admin\\orders\\pending_orders.php', 339)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\orders\\pending_orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/orders/pending_orders', [], true)
+ 5 APPPATH\Controllers\Orders.php(535): view('admin/orders/pending_orders', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Orders->pending_orders()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 00:36:31 --> Undefined array key "order_status"
+in APPPATH\Views\admin\orders\pending_orders.php on line 339.
+ 1 APPPATH\Views\admin\orders\pending_orders.php(339): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "order_status"', 'APPPATH\\Views\\admin\\orders\\pending_orders.php', 339)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\orders\\pending_orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/orders/pending_orders', [], true)
+ 5 APPPATH\Controllers\Orders.php(535): view('admin/orders/pending_orders', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Orders->pending_orders()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 00:37:00 --> Undefined array key "order_status"
+in APPPATH\Views\admin\orders\pending_orders.php on line 339.
+ 1 APPPATH\Views\admin\orders\pending_orders.php(339): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "order_status"', 'APPPATH\\Views\\admin\\orders\\pending_orders.php', 339)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\orders\\pending_orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/orders/pending_orders', [], true)
+ 5 APPPATH\Controllers\Orders.php(535): view('admin/orders/pending_orders', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Orders->pending_orders()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 00:37:03 --> Undefined array key "order_status"
+in APPPATH\Views\admin\orders\pending_orders.php on line 339.
+ 1 APPPATH\Views\admin\orders\pending_orders.php(339): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "order_status"', 'APPPATH\\Views\\admin\\orders\\pending_orders.php', 339)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\orders\\pending_orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/orders/pending_orders', [], true)
+ 5 APPPATH\Controllers\Orders.php(535): view('admin/orders/pending_orders', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Orders->pending_orders()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 00:37:49 --> Undefined variable $orderStatus
+in APPPATH\Views\admin\orders\pending_orders.php on line 333.
+ 1 APPPATH\Views\admin\orders\pending_orders.php(333): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $orderStatus', 'APPPATH\\Views\\admin\\orders\\pending_orders.php', 333)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\orders\\pending_orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/orders/pending_orders', [], true)
+ 5 APPPATH\Controllers\Orders.php(535): view('admin/orders/pending_orders', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Orders->pending_orders()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 00:39:33 --> Undefined variable $item
+in APPPATH\Views\admin\orders\pending_orders.php on line 333.
+ 1 APPPATH\Views\admin\orders\pending_orders.php(333): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Views\\admin\\orders\\pending_orders.php', 333)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\orders\\pending_orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/orders/pending_orders', [], true)
+ 5 APPPATH\Controllers\Orders.php(535): view('admin/orders/pending_orders', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Orders->pending_orders()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 00:39:48 --> Undefined array key "order_status"
+in APPPATH\Views\admin\orders\pending_orders.php on line 333.
+ 1 APPPATH\Views\admin\orders\pending_orders.php(333): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "order_status"', 'APPPATH\\Views\\admin\\orders\\pending_orders.php', 333)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\orders\\pending_orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/orders/pending_orders', [], true)
+ 5 APPPATH\Controllers\Orders.php(535): view('admin/orders/pending_orders', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Orders->pending_orders()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 01:21:04 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 134.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(28): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 01:35:43 --> Invalid file: order_not_found.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('order_not_found.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('order_not_found', [], true)
+ 3 APPPATH\Controllers\Customize.php(218): view('order_not_found')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Customize->details('27')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customize))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 01:40:19 --> Undefined array key "user_email"
+in APPPATH\Views\admin\orders\pending_orders.php on line 324.
+ 1 APPPATH\Views\admin\orders\pending_orders.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_email"', 'APPPATH\\Views\\admin\\orders\\pending_orders.php', 324)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\orders\\pending_orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/orders/pending_orders', [], true)
+ 5 APPPATH\Controllers\Orders.php(535): view('admin/orders/pending_orders', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Orders->pending_orders()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 01:48:52 --> strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated
+in SYSTEMPATH\Email\Email.php on line 736.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated', 'SYSTEMPATH\\Email\\Email.php', 736)
+ 2 SYSTEMPATH\Email\Email.php(736): strpos(null, ',')
+ 3 SYSTEMPATH\Email\Email.php(549): CodeIgniter\Email\Email->stringToArray(null)
+ 4 APPPATH\Controllers\Customize.php(175): CodeIgniter\Email\Email->setTo(null)
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Customize->add_price('30')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customize))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 01:52:01 --> strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated
+in SYSTEMPATH\Email\Email.php on line 736.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated', 'SYSTEMPATH\\Email\\Email.php', 736)
+ 2 SYSTEMPATH\Email\Email.php(736): strpos(null, ',')
+ 3 SYSTEMPATH\Email\Email.php(549): CodeIgniter\Email\Email->stringToArray(null)
+ 4 APPPATH\Controllers\Customize.php(176): CodeIgniter\Email\Email->setTo(null)
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Customize->add_price('30')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customize))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 02:09:17 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\header.php on line 131.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/header', [], true)
+ 4 APPPATH\Views\includes\template.php(1): view('includes/header')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 8 APPPATH\Controllers\Customize.php(321): view('includes/template', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Customize->cus_checkout('30')
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customize))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-08-24 05:03:54 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'finalproject', 3306, '', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Validation\Rules.php(104): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_not_unique('carlosbernales2...', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'carlosbernales2...', Array, Array)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Account.php(30): CodeIgniter\Controller->validate(Array, Array)
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Account->signin()
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Validation\Rules.php(104): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_not_unique('carlosbernales2...', 'email', Array, NULL, 'email')
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'carlosbernales2...', Array, Array)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Account.php(30): CodeIgniter\Controller->validate(Array, Array)
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Account->signin()
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-08-24 05:03:54 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `user`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\Rules.php(104): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_not_unique('carlosbernales24@gmail.com', 'email', [...], null, 'email')
+ 5 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'carlosbernales24@gmail.com', [...], [...])
+ 6 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Account.php(30): CodeIgniter\Controller->validate([...], [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->signin()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-08-24 05:03:58 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'finalproject', 3306, '', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(52): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->admin_login()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(52): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->admin_login()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-08-24 05:03:58 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admin`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Admin.php(52): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->admin_login()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 05:14:26 --> Undefined array key "order_amount"
+in APPPATH\Views\home\checkout.php on line 126.
+ 1 APPPATH\Views\home\checkout.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "order_amount"', 'APPPATH\\Views\\home\\checkout.php', 126)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\checkout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/checkout', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/checkout')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(741): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->checkout()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 05:14:33 --> Undefined array key "item_amount"
+in APPPATH\Views\home\checkout.php on line 126.
+ 1 APPPATH\Views\home\checkout.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "item_amount"', 'APPPATH\\Views\\home\\checkout.php', 126)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\checkout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/checkout', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/checkout')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(741): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->checkout()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 05:14:54 --> Undefined array key "order_amount"
+in APPPATH\Views\home\checkout.php on line 126.
+ 1 APPPATH\Views\home\checkout.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "order_amount"', 'APPPATH\\Views\\home\\checkout.php', 126)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\checkout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/checkout', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/checkout')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(741): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->checkout()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 05:15:05 --> Undefined array key "user_email"
+in APPPATH\Views\home\checkout.php on line 126.
+ 1 APPPATH\Views\home\checkout.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_email"', 'APPPATH\\Views\\home\\checkout.php', 126)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\checkout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/checkout', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/checkout')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(741): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->checkout()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 05:48:25 --> Undefined variable $monthpos
+in APPPATH\Views\admin\dashboard.php on line 773.
+ 1 APPPATH\Views\admin\dashboard.php(773): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $monthpos', 'APPPATH\\Views\\admin\\dashboard.php', 773)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(393): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 05:56:55 --> Undefined variable $monthpos
+in APPPATH\Views\admin\dashboard.php on line 793.
+ 1 APPPATH\Views\admin\dashboard.php(793): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $monthpos', 'APPPATH\\Views\\admin\\dashboard.php', 793)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(393): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 05:56:59 --> Undefined variable $monthpos
+in APPPATH\Views\admin\dashboard.php on line 804.
+ 1 APPPATH\Views\admin\dashboard.php(804): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $monthpos', 'APPPATH\\Views\\admin\\dashboard.php', 804)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(393): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 05:57:01 --> Undefined variable $monthpos
+in APPPATH\Views\admin\dashboard.php on line 804.
+ 1 APPPATH\Views\admin\dashboard.php(804): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $monthpos', 'APPPATH\\Views\\admin\\dashboard.php', 804)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(393): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 05:57:16 --> Undefined variable $monthpos
+in APPPATH\Views\admin\dashboard.php on line 804.
+ 1 APPPATH\Views\admin\dashboard.php(804): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $monthpos', 'APPPATH\\Views\\admin\\dashboard.php', 804)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(393): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 06:00:23 --> Undefined variable $monthpos
+in APPPATH\Views\admin\dashboard.php on line 773.
+ 1 APPPATH\Views\admin\dashboard.php(773): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $monthpos', 'APPPATH\\Views\\admin\\dashboard.php', 773)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(393): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-08-24 06:12:54 --> mysqli_sql_exception: Illegal parameter data types char and row for operation '=' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(524): CodeIgniter\Model->doFind(false, NULL)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Home.php(51): CodeIgniter\BaseModel->find()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Home->home()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-08-24 06:12:54 --> Illegal parameter data types char and row for operation '='
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`fk_order_id` = `orderdata`.`id`
+WHERE `order_status` = (\'Completed\',\'Received\')
+AND `order_type` IN (\'COD\',\'Online\')
+GROUP BY `item_name`
+ORDER BY `item_qty` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`fk_order_id` = `orderdata`.`id`
+WHERE `order_status` = (\'Completed\',\'Received\')
+AND `order_type` IN (\'COD\',\'Online\')
+GROUP BY `item_name`
+ORDER BY `item_qty` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`fk_order_id` = `orderdata`.`id`
+WHERE `order_status` = (\'Completed\',\'Received\')
+AND `order_type` IN (\'COD\',\'Online\')
+GROUP BY `item_name`
+ORDER BY `item_qty` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `orderdata`
+JOIN `order_item` ON `order_item`.`fk_order_id` = `orderdata`.`id`
+WHERE `order_status` = :order_status:
+AND `order_type` IN :order_type:
+GROUP BY `item_name`
+ORDER BY `item_qty` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(524): CodeIgniter\Model->doFind(false, null)
+ 7 APPPATH\Controllers\Home.php(51): CodeIgniter\BaseModel->find()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->home()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 06:16:06 --> Undefined variable $monthpos
+in APPPATH\Views\admin\dashboard.php on line 773.
+ 1 APPPATH\Views\admin\dashboard.php(773): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $monthpos', 'APPPATH\\Views\\admin\\dashboard.php', 773)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(393): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 19:48:40 --> Undefined variable $monthpos
+in APPPATH\Views\admin\dashboard.php on line 773.
+ 1 APPPATH\Views\admin\dashboard.php(773): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $monthpos', 'APPPATH\\Views\\admin\\dashboard.php', 773)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(393): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 20:05:28 --> Undefined variable $order_id
+in APPPATH\Views\home\order_success.php on line 20.
+ 1 APPPATH\Views\home\order_success.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $order_id', 'APPPATH\\Views\\home\\order_success.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\order_success.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/order_success', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/order_success')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(931): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->order_success('ROOTPATH\\public')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-08-24 20:28:14 --> mysqli_sql_exception: Illegal parameter data types char and row for operation '=' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(371): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-08-24 20:28:14 --> Illegal parameter data types char and row for operation '='
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `orderdata`
+WHERE `order_status` = (\'Pending\',\'Settle\',\'Request\',\'Agree\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `orderdata`
+WHERE `order_status` = (\'Pending\',\'Settle\',\'Request\',\'Agree\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `orderdata`
+WHERE `order_status` = (\'Pending\',\'Settle\',\'Request\',\'Agree\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `orderdata`
+WHERE `order_status` = :order_status:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Admin.php(371): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 21:02:39 --> syntax error, unexpected token "&&"
+in APPPATH\Views\home\orders.php on line 96.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 3 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 7 APPPATH\Controllers\Home.php(422): view('includes/template', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 21:45:30 --> strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated
+in SYSTEMPATH\Email\Email.php on line 736.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated', 'SYSTEMPATH\\Email\\Email.php', 736)
+ 2 SYSTEMPATH\Email\Email.php(736): strpos(null, ',')
+ 3 SYSTEMPATH\Email\Email.php(549): CodeIgniter\Email\Email->stringToArray(null)
+ 4 APPPATH\Controllers\Orders.php(647): CodeIgniter\Email\Email->setTo(null)
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Orders->orderscancel('1')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 22:02:35 --> strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated
+in SYSTEMPATH\Email\Email.php on line 736.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated', 'SYSTEMPATH\\Email\\Email.php', 736)
+ 2 SYSTEMPATH\Email\Email.php(736): strpos(null, ',')
+ 3 SYSTEMPATH\Email\Email.php(549): CodeIgniter\Email\Email->stringToArray(null)
+ 4 APPPATH\Controllers\Orders.php(647): CodeIgniter\Email\Email->setTo(null)
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Orders->orderscancel('1')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 22:04:11 --> Undefined variable $itemQty
+in APPPATH\Views\home\orders.php on line 539.
+ 1 APPPATH\Views\home\orders.php(539): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $itemQty', 'APPPATH\\Views\\home\\orders.php', 539)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/orders', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/orders')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(427): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->orders()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 23:53:23 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 134.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(28): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 23:54:21 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 134.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(28): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 23:54:41 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 134.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(28): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 23:59:10 --> Undefined array key "isLoggedIn"
+in APPPATH\Controllers\Home.php on line 31.
+ 1 APPPATH\Controllers\Home.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "isLoggedIn"', 'APPPATH\\Controllers\\Home.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-08-24 23:59:13 --> Undefined array key "isLoggedIn"
+in APPPATH\Controllers\Home.php on line 31.
+ 1 APPPATH\Controllers\Home.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "isLoggedIn"', 'APPPATH\\Controllers\\Home.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

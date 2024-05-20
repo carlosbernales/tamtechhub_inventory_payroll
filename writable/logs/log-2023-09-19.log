@@ -1,0 +1,349 @@
+CRITICAL - 2023-09-19 01:06:07 --> Array to string conversion
+in APPPATH\Views\pos\custom_printview.php on line 125.
+ 1 APPPATH\Views\pos\custom_printview.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\pos\\custom_printview.php', 125)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pos\\custom_printview.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('pos/custom_printview', [], true)
+ 5 APPPATH\Controllers\POS.php(230): view('pos/custom_printview', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\POS->custom_printView()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\POS))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-19 01:30:05 --> Undefined variable $receipt_total
+in APPPATH\Controllers\POS.php on line 261.
+ 1 APPPATH\Controllers\POS.php(261): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $receipt_total', 'APPPATH\\Controllers\\POS.php', 261)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\POS->insertData_custom()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\POS))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-19 01:31:04 --> Undefined variable $receipt_total
+in APPPATH\Controllers\POS.php on line 261.
+ 1 APPPATH\Controllers\POS.php(261): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $receipt_total', 'APPPATH\\Controllers\\POS.php', 261)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\POS->insertData_custom()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\POS))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-19 02:37:10 --> Undefined variable $labor
+in APPPATH\Views\pos\custom_printview.php on line 129.
+ 1 APPPATH\Views\pos\custom_printview.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $labor', 'APPPATH\\Views\\pos\\custom_printview.php', 129)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pos\\custom_printview.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('pos/custom_printview', [], true)
+ 5 APPPATH\Controllers\POS.php(231): view('pos/custom_printview', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\POS->custom_printView()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\POS))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-09-19 02:53:07 --> mysqli_sql_exception: Unknown column 'order_item.item_image' in 'where clause' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FOR...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FOR...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FOR...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(370): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FOR...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-09-19 02:53:07 --> Unknown column 'order_item.item_image' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(order_amount) AS total_sold
+        FROM orderdata 
+        WHERE (order_type = \'COD\' OR order_type = \'POS\' OR order_type = \'Online\' or order_type = \'Pick Up\' or order_type = \'Pick Up (Paid)\') AND (order_status = \'Completed\' OR order_status = \'Received\')
+        AND order_item.item_image IS NOT NULL
+        AND order_item.item_image != \'\'
+        GROUP BY MONTH(order_date), YEAR(order_date)
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(order_amount) AS total_sold
+        FROM orderdata 
+        WHERE (order_type = \'COD\' OR order_type = \'POS\' OR order_type = \'Online\' or order_type = \'Pick Up\' or order_type = \'Pick Up (Paid)\') AND (order_status = \'Completed\' OR order_status = \'Received\')
+        AND order_item.item_image IS NOT NULL
+        AND order_item.item_image != \'\'
+        GROUP BY MONTH(order_date), YEAR(order_date)
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(order_amount) AS total_sold
+        FROM orderdata 
+        WHERE (order_type = \'COD\' OR order_type = \'POS\' OR order_type = \'Online\' or order_type = \'Pick Up\' or order_type = \'Pick Up (Paid)\') AND (order_status = \'Completed\' OR order_status = \'Received\')
+        AND order_item.item_image IS NOT NULL
+        AND order_item.item_image != \'\'
+        GROUP BY MONTH(order_date), YEAR(order_date)
+    ')
+ 4 APPPATH\Controllers\Admin.php(370): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(order_amount) AS total_sold
+        FROM orderdata 
+        WHERE (order_type = \'COD\' OR order_type = \'POS\' OR order_type = \'Online\' or order_type = \'Pick Up\' or order_type = \'Pick Up (Paid)\') AND (order_status = \'Completed\' OR order_status = \'Received\')
+        AND order_item.item_image IS NOT NULL
+        AND order_item.item_image != \'\'
+        GROUP BY MONTH(order_date), YEAR(order_date)
+    ')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-09-19 02:53:31 --> mysqli_sql_exception: Unknown column 'order_item.item_image' in 'where clause' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FOR...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FOR...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FOR...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(370): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FOR...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-09-19 02:53:31 --> Unknown column 'order_item.item_image' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(order_amount) AS total_sold
+        FROM orderdata 
+        WHERE (order_type = \'COD\' OR order_type = \'POS\' OR order_type = \'Online\' or order_type = \'Pick Up\' or order_type = \'Pick Up (Paid)\') AND (order_status = \'Completed\' OR order_status = \'Received\')
+        AND order_item.item_image IS NOT NULL
+        AND order_item.item_image != \'\'
+        GROUP BY MONTH(order_date), YEAR(order_date)
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(order_amount) AS total_sold
+        FROM orderdata 
+        WHERE (order_type = \'COD\' OR order_type = \'POS\' OR order_type = \'Online\' or order_type = \'Pick Up\' or order_type = \'Pick Up (Paid)\') AND (order_status = \'Completed\' OR order_status = \'Received\')
+        AND order_item.item_image IS NOT NULL
+        AND order_item.item_image != \'\'
+        GROUP BY MONTH(order_date), YEAR(order_date)
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(order_amount) AS total_sold
+        FROM orderdata 
+        WHERE (order_type = \'COD\' OR order_type = \'POS\' OR order_type = \'Online\' or order_type = \'Pick Up\' or order_type = \'Pick Up (Paid)\') AND (order_status = \'Completed\' OR order_status = \'Received\')
+        AND order_item.item_image IS NOT NULL
+        AND order_item.item_image != \'\'
+        GROUP BY MONTH(order_date), YEAR(order_date)
+    ')
+ 4 APPPATH\Controllers\Admin.php(370): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(order_amount) AS total_sold
+        FROM orderdata 
+        WHERE (order_type = \'COD\' OR order_type = \'POS\' OR order_type = \'Online\' or order_type = \'Pick Up\' or order_type = \'Pick Up (Paid)\') AND (order_status = \'Completed\' OR order_status = \'Received\')
+        AND order_item.item_image IS NOT NULL
+        AND order_item.item_image != \'\'
+        GROUP BY MONTH(order_date), YEAR(order_date)
+    ')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-09-19 02:53:35 --> mysqli_sql_exception: Unknown column 'order_item.item_image' in 'where clause' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FOR...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FOR...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FOR...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Admin.php(370): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FOR...')
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-09-19 02:53:35 --> Unknown column 'order_item.item_image' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(order_amount) AS total_sold
+        FROM orderdata 
+        WHERE (order_type = \'COD\' OR order_type = \'POS\' OR order_type = \'Online\' or order_type = \'Pick Up\' or order_type = \'Pick Up (Paid)\') AND (order_status = \'Completed\' OR order_status = \'Received\')
+        AND order_item.item_image IS NOT NULL
+        AND order_item.item_image != \'\'
+        GROUP BY MONTH(order_date), YEAR(order_date)
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(order_amount) AS total_sold
+        FROM orderdata 
+        WHERE (order_type = \'COD\' OR order_type = \'POS\' OR order_type = \'Online\' or order_type = \'Pick Up\' or order_type = \'Pick Up (Paid)\') AND (order_status = \'Completed\' OR order_status = \'Received\')
+        AND order_item.item_image IS NOT NULL
+        AND order_item.item_image != \'\'
+        GROUP BY MONTH(order_date), YEAR(order_date)
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(order_amount) AS total_sold
+        FROM orderdata 
+        WHERE (order_type = \'COD\' OR order_type = \'POS\' OR order_type = \'Online\' or order_type = \'Pick Up\' or order_type = \'Pick Up (Paid)\') AND (order_status = \'Completed\' OR order_status = \'Received\')
+        AND order_item.item_image IS NOT NULL
+        AND order_item.item_image != \'\'
+        GROUP BY MONTH(order_date), YEAR(order_date)
+    ')
+ 4 APPPATH\Controllers\Admin.php(370): CodeIgniter\Database\BaseConnection->query('SELECT DATE_FORMAT(order_date, \'%M %Y\') AS orderdate,
+        SUM(order_amount) AS total_sold
+        FROM orderdata 
+        WHERE (order_type = \'COD\' OR order_type = \'POS\' OR order_type = \'Online\' or order_type = \'Pick Up\' or order_type = \'Pick Up (Paid)\') AND (order_status = \'Completed\' OR order_status = \'Received\')
+        AND order_item.item_image IS NOT NULL
+        AND order_item.item_image != \'\'
+        GROUP BY MONTH(order_date), YEAR(order_date)
+    ')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-19 03:28:45 --> Undefined array key "username"
+in APPPATH\Controllers\Account.php on line 95.
+ 1 APPPATH\Controllers\Account.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Controllers\\Account.php', 95)
+ 2 APPPATH\Controllers\Account.php(56): App\Controllers\Account->setAdminSession([...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->signin()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-19 03:29:40 --> Undefined variable $user
+in APPPATH\Controllers\Account.php on line 95.
+ 1 APPPATH\Controllers\Account.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'APPPATH\\Controllers\\Account.php', 95)
+ 2 APPPATH\Controllers\Account.php(56): App\Controllers\Account->setAdminSession([...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->signin()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-19 05:55:04 --> Undefined array key "firstname"
+in APPPATH\Views\admin\profile.php on line 269.
+ 1 APPPATH\Views\admin\profile.php(269): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'APPPATH\\Views\\admin\\profile.php', 269)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/profile', [], true)
+ 5 APPPATH\Controllers\Admin.php(755): view('admin/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->admin_profile()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-19 05:56:09 --> Undefined array key "firstname"
+in APPPATH\Views\admin\profile.php on line 276.
+ 1 APPPATH\Views\admin\profile.php(276): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'APPPATH\\Views\\admin\\profile.php', 276)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/profile', [], true)
+ 5 APPPATH\Controllers\Admin.php(755): view('admin/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->admin_profile()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-19 05:56:45 --> Undefined array key "firstname"
+in APPPATH\Views\admin\profile.php on line 276.
+ 1 APPPATH\Views\admin\profile.php(276): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'APPPATH\\Views\\admin\\profile.php', 276)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/profile', [], true)
+ 5 APPPATH\Controllers\Admin.php(758): view('admin/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->admin_profile()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-19 05:56:45 --> Undefined array key "firstname"
+in APPPATH\Views\admin\profile.php on line 276.
+ 1 APPPATH\Views\admin\profile.php(276): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'APPPATH\\Views\\admin\\profile.php', 276)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/profile', [], true)
+ 5 APPPATH\Controllers\Admin.php(758): view('admin/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->admin_profile()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-19 05:56:46 --> Undefined array key "firstname"
+in APPPATH\Views\admin\profile.php on line 276.
+ 1 APPPATH\Views\admin\profile.php(276): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname"', 'APPPATH\\Views\\admin\\profile.php', 276)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/profile', [], true)
+ 5 APPPATH\Controllers\Admin.php(758): view('admin/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->admin_profile()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-19 07:11:47 --> Undefined array key "firstname_value"
+in APPPATH\Views\admin\profile.php on line 272.
+ 1 APPPATH\Views\admin\profile.php(272): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "firstname_value"', 'APPPATH\\Views\\admin\\profile.php', 272)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/profile', [], true)
+ 5 APPPATH\Controllers\Admin.php(762): view('admin/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->admin_profile()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-19 07:37:04 --> Undefined array key "fistname"
+in APPPATH\Views\admin\admins.php on line 283.
+ 1 APPPATH\Views\admin\admins.php(283): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fistname"', 'APPPATH\\Views\\admin\\admins.php', 283)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\admins.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/admins', [], true)
+ 5 APPPATH\Controllers\Admin.php(809): view('admin/admins', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->admins()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-19 07:40:38 --> Call to undefined function App\Controllers\findAll()
+in APPPATH\Controllers\Admin.php on line 793.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->admins()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-19 09:19:07 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 867.
+ 1 SYSTEMPATH\BaseModel.php(867): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Admin.php(181): CodeIgniter\Model->update('4', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_admin('4')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-19 09:20:53 --> Call to a member function setTo() on string
+in APPPATH\Controllers\Admin.php on line 184.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_admin('4')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-19 09:22:02 --> strpos(): Argument #1 ($haystack) must be of type string, CodeIgniter\Email\Email given
+in SYSTEMPATH\Email\Email.php on line 736.
+ 1 SYSTEMPATH\Email\Email.php(736): strpos(Object(CodeIgniter\Email\Email), ',')
+ 2 SYSTEMPATH\Email\Email.php(549): CodeIgniter\Email\Email->stringToArray(Object(CodeIgniter\Email\Email))
+ 3 APPPATH\Controllers\Admin.php(185): CodeIgniter\Email\Email->setTo(Object(CodeIgniter\Email\Email))
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->update_admin('4')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-19 09:54:32 --> Undefined variable $user_info
+in APPPATH\Views\pos\pos_custom.php on line 146.
+ 1 APPPATH\Views\pos\pos_custom.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_info', 'APPPATH\\Views\\pos\\pos_custom.php', 146)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pos\\pos_custom.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('pos/pos_custom', [], true)
+ 5 APPPATH\Controllers\POS.php(176): view('pos/pos_custom', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\POS->postview_custom()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\POS))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-19 10:18:40 --> Undefined variable $password
+in APPPATH\Controllers\Account.php on line 370.
+ 1 APPPATH\Controllers\Account.php(370): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $password', 'APPPATH\\Controllers\\Account.php', 370)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->updatePassword()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

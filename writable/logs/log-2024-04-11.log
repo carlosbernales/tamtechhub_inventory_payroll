@@ -1,0 +1,37 @@
+CRITICAL - 2024-04-11 01:21:55 --> Undefined variable $new
+in APPPATH\Views\admin\agent_files.php on line 473.
+ 1 APPPATH\Views\admin\agent_files.php(473): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $new', 'APPPATH\\Views\\admin\\agent_files.php', 473)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\agent_files.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/agent_files', [], true)
+ 5 APPPATH\Controllers\Home.php(2683): view('admin/agent_files', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->filesVIew('5')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-11 01:28:14 --> rename(C:\laragon\www\tamtechhub_inventory\public\userFiles/5/carlos,C:\laragon\www\tamtechhub_inventory\public\userFiles/5/carlos.jpg.): Access is denied (code: 5)
+in APPPATH\Controllers\Home.php on line 2813.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'rename(C:\\laragon\\www\\tamtechhub_inventory\\public\\userFiles/5/carlos,C:\\laragon\\www\\tamtechhub_inventory\\public\\userFiles/5/carlos.jpg.): Access is denied (code: 5)', 'APPPATH\\Controllers\\Home.php', 2813)
+ 2 APPPATH\Controllers\Home.php(2813): rename('FCPATH\\userFiles\\5\\carlos', 'FCPATH\\userFiles/5/carlos.jpg.')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->renameFile('43')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-11 20:25:52 --> json_decode(): Argument #1 ($json) must be of type string, array given
+in APPPATH\Controllers\Home.php on line 2793.
+ 1 APPPATH\Controllers\Home.php(2793): json_decode([...], true)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->deleteFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-11 20:26:42 --> json_decode(): Argument #1 ($json) must be of type string, array given
+in APPPATH\Controllers\Home.php on line 2793.
+ 1 APPPATH\Controllers\Home.php(2793): json_decode([...], true)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->deleteFiles()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

@@ -1,0 +1,223 @@
+CRITICAL - 2023-06-08 01:15:27 --> Undefined variable $row
+in APPPATH\Views\admin\stocks\stockslist.php on line 313.
+ 1 APPPATH\Views\admin\stocks\stockslist.php(313): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'APPPATH\\Views\\admin\\stocks\\stockslist.php', 313)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\stocks\\stockslist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/stocks/stockslist', [], true)
+ 5 APPPATH\Controllers\Admin.php(308): view('admin/stocks/stockslist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->stocks()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-08 01:30:40 --> Undefined variable $category
+in APPPATH\Views\admin\stocks\stockslist.php on line 311.
+ 1 APPPATH\Views\admin\stocks\stockslist.php(311): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $category', 'APPPATH\\Views\\admin\\stocks\\stockslist.php', 311)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\stocks\\stockslist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/stocks/stockslist', [], true)
+ 5 APPPATH\Controllers\Admin.php(308): view('admin/stocks/stockslist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->stocks()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-08 01:31:23 --> Undefined array key "id"
+in APPPATH\Views\admin\stocks\stockslist.php on line 328.
+ 1 APPPATH\Views\admin\stocks\stockslist.php(328): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\admin\\stocks\\stockslist.php', 328)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\stocks\\stockslist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/stocks/stockslist', [], true)
+ 5 APPPATH\Controllers\Admin.php(308): view('admin/stocks/stockslist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->stocks()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-08 03:17:07 --> Undefined variable $stocks
+in APPPATH\Views\admin\stocks\stockslist.php on line 382.
+ 1 APPPATH\Views\admin\stocks\stockslist.php(382): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $stocks', 'APPPATH\\Views\\admin\\stocks\\stockslist.php', 382)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\stocks\\stockslist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/stocks/stockslist', [], true)
+ 5 APPPATH\Controllers\Admin.php(308): view('admin/stocks/stockslist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->stocks()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-08 03:17:13 --> Undefined variable $stocks
+in APPPATH\Views\admin\stocks\stockslist.php on line 382.
+ 1 APPPATH\Views\admin\stocks\stockslist.php(382): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $stocks', 'APPPATH\\Views\\admin\\stocks\\stockslist.php', 382)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\stocks\\stockslist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/stocks/stockslist', [], true)
+ 5 APPPATH\Controllers\Admin.php(308): view('admin/stocks/stockslist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->stocks()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-08 03:19:26 --> Undefined variable $stocks
+in APPPATH\Views\admin\stocks\stockslist.php on line 382.
+ 1 APPPATH\Views\admin\stocks\stockslist.php(382): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $stocks', 'APPPATH\\Views\\admin\\stocks\\stockslist.php', 382)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\stocks\\stockslist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/stocks/stockslist', [], true)
+ 5 APPPATH\Controllers\Admin.php(308): view('admin/stocks/stockslist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->stocks()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-08 03:19:50 --> Undefined variable $stocks
+in APPPATH\Views\admin\stocks\stockslist.php on line 382.
+ 1 APPPATH\Views\admin\stocks\stockslist.php(382): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $stocks', 'APPPATH\\Views\\admin\\stocks\\stockslist.php', 382)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\stocks\\stockslist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/stocks/stockslist', [], true)
+ 5 APPPATH\Controllers\Admin.php(308): view('admin/stocks/stockslist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->stocks()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-08 03:33:41 --> Undefined variable $rejectprice
+in APPPATH\Controllers\Stocks.php on line 102.
+ 1 APPPATH\Controllers\Stocks.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rejectprice', 'APPPATH\\Controllers\\Stocks.php', 102)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Stocks->update_minus_stocks('3')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stocks))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-08 05:20:15 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(23): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-08 05:58:19 --> syntax error, unexpected end of file
+in APPPATH\Views\admin\stocks\stockslist.php on line 831.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/stocks/stockslist', [], true)
+ 3 APPPATH\Controllers\Admin.php(308): view('admin/stocks/stockslist', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->stocks()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-08 08:27:23 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(23): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-08 08:32:59 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\includes\index.php on line 98.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 4 APPPATH\Controllers\Home.php(23): view('includes/index')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-08 08:33:23 --> Class "App\Controllers\Services" not found
+in APPPATH\Controllers\Admin.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->admin_login()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-08 08:34:07 --> Class "App\Controllers\Services" not found
+in APPPATH\Controllers\Admin.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->admin_login()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-08 08:34:08 --> Class "App\Controllers\Services" not found
+in APPPATH\Controllers\Admin.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->admin_login()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-08 08:34:15 --> Call to a member function isLoggedIn() on null
+in APPPATH\Controllers\Admin.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->admin_login()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-08 08:37:34 --> Call to a member function isLoggedIn() on null
+in APPPATH\Controllers\Admin.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->admin_login()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-08 08:37:35 --> Call to a member function isLoggedIn() on null
+in APPPATH\Controllers\Admin.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->admin_login()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-08 08:53:30 --> Call to undefined method App\Controllers\Account::isLoggedIn()
+in APPPATH\Controllers\Account.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->signin()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-08 08:57:36 --> Undefined array key "id"
+in APPPATH\Controllers\Home.php on line 46.
+ 1 APPPATH\Controllers\Home.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\Home.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->home()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-08 10:28:01 --> Undefined constant "App\Controllers\email"
+in APPPATH\Controllers\Employee.php on line 278.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->employee_orders_update('15')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-08 21:52:05 --> Undefined array key "id"
+in APPPATH\Views\admin\orders\orderlist.php on line 313.
+ 1 APPPATH\Views\admin\orders\orderlist.php(313): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\admin\\orders\\orderlist.php', 313)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\orders\\orderlist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/orders/orderlist', [], true)
+ 5 APPPATH\Controllers\Admin.php(299): view('admin/orders/orderlist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->orderlist()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-08 23:38:05 --> Undefined variable $order
+in APPPATH\Views\admin\product\productlist.php on line 328.
+ 1 APPPATH\Views\admin\product\productlist.php(328): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $order', 'APPPATH\\Views\\admin\\product\\productlist.php', 328)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\product\\productlist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/product/productlist', [], true)
+ 5 APPPATH\Controllers\Admin.php(289): view('admin/product/productlist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->productlist()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

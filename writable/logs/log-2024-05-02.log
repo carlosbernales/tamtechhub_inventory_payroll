@@ -1,0 +1,153 @@
+CRITICAL - 2024-05-02 19:10:43 --> Call to undefined function App\Controllers\write_file()
+in APPPATH\Controllers\Payroll.php on line 672.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->saveImage()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-02 19:14:08 --> mkdir(): Permission denied
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): Permission denied', 'SYSTEMPATH\\HTTP\\Files\\UploadedFile.php', 176)
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(176): mkdir('ROOTPATH\\writable\\payslip_image/e75027e85884f7df./', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('ROOTPATH\\writable\\payslip_image/e75027e85884f7df./')
+ 4 APPPATH\Controllers\Payroll.php(680): CodeIgniter\HTTP\Files\UploadedFile->move('ROOTPATH\\writable\\payslip_image/e75027e85884f7df./')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->save_image()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-02 19:14:14 --> Call to a member function getClientExtension() on null
+in APPPATH\Controllers\Payroll.php on line 666.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->save_image()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-02 19:35:10 --> Undefined array key "agent_id"
+in APPPATH\Views\payroll\payslip_list.php on line 50.
+ 1 APPPATH\Views\payroll\payslip_list.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "agent_id"', 'APPPATH\\Views\\payroll\\payslip_list.php', 50)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\payroll\\payslip_list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('payroll/payslip_list', [], true)
+ 5 APPPATH\Controllers\Payroll.php(696): view('payroll/payslip_list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->payslip_list()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-02 20:31:30 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1598.
+ 1 SYSTEMPATH\BaseModel.php(1598): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\Payslip_model.php(21): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\Payroll.php(675): App\Models\Payslip_model->updatePayslip('48771017', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->payslip_sendMail()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-02 20:33:44 --> Call to undefined method App\Models\Payslip_model::updatePayslipStatus
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Payroll.php(671): CodeIgniter\Model->__call('updatePayslipStatus', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->payslip_sendMail()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-02 20:35:51 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1598.
+ 1 SYSTEMPATH\BaseModel.php(1598): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\Payslip_model.php(23): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\Payroll.php(671): App\Models\Payslip_model->updatePayslipStatus('48771017')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->payslip_sendMail()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-02 21:43:32 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1598.
+ 1 SYSTEMPATH\BaseModel.php(1598): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\Payslip_model.php(23): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\Payroll.php(670): App\Models\Payslip_model->updateAllPayslipStatus('12625327')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->payslip_sendMail()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-02 21:43:36 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1598.
+ 1 SYSTEMPATH\BaseModel.php(1598): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\Payslip_model.php(23): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\Payroll.php(670): App\Models\Payslip_model->updateAllPayslipStatus('46390854')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->payslip_sendMail()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-02 21:43:40 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1598.
+ 1 SYSTEMPATH\BaseModel.php(1598): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\Payslip_model.php(23): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\Payroll.php(670): App\Models\Payslip_model->updateAllPayslipStatus('91686165')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->payslip_sendMail()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-02 21:44:42 --> Call to undefined method App\Models\Payslip_model::updateAllPayslipStatus
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Payroll.php(670): CodeIgniter\Model->__call('updateAllPayslipStatus', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->payslip_sendMail()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-02 21:45:00 --> Call to undefined method App\Models\Payslip_model::updateAllPayslipStatus
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Payroll.php(670): CodeIgniter\Model->__call('updateAllPayslipStatus', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->payslip_sendMail()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-02 21:45:12 --> Call to undefined method App\Models\Payslip_model::updateAllPayslipStatus
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Payroll.php(670): CodeIgniter\Model->__call('updateAllPayslipStatus', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->payslip_sendMail()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-02 22:33:06 --> Undefined variable $payslip
+in APPPATH\Views\payroll\payslip_history.php on line 37.
+ 1 APPPATH\Views\payroll\payslip_history.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $payslip', 'APPPATH\\Views\\payroll\\payslip_history.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\payroll\\payslip_history.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('payroll/payslip_history', [], true)
+ 5 APPPATH\Controllers\Payroll.php(688): view('payroll/payslip_history', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->payslip_history()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-05-02 22:45:53 --> Undefined array key "totalngovertimePay"
+in APPPATH\Views\payroll\payslip.php on line 284.
+ 1 APPPATH\Views\payroll\payslip.php(284): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "totalngovertimePay"', 'APPPATH\\Views\\payroll\\payslip.php', 284)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\payroll\\payslip.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('payroll/payslip', [], true)
+ 5 APPPATH\Controllers\Payroll.php(613): view('payroll/payslip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->generatePayslip()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

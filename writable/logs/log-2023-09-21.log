@@ -1,0 +1,116 @@
+ERROR - 2023-09-21 09:34:30 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-21 09:34:30 --> 220 smtp.googlemail.com ESMTP j6-20020a170902c3c600b001bdc3768ca5sm1550766plj.254 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [180.190.139.22]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials j6-20020a170902c3c600b001bdc3768ca5sm1550766plj.254 - gsmtp
+
+ERROR - 2023-09-21 09:36:30 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-09-21 09:36:30 --> 220 smtp.googlemail.com ESMTP a34-20020a056a001d2200b00690b8961bf4sm1486410pfx.146 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [180.190.139.22]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials a34-20020a056a001d2200b00690b8961bf4sm1486410pfx.146 - gsmtp
+
+CRITICAL - 2023-09-21 20:00:56 --> Undefined variable $listProducts
+in APPPATH\Views\test.php on line 86.
+ 1 APPPATH\Views\test.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $listProducts', 'APPPATH\\Views\\test.php', 86)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('test', [], true)
+ 5 APPPATH\Controllers\DraggableController.php(24): view('test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\DraggableController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DraggableController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-21 20:13:01 --> Undefined variable $fullname
+in APPPATH\Views\admin\emails\booking_approve.php on line 47.
+ 1 APPPATH\Views\admin\emails\booking_approve.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fullname', 'APPPATH\\Views\\admin\\emails\\booking_approve.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\emails\\booking_approve.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/emails/booking_approve', [], true)
+ 5 APPPATH\Controllers\Booking.php(482): view('admin/emails/booking_approve')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->test()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-21 20:13:40 --> Invalid file: admin/emails/booking_approved.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/emails/booking_approved.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/emails/booking_approved', [], true)
+ 3 APPPATH\Controllers\Booking.php(208): view('admin/emails/booking_approved', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->updatereservation('1')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-21 20:53:28 --> Cannot access offset of type string on string
+in APPPATH\Views\admin\dashboard.php on line 568.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 4 APPPATH\Controllers\Admin.php(502): view('admin/dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-21 23:49:19 --> strpos(): Argument #1 ($haystack) must be of type string, CodeIgniter\Email\Email given
+in SYSTEMPATH\Email\Email.php on line 736.
+ 1 SYSTEMPATH\Email\Email.php(736): strpos(Object(CodeIgniter\Email\Email), ',')
+ 2 SYSTEMPATH\Email\Email.php(549): CodeIgniter\Email\Email->stringToArray(Object(CodeIgniter\Email\Email))
+ 3 APPPATH\Controllers\Account.php(245): CodeIgniter\Email\Email->setTo(Object(CodeIgniter\Email\Email))
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->signup()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-21 23:50:46 --> strpos(): Argument #1 ($haystack) must be of type string, CodeIgniter\Email\Email given
+in SYSTEMPATH\Email\Email.php on line 736.
+ 1 SYSTEMPATH\Email\Email.php(736): strpos(Object(CodeIgniter\Email\Email), ',')
+ 2 SYSTEMPATH\Email\Email.php(549): CodeIgniter\Email\Email->stringToArray(Object(CodeIgniter\Email\Email))
+ 3 APPPATH\Controllers\Account.php(245): CodeIgniter\Email\Email->setTo(Object(CodeIgniter\Email\Email))
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->signup()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-21 23:54:14 --> strpos(): Argument #1 ($haystack) must be of type string, CodeIgniter\Email\Email given
+in SYSTEMPATH\Email\Email.php on line 736.
+ 1 SYSTEMPATH\Email\Email.php(736): strpos(Object(CodeIgniter\Email\Email), ',')
+ 2 SYSTEMPATH\Email\Email.php(549): CodeIgniter\Email\Email->stringToArray(Object(CodeIgniter\Email\Email))
+ 3 APPPATH\Controllers\Account.php(245): CodeIgniter\Email\Email->setTo(Object(CodeIgniter\Email\Email))
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->signup()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-21 23:56:35 --> Object of class CodeIgniter\Email\Email could not be converted to string
+in APPPATH\Views\admin\emails\account_activation.php on line 71.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/emails/account_activation', [], true)
+ 4 APPPATH\Controllers\Account.php(258): view('admin/emails/account_activation', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->signup()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

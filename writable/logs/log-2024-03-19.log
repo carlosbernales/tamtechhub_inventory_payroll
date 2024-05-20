@@ -1,0 +1,12 @@
+CRITICAL - 2024-03-19 20:40:33 --> Undefined variable $email
+in APPPATH\Views\newpassword.php on line 42.
+ 1 APPPATH\Views\newpassword.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email', 'APPPATH\\Views\\newpassword.php', 42)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\newpassword.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('newpassword', [], true)
+ 5 APPPATH\Controllers\Account.php(244): view('newpassword', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->token('d3feb0196c7c8f9180f49d60859b0bdafda33ab96e44b0eeac6cf62d830d5fd3')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

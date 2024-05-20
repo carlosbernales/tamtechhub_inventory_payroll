@@ -1,0 +1,198 @@
+CRITICAL - 2024-04-17 01:58:59 --> Undefined array key "start_date_formatted"
+in APPPATH\Views\payroll\agent_list.php on line 982.
+ 1 APPPATH\Views\payroll\agent_list.php(982): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "start_date_formatted"', 'APPPATH\\Views\\payroll\\agent_list.php', 982)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\payroll\\agent_list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('payroll/agent_list', [], true)
+ 5 APPPATH\Controllers\Payroll.php(37): view('payroll/agent_list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->payroll_agents()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-17 03:36:23 --> Undefined array key "Pag Ibig"
+in APPPATH\Views\payroll\agent_list.php on line 56.
+ 1 APPPATH\Views\payroll\agent_list.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Pag Ibig"', 'APPPATH\\Views\\payroll\\agent_list.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\payroll\\agent_list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('payroll/agent_list', [], true)
+ 5 APPPATH\Controllers\Payroll.php(37): view('payroll/agent_list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->payroll_agents()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-17 07:39:00 --> Invalid file: payroll/attendance.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('payroll/attendance.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('payroll/attendance', [], true)
+ 3 APPPATH\Controllers\Payroll.php(105): view('payroll/attendance', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->attendance()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-17 07:39:55 --> Invalid file: payroll/attendance.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('payroll/attendance.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('payroll/attendance', [], true)
+ 3 APPPATH\Controllers\Payroll.php(105): view('payroll/attendance', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->attendance()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-17 07:53:10 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Payroll.php on line 113.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->upload_attendance()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-17 08:07:12 --> Call to undefined method PhpOffice\PhpSpreadsheet\Worksheet\Row::getValues()
+in APPPATH\Controllers\Payroll.php on line 125.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->upload_attendance()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-17 08:08:09 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Payroll.php on line 113.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->upload_attendance()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-17 08:10:18 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Payroll.php on line 113.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->upload_attendance()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2024-04-17 08:13:11 --> mysqli_sql_exception: Column 'late_count' cannot be null in C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\tamtechhub_inventory\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `at...', 0)
+#1 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `at...')
+#2 C:\laragon\www\tamtechhub_inventory\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `at...')
+#3 C:\laragon\www\tamtechhub_inventory\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `at...', Array, false)
+#4 C:\laragon\www\tamtechhub_inventory\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\tamtechhub_inventory\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\tamtechhub_inventory\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\tamtechhub_inventory\app\Controllers\Payroll.php(148): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(927): App\Controllers\Payroll->upload_attendance()
+#9 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+#10 C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\tamtechhub_inventory\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\tamtechhub_inventory\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2024-04-17 08:13:11 --> Column 'late_count' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `attendance` (`agent_id`, `date`, `time_in`, `time_out`, `late_count`) VALUES (\'TAM074\', 45316, 0.34027777777778, 0.70833333333333, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `attendance` (`agent_id`, `date`, `time_in`, `time_out`, `late_count`) VALUES (\'TAM074\', 45316, 0.34027777777778, 0.70833333333333, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `attendance` (`agent_id`, `date`, `time_in`, `time_out`, `late_count`) VALUES (\'TAM074\', 45316, 0.34027777777778, 0.70833333333333, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `attendance` (`agent_id`, `date`, `time_in`, `time_out`, `late_count`) VALUES (:agent_id:, :date:, :time_in:, :time_out:, :late_count:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Payroll.php(148): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->upload_attendance()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-17 08:13:31 --> Invalid file: atpayroll/attendance.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('atpayroll/attendance.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('atpayroll/attendance', [], true)
+ 3 APPPATH\Controllers\Payroll.php(159): view('atpayroll/attendance')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->upload_attendance()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-17 08:13:53 --> Undefined variable $attendance
+in APPPATH\Views\payroll\attendance.php on line 38.
+ 1 APPPATH\Views\payroll\attendance.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $attendance', 'APPPATH\\Views\\payroll\\attendance.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\payroll\\attendance.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('payroll/attendance', [], true)
+ 5 APPPATH\Controllers\Payroll.php(159): view('payroll/attendance')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->upload_attendance()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-17 08:15:45 --> Undefined array key "upload_attendance"
+in APPPATH\Controllers\Payroll.php on line 111.
+ 1 APPPATH\Controllers\Payroll.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "upload_attendance"', 'APPPATH\\Controllers\\Payroll.php', 111)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->upload_attendance()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-17 08:17:37 --> Invalid file: upload_form.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('upload_form.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('upload_form', [], true)
+ 3 APPPATH\Controllers\Payroll.php(140): view('upload_form')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->upload_attendance()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-17 08:18:07 --> Invalid file: upload_form.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('upload_form.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('upload_form', [], true)
+ 3 APPPATH\Controllers\Payroll.php(140): view('upload_form')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->upload_attendance()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-17 22:39:20 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH\Controllers\Payroll.php on line 128.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH\\Controllers\\Payroll.php', 128)
+ 2 APPPATH\Controllers\Payroll.php(128): strtotime(null)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->upload_attendance()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-17 22:42:33 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH\Controllers\Payroll.php on line 128.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH\\Controllers\\Payroll.php', 128)
+ 2 APPPATH\Controllers\Payroll.php(128): strtotime(null)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->upload_attendance()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-17 22:43:49 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH\Controllers\Payroll.php on line 128.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH\\Controllers\\Payroll.php', 128)
+ 2 APPPATH\Controllers\Payroll.php(128): strtotime(null)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->upload_attendance()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-17 22:44:07 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH\Controllers\Payroll.php on line 128.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH\\Controllers\\Payroll.php', 128)
+ 2 APPPATH\Controllers\Payroll.php(128): strtotime(null)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->upload_attendance()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-17 22:44:39 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH\Controllers\Payroll.php on line 128.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH\\Controllers\\Payroll.php', 128)
+ 2 APPPATH\Controllers\Payroll.php(128): strtotime(null)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Payroll->upload_attendance()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

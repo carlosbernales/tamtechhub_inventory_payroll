@@ -1,0 +1,301 @@
+CRITICAL - 2023-03-30 05:19:25 --> Class "App\Models\Account_model" not found
+in APPPATH\Controllers\Account.php on line 107.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->signup()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-30 05:49:04 --> Undefined variable $sendMail
+in APPPATH\Controllers\Account.php on line 127.
+ 1 APPPATH\Controllers\Account.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sendMail', 'APPPATH\\Controllers\\Account.php', 127)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->signup()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-30 06:16:13 --> Call to undefined function App\Controllers\setMailType()
+in APPPATH\Controllers\Account.php on line 145.
+ 1 APPPATH\Controllers\Account.php(127): App\Controllers\Account->sendMail('johnravenporo01@gmail.com', 'Confirm your registration', 'Good day raven, Welcome to Bituins Flower Shop Website. 
+                    To continue, please confirm your account 
+                    by clicking this <a href="http://localhost:8080/verify/q4OmFJGxZoc0Pe7rwf12SVARpkjY9KQvaUshBuMEi8NCdnyTtWb36IXDHlL5gz">Activate Account</a>')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->signup()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-30 07:06:36 --> syntax error, unexpected token ";"
+in APPPATH\Controllers\Account.php on line 172.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Account.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Account')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Account')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Account', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-03-30 07:10:48 --> mysqli_sql_exception: Unknown column 'tokenTxMlFf3SRteg2DmJPrhqAKIBuL8i9o1kNjpvZzwGWC67ydVsnb4HUaX0EYcQO5' in 'where clause' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `user` S...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `user` S...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `user` S...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `user` S...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(886): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(693): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Account.php(171): CodeIgniter\Model->update()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Account->verify_account('TxMlFf3SRteg2Dm...')
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-03-30 07:10:48 --> Unknown column 'tokenTxMlFf3SRteg2DmJPrhqAKIBuL8i9o1kNjpvZzwGWC67ydVsnb4HUaX0EYcQO5' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `user` SET `token` = \'2Av3URceFtq0mbHzKdpn17QsJwOPxGXrM9WEDCYiZguaf6VNoLjByTSlhI4k58\', `status` = \'verified\', `updated_at` = \'2023-03-30 07:10:48\'
+WHERE `tokenTxMlFf3SRteg2DmJPrhqAKIBuL8i9o1kNjpvZzwGWC67ydVsnb4HUaX0EYcQO5` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `user` SET `token` = \'2Av3URceFtq0mbHzKdpn17QsJwOPxGXrM9WEDCYiZguaf6VNoLjByTSlhI4k58\', `status` = \'verified\', `updated_at` = \'2023-03-30 07:10:48\'
+WHERE `tokenTxMlFf3SRteg2DmJPrhqAKIBuL8i9o1kNjpvZzwGWC67ydVsnb4HUaX0EYcQO5` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `user` SET `token` = \'2Av3URceFtq0mbHzKdpn17QsJwOPxGXrM9WEDCYiZguaf6VNoLjByTSlhI4k58\', `status` = \'verified\', `updated_at` = \'2023-03-30 07:10:48\'
+WHERE `tokenTxMlFf3SRteg2DmJPrhqAKIBuL8i9o1kNjpvZzwGWC67ydVsnb4HUaX0EYcQO5` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `user` SET `token` = :token:, `status` = :status:, `updated_at` = :updated_at:
+WHERE `tokenTxMlFf3SRteg2DmJPrhqAKIBuL8i9o1kNjpvZzwGWC67ydVsnb4HUaX0EYcQO5` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(886): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Controllers\Account.php(171): CodeIgniter\Model->update()
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->verify_account('TxMlFf3SRteg2DmJPrhqAKIBuL8i9o1kNjpvZzwGWC67ydVsnb4HUaX0EYcQO5')
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-03-30 07:11:43 --> mysqli_sql_exception: Unknown column 'tokenTxMlFf3SRteg2DmJPrhqAKIBuL8i9o1kNjpvZzwGWC67ydVsnb4HUaX0EYcQO5' in 'where clause' in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `user` S...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `user` S...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `user` S...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `user` S...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(886): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(693): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Account.php(171): CodeIgniter\Model->update()
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Account->verify_account('TxMlFf3SRteg2Dm...')
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-03-30 07:11:43 --> Unknown column 'tokenTxMlFf3SRteg2DmJPrhqAKIBuL8i9o1kNjpvZzwGWC67ydVsnb4HUaX0EYcQO5' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `user` SET `token` = \'zkWeC8fD9oT1y6iVbZatMI254GjgwFu0qnUXm7xpAdrBEKlRvPYH3sNJSOLQch\', `status` = \'verified\', `updated_at` = \'2023-03-30 07:11:43\'
+WHERE `tokenTxMlFf3SRteg2DmJPrhqAKIBuL8i9o1kNjpvZzwGWC67ydVsnb4HUaX0EYcQO5` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `user` SET `token` = \'zkWeC8fD9oT1y6iVbZatMI254GjgwFu0qnUXm7xpAdrBEKlRvPYH3sNJSOLQch\', `status` = \'verified\', `updated_at` = \'2023-03-30 07:11:43\'
+WHERE `tokenTxMlFf3SRteg2DmJPrhqAKIBuL8i9o1kNjpvZzwGWC67ydVsnb4HUaX0EYcQO5` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `user` SET `token` = \'zkWeC8fD9oT1y6iVbZatMI254GjgwFu0qnUXm7xpAdrBEKlRvPYH3sNJSOLQch\', `status` = \'verified\', `updated_at` = \'2023-03-30 07:11:43\'
+WHERE `tokenTxMlFf3SRteg2DmJPrhqAKIBuL8i9o1kNjpvZzwGWC67ydVsnb4HUaX0EYcQO5` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `user` SET `token` = :token:, `status` = :status:, `updated_at` = :updated_at:
+WHERE `tokenTxMlFf3SRteg2DmJPrhqAKIBuL8i9o1kNjpvZzwGWC67ydVsnb4HUaX0EYcQO5` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(886): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Controllers\Account.php(171): CodeIgniter\Model->update()
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->verify_account('TxMlFf3SRteg2DmJPrhqAKIBuL8i9o1kNjpvZzwGWC67ydVsnb4HUaX0EYcQO5')
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-30 07:46:16 --> Call to undefined function getFlashdata()
+in APPPATH\Views\home\signin.php on line 1.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/signin', [], true)
+ 4 APPPATH\Controllers\Account.php(48): view('home/signin', [])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->signin()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-30 09:06:58 --> Undefined variable $session
+in APPPATH\Views\home\signin.php on line 109.
+ 1 APPPATH\Views\home\signin.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Views\\home\\signin.php', 109)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\signin.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/signin', [], true)
+ 5 APPPATH\Controllers\Account.php(52): view('home/signin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->signin()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-30 09:20:57 --> validateUser is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 323.
+ 1 SYSTEMPATH\Validation\Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('validateUser')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', '123123', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Account.php(30): CodeIgniter\Controller->validate([...], [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->signin()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-30 09:44:46 --> Call to a member function listErrors() on string
+in APPPATH\Views\home\signin.php on line 116.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/signin', [], true)
+ 4 APPPATH\Controllers\Account.php(52): view('home/signin', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->signin()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-30 09:45:30 --> msg is not a valid Validation template.
+in SYSTEMPATH\Validation\Validation.php on line 549.
+ 1 SYSTEMPATH\Validation\Validation.php(549): CodeIgniter\Validation\Exceptions\ValidationException::forInvalidTemplate('msg')
+ 2 APPPATH\Views\home\signin.php(110): CodeIgniter\Validation\Validation->listErrors('msg')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\signin.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/signin', [], true)
+ 6 APPPATH\Controllers\Account.php(52): view('home/signin', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->signin()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-30 09:45:39 --> msg is not a valid Validation template.
+in SYSTEMPATH\Validation\Validation.php on line 549.
+ 1 SYSTEMPATH\Validation\Validation.php(549): CodeIgniter\Validation\Exceptions\ValidationException::forInvalidTemplate('msg')
+ 2 APPPATH\Views\home\signin.php(110): CodeIgniter\Validation\Validation->listErrors('msg')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\signin.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/signin', [], true)
+ 6 APPPATH\Controllers\Account.php(52): view('home/signin', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->signin()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-30 09:45:42 --> msg is not a valid Validation template.
+in SYSTEMPATH\Validation\Validation.php on line 549.
+ 1 SYSTEMPATH\Validation\Validation.php(549): CodeIgniter\Validation\Exceptions\ValidationException::forInvalidTemplate('msg')
+ 2 APPPATH\Views\home\signin.php(110): CodeIgniter\Validation\Validation->listErrors('msg')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\signin.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/signin', [], true)
+ 6 APPPATH\Controllers\Account.php(52): view('home/signin', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->signin()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-30 10:48:13 --> Undefined property: App\Controllers\Category::$ProductModel
+in APPPATH\Controllers\Category.php on line 19.
+ 1 APPPATH\Controllers\Category.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Category::$ProductModel', 'APPPATH\\Controllers\\Category.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Category->addcategory()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-30 10:48:23 --> Undefined property: App\Controllers\Category::$Category_model
+in APPPATH\Controllers\Category.php on line 19.
+ 1 APPPATH\Controllers\Category.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Category::$Category_model', 'APPPATH\\Controllers\\Category.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Category->addcategory()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-30 10:50:37 --> Undefined property: App\Controllers\Category::$Category_model
+in APPPATH\Controllers\Category.php on line 19.
+ 1 APPPATH\Controllers\Category.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Category::$Category_model', 'APPPATH\\Controllers\\Category.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Category->addcategory()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-30 10:51:51 --> Undefined property: App\Controllers\Category::$Category_model
+in APPPATH\Controllers\Category.php on line 19.
+ 1 APPPATH\Controllers\Category.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Category::$Category_model', 'APPPATH\\Controllers\\Category.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Category->addcategory()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-30 10:59:58 --> Undefined property: App\Controllers\Category::$Category_model
+in APPPATH\Controllers\Category.php on line 19.
+ 1 APPPATH\Controllers\Category.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Category::$Category_model', 'APPPATH\\Controllers\\Category.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Category->addcategory()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-30 11:01:29 --> Undefined property: App\Controllers\Category::$Category_model
+in APPPATH\Controllers\Category.php on line 19.
+ 1 APPPATH\Controllers\Category.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Category::$Category_model', 'APPPATH\\Controllers\\Category.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Category->addcategory()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-30 11:09:51 --> Undefined array key "id"
+in APPPATH\Views\includes\header.php on line 7.
+ 1 APPPATH\Views\includes\header.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\includes\\header.php', 7)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/header', [], true)
+ 5 APPPATH\Views\includes\template.php(1): view('includes/header')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(124): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->productdetails('39')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-30 11:09:58 --> Undefined array key "id"
+in APPPATH\Views\includes\header.php on line 7.
+ 1 APPPATH\Views\includes\header.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\includes\\header.php', 7)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/header', [], true)
+ 5 APPPATH\Views\includes\template.php(1): view('includes/header')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(124): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->productdetails('29')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-30 11:16:08 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\productdetails.php on line 20.
+ 1 APPPATH\Views\home\productdetails.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\home\\productdetails.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\productdetails.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/productdetails', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/productdetails')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(124): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->productdetails('path', 'to', 'font-awesome', 'FCPATH\\css', 'font-awesome.min.css')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-30 11:18:24 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\bookings\my_booking.php on line 41.
+ 1 APPPATH\Views\home\bookings\my_booking.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\home\\bookings\\my_booking.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\bookings\\my_booking.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/bookings/my_booking', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/bookings/my_booking')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Booking.php(88): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->my_booking()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

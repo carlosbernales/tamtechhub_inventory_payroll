@@ -1,0 +1,43 @@
+CRITICAL - 2024-04-06 01:02:57 --> Too few arguments to function App\Controllers\Account::profileImage_update(), 0 passed in C:\laragon\www\tamtechhub_inventory\system\CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH\Controllers\Account.php on line 645.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->profileImage_update()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-06 01:03:13 --> unlink(profile_image/): Is a directory
+in APPPATH\Controllers\Account.php on line 658.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(profile_image/): Is a directory', 'APPPATH\\Controllers\\Account.php', 658)
+ 2 APPPATH\Controllers\Account.php(658): unlink('FCPATH\\profile_image')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->profileImage_update()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-06 01:04:21 --> unlink(profile_imageUpload/): Is a directory
+in APPPATH\Controllers\Account.php on line 658.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(profile_imageUpload/): Is a directory', 'APPPATH\\Controllers\\Account.php', 658)
+ 2 APPPATH\Controllers\Account.php(658): unlink('FCPATH\\profile_imageUpload')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->profileImage_update()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-06 01:04:40 --> unlink(profile_image): No such file or directory
+in APPPATH\Controllers\Account.php on line 658.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(profile_image): No such file or directory', 'APPPATH\\Controllers\\Account.php', 658)
+ 2 APPPATH\Controllers\Account.php(658): unlink('profile_image')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->profileImage_update()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2024-04-06 01:19:48 --> unlink(profile_imageUpload/): Is a directory
+in APPPATH\Controllers\Account.php on line 658.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(profile_imageUpload/): Is a directory', 'APPPATH\\Controllers\\Account.php', 658)
+ 2 APPPATH\Controllers\Account.php(658): unlink('FCPATH\\profile_imageUpload')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Account->profileImage_update()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

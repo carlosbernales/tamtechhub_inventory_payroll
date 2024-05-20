@@ -1,0 +1,1924 @@
+CRITICAL - 2023-02-03 02:51:12 --> Undefined array key 1
+in APPPATH\Controllers\Home.php on line 230.
+ 1 APPPATH\Controllers\Home.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Home.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 02:51:20 --> Undefined array key 1
+in APPPATH\Controllers\Home.php on line 230.
+ 1 APPPATH\Controllers\Home.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Home.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 02:51:21 --> Undefined array key 1
+in APPPATH\Controllers\Home.php on line 230.
+ 1 APPPATH\Controllers\Home.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Home.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 02:51:21 --> Undefined array key 1
+in APPPATH\Controllers\Home.php on line 230.
+ 1 APPPATH\Controllers\Home.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Home.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 02:51:22 --> Undefined array key 1
+in APPPATH\Controllers\Home.php on line 230.
+ 1 APPPATH\Controllers\Home.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Home.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 02:52:26 --> Undefined array key 1
+in APPPATH\Controllers\Home.php on line 230.
+ 1 APPPATH\Controllers\Home.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Home.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 02:52:29 --> Undefined array key 1
+in APPPATH\Controllers\Home.php on line 230.
+ 1 APPPATH\Controllers\Home.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Home.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 02:52:57 --> Undefined array key 1
+in APPPATH\Controllers\Home.php on line 230.
+ 1 APPPATH\Controllers\Home.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Home.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 02:52:57 --> Undefined array key 1
+in APPPATH\Controllers\Home.php on line 230.
+ 1 APPPATH\Controllers\Home.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Home.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 02:53:00 --> Undefined array key 1
+in APPPATH\Controllers\Home.php on line 230.
+ 1 APPPATH\Controllers\Home.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Home.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 02:53:00 --> Undefined array key 1
+in APPPATH\Controllers\Home.php on line 230.
+ 1 APPPATH\Controllers\Home.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Home.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 02:53:01 --> Undefined array key 1
+in APPPATH\Controllers\Home.php on line 230.
+ 1 APPPATH\Controllers\Home.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Home.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 02:53:59 --> Undefined array key 1
+in APPPATH\Controllers\Home.php on line 230.
+ 1 APPPATH\Controllers\Home.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Home.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 02:54:00 --> Undefined array key 1
+in APPPATH\Controllers\Home.php on line 230.
+ 1 APPPATH\Controllers\Home.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Home.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 02:54:45 --> Undefined array key 1
+in APPPATH\Controllers\Home.php on line 231.
+ 1 APPPATH\Controllers\Home.php(231): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Home.php', 231)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 02:54:48 --> Undefined array key 1
+in APPPATH\Controllers\Home.php on line 231.
+ 1 APPPATH\Controllers\Home.php(231): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Home.php', 231)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 02:54:49 --> Undefined array key 1
+in APPPATH\Controllers\Home.php on line 231.
+ 1 APPPATH\Controllers\Home.php(231): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Home.php', 231)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 02:54:50 --> Undefined array key 1
+in APPPATH\Controllers\Home.php on line 231.
+ 1 APPPATH\Controllers\Home.php(231): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Home.php', 231)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 03:08:10 --> Undefined array key 1
+in APPPATH\Controllers\Home.php on line 230.
+ 1 APPPATH\Controllers\Home.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Home.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 03:08:11 --> Undefined array key 1
+in APPPATH\Controllers\Home.php on line 230.
+ 1 APPPATH\Controllers\Home.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Home.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 03:08:12 --> Undefined array key 1
+in APPPATH\Controllers\Home.php on line 230.
+ 1 APPPATH\Controllers\Home.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Home.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 03:08:12 --> Undefined array key 1
+in APPPATH\Controllers\Home.php on line 230.
+ 1 APPPATH\Controllers\Home.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Home.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 03:08:14 --> Undefined array key 1
+in APPPATH\Controllers\Home.php on line 230.
+ 1 APPPATH\Controllers\Home.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Home.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 03:25:18 --> Undefined variable $Cart_model
+in APPPATH\Controllers\Home.php on line 575.
+ 1 APPPATH\Controllers\Home.php(575): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Cart_model', 'APPPATH\\Controllers\\Home.php', 575)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 03:25:21 --> Undefined variable $Cart_model
+in APPPATH\Controllers\Home.php on line 575.
+ 1 APPPATH\Controllers\Home.php(575): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Cart_model', 'APPPATH\\Controllers\\Home.php', 575)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 03:25:50 --> Undefined variable $Cart_model
+in APPPATH\Controllers\Home.php on line 574.
+ 1 APPPATH\Controllers\Home.php(574): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Cart_model', 'APPPATH\\Controllers\\Home.php', 574)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->proceed_to_order()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 04:28:24 --> Undefined variable $oldqty
+in APPPATH\Controllers\Home.php on line 232.
+ 1 APPPATH\Controllers\Home.php(232): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $oldqty', 'APPPATH\\Controllers\\Home.php', 232)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 04:28:25 --> Undefined variable $oldqty
+in APPPATH\Controllers\Home.php on line 232.
+ 1 APPPATH\Controllers\Home.php(232): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $oldqty', 'APPPATH\\Controllers\\Home.php', 232)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 04:28:26 --> Undefined variable $oldqty
+in APPPATH\Controllers\Home.php on line 232.
+ 1 APPPATH\Controllers\Home.php(232): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $oldqty', 'APPPATH\\Controllers\\Home.php', 232)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 04:29:48 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1598.
+ 1 SYSTEMPATH\BaseModel.php(1598): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Home.php(234): CodeIgniter\Model->update('103')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 04:29:51 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1598.
+ 1 SYSTEMPATH\BaseModel.php(1598): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Home.php(234): CodeIgniter\Model->update('103')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 04:29:53 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1598.
+ 1 SYSTEMPATH\BaseModel.php(1598): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Home.php(234): CodeIgniter\Model->update('103')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 04:29:54 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1598.
+ 1 SYSTEMPATH\BaseModel.php(1598): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Home.php(234): CodeIgniter\Model->update('103')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 04:29:54 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1598.
+ 1 SYSTEMPATH\BaseModel.php(1598): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Home.php(234): CodeIgniter\Model->update('103')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 04:30:46 --> Undefined array key "cart_qty"
+in APPPATH\Controllers\Home.php on line 230.
+ 1 APPPATH\Controllers\Home.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cart_qty"', 'APPPATH\\Controllers\\Home.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 04:30:46 --> Undefined array key "cart_qty"
+in APPPATH\Controllers\Home.php on line 230.
+ 1 APPPATH\Controllers\Home.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cart_qty"', 'APPPATH\\Controllers\\Home.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 04:30:47 --> Undefined array key "cart_qty"
+in APPPATH\Controllers\Home.php on line 230.
+ 1 APPPATH\Controllers\Home.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cart_qty"', 'APPPATH\\Controllers\\Home.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 04:30:47 --> Undefined array key "cart_qty"
+in APPPATH\Controllers\Home.php on line 230.
+ 1 APPPATH\Controllers\Home.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cart_qty"', 'APPPATH\\Controllers\\Home.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 04:30:48 --> Undefined array key "cart_qty"
+in APPPATH\Controllers\Home.php on line 230.
+ 1 APPPATH\Controllers\Home.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cart_qty"', 'APPPATH\\Controllers\\Home.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 04:30:52 --> Undefined array key "cart_qty"
+in APPPATH\Controllers\Home.php on line 230.
+ 1 APPPATH\Controllers\Home.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cart_qty"', 'APPPATH\\Controllers\\Home.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 04:30:53 --> Undefined array key "cart_qty"
+in APPPATH\Controllers\Home.php on line 230.
+ 1 APPPATH\Controllers\Home.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cart_qty"', 'APPPATH\\Controllers\\Home.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 04:31:02 --> Undefined array key "cart_qty"
+in APPPATH\Controllers\Home.php on line 230.
+ 1 APPPATH\Controllers\Home.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cart_qty"', 'APPPATH\\Controllers\\Home.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 04:31:08 --> Undefined array key "cart_qty"
+in APPPATH\Controllers\Home.php on line 230.
+ 1 APPPATH\Controllers\Home.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cart_qty"', 'APPPATH\\Controllers\\Home.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 04:31:33 --> Undefined array key 0
+in APPPATH\Controllers\Home.php on line 230.
+ 1 APPPATH\Controllers\Home.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Home.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 04:31:38 --> Undefined array key 0
+in APPPATH\Controllers\Home.php on line 230.
+ 1 APPPATH\Controllers\Home.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Home.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 04:31:38 --> Undefined array key 0
+in APPPATH\Controllers\Home.php on line 230.
+ 1 APPPATH\Controllers\Home.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Home.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 04:31:43 --> Undefined array key 0
+in APPPATH\Controllers\Home.php on line 230.
+ 1 APPPATH\Controllers\Home.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Home.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->addtocart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-03 06:07:24 --> mysqli_sql_exception: Column 'end' cannot be null in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `bo...', 0)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bo...')
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bo...')
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Booking.php(32): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Booking->book_now()
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#11 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-02-03 06:07:24 --> Column 'end' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `booking` (`fullname`, `contact`, `email`, `category`, `location`, `date`, `start`, `end`, `status`) VALUES (\'Sample Name\', \'09123456879\', \'sample@gmail.com\', \'Wedding\', \'Masipit Church\', \'2023-02-09\', \'11:08\', NULL, \'Pending\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `booking` (`fullname`, `contact`, `email`, `category`, `location`, `date`, `start`, `end`, `status`) VALUES (\'Sample Name\', \'09123456879\', \'sample@gmail.com\', \'Wedding\', \'Masipit Church\', \'2023-02-09\', \'11:08\', NULL, \'Pending\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `booking` (`fullname`, `contact`, `email`, `category`, `location`, `date`, `start`, `end`, `status`) VALUES (\'Sample Name\', \'09123456879\', \'sample@gmail.com\', \'Wedding\', \'Masipit Church\', \'2023-02-09\', \'11:08\', NULL, \'Pending\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `booking` (`fullname`, `contact`, `email`, `category`, `location`, `date`, `start`, `end`, `status`) VALUES (:fullname:, :contact:, :email:, :category:, :location:, :date:, :start:, :end:, :status:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Booking.php(32): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->book_now()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 06:10:58 --> Undefined array key "fullname"
+in APPPATH\Views\home\bookings\my_booking.php on line 38.
+ 1 APPPATH\Views\home\bookings\my_booking.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fullname"', 'APPPATH\\Views\\home\\bookings\\my_booking.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\bookings\\my_booking.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/bookings/my_booking', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/bookings/my_booking')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Booking.php(46): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->my_booking()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 06:13:03 --> Undefined variable $bookingUser
+in APPPATH\Controllers\Booking.php on line 44.
+ 1 APPPATH\Controllers\Booking.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bookingUser', 'APPPATH\\Controllers\\Booking.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->my_booking()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 06:27:36 --> Undefined variable $booking_user
+in APPPATH\Views\home\bookings\my_booking.php on line 38.
+ 1 APPPATH\Views\home\bookings\my_booking.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $booking_user', 'APPPATH\\Views\\home\\bookings\\my_booking.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\bookings\\my_booking.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/bookings/my_booking', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/bookings/my_booking')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Booking.php(46): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->my_booking()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 06:51:31 --> Undefined array key "contact"
+in APPPATH\Views\home\bookings\my_booking.php on line 40.
+ 1 APPPATH\Views\home\bookings\my_booking.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contact"', 'APPPATH\\Views\\home\\bookings\\my_booking.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\bookings\\my_booking.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/bookings/my_booking', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/bookings/my_booking')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Booking.php(45): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->my_booking()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 06:52:10 --> Undefined array key "contact"
+in APPPATH\Views\home\bookings\my_booking.php on line 40.
+ 1 APPPATH\Views\home\bookings\my_booking.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contact"', 'APPPATH\\Views\\home\\bookings\\my_booking.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\bookings\\my_booking.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/bookings/my_booking', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/bookings/my_booking')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Booking.php(45): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->my_booking()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 06:52:24 --> Undefined array key "contact"
+in APPPATH\Views\home\bookings\my_booking.php on line 40.
+ 1 APPPATH\Views\home\bookings\my_booking.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contact"', 'APPPATH\\Views\\home\\bookings\\my_booking.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\bookings\\my_booking.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/bookings/my_booking', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/bookings/my_booking')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Booking.php(45): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->my_booking()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 06:52:25 --> Undefined array key "contact"
+in APPPATH\Views\home\bookings\my_booking.php on line 40.
+ 1 APPPATH\Views\home\bookings\my_booking.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contact"', 'APPPATH\\Views\\home\\bookings\\my_booking.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\bookings\\my_booking.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/bookings/my_booking', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/bookings/my_booking')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Booking.php(45): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->my_booking()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 07:05:57 --> Undefined variable $id
+in APPPATH\Controllers\Booking.php on line 60.
+ 1 APPPATH\Controllers\Booking.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Booking.php', 60)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->my_booking()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 07:10:11 --> Undefined variable $bookdetails
+in APPPATH\Views\includes\header.php on line 70.
+ 1 APPPATH\Views\includes\header.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bookdetails', 'APPPATH\\Views\\includes\\header.php', 70)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/header', [], true)
+ 5 APPPATH\Views\includes\template.php(1): view('includes/header')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(453): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->cart()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 07:10:12 --> Undefined variable $bookdetails
+in APPPATH\Views\includes\header.php on line 70.
+ 1 APPPATH\Views\includes\header.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bookdetails', 'APPPATH\\Views\\includes\\header.php', 70)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/header', [], true)
+ 5 APPPATH\Views\includes\template.php(1): view('includes/header')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Booking.php(39): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->book_now()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 07:10:17 --> Undefined variable $bookdetails
+in APPPATH\Views\includes\header.php on line 70.
+ 1 APPPATH\Views\includes\header.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bookdetails', 'APPPATH\\Views\\includes\\header.php', 70)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/header', [], true)
+ 5 APPPATH\Views\includes\template.php(1): view('includes/header')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(453): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->cart()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 07:10:21 --> Undefined variable $bookdetails
+in APPPATH\Views\includes\header.php on line 70.
+ 1 APPPATH\Views\includes\header.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bookdetails', 'APPPATH\\Views\\includes\\header.php', 70)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/header', [], true)
+ 5 APPPATH\Views\includes\template.php(1): view('includes/header')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Home.php(453): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->cart()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 07:10:50 --> Undefined variable $bookdetails
+in APPPATH\Views\includes\index.php on line 86.
+ 1 APPPATH\Views\includes\index.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bookdetails', 'APPPATH\\Views\\includes\\index.php', 86)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 5 APPPATH\Controllers\Home.php(21): view('includes/index')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 07:10:51 --> Undefined variable $bookdetails
+in APPPATH\Views\includes\index.php on line 86.
+ 1 APPPATH\Views\includes\index.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bookdetails', 'APPPATH\\Views\\includes\\index.php', 86)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 5 APPPATH\Controllers\Home.php(21): view('includes/index')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 07:10:54 --> Undefined variable $bookdetails
+in APPPATH\Views\includes\index.php on line 86.
+ 1 APPPATH\Views\includes\index.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bookdetails', 'APPPATH\\Views\\includes\\index.php', 86)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/index', [], true)
+ 5 APPPATH\Controllers\Home.php(21): view('includes/index')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->landingpage()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 07:26:32 --> Undefined variable $useSessionData
+in APPPATH\Controllers\Booking.php on line 62.
+ 1 APPPATH\Controllers\Booking.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $useSessionData', 'APPPATH\\Controllers\\Booking.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->my_booking()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 07:27:03 --> Undefined variable $useSessionData
+in APPPATH\Controllers\Booking.php on line 62.
+ 1 APPPATH\Controllers\Booking.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $useSessionData', 'APPPATH\\Controllers\\Booking.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->my_booking()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 07:27:57 --> Undefined variable $dabookdetailsta
+in APPPATH\Views\home\bookings\my_booking.php on line 41.
+ 1 APPPATH\Views\home\bookings\my_booking.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dabookdetailsta', 'APPPATH\\Views\\home\\bookings\\my_booking.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\bookings\\my_booking.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/bookings/my_booking', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/bookings/my_booking')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Booking.php(68): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->my_booking()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 07:29:00 --> Undefined array key "category"
+in APPPATH\Views\home\bookings\my_booking.php on line 49.
+ 1 APPPATH\Views\home\bookings\my_booking.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category"', 'APPPATH\\Views\\home\\bookings\\my_booking.php', 49)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\bookings\\my_booking.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/bookings/my_booking', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/bookings/my_booking')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Booking.php(68): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->my_booking()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 07:30:21 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\bookings\my_booking.php on line 39.
+ 1 APPPATH\Views\home\bookings\my_booking.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\home\\bookings\\my_booking.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\bookings\\my_booking.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/bookings/my_booking', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/bookings/my_booking')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Booking.php(69): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->my_booking()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 07:30:36 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\bookings\my_booking.php on line 39.
+ 1 APPPATH\Views\home\bookings\my_booking.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\home\\bookings\\my_booking.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\bookings\\my_booking.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/bookings/my_booking', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/bookings/my_booking')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Booking.php(69): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->my_booking()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 07:30:48 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\bookings\my_booking.php on line 39.
+ 1 APPPATH\Views\home\bookings\my_booking.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\home\\bookings\\my_booking.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\bookings\\my_booking.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/bookings/my_booking', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/bookings/my_booking')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Booking.php(69): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->my_booking()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 07:31:09 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\bookings\my_booking.php on line 39.
+ 1 APPPATH\Views\home\bookings\my_booking.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\home\\bookings\\my_booking.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\bookings\\my_booking.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/bookings/my_booking', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/bookings/my_booking')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Booking.php(69): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->my_booking()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 07:31:16 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\bookings\my_booking.php on line 39.
+ 1 APPPATH\Views\home\bookings\my_booking.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\home\\bookings\\my_booking.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\bookings\\my_booking.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/bookings/my_booking', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/bookings/my_booking')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Booking.php(69): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->my_booking()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 07:31:23 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\bookings\my_booking.php on line 39.
+ 1 APPPATH\Views\home\bookings\my_booking.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\home\\bookings\\my_booking.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\bookings\\my_booking.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home/bookings/my_booking', [], true)
+ 5 APPPATH\Views\includes\template.php(2): view('home/bookings/my_booking')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\includes\\template.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('includes/template', [], true)
+ 9 APPPATH\Controllers\Booking.php(69): view('includes/template', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->my_booking()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 09:12:48 --> Call to undefined function App\Controllers\validate()
+in APPPATH\Controllers\Booking.php on line 254.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->send_email()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 09:33:45 --> Call to undefined function App\Controllers\send()
+in APPPATH\Controllers\Booking.php on line 307.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->send_email()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-03 09:34:10 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 09:34:10 --> 220 smtp.gmail.com ESMTP c17-20020aa781d1000000b0058c8bf500bcsm1887952pfn.72 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials c17-20020aa781d1000000b0058c8bf500bcsm1887952pfn.72 - gsmtp
+
+ERROR - 2023-02-03 09:34:56 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 09:34:56 --> 220 smtp.gmail.com ESMTP 19-20020a170902ee5300b00194ae12a313sm1753441plo.222 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 19-20020a170902ee5300b00194ae12a313sm1753441plo.222 - gsmtp
+
+ERROR - 2023-02-03 09:37:30 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 09:37:30 --> 220 smtp.gmail.com ESMTP p18-20020a170902a41200b00198d5c7cafasm1762640plq.156 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials p18-20020a170902a41200b00198d5c7cafasm1762640plq.156 - gsmtp
+
+ERROR - 2023-02-03 09:40:23 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 09:40:23 --> 220 smtp.gmail.com ESMTP u10-20020a056a00098a00b0058d97b624f0sm1896516pfg.75 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials u10-20020a056a00098a00b0058d97b624f0sm1896516pfg.75 - gsmtp
+
+ERROR - 2023-02-03 09:41:12 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 09:41:12 --> 220 smtp.googlemail.com ESMTP x36-20020a17090a38a700b0022bb9f05753sm5074351pjb.48 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials x36-20020a17090a38a700b0022bb9f05753sm5074351pjb.48 - gsmtp
+
+CRITICAL - 2023-02-03 09:42:43 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::gePost()
+in APPPATH\Controllers\Booking.php on line 292.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->send_email()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-03 09:42:58 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 09:42:58 --> 220 smtp.gmail.com ESMTP u206-20020a6279d7000000b0059085684b54sm1994720pfc.140 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials u206-20020a6279d7000000b0059085684b54sm1994720pfc.140 - gsmtp
+
+ERROR - 2023-02-03 09:43:11 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 09:43:11 --> 220 smtp.gmail.com ESMTP q6-20020a056a00150600b005914b161a13sm2007176pfu.11 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials q6-20020a056a00150600b005914b161a13sm2007176pfu.11 - gsmtp
+
+ERROR - 2023-02-03 09:43:35 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 09:43:35 --> 220 smtp.gmail.com ESMTP k20-20020aa790d4000000b005907664a3eesm1918391pfk.125 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials k20-20020aa790d4000000b005907664a3eesm1918391pfk.125 - gsmtp
+
+ERROR - 2023-02-03 09:48:49 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 09:48:49 --> 220 smtp.gmail.com ESMTP i17-20020a170902cf1100b00198a1d5a7cdsm1785412plg.78 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials i17-20020a170902cf1100b00198a1d5a7cdsm1785412plg.78 - gsmtp
+
+ERROR - 2023-02-03 09:49:31 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 09:49:31 --> 220 smtp.gmail.com ESMTP w22-20020a056a0014d600b0058e08796e98sm1938939pfu.196 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials w22-20020a056a0014d600b0058e08796e98sm1938939pfu.196 - gsmtp
+
+ERROR - 2023-02-03 09:51:07 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 09:51:07 --> 220 smtp.gmail.com ESMTP s22-20020a056a00195600b005882b189a44sm1911804pfk.104 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials s22-20020a056a00195600b005882b189a44sm1911804pfk.104 - gsmtp
+
+ERROR - 2023-02-03 09:52:17 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 09:52:17 --> 220 smtp.gmail.com ESMTP d7-20020a170902b70700b001869b988d93sm1763248pls.187 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d7-20020a170902b70700b001869b988d93sm1763248pls.187 - gsmtp
+
+ERROR - 2023-02-03 09:54:53 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 09:54:53 --> 220 smtp.gmail.com ESMTP t18-20020a170902d21200b00194caf3e975sm1766820ply.208 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials t18-20020a170902d21200b00194caf3e975sm1766820ply.208 - gsmtp
+
+ERROR - 2023-02-03 09:55:22 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 09:55:22 --> 220 smtp.gmail.com ESMTP w19-20020a1709029a9300b00186b69157ecsm1776633plp.202 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials w19-20020a1709029a9300b00186b69157ecsm1776633plp.202 - gsmtp
+
+ERROR - 2023-02-03 09:58:26 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 09:58:26 --> 220 smtp.gmail.com ESMTP h2-20020a17090a470200b00223ed94759csm5060971pjg.39 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials h2-20020a17090a470200b00223ed94759csm5060971pjg.39 - gsmtp
+
+ERROR - 2023-02-03 10:01:20 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 10:01:20 --> 220 smtp.googlemail.com ESMTP 21-20020a170902c25500b0019605a51d50sm1797700plg.61 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 21-20020a170902c25500b0019605a51d50sm1797700plg.61 - gsmtp
+
+ERROR - 2023-02-03 10:02:15 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 10:02:15 --> 220 smtp.gmail.com ESMTP w12-20020a63b74c000000b004f1e73b073bsm1640375pgt.26 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials w12-20020a63b74c000000b004f1e73b073bsm1640375pgt.26 - gsmtp
+
+ERROR - 2023-02-03 10:36:28 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 10:36:28 --> 220 smtp.googlemail.com ESMTP w23-20020a17090a15d700b00229b00cc8desm10379416pjd.0 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials w23-20020a17090a15d700b00229b00cc8desm10379416pjd.0 - gsmtp
+
+CRITICAL - 2023-02-03 10:42:18 --> Call to a member function getName() on null
+in APPPATH\Controllers\Booking.php on line 293.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->send_email()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-03 10:42:53 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 10:42:53 --> 220 smtp.googlemail.com ESMTP kb1-20020a17090ae7c100b001fde655225fsm10708797pjb.2 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials kb1-20020a17090ae7c100b001fde655225fsm10708797pjb.2 - gsmtp
+
+CRITICAL - 2023-02-03 10:46:41 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Controllers\Booking.php on line 293.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Booking.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Booking')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Booking')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Booking', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-03 10:59:08 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 10:59:08 --> 220 smtp.googlemail.com ESMTP f3-20020a17090a8e8300b0022c08b63564sm1831654pjo.52 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials f3-20020a17090a8e8300b0022c08b63564sm1831654pjo.52 - gsmtp
+
+ERROR - 2023-02-03 11:04:27 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 11:04:27 --> 220 smtp.googlemail.com ESMTP 194-20020a6219cb000000b0058bc37f3d13sm2037809pfz.43 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor 194-20020a6219cb000000b0058bc37f3d13sm2037809pfz.43 - gsmtp
+
+ERROR - 2023-02-03 11:06:58 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 11:06:58 --> 220 smtp.googlemail.com ESMTP jd20-20020a170903261400b0019607984a5esm1846059plb.95 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor jd20-20020a170903261400b0019607984a5esm1846059plb.95 - gsmtp
+
+ERROR - 2023-02-03 11:07:14 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 11:07:14 --> 220 smtp.googlemail.com ESMTP g23-20020a1709029f9700b0017f73dc1549sm1830836plq.263 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor g23-20020a1709029f9700b0017f73dc1549sm1830836plq.263 - gsmtp
+
+ERROR - 2023-02-03 11:11:33 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 11:11:33 --> 220 smtp.googlemail.com ESMTP kb1-20020a17090ae7c100b001fde655225fsm10754026pjb.2 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor kb1-20020a17090ae7c100b001fde655225fsm10754026pjb.2 - gsmtp
+
+ERROR - 2023-02-03 11:13:56 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 11:13:56 --> 220 smtp.googlemail.com ESMTP w1-20020a170902c78100b00196087a3d7csm1852916pla.77 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor w1-20020a170902c78100b00196087a3d7csm1852916pla.77 - gsmtp
+
+ERROR - 2023-02-03 11:15:45 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 11:15:45 --> 220 smtp.googlemail.com ESMTP u9-20020a17090a6a8900b0022bfaf41662sm5104630pjj.46 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor u9-20020a17090a6a8900b0022bfaf41662sm5104630pjj.46 - gsmtp
+
+ERROR - 2023-02-03 11:16:32 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 11:16:32 --> 220 smtp.googlemail.com ESMTP t32-20020a056a0013a000b0059428b51220sm2037036pfg.186 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor t32-20020a056a0013a000b0059428b51220sm2037036pfg.186 - gsmtp
+
+ERROR - 2023-02-03 11:16:59 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 11:16:59 --> 220 smtp.googlemail.com ESMTP v15-20020a17090a0e0f00b002265ddfc13esm5146316pje.29 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor v15-20020a17090a0e0f00b002265ddfc13esm5146316pje.29 - gsmtp
+
+ERROR - 2023-02-03 11:17:44 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 11:17:44 --> 220 smtp.gmail.com ESMTP m10-20020a17090a414a00b0023045b9664dsm1868717pjg.30 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor m10-20020a17090a414a00b0023045b9664dsm1868717pjg.30 - gsmtp
+
+ERROR - 2023-02-03 11:18:10 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 11:18:10 --> 220 smtp.gmail.com ESMTP h68-20020a628347000000b005772d55df03sm2056653pfe.35 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor h68-20020a628347000000b005772d55df03sm2056653pfe.35 - gsmtp
+
+ERROR - 2023-02-03 11:21:02 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 11:21:02 --> 220 smtp.gmail.com ESMTP v24-20020a17090331d800b00198e40d95d1sm1352928ple.47 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor v24-20020a17090331d800b00198e40d95d1sm1352928ple.47 - gsmtp
+
+ERROR - 2023-02-03 11:27:24 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL/TLS already set-up for this stream in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php:1881
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'C:\\xampp\\htdocs...', 1881)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1881): stream_socket_enable_crypto(Resource id #154, true, 57)
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Booking.php(280): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Booking->send_email()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2023-02-03 11:27:24 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 11:27:24 --> 220 smtp.gmail.com ESMTP u13-20020a170902a60d00b00194974a2b3asm1859314plq.151 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 530-5.7.0 Authentication Required. Learn more at
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError u13-20020a170902a60d00b00194974a2b3asm1859314plq.151 - gsmtp
+
+The following SMTP error was encountered: 530-5.7.0 Authentication Required. Learn more at
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError u13-20020a170902a60d00b00194974a2b3asm1859314plq.151 - gsmtp
+
+ERROR - 2023-02-03 11:27:55 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 11:27:55 --> 220 smtp.gmail.com ESMTP i6-20020a17090ac40600b00229b17bb1e8sm1890118pjt.34 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor i6-20020a17090ac40600b00229b17bb1e8sm1890118pjt.34 - gsmtp
+
+CRITICAL - 2023-02-03 11:36:53 --> Invalid file: admin/reservation/send_email.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/reservation/send_email.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/reservation/send_email', [], true)
+ 3 APPPATH\Controllers\Booking.php(254): view('admin/reservation/send_email')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->mail()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-03 11:42:32 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL/TLS already set-up for this stream in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php:1881
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'C:\\xampp\\htdocs...', 1881)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1881): stream_socket_enable_crypto(Resource id #154, true, 57)
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Booking.php(285): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Booking->send_email()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2023-02-03 11:42:32 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 11:42:32 --> 220 smtp.gmail.com ESMTP l9-20020a63be09000000b004f01a88e135sm1700213pgf.85 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 530-5.7.0 Authentication Required. Learn more at
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError l9-20020a63be09000000b004f01a88e135sm1700213pgf.85 - gsmtp
+
+The following SMTP error was encountered: 530-5.7.0 Authentication Required. Learn more at
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError l9-20020a63be09000000b004f01a88e135sm1700213pgf.85 - gsmtp
+
+CRITICAL - 2023-02-03 11:44:59 --> Call to undefined function App\Controllers\library()
+in APPPATH\Controllers\Booking.php on line 260.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->send_email()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 11:45:11 --> Call to undefined function App\Controllers\library()
+in APPPATH\Controllers\Booking.php on line 260.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->send_email()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-03 11:45:36 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL/TLS already set-up for this stream in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php:1881
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'C:\\xampp\\htdocs...', 1881)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1881): stream_socket_enable_crypto(Resource id #154, true, 57)
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Booking.php(284): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Booking->send_email()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2023-02-03 11:45:36 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 11:45:36 --> 220 smtp.gmail.com ESMTP x7-20020a170902b40700b00186c3afb49esm1859597plr.209 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 530-5.7.0 Authentication Required. Learn more at
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError x7-20020a170902b40700b00186c3afb49esm1859597plr.209 - gsmtp
+
+The following SMTP error was encountered: 530-5.7.0 Authentication Required. Learn more at
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError x7-20020a170902b40700b00186c3afb49esm1859597plr.209 - gsmtp
+
+ERROR - 2023-02-03 11:45:40 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL/TLS already set-up for this stream in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php:1881
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'C:\\xampp\\htdocs...', 1881)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1881): stream_socket_enable_crypto(Resource id #154, true, 57)
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Booking.php(284): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Booking->send_email()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2023-02-03 11:45:40 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 11:45:40 --> 220 smtp.gmail.com ESMTP q7-20020a170902edc700b001960706141fsm1888651plk.149 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 530-5.7.0 Authentication Required. Learn more at
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError q7-20020a170902edc700b001960706141fsm1888651plk.149 - gsmtp
+
+The following SMTP error was encountered: 530-5.7.0 Authentication Required. Learn more at
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError q7-20020a170902edc700b001960706141fsm1888651plk.149 - gsmtp
+
+ERROR - 2023-02-03 11:46:48 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): SSL/TLS already set-up for this stream in C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php:1881
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', 'C:\\xampp\\htdocs...', 1881)
+#1 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1881): stream_socket_enable_crypto(Resource id #154, true, 57)
+#2 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\app\Controllers\Booking.php(284): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(927): App\Controllers\Booking->send_email()
+#7 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#8 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Florist-Event-Reservation-Ordering\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2023-02-03 11:46:48 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 11:46:48 --> 220 smtp.gmail.com ESMTP q5-20020a170902c74500b00195f0fb0c18sm1911946plq.31 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 530-5.7.0 Authentication Required. Learn more at
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError q5-20020a170902c74500b00195f0fb0c18sm1911946plq.31 - gsmtp
+
+The following SMTP error was encountered: 530-5.7.0 Authentication Required. Learn more at
+530 5.7.0  https://support.google.com/mail/?p=WantAuthError q5-20020a170902c74500b00195f0fb0c18sm1911946plq.31 - gsmtp
+
+ERROR - 2023-02-03 12:04:30 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-02-03 12:04:30 --> 220 smtp.googlemail.com ESMTP jn15-20020a170903050f00b00198b01b412csm1288337plb.303 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.googlemail.com at your service, [2001:4453:654:9a00:4cac:7814:74a5:760e]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor jn15-20020a170903050f00b00198b01b412csm1288337plb.303 - gsmtp
+
+CRITICAL - 2023-02-03 12:37:05 --> Invalid file: email-template.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('email-template.php')
+ 2 APPPATH\Controllers\Booking.php(280): CodeIgniter\View\View->render('email-template')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->send_email()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 12:37:22 --> Invalid file: email_msg.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('email_msg.php')
+ 2 APPPATH\Controllers\Booking.php(280): CodeIgniter\View\View->render('email_msg')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->send_email()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 12:37:39 --> Invalid file: /home/reservation/email_msg.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/home/reservation/email_msg.php')
+ 2 APPPATH\Controllers\Booking.php(280): CodeIgniter\View\View->render('/home/reservation/email_msg')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->send_email()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 12:39:50 --> Undefined variable $message
+in APPPATH\Views\admin\reservation\email_msg.php on line 1.
+ 1 APPPATH\Views\admin\reservation\email_msg.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $message', 'APPPATH\\Views\\admin\\reservation\\email_msg.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\reservation\\email_msg.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/reservation/email_msg', [], true)
+ 5 APPPATH\Controllers\Booking.php(254): view('admin/reservation/email_msg')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->email_msg()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 13:06:20 --> Undefined variable $validation
+in APPPATH\Views\admin\reservation\editreservation.php on line 109.
+ 1 APPPATH\Views\admin\reservation\editreservation.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Views\\admin\\reservation\\editreservation.php', 109)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\reservation\\editreservation.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/reservation/editreservation', [], true)
+ 5 APPPATH\Controllers\Booking.php(97): view('admin/reservation/editreservation', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->editreservation('28')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 13:07:15 --> Undefined variable $validation
+in APPPATH\Views\admin\reservation\editreservation.php on line 121.
+ 1 APPPATH\Views\admin\reservation\editreservation.php(121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Views\\admin\\reservation\\editreservation.php', 121)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\reservation\\editreservation.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/reservation/editreservation', [], true)
+ 5 APPPATH\Controllers\Booking.php(97): view('admin/reservation/editreservation', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->editreservation('28')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-03 13:07:45 --> Undefined variable $validation
+in APPPATH\Views\admin\reservation\editreservation.php on line 122.
+ 1 APPPATH\Views\admin\reservation\editreservation.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Views\\admin\\reservation\\editreservation.php', 122)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\reservation\\editreservation.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/reservation/editreservation', [], true)
+ 5 APPPATH\Controllers\Booking.php(97): view('admin/reservation/editreservation', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Booking->editreservation('28')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

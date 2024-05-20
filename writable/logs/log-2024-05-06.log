@@ -1,0 +1,17 @@
+CRITICAL - 2024-05-06 00:23:20 --> Class "App\Controllers\Agent_payslips" not found
+in APPPATH/Controllers/Payroll.php on line 925.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->agent_payslips()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-06 00:26:14 --> Undefined variable $start_date
+in APPPATH/Views/payroll/payslip.php on line 535.
+ 1 APPPATH/Views/payroll/payslip.php(535): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $start_date', 'APPPATH/Views/payroll/payslip.php', 535)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/payroll/payslip.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('payroll/payslip', [], true)
+ 5 APPPATH/Controllers/Payroll.php(754): view('payroll/payslip', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->generatePayslip()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()

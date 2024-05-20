@@ -1,0 +1,35 @@
+CRITICAL - 2023-12-17 05:38:36 --> Class "App\Controllers\User_model" not found
+in APPPATH\Controllers\Home.php on line 152.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->register()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-17 05:58:57 --> Undefined array key "Position"
+in APPPATH\Controllers\Home.php on line 67.
+ 1 APPPATH\Controllers\Home.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Position"', 'APPPATH\\Controllers\\Home.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-17 05:59:50 --> Undefined array key "Role"
+in APPPATH\Controllers\Home.php on line 67.
+ 1 APPPATH\Controllers\Home.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Role"', 'APPPATH\\Controllers\\Home.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-17 06:00:10 --> Undefined variable $user_info
+in APPPATH\Views\dashboard.php on line 84.
+ 1 APPPATH\Views\dashboard.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_info', 'APPPATH\\Views\\dashboard.php', 84)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Home.php(177): view('dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

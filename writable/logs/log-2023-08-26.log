@@ -1,0 +1,12 @@
+CRITICAL - 2023-08-26 00:06:35 --> Undefined variable $allowedStatuses
+in APPPATH\Views\admin\orders\pending_orders.php on line 288.
+ 1 APPPATH\Views\admin\orders\pending_orders.php(288): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $allowedStatuses', 'APPPATH\\Views\\admin\\orders\\pending_orders.php', 288)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\orders\\pending_orders.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/orders/pending_orders', [], true)
+ 5 APPPATH\Controllers\Orders.php(538): view('admin/orders/pending_orders', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Orders->pending_orders()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

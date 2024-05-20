@@ -1,0 +1,29 @@
+CRITICAL - 2024-05-07 01:39:22 --> Undefined array key "dropdownValue"
+in APPPATH/Views/payroll/payslip.php on line 290.
+ 1 APPPATH/Views/payroll/payslip.php(290): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dropdownValue"', 'APPPATH/Views/payroll/payslip.php', 290)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/payroll/payslip.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('payroll/payslip', [], true)
+ 5 APPPATH/Controllers/Payroll.php(762): view('payroll/payslip', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->generatePayslip()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-07 01:59:34 --> File not found: /home1/tamtechh/public_html/inventory/public/payroll_template/attendance_template.xlsx
+in SYSTEMPATH/Files/File.php on line 46.
+ 1 SYSTEMPATH/Files/File.php(46): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('FCPATH/payroll_template/attendance_template.xlsx')
+ 2 SYSTEMPATH/HTTP/DownloadResponse.php(97): CodeIgniter\Files\File->__construct('FCPATH/payroll_template/attendance_template.xlsx', true)
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(791): CodeIgniter\HTTP\DownloadResponse->setFilePath('FCPATH/payroll_template/attendance_template.xlsx')
+ 4 APPPATH/Controllers/Payroll.php(1015): CodeIgniter\HTTP\Response->download('attendance_template.xlsx', null)
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->downloadTemplate()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-07 21:40:43 --> json_decode(): Passing null to parameter #1 ($json) of type string is deprecated
+in APPPATH/Controllers/Payroll.php on line 119.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'json_decode(): Passing null to parameter #1 ($json) of type string is deprecated', 'APPPATH/Controllers/Payroll.php', 119)
+ 2 APPPATH/Controllers/Payroll.php(119): json_decode(null, true)
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Payroll->updateDailySalary()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payroll))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(87): CodeIgniter\CodeIgniter->run()
