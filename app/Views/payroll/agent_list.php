@@ -303,7 +303,7 @@
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label>Daily Salary</label>
-                                                    <input type="number" class="form-control" id="daily_salary" name="daily_salary" value="<?php echo $new['daily_salary']; ?>">
+                                                    <input type="number" class="form-control" id="daily_salary" name="daily_salary" value="<?php echo $new['daily_salary']; ?>" step="0.01">
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
