@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 17, 2024 at 09:49 PM
--- Server version: 5.7.23-23
--- PHP Version: 8.1.27
+-- Generation Time: Jul 22, 2024 at 01:46 AM
+-- Server version: 8.0.30
+-- PHP Version: 8.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `tamtechh_tamtech_inventory`
+-- Database: `tamtech_inventory`
 --
 
 -- --------------------------------------------------------
@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `account` (
-  `id` int(11) NOT NULL,
+  `id` int NOT NULL,
   `firstname` varchar(255) NOT NULL,
   `lastname` varchar(255) NOT NULL,
   `profile_image` varchar(255) NOT NULL,
@@ -39,7 +39,7 @@ CREATE TABLE `account` (
   `token` varchar(255) NOT NULL,
   `approve_token` varchar(255) NOT NULL,
   `verify_otp` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `account`
@@ -56,10 +56,10 @@ INSERT INTO `account` (`id`, `firstname`, `lastname`, `profile_image`, `username
 --
 
 CREATE TABLE `agent_documents` (
-  `id` int(11) NOT NULL,
-  `agent_fk_id` int(11) NOT NULL,
+  `id` int NOT NULL,
+  `agent_fk_id` int NOT NULL,
   `upload_files` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `agent_documents`
@@ -378,8 +378,8 @@ INSERT INTO `agent_documents` (`id`, `agent_fk_id`, `upload_files`) VALUES
 --
 
 CREATE TABLE `agent_leave` (
-  `id` int(11) NOT NULL,
-  `agent_fk_id` int(11) NOT NULL,
+  `id` int NOT NULL,
+  `agent_fk_id` int NOT NULL,
   `agent_id` varchar(255) NOT NULL,
   `comment` text NOT NULL,
   `status` varchar(255) NOT NULL,
@@ -388,7 +388,7 @@ CREATE TABLE `agent_leave` (
   `end_date` date DEFAULT NULL,
   `required_work` time NOT NULL,
   `daily_salary` double(10,2) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `agent_leave`
@@ -669,7 +669,12 @@ INSERT INTO `agent_leave` (`id`, `agent_fk_id`, `agent_id`, `comment`, `status`,
 (272, 63, 'TAM202', 'None', 'Unused', '0000-00-00', '2024-01-01', '2024-12-31', '08:00:00', 0.00),
 (273, 63, 'TAM202', 'None', 'Unused', '0000-00-00', '2024-01-01', '2024-12-31', '08:00:00', 0.00),
 (274, 63, 'TAM202', 'None', 'Unused', '0000-00-00', '2024-01-01', '2024-12-31', '08:00:00', 0.00),
-(275, 63, 'TAM202', 'None', 'Unused', '0000-00-00', '2024-01-01', '2024-12-31', '08:00:00', 0.00);
+(275, 63, 'TAM202', 'None', 'Unused', '0000-00-00', '2024-01-01', '2024-12-31', '08:00:00', 0.00),
+(276, 71, 'dsdddsd', 'None', 'Unused', '0000-00-00', '2024-01-01', '2024-12-31', '00:00:00', 0.00),
+(277, 71, 'dsdddsd', 'None', 'Unused', '0000-00-00', '2024-01-01', '2024-12-31', '00:00:00', 0.00),
+(278, 71, 'dsdddsd', 'None', 'Unused', '0000-00-00', '2024-01-01', '2024-12-31', '00:00:00', 0.00),
+(279, 71, 'dsdddsd', 'None', 'Unused', '0000-00-00', '2024-01-01', '2024-12-31', '00:00:00', 0.00),
+(280, 71, 'dsdddsd', 'None', 'Unused', '0000-00-00', '2024-01-01', '2024-12-31', '00:00:00', 0.00);
 
 -- --------------------------------------------------------
 
@@ -678,7 +683,7 @@ INSERT INTO `agent_leave` (`id`, `agent_fk_id`, `agent_id`, `comment`, `status`,
 --
 
 CREATE TABLE `agent_list` (
-  `id` int(11) NOT NULL,
+  `id` int NOT NULL,
   `agent_name` varchar(255) NOT NULL,
   `agent_id` varchar(255) NOT NULL DEFAULT 'None',
   `campaign` varchar(255) NOT NULL DEFAULT 'None',
@@ -692,16 +697,16 @@ CREATE TABLE `agent_list` (
   `house_rent` double(10,2) NOT NULL,
   `user_email` varchar(255) NOT NULL,
   `comment` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `agent_list`
 --
 
 INSERT INTO `agent_list` (`id`, `agent_name`, `agent_id`, `campaign`, `status`, `start_date`, `SSS`, `pag_ibig`, `philhealth`, `daily_salary`, `required_work`, `house_rent`, `user_email`, `comment`) VALUES
-(2, 'Ezekiel Telmo', 'TAM009', 'BDM', 'Active', '2017-03-05', 0.00, 200.00, 0.00, 395.00, '08:00:00', 0.00, 'ezekiel.telmo@tamtechhub.com', ''),
-(3, 'Reynato Froisland', 'TAM069', 'DCS', 'Active', '2019-02-04', 0.00, 200.00, 0.00, 395.00, '08:00:00', 0.00, 'reynato.tamtech@gmail.com', ''),
-(4, 'Jaynelle Bumacod', 'TAM072', 'DCS', 'Active', '2019-04-08', 0.00, 200.00, 0.00, 395.00, '08:00:00', 0.00, 'jaynelle.tamtech@gmail.com', ''),
+(2, 'Ezekiel Telmo', 'TAM009', 'BDM', 'Active', '2017-03-05', 0.00, 200.00, 0.00, 550.00, '08:00:00', 0.00, 'ezekiel.telmo@tamtechhub.com', ''),
+(3, 'Reynato Froisland', 'TAM069', 'DCS', 'Active', '2019-02-04', 0.00, 200.00, 0.00, 120.00, '08:00:00', 0.00, 'reynato.tamtech@gmail.com', ''),
+(4, 'Jaynelle Bumacod', 'TAM072', 'DCS', 'Active', '2019-04-08', 0.00, 200.00, 0.00, 400.00, '08:00:00', 0.00, 'jaynelle.tamtech@gmail.com', ''),
 (5, 'Carl Lorenz Villaluna', 'TAM075', 'Energy Makeovers (Calls)', 'Active', '2019-05-08', 100.00, 200.00, 50.00, 400.00, '08:00:00', 500.00, 'carl.tamtech@gmail.com', ''),
 (6, 'Wendell Lozano', 'TAM081', 'Cold Calls/ CM', 'Active', '2019-07-01', 0.00, 200.00, 0.00, 395.00, '08:00:00', 0.00, 'ariancuenca28@gmail.com', ''),
 (7, 'Ro Anne Sarmiento', 'TAM076', 'CHR ', 'Active', '2019-08-19', 0.00, 200.00, 0.00, 395.00, '08:00:00', 0.00, 'roann.tamtech@gmail.com', ''),
@@ -725,7 +730,7 @@ INSERT INTO `agent_list` (`id`, `agent_name`, `agent_id`, `campaign`, `status`, 
 (25, 'Joel  Catague Jr. ', 'TAM167', 'DCS', 'Active', '2023-02-15', 0.00, 200.00, 0.00, 395.00, '08:00:00', 0.00, 'joel.tamtech@gmail.com', ''),
 (26, 'Christian Ralph Ilagan', 'TAM168', 'CHR', 'Active', '2023-02-25', 100.00, 200.00, 0.00, 395.00, '08:00:00', 500.00, 'christianralph.tamtech@gmail.com', ''),
 (27, 'John Mark  Castro', 'TAM170', 'CHR', 'Active', '2023-03-08', 0.00, 200.00, 0.00, 395.00, '08:00:00', 0.00, 'johnmark.tamtech@gmail.com', ''),
-(28, 'Christian  Delos Reyes', 'TAM171', 'Investors Adv. Grp', 'Active', '2023-03-10', 100.00, 200.00, 0.00, 395.00, '08:00:00', 500.00, 'christian.tamtech@gmail.com', ''),
+(28, 'Christian  Delos Reyes', 'TAM171', 'Investors Adv. Grp', 'Active', '2023-03-10', 100.00, 200.00, 0.00, 395.00, '08:00:00', 500.00, 'carlosbernales24@gmail.com', ''),
 (29, 'Kathy Silvano', 'TAM175', 'Cold Calls/EM Calls', 'Active', '2023-03-21', 0.00, 200.00, 0.00, 395.00, '08:00:00', 0.00, 'kathysilvano.tamtech@gmail.com', ''),
 (30, 'Maria Cristina Montoya', 'TAM177', 'Cold Calls/ CHR', 'Active', '2023-04-01', 0.00, 200.00, 0.00, 395.00, '08:00:00', 0.00, 'mariachristina.tamtech@gmail.com', ''),
 (31, 'Jhon Jhon Maranan', 'TAM181', 'Cold Calls', 'Active', '2023-07-24', 0.00, 200.00, 0.00, 395.00, '08:00:00', 0.00, 'jhonjhon.tamtech@gmail.com', ''),
@@ -753,7 +758,8 @@ INSERT INTO `agent_list` (`id`, `agent_name`, `agent_id`, `campaign`, `status`, 
 (53, 'Rosenie Villanueva', 'None', 'Nones', 'Active', NULL, 0.00, 0.00, 0.00, 0.00, '00:00:00', 0.00, '', ''),
 (54, 'Leniel Mampusti ', 'TAM201', 'Cold Calls', 'Active', '2024-04-15', 0.00, 200.00, 0.00, 395.00, '08:00:00', 0.00, 'leniel.tamtech@gmail.com', ''),
 (55, 'Roel Paulo Telmo', 'EITB016', 'Elephant ', 'Active', '2024-04-02', 0.00, 200.00, 0.00, 395.00, '08:00:00', 0.00, 'roel@elephantintheboardroom.co.in', ''),
-(63, 'Princess Joy Roncali', 'TAM202', 'Cold Calls', 'Active', '2024-04-29', 0.00, 0.00, 0.00, 395.00, '08:00:00', 0.00, 'princess.tamtech@gmail.com', '');
+(63, 'Princess Joy Roncali', 'TAM202', 'Cold Calls', 'Active', '2024-04-29', 0.00, 0.00, 0.00, 395.00, '08:00:00', 0.00, 'princess.tamtech@gmail.com', ''),
+(71, 'sd', 'dsdddsd', 'sd', 'Active', '0000-00-00', 0.00, 0.00, 0.00, 0.00, '00:00:00', 0.00, '', '');
 
 -- --------------------------------------------------------
 
@@ -762,14 +768,14 @@ INSERT INTO `agent_list` (`id`, `agent_name`, `agent_id`, `campaign`, `status`, 
 --
 
 CREATE TABLE `agent_monitor` (
-  `id` int(11) NOT NULL,
-  `agent_fk_id` int(11) NOT NULL,
+  `id` int NOT NULL,
+  `agent_fk_id` int NOT NULL,
   `agent` varchar(255) NOT NULL,
   `monitor_one` varchar(255) NOT NULL,
-  `monitor_one_fk` int(11) NOT NULL,
+  `monitor_one_fk` int NOT NULL,
   `monitor_two` varchar(255) NOT NULL,
-  `monitor_two_fk` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `monitor_two_fk` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `agent_monitor`
@@ -815,7 +821,7 @@ INSERT INTO `agent_monitor` (`id`, `agent_fk_id`, `agent`, `monitor_one`, `monit
 --
 
 CREATE TABLE `agent_payslips` (
-  `id` int(11) NOT NULL,
+  `id` int NOT NULL,
   `attendance_bonus` double(10,2) NOT NULL,
   `spiff_incentive` double(10,2) NOT NULL,
   `overtime_pay` double(10,2) NOT NULL,
@@ -847,7 +853,7 @@ CREATE TABLE `agent_payslips` (
   `otherAddComment_one` text NOT NULL,
   `Otherdeduc_one` double(10,2) NOT NULL,
   `DeducComment_one` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -856,7 +862,7 @@ CREATE TABLE `agent_payslips` (
 --
 
 CREATE TABLE `attendance` (
-  `id` int(11) NOT NULL,
+  `id` int NOT NULL,
   `agent_name` varchar(255) NOT NULL,
   `daily_salary` double(10,2) NOT NULL,
   `agent_id` varchar(255) NOT NULL,
@@ -872,7 +878,28 @@ CREATE TABLE `attendance` (
   `required_work` time NOT NULL,
   `status` varchar(255) NOT NULL,
   `day_status` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `attendance`
+--
+
+INSERT INTO `attendance` (`id`, `agent_name`, `daily_salary`, `agent_id`, `date`, `time_in`, `time_out`, `late_count`, `early_out`, `night_diff`, `ovetime`, `nd_overtime`, `actual_work`, `required_work`, `status`, `day_status`) VALUES
+(1, 'Christian  Delos Reyes', 395.00, 'TAM171', '2024-04-04', '8:54 AM', '12:08 PM', '00:00:00', '00:00:00', '07:00:00', '05:00:00', '02:00:00', '08:00:00', '08:00:00', 'Present', 'Normal day'),
+(2, 'Christian  Delos Reyes', 395.00, 'TAM171', '2024-04-05', '4:03 PM', 'None', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '08:00:00', 'OFF/Holiday', 'OFF/Holiday'),
+(3, 'Christian  Delos Reyes', 395.00, 'TAM171', '2024-04-06', 'None', 'None', '00:00:00', '00:00:00', '07:00:00', '05:00:00', '02:00:00', '08:00:00', '08:00:00', 'Present', 'Normal day'),
+(4, 'Christian  Delos Reyes', 395.00, 'TAM171', '2024-04-07', 'None', 'None', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '08:00:00', 'Absent', 'REG/Holiday'),
+(5, 'Christian  Delos Reyes', 395.00, 'TAM171', '2024-04-08', '7:59 AM', '5:02 PM', '00:02:00', '01:05:00', '07:00:00', '05:00:00', '02:00:00', '08:00:00', '08:00:00', 'Present', 'Normal day'),
+(6, 'Christian  Delos Reyes', 395.00, 'TAM171', '2024-04-09', '7:34 PM', 'None', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '08:00:00', 'Holiday Leave', 'Holiday Leave'),
+(7, 'Christian  Delos Reyes', 395.00, 'TAM171', '2024-04-10', '7:02 AM', '5:15 PM', '00:00:00', '00:00:00', '07:00:00', '05:00:00', '02:00:00', '08:00:00', '08:00:00', 'Present', 'Normal day'),
+(8, 'Christian  Delos Reyes', 395.00, 'TAM171', '2024-04-11', '8:33 AM, 7:53 PM', '2:03 PM, 11:59 PM', '00:00:00', '00:00:00', '07:00:00', '05:00:00', '02:00:00', '08:00:00', '08:00:00', 'Present', 'Normal day'),
+(9, 'Christian  Delos Reyes', 395.00, 'TAM171', '2024-04-12', '9:17 AM', '5:39 PM', '00:00:00', '00:00:00', '07:00:00', '05:00:00', '02:00:00', '08:00:00', '08:00:00', 'Present', 'Normal day'),
+(10, 'Christian  Delos Reyes', 395.00, 'TAM171', '2024-04-13', 'None', 'None', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '08:00:00', 'OFF', 'Normal day'),
+(11, 'Christian  Delos Reyes', 395.00, 'TAM171', '2024-04-14', 'None', 'None', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '08:00:00', 'OFF', 'Normal day'),
+(12, 'Christian  Delos Reyes', 395.00, 'TAM171', '2024-04-15', '8:17 AM, 5:32 PM', '12:15 PM, 8:33 PM', '00:05:00', '01:12:00', '07:00:00', '05:00:00', '02:00:00', '08:00:00', '08:00:00', 'Present', 'Normal day'),
+(13, 'Christian  Delos Reyes', 395.00, 'TAM171', '2024-04-20', '8:17 AM, 5:32 PM', '12:15 PM, 8:33 PM', '00:00:00', '00:00:00', '07:00:00', '05:00:00', '02:00:00', '08:00:00', '08:00:00', 'Present', 'Normal day'),
+(14, 'Christian  Delos Reyes', 395.00, 'TAM171', '2024-04-21', '8:17 AM, 5:32 PM', '12:15 PM, 8:33 PM', '00:00:00', '00:00:00', '07:00:00', '05:00:00', '02:00:00', '08:00:00', '08:00:00', 'Present', 'Normal day'),
+(15, 'Christian  Delos Reyes', 395.00, 'TAM171', '2024-04-22', '8:17 AM, 5:32 PM', '12:15 PM, 8:33 PM', '00:00:00', '00:00:00', '07:00:00', '05:00:00', '02:00:00', '08:00:00', '08:00:00', 'Present', 'Normal day');
 
 -- --------------------------------------------------------
 
@@ -881,8 +908,8 @@ CREATE TABLE `attendance` (
 --
 
 CREATE TABLE `headset` (
-  `id` int(11) NOT NULL,
-  `agent_fk_id` int(11) NOT NULL DEFAULT '0',
+  `id` int NOT NULL,
+  `agent_fk_id` int NOT NULL DEFAULT '0',
   `agent` varchar(255) NOT NULL DEFAULT 'None',
   `equip_id` varchar(255) NOT NULL,
   `status` varchar(255) NOT NULL DEFAULT 'Unassigned',
@@ -890,7 +917,7 @@ CREATE TABLE `headset` (
   `model` varchar(255) NOT NULL DEFAULT 'No Model',
   `condition` varchar(255) NOT NULL,
   `comment` varchar(255) NOT NULL DEFAULT 'No Comment'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `headset`
@@ -945,16 +972,16 @@ INSERT INTO `headset` (`id`, `agent_fk_id`, `agent`, `equip_id`, `status`, `bran
 --
 
 CREATE TABLE `keyboard` (
-  `id` int(11) NOT NULL,
+  `id` int NOT NULL,
   `agent` varchar(255) NOT NULL DEFAULT 'None',
-  `agent_fk_id` int(11) NOT NULL DEFAULT '0',
+  `agent_fk_id` int NOT NULL DEFAULT '0',
   `keyboard_equip_id` varchar(255) NOT NULL,
   `keyboard_status` varchar(255) NOT NULL DEFAULT 'Unassigned',
   `keyboard_brand` varchar(255) NOT NULL DEFAULT 'No Brand',
   `keyboard_model` varchar(255) NOT NULL DEFAULT 'No Model',
   `keyboard_condition` varchar(255) NOT NULL,
   `keyboard_comment` varchar(255) NOT NULL DEFAULT 'No Comment'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `keyboard`
@@ -1010,9 +1037,9 @@ INSERT INTO `keyboard` (`id`, `agent`, `agent_fk_id`, `keyboard_equip_id`, `keyb
 --
 
 CREATE TABLE `laptop` (
-  `id` int(11) NOT NULL,
+  `id` int NOT NULL,
   `laptop_agent` varchar(255) NOT NULL DEFAULT 'None',
-  `agent_fk_id` int(11) NOT NULL DEFAULT '0',
+  `agent_fk_id` int NOT NULL DEFAULT '0',
   `laptop_equip_id` varchar(255) NOT NULL,
   `laptop_status` varchar(255) NOT NULL DEFAULT 'Unassigned',
   `laptop_model` varchar(255) NOT NULL DEFAULT 'No Model',
@@ -1022,7 +1049,7 @@ CREATE TABLE `laptop` (
   `laptop_storage` varchar(255) NOT NULL,
   `laptop_condition` varchar(255) NOT NULL,
   `laptop_comment` varchar(255) NOT NULL DEFAULT 'No Comment'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `laptop`
@@ -1045,15 +1072,15 @@ INSERT INTO `laptop` (`id`, `laptop_agent`, `agent_fk_id`, `laptop_equip_id`, `l
 --
 
 CREATE TABLE `locker` (
-  `id` int(11) NOT NULL,
-  `agent_fk_id` int(11) NOT NULL DEFAULT '0',
+  `id` int NOT NULL,
+  `agent_fk_id` int NOT NULL DEFAULT '0',
   `locker_no` varchar(255) NOT NULL,
   `locker_agent` varchar(255) NOT NULL DEFAULT 'None',
   `locker_tool_id` varchar(255) NOT NULL,
   `locker_status` varchar(255) NOT NULL DEFAULT 'Non-Occupied',
   `locker_condition` varchar(255) NOT NULL,
   `locker_comment` varchar(255) NOT NULL DEFAULT 'No Comment'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `locker`
@@ -1158,8 +1185,8 @@ INSERT INTO `locker` (`id`, `agent_fk_id`, `locker_no`, `locker_agent`, `locker_
 --
 
 CREATE TABLE `machine` (
-  `id` int(11) NOT NULL,
-  `agent_fk_id` int(11) NOT NULL DEFAULT '0',
+  `id` int NOT NULL,
+  `agent_fk_id` int NOT NULL DEFAULT '0',
   `station_no` varchar(255) NOT NULL DEFAULT 'None',
   `static_ip` varchar(255) NOT NULL DEFAULT 'None',
   `agent` varchar(255) NOT NULL DEFAULT 'None',
@@ -1172,7 +1199,7 @@ CREATE TABLE `machine` (
   `storage_type` varchar(255) NOT NULL DEFAULT 'No Storage',
   `conditions` varchar(255) NOT NULL,
   `comment` varchar(255) NOT NULL DEFAULT 'No Comment'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `machine`
@@ -1229,15 +1256,15 @@ INSERT INTO `machine` (`id`, `agent_fk_id`, `station_no`, `static_ip`, `agent`, 
 --
 
 CREATE TABLE `monitor` (
-  `id` int(11) NOT NULL,
-  `agent_fk_id` int(11) NOT NULL DEFAULT '0',
+  `id` int NOT NULL,
+  `agent_fk_id` int NOT NULL DEFAULT '0',
   `monitor_equip_id` varchar(255) NOT NULL,
   `monitor_status` varchar(255) NOT NULL DEFAULT 'Unassigned',
   `monitor_brand` varchar(255) NOT NULL DEFAULT 'No Brand',
   `monitor_model` varchar(255) NOT NULL DEFAULT 'No Model',
   `monitor_condition` varchar(255) NOT NULL,
   `monitor_comment` varchar(255) NOT NULL DEFAULT 'No Comment'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `monitor`
@@ -1309,8 +1336,8 @@ INSERT INTO `monitor` (`id`, `agent_fk_id`, `monitor_equip_id`, `monitor_status`
 --
 
 CREATE TABLE `mouse` (
-  `id` int(11) NOT NULL,
-  `agent_fk_id` int(11) NOT NULL DEFAULT '0',
+  `id` int NOT NULL,
+  `agent_fk_id` int NOT NULL DEFAULT '0',
   `agent` varchar(255) NOT NULL DEFAULT 'None',
   `equip_id` varchar(255) NOT NULL,
   `status` varchar(255) NOT NULL DEFAULT 'Unassigned',
@@ -1318,7 +1345,7 @@ CREATE TABLE `mouse` (
   `model` varchar(255) NOT NULL DEFAULT 'No Model',
   `mouse_condition` varchar(255) NOT NULL,
   `comment` varchar(255) NOT NULL DEFAULT 'No Comment'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `mouse`
@@ -1375,7 +1402,7 @@ INSERT INTO `mouse` (`id`, `agent_fk_id`, `agent`, `equip_id`, `status`, `brand`
 --
 
 CREATE TABLE `payslip` (
-  `id` int(11) NOT NULL,
+  `id` int NOT NULL,
   `image_name` varchar(255) NOT NULL,
   `user_email` varchar(255) NOT NULL,
   `agent_name` varchar(255) NOT NULL,
@@ -1384,7 +1411,7 @@ CREATE TABLE `payslip` (
   `startDate` date NOT NULL,
   `end_date` date NOT NULL,
   `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -1393,9 +1420,9 @@ CREATE TABLE `payslip` (
 --
 
 CREATE TABLE `phone` (
-  `id` int(11) NOT NULL,
+  `id` int NOT NULL,
   `phone_agent_name` varchar(255) NOT NULL DEFAULT 'None',
-  `agent_fk_id` int(11) NOT NULL DEFAULT '0',
+  `agent_fk_id` int NOT NULL DEFAULT '0',
   `phone_equip_id` varchar(255) NOT NULL,
   `phone_status` varchar(255) NOT NULL DEFAULT 'Unassigned',
   `phone_brand` varchar(255) NOT NULL DEFAULT 'No Brand',
@@ -1411,7 +1438,7 @@ CREATE TABLE `phone` (
   `phone_number_three` varchar(255) NOT NULL DEFAULT 'None',
   `whatsapp_acc_three` varchar(255) NOT NULL DEFAULT 'None',
   `whatsapp_acc_three_cond` varchar(255) NOT NULL DEFAULT 'None'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `phone`
@@ -1443,12 +1470,12 @@ INSERT INTO `phone` (`id`, `phone_agent_name`, `agent_fk_id`, `phone_equip_id`, 
 --
 
 CREATE TABLE `resigned_details` (
-  `id` int(11) NOT NULL,
-  `agent_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `comment` text COLLATE utf8_unicode_ci NOT NULL,
-  `status` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `id` int NOT NULL,
+  `agent_id` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_unicode_ci NOT NULL,
+  `comment` text CHARACTER SET utf8mb3 COLLATE utf8mb3_unicode_ci NOT NULL,
+  `status` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_unicode_ci NOT NULL,
   `date` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -1457,17 +1484,17 @@ CREATE TABLE `resigned_details` (
 --
 
 CREATE TABLE `sgsimcard` (
-  `id` int(11) NOT NULL,
+  `id` int NOT NULL,
   `number` varchar(255) NOT NULL,
   `serial_no` varchar(255) NOT NULL DEFAULT 'None',
   `agent` varchar(255) NOT NULL,
-  `agent_fk_id` int(11) NOT NULL,
+  `agent_fk_id` int NOT NULL,
   `used_in` varchar(255) NOT NULL,
   `remarks` varchar(255) NOT NULL,
   `phone_serial_no` varchar(255) NOT NULL,
-  `phone_fk_id` int(11) NOT NULL,
+  `phone_fk_id` int NOT NULL,
   `load_expired` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `sgsimcard`
@@ -1506,16 +1533,16 @@ INSERT INTO `sgsimcard` (`id`, `number`, `serial_no`, `agent`, `agent_fk_id`, `u
 --
 
 CREATE TABLE `webcam` (
-  `id` int(11) NOT NULL,
+  `id` int NOT NULL,
   `webcam_agent` varchar(255) NOT NULL DEFAULT 'None',
-  `agent_fk_id` int(11) NOT NULL DEFAULT '0',
+  `agent_fk_id` int NOT NULL DEFAULT '0',
   `webcam_equip_id` varchar(255) NOT NULL,
   `webcam_status` varchar(255) NOT NULL DEFAULT 'Unassigned',
   `webcam_brand` varchar(255) NOT NULL DEFAULT 'No Brand',
   `webcam_model` varchar(255) NOT NULL DEFAULT 'No Model',
   `webcam_condition` varchar(255) NOT NULL,
   `webcam_comment` varchar(255) NOT NULL DEFAULT 'No Comment'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `webcam`
@@ -1654,115 +1681,115 @@ ALTER TABLE `webcam`
 -- AUTO_INCREMENT for table `account`
 --
 ALTER TABLE `account`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `agent_documents`
 --
 ALTER TABLE `agent_documents`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=658;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=658;
 
 --
 -- AUTO_INCREMENT for table `agent_leave`
 --
 ALTER TABLE `agent_leave`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=276;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=281;
 
 --
 -- AUTO_INCREMENT for table `agent_list`
 --
 ALTER TABLE `agent_list`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=71;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
 
 --
 -- AUTO_INCREMENT for table `agent_monitor`
 --
 ALTER TABLE `agent_monitor`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT for table `agent_payslips`
 --
 ALTER TABLE `agent_payslips`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `attendance`
 --
 ALTER TABLE `attendance`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `headset`
 --
 ALTER TABLE `headset`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
 -- AUTO_INCREMENT for table `keyboard`
 --
 ALTER TABLE `keyboard`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- AUTO_INCREMENT for table `laptop`
 --
 ALTER TABLE `laptop`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `locker`
 --
 ALTER TABLE `locker`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=92;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=92;
 
 --
 -- AUTO_INCREMENT for table `machine`
 --
 ALTER TABLE `machine`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
 
 --
 -- AUTO_INCREMENT for table `monitor`
 --
 ALTER TABLE `monitor`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
 
 --
 -- AUTO_INCREMENT for table `mouse`
 --
 ALTER TABLE `mouse`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
 -- AUTO_INCREMENT for table `payslip`
 --
 ALTER TABLE `payslip`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `phone`
 --
 ALTER TABLE `phone`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `resigned_details`
 --
 ALTER TABLE `resigned_details`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `sgsimcard`
 --
 ALTER TABLE `sgsimcard`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `webcam`
 --
 ALTER TABLE `webcam`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
